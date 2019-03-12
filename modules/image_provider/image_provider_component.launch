@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>Image Provider</name>
+        <dag_conf>/apollo/modules/image_provider/image_provider_component.dag</dag_conf>
+        <process_name>image_provider</process_name>
+    </module>
+</cyber>

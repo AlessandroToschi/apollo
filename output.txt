@@ -1,0 +1,29 @@
+Running main() from gmock_main.cc
+[==========] Running 10 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 10 tests from SemanticReviser
+[ RUN      ] SemanticReviser.red_flash
+[       OK ] SemanticReviser.red_flash (2 ms)
+[ RUN      ] SemanticReviser.green_flash
+[       OK ] SemanticReviser.green_flash (2 ms)
+[ RUN      ] SemanticReviser.yellow_flash
+[       OK ] SemanticReviser.yellow_flash (1 ms)
+[ RUN      ] SemanticReviser.mix
+[       OK ] SemanticReviser.mix (2 ms)
+[ RUN      ] SemanticReviser.mix_yellow
+[       OK ] SemanticReviser.mix_yellow (3 ms)
+[ RUN      ] SemanticReviser.mix_black
+[       OK ] SemanticReviser.mix_black (2 ms)
+[ RUN      ] SemanticReviser.unknown_to_black
+[       OK ] SemanticReviser.unknown_to_black (2 ms)
+[ RUN      ] SemanticReviser.black_to_unknown
+[       OK ] SemanticReviser.black_to_unknown (2 ms)
+[ RUN      ] SemanticReviser.mix_yellow_red_flash
+[       OK ] SemanticReviser.mix_yellow_red_flash (15 ms)
+[ RUN      ] SemanticReviser.green_blink
+[       OK ] SemanticReviser.green_blink (8 ms)
+[----------] 10 tests from SemanticReviser (39 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test case ran. (39 ms total)
+[  PASSED  ] 10 tests.

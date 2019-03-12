@@ -318,6 +318,8 @@ function main(){
         --shm-size 2G \
         --pid=host \
         -v /dev/null:/dev/raw1394 \
+		-v /usr/src:/usr/src \
+		-v /lib/modules:/lib/modules \
         $IMG \
         /bin/bash
 

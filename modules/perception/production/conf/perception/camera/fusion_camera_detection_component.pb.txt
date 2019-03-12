@@ -16,8 +16,8 @@ default_camera_height : 1.5
 lane_calibration_working_sensor_name : "front_6mm"
 calibrator_method : "LaneLineCalibrator"
 calib_service_name : "OnlineCalibrationService"
-run_calib_service : true
-output_camera_debug_msg : false
+run_calib_service : false
+output_camera_debug_msg : true
 camera_debug_channel_name : "/perception/camera_debug"
 ts_diff : 0.1
 visual_debug_folder : "/apollo/debug_output"

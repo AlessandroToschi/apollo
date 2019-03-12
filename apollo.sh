@@ -109,6 +109,9 @@ function generate_build_targets() {
   no_perception)
     BUILD_TARGETS=`bazel query //modules/... except //modules/perception/... union //cyber/...`
     ;;
+  image_provider)
+	BUILD_TARGETS=`bazel query $COMMON_TARGETS union //modules/image_provider/...`
+	;;
   *)
     BUILD_TARGETS=`bazel query //modules/... union //cyber/...`
   esac
@@ -751,6 +754,10 @@ function main() {
       BUILD_FILTER="pnc"
       apollo_build_dbg $@
       ;;
+	build_ip)
+	  BUILD_FILTER="image_provider drivers"
+      apollo_build_dbg $@
+	  ;;
     cibuild)
       DEFINES="${DEFINES} --cxxopt=-DCPU_ONLY"
       cibuild $@
