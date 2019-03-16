@@ -59,10 +59,10 @@ bool SetCameraHeight(const std::string &sensor_name,
   float base_h = default_camera_height;
   float camera_offset = 0.0f;
   try {
-    YAML::Node lidar_height =
-        YAML::LoadFile(params_dir + "/" + "velodyne128_height.yaml");
-    base_h = lidar_height["vehicle"]["parameters"]["height"].as<float>();
-    AINFO << base_h;
+    //YAML::Node lidar_height =
+    //    YAML::LoadFile(params_dir + "/" + "velodyne128_height.yaml");
+    //base_h = lidar_height["vehicle"]["parameters"]["height"].as<float>();
+    //AINFO << base_h;
     YAML::Node camera_ex =
         YAML::LoadFile(params_dir + "/" + sensor_name + "_extrinsics.yaml");
     camera_offset = camera_ex["transform"]["translation"]["z"].as<float>();
@@ -78,6 +78,7 @@ bool SetCameraHeight(const std::string &sensor_name,
   } catch (YAML::Exception &e) {
     AERROR << "load camera extrisic file "
            << " error, YAML exception:" << e.what();
+    AERROR << sensor_name << " " << params_dir;
     return false;
   }
   return true;
@@ -214,9 +215,10 @@ bool FusionCameraDetectionComponent::Init() {
   double roll_adj_degree = 0.0;
   // load in lidar to imu extrinsic
   Eigen::Matrix4d ex_lidar2imu;
-  LoadExtrinsics(FLAGS_obs_sensor_intrinsic_path + "/" +
-                     "velodyne128_novatel_extrinsics.yaml",
-                 &ex_lidar2imu);
+  if(!LoadExtrinsics(FLAGS_obs_sensor_intrinsic_path + "/" + "velodyne128_novatel_extrinsics.yaml", &ex_lidar2imu))
+  {
+    ex_lidar2imu = Eigen::Matrix4d::Identity();
+  }
   AINFO << "velodyne128_novatel_extrinsics: " << ex_lidar2imu;
 
   CHECK(visualize_.Init_all_info_single_camera(
@@ -274,8 +276,8 @@ void FusionCameraDetectionComponent::OnReceiveImage(
   std::shared_ptr<SensorFrameMessage> prefused_message(new (std::nothrow)
                                                            SensorFrameMessage);
 
-  if (InternalProc(message, camera_name, &error_code, prefused_message.get(),
-                   out_message.get()) != cyber::SUCC) {
+  if (InternalProc(message, camera_name, &error_code, prefused_message.get(), out_message.get()) != cyber::SUCC) 
+  {
     AERROR << "InternalProc failed, error_code: " << error_code;
     if (MakeProtobufMsg(msg_timestamp, seq_num_, std::vector<base::ObjectPtr>(),
                         error_code, out_message.get()) != cyber::SUCC) {
@@ -419,8 +421,7 @@ int FusionCameraDetectionComponent::InitSensorInfo() {
     }
     sensor_info_map_[camera_names_[i]] = sensor_info;
 
-    std::string tf_camera_frame_id =
-        sensor_manager->GetFrameId(camera_names_[i]);
+    std::string tf_camera_frame_id = sensor_manager->GetFrameId(camera_names_[i]);
     tf_camera_frame_id_map_[camera_names_[i]] = tf_camera_frame_id;
     std::shared_ptr<TransformWrapper> trans_wrapper(new TransformWrapper);
     trans_wrapper->Init(tf_camera_frame_id);
@@ -569,7 +570,8 @@ int FusionCameraDetectionComponent::InternalProc(
     const std::shared_ptr<apollo::drivers::Image const> &in_message,
     const std::string &camera_name, apollo::common::ErrorCode *error_code,
     SensorFrameMessage *prefused_message,
-    apollo::perception::PerceptionObstacles *out_message) {
+    apollo::perception::PerceptionObstacles *out_message) 
+{
   const double msg_timestamp =
       in_message->measurement_time() + timestamp_offset_;
   const int frame_size = static_cast<int>(camera_frames_.size());
@@ -584,27 +586,28 @@ int FusionCameraDetectionComponent::InternalProc(
   prefused_message->frame_->timestamp = msg_timestamp;
 
   // Get sensor to world pose from TF
-  Eigen::Affine3d camera2world_trans;
-  if (!camera2world_trans_wrapper_map_[camera_name]->GetSensor2worldTrans(
-          msg_timestamp, &camera2world_trans)) {
-    std::string err_str = "failed to get camera to world pose, ts: " +
-                          std::to_string(msg_timestamp) +
-                          " camera_name: " + camera_name;
-    AERROR << err_str;
-    *error_code = apollo::common::ErrorCode::PERCEPTION_ERROR_TF;
-    prefused_message->error_code_ = *error_code;
-    return cyber::FAIL;
-  }
+  Eigen::Affine3d camera2world_trans = Eigen::Affine3d::Identity();
+  //if (!camera2world_trans_wrapper_map_[camera_name]->GetSensor2worldTrans(msg_timestamp, &camera2world_trans)) 
+  //{
+    //std::string err_str = "failed to get camera to world pose, ts: " +
+    //                      std::to_string(msg_timestamp) +
+    //                      " camera_name: " + camera_name;
+    //AERROR << err_str;
+    //*error_code = apollo::common::ErrorCode::PERCEPTION_ERROR_TF;
+    //prefused_message->error_code_ = *error_code;
+    //return cyber::FAIL;
+    //camera2world_trans = Eigen::Scaling(1.0);
+  //}
   prefused_message->frame_->sensor2world_pose = camera2world_trans;
+
+  image_width_ = in_message->width();
+  image_height_ = in_message->height();
 
   // Fill camera frame
   // frame_size != 0, see InitCameraFrames()
   camera_frame.camera2world_pose = camera2world_trans;
   camera_frame.data_provider = data_providers_map_[camera_name].get();
-  camera_frame.data_provider->FillImageData(
-      image_height_, image_width_,
-      reinterpret_cast<const uint8_t *>(in_message->data().data()),
-      in_message->encoding());
+  camera_frame.data_provider->FillImageData(image_height_, image_width_, reinterpret_cast<const uint8_t *>(in_message->data().data()), in_message->encoding());
 
   camera_frame.frame_id = frame_id_;
   camera_frame.timestamp = msg_timestamp;
@@ -614,14 +617,14 @@ int FusionCameraDetectionComponent::InternalProc(
   } else {
     camera_frame.project_matrix.setIdentity();
   }
-
+  AINFO << "qua ci arrivo";
   ++frame_id_;
   // Run camera perception pipeline
   camera_obstacle_pipeline_->GetCalibrationService(
       &camera_frame.calibration_service);
 
-  if (!camera_obstacle_pipeline_->Perception(camera_perception_options_,
-                                             &camera_frame)) {
+  if (!camera_obstacle_pipeline_->Perception(camera_perception_options_, &camera_frame)) 
+  {
     AERROR << "camera_obstacle_pipeline_->Perception() failed"
            << " msg_timestamp: " << std::to_string(msg_timestamp);
     *error_code = apollo::common::ErrorCode::PERCEPTION_ERROR_PROCESS;

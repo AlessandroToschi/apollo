@@ -28,7 +28,7 @@
 # whether to send message for visualization.
 # type: bool
 # default: false
---obs_enable_visualization=false
+--obs_enable_visualization=true
 
 # where to save screenshots of visualization
 # type: string
@@ -71,7 +71,7 @@
 # enabled state of local pose extrapolation when failed to query pose
 # type: bool
 # default: false
---obs_enable_local_pose_extrapolation=true
+--obs_enable_local_pose_extrapolation=false
 
 # local pose cache size
 # type: double

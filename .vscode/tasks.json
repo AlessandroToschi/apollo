@@ -99,7 +99,7 @@
             // you can change the "planning" module name to another one and 
             // change the "1111" to another port number. The port number should 
             // be same as that in the "launch.json" file. 
-            "command": "bash docker/scripts/dev_start_gdb_server.sh planning 1111",            
+            "command": "bash docker/scripts/dev_start_gdb_server.sh perception_camera 1111",            
             "isBackground": true,
             "problemMatcher": {
                 "owner": "custom",

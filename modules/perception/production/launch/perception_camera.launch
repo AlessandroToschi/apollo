@@ -14,7 +14,7 @@
         <name>perception_camera</name>
         <dag_conf>/apollo/modules/perception/production/dag/dag_streaming_perception_camera.dag</dag_conf>
         <!-- if not set, use default process -->
-        <process_name></process_name>
+        <process_name>perception_camera</process_name>
         <version>1.0.0</version>
     </module>
 

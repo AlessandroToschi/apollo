@@ -1,6 +1,44 @@
 {
     "version": "0.2.0",
     "configurations": [
+    
+        { 
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "${workspaceRoot}/bazel-bin/cyber/mainboard",
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "localhost:1111",
+            "processId": "7587",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        
+        { 
+            "name": "Debug FusionCameraDetectionComponent",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "cyber_launch start modules/perception/production/launch/perception_camera.launch",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
     {
         "name": "C++ Launch",
         "type": "cppdbg",
@@ -13,7 +51,7 @@
         // ".vscode/tasks.json" file, for example "planning".
         // Tips: search the label "start gdbserver" in ".vscode/tasks.json".
         // The port number should be consistent with this file.        
-        "preLaunchTask": "start gdbserver",
+        //"preLaunchTask": "start gdbserver",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${workspaceRoot}",
@@ -29,5 +67,6 @@
             "MIMode": "gdb"
         }
     }
+
     ]
 }

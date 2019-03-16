@@ -151,8 +151,7 @@ bool DataProvider::FillImageData(int rows, int cols, const uint8_t *data,
                  ori_rgb_->rows() * ori_rgb_->width_step(), cudaMemcpyDefault);
       success = handler_->Handle(*ori_rgb_, rgb_.get());
     } else {
-      cudaMemcpy(rgb_->mutable_gpu_data(), data,
-                 rgb_->rows() * rgb_->width_step(), cudaMemcpyDefault);
+      cudaMemcpy(rgb_->mutable_gpu_data(), data, rgb_->rows() * rgb_->width_step(), cudaMemcpyDefault);
       success = true;
     }
     rgb_ready_ = true;

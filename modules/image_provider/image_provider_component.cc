@@ -27,7 +27,7 @@ bool ImageProviderComponent::Init()
 
     images_index = 0;
 
-    writer_ = node_->CreateWriter<Image>("/apollo/sensor/camera/front_6mm");
+    writer_ = node_->CreateWriter<Image>("/apollo/sensor/camera/front_6mm/image");
 
     return true;
 }
@@ -37,11 +37,13 @@ bool ImageProviderComponent::Proc()
     if(images_index >= images_list.size())
     {
         AINFO << "Saro uscito?";
-        apollo::cyber::AsyncShutdown();
+        //apollo::cyber::AsyncShutdown();
         return false;
     }
 
     cv::Mat image = cv::imread("/apollo/dataset/data/" + images_list[images_index]);
+    cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
+    cv::resize(image, image, cv::Size(1920, 1080), 1.0, 1.0, cv::INTER_CUBIC);
 
     AINFO << image.rows << "    " << image.cols;
     
@@ -51,17 +53,19 @@ bool ImageProviderComponent::Proc()
     raw_image->height = image.rows;
     raw_image->bytes_per_pixel = 3;
     raw_image->image_size =  raw_image->width * raw_image->height * 3;
-    raw_image->is_new = 0;
+    raw_image->is_new = 1;
     raw_image->image = reinterpret_cast<char*>(calloc(raw_image->image_size, sizeof(char)));
 
 
     auto proto_image = std::make_shared<Image>();
-    //proto_image->mutable_header()->set_frame_id(images_index);
+    proto_image->mutable_header()->set_frame_id("camera_front_6mm");
+    proto_image->mutable_header()->set_timestamp_sec(cyber::Time::Now().ToSecond());
     proto_image->set_width(raw_image->width);
     proto_image->set_height(raw_image->height);
     proto_image->mutable_data()->reserve(raw_image->image_size);
     proto_image->set_encoding("rgb8");
     proto_image->set_step(3 * raw_image->width);
+    proto_image->set_measurement_time(cyber::Time::Now().ToSecond());
 
     memcpy(raw_image->image, image.data, raw_image->image_size);
 
@@ -70,6 +74,8 @@ bool ImageProviderComponent::Proc()
     images_index++;
 
     writer_->Write(proto_image);
+
+    images_index = (uint)images_list.size();
     
     return true;
 }

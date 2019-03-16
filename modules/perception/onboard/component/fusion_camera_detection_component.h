@@ -46,16 +46,13 @@ class FusionCameraDetectionComponent : public apollo::cyber::Component<> {
   FusionCameraDetectionComponent() : seq_num_(0) {}
   ~FusionCameraDetectionComponent();
 
-  FusionCameraDetectionComponent(const FusionCameraDetectionComponent&) =
-      delete;
-  FusionCameraDetectionComponent& operator=(
-      const FusionCameraDetectionComponent&) = delete;
+  FusionCameraDetectionComponent(const FusionCameraDetectionComponent&) = delete;
+  FusionCameraDetectionComponent& operator=(const FusionCameraDetectionComponent&) = delete;
 
   bool Init() override;
 
  private:
-  void OnReceiveImage(const std::shared_ptr<apollo::drivers::Image>& in_message,
-                      const std::string& camera_name);
+  void OnReceiveImage(const std::shared_ptr<apollo::drivers::Image>& in_message, const std::string& camera_name);
   int InitConfig();
   int InitSensorInfo();
   int InitAlgorithmPlugin();
@@ -112,8 +109,7 @@ class FusionCameraDetectionComponent : public apollo::cyber::Component<> {
 
   // TF stuff
   std::map<std::string, std::string> tf_camera_frame_id_map_;
-  std::map<std::string, std::shared_ptr<TransformWrapper>>
-      camera2world_trans_wrapper_map_;
+  std::map<std::string, std::shared_ptr<TransformWrapper>> camera2world_trans_wrapper_map_;
 
   // pre-allocaated-mem data_provider;
   std::map<std::string, std::shared_ptr<camera::DataProvider>>
