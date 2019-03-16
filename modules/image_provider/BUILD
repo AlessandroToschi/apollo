@@ -25,7 +25,24 @@ cc_library(
         "//cyber",
         "//modules/drivers/camera/proto:sensor_camera_proto",
         "//modules/drivers/proto:sensor_proto",
-        "//modules/drivers/camera"
+        "//modules/drivers/camera",
+        ":image_provider_gflags",
+    ],
+)
+
+cc_library(
+    name = "image_provider_gflags",
+    srcs = [
+        "image_provider_component_gflags.cc",
+    ],
+    hdrs = [
+        "image_provider_component_gflags.h",
+    ],
+    copts = [
+        "-DMODULE_NAME=\\\"image_provider\\\"",
+    ],
+    deps = [
+        "//external:gflags",
     ],
 )
 

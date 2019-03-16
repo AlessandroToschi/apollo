@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <string>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/core/core.hpp>
@@ -11,6 +12,7 @@
 #include "modules/drivers/camera/usb_cam.h"
 #include "modules/drivers/camera/proto/config.pb.h"
 #include "modules/drivers/proto/sensor_image.pb.h"
+#include "image_provider_component_gflags.h"
 
 using apollo::cyber::Component;
 using apollo::cyber::ComponentBase;
