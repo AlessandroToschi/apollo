@@ -357,11 +357,11 @@ Status MPCController::ComputeControlCommand(
   double control_gain_truncation_ratio = 0.0;
   double unconstraint_control = 0.0;
   const double v = VehicleStateProvider::Instance()->linear_velocity();
-  if (common::math::SolveLinearMPC(
-          matrix_ad_, matrix_bd_, matrix_cd_, matrix_q_updated_,
-          matrix_r_updated_, lower_bound, upper_bound, matrix_state_, reference,
-          mpc_eps_, mpc_max_iteration_, &control, &control_gain, &addition_gain)
-           != true) {
+  if (!common::math::SolveLinearMPC(matrix_ad_, matrix_bd_, matrix_cd_,
+                                    matrix_q_updated_, matrix_r_updated_,
+                                    lower_bound, upper_bound, matrix_state_,
+                                    reference, mpc_eps_, mpc_max_iteration_,
+                                    &control, &control_gain, &addition_gain)) {
     AERROR << "MPC solver failed";
   } else {
     ADEBUG << "MPC problem solved! ";
@@ -386,7 +386,7 @@ Status MPCController::ComputeControlCommand(
                            (lr_ - lf_ / cr_ * mass_ * v * v / wheelbase_) -
                            addition_gain[0](0, 0) * v) *
                            control_gain_truncation_ratio);
-        }
+      }
     } else {
       steer_angle_ff_compensation = 0.0;
     }
@@ -398,9 +398,9 @@ Status MPCController::ComputeControlCommand(
          << (mpc_end_timestamp - mpc_start_timestamp) * 1000 << " ms.";
 
   // TODO(QiL): evaluate whether need to add spline smoothing after the result
-  double steer_angle =
-      steer_angle_feedback + steer_angle_feedforwardterm_updated_ +
-      steer_angle_ff_compensation;
+  double steer_angle = steer_angle_feedback +
+                       steer_angle_feedforwardterm_updated_ +
+                       steer_angle_ff_compensation;
 
   // Clamp the steer angle to -100.0 to 100.0
   steer_angle = common::math::Clamp(steer_angle, -100.0, 100.0);

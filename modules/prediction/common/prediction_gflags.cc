@@ -49,7 +49,7 @@ DEFINE_double(lane_search_radius, 3.0, "Search radius for a candidate lane");
 DEFINE_double(lane_search_radius_in_junction, 15.0,
               "Search radius for a candidate lane");
 DEFINE_double(junction_search_radius, 1.0, "Search radius for a junction");
-DEFINE_double(pedestrian_nearby_lane_search_radius, 3.0,
+DEFINE_double(pedestrian_nearby_lane_search_radius, 5.0,
               "Radius to determine if pedestrian-like obstacle is near lane.");
 
 // Scenario
@@ -62,14 +62,16 @@ DEFINE_bool(enable_junction_feature, true,
             "If to enable building junction feature for obstacles");
 DEFINE_bool(enable_all_junction, false,
             "If consider all junction with junction_mlp_model.");
-DEFINE_double(caution_search_distance_ahead, 40.0,
+DEFINE_double(caution_search_distance_ahead, 50.0,
               "The distance ahead to search caution-level obstacles");
-DEFINE_double(caution_search_distance_backward_for_merge, 30.0,
+DEFINE_double(caution_search_distance_backward_for_merge, 60.0,
               "The distance backward to search caution-lebel obstacles "
               "in the case of merging");
-DEFINE_double(caution_search_distance_backward_for_overlap, 20.0,
+DEFINE_double(caution_search_distance_backward_for_overlap, 30.0,
               "The distance backward to search caution-lebel obstacles "
               "in the case of overlap");
+DEFINE_double(caution_pedestrian_approach_time, 3.0,
+              "The time for a pedestrian to approach adc trajectory");
 
 // Obstacle features
 DEFINE_int32(ego_vehicle_id, -1, "The obstacle ID of the ego vehicle.");

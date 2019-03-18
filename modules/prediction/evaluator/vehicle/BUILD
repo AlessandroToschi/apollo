@@ -117,11 +117,12 @@ cc_library(
         "//modules/prediction/proto:fnn_vehicle_model_proto",
     ] + select({
         "//tools/platforms:use_gpu": [
-            "@pytorch_gpu",
+            "@pytorch",
         ],
         "//conditions:default": [
             "@pytorch",
-        ]}),
+        ],
+    }),
 )
 
 cc_test(
@@ -157,11 +158,12 @@ cc_library(
         "//modules/prediction/network/cruise_model",
     ] + select({
         "//tools/platforms:use_gpu": [
-            "@pytorch_gpu",
+            "@pytorch",
         ],
         "//conditions:default": [
             "@pytorch",
-        ]}),
+        ],
+    }),
 )
 
 cc_test(
