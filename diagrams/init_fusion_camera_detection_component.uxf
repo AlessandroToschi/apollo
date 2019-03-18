@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>14</zoom_level>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>266</x>
+      <y>0</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>::Init
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>266</x>
+      <y>112</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitConfig
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>14</y>
+      <w>70</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;98;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>98</y>
+      <w>910</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Load the config_file_path specified in the dag file
+perception/production/conf/perception/camera/fusion_camera_detection_component_pb.txt
+Initialize all the flags and parameters of this component
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>266</x>
+      <y>224</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Create the 
+writers</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>126</y>
+      <w>70</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;98;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>266</x>
+      <y>336</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitSensor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>238</y>
+      <w>70</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;98;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>294</y>
+      <w>994</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Initialize each sensor present in the
+perception/moproduction/data/perception/common/sensor_meta.pt
+If the sensor is a camera then load the intrisincs from 
+/perception/data/params/camera_name_instrinsics.yaml
+An intrinsic file is composed by camera height and width, K matrix and D vector
+For each camera get the relative transformation (TODO)
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>238</x>
+      <y>574</y>
+      <w>238</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitPluginAlgorithm</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>350</y>
+      <w>70</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;224;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>560</y>
+      <w>994</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Intialize the CameraObstaclePerceptionPipeline
+YoloObstacleDetector, OMTObstacleTracker, MultiCueObstacleTransformer,
+LocationRefinerObstaclePostprocessor, DarkSCNNLaneDetector, DarkSCNNLanePostprocessor
+OnlineCalibrationService, ObjectTemplate
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>238</x>
+      <y>742</y>
+      <w>238</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitCameraFrames</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>588</y>
+      <w>70</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;154;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>728</y>
+      <w>994</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Initialize data_providers for each camera
+Load intrinsics and extrinsics for each camera
+Set the camera height for each camera
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>238</x>
+      <y>882</y>
+      <w>238</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitProjectMatrix</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>896</y>
+      <w>994</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Geometrical transformation based on extrisics and intrinsics
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>756</y>
+      <w>70</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;126;42;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>238</x>
+      <y>994</y>
+      <w>238</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>InitCameraListeners</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>1008</y>
+      <w>994</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Setup the image's listeners for each camera
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>308</x>
+      <y>896</y>
+      <w>70</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>42;98;42;42</additional_attributes>
+  </element>
+</diagram>
