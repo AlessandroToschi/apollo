@@ -52,7 +52,7 @@ bool ImageProviderComponent::Proc()
         }
     }
 
-    double start_time = cyber::Time::Now().ToSecond();
+    //double start_time = cyber::Time::Now().ToSecond();
 
     cv::Mat image = cv::imread(FLAGS_dataset_root_folder + FLAGS_dataset_image_folder_name + images_list[images_index]);
     cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
@@ -77,7 +77,7 @@ bool ImageProviderComponent::Proc()
     proto_image->mutable_data()->reserve(image.cols * image.rows * 3);
     proto_image->set_encoding("rgb8");
     proto_image->set_step(3 * image.cols);
-    proto_image->set_measurement_time(cyber::Time::Now().ToSecond() - start_time);
+    proto_image->set_measurement_time(cyber::Time::Now().ToSecond());
 
     //memcpy(raw_image->image, image.data, raw_image->image_size);
 

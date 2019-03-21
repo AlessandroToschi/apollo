@@ -188,6 +188,10 @@ int WriteDetections(const bool enable, const std::string &out_path,
   }
   outf << frame->frame_id << std::endl;
   outf << frame->detected_objects.size() << std::endl;
+  if(frame->detected_objects.size() == 0)
+  {
+    return 0;
+  }
   const float *feature_ptr = frame->track_feature_blob->cpu_data();
   int feature_dim =
       frame->track_feature_blob->count() / frame->track_feature_blob->num();

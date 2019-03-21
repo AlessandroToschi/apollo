@@ -72,3 +72,8 @@ object_template_param {
   }
 }
 
+debug_param
+{
+  detect_feature_dir : "/apollo/debug_output"
+}
+
