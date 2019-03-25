@@ -20,6 +20,8 @@
 #include <string>
 #include <vector>
 
+#include "third_party/gperftools/profiler.h"
+
 #include "cyber/component/component.h"
 #include "modules/drivers/proto/sensor_image.pb.h"
 #include "modules/perception/base/object.h"

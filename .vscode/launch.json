@@ -50,7 +50,7 @@
         "name": "C++ Launch",
         "type": "cppdbg",
         "request": "launch",
-        "program": "${workspaceRoot}/bazel-bin/cyber/mainboard",
+        "program": "${workspaceFolder}/bazel-bin/cyber/mainboard",
         // You can change "localhost:1111" to another "IP:port" name, but it 
         // should be same as those in gdbserver of the docker container.  
         "miDebuggerServerAddress": "localhost:1111",

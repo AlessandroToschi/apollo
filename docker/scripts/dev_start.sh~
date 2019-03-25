@@ -231,7 +231,7 @@ function main(){
         info "Start docker container based on local image : $IMG"
     else
         info "Start pulling docker image $IMG ..."
-        docker pull $IMG
+        #docker pull $IMG
         if [ $? -ne 0 ];then
             error "Failed to pull docker image."
             exit 1
@@ -271,19 +271,19 @@ function main(){
         mkdir "$HOME/.cache"
     fi
 
-    LOCALIZATION_VOLUME=apollo_localization_volume_$USER
-    docker stop ${LOCALIZATION_VOLUME} > /dev/null 2>&1
+    #LOCALIZATION_VOLUME=apollo_localization_volume_$USER
+    #docker stop ${LOCALIZATION_VOLUME} > /dev/null 2>&1
 
-    LOCALIZATION_VOLUME_IMAGE=${DOCKER_REPO}:localization_volume-${ARCH}-latest
-    docker pull ${LOCALIZATION_VOLUME_IMAGE}
-    docker run -it -d --rm --name ${LOCALIZATION_VOLUME} ${LOCALIZATION_VOLUME_IMAGE}
+    #LOCALIZATION_VOLUME_IMAGE=${DOCKER_REPO}:localization_volume-${ARCH}-latest
+    #docker pull ${LOCALIZATION_VOLUME_IMAGE}
+    #docker run -it -d --rm --name ${LOCALIZATION_VOLUME} ${LOCALIZATION_VOLUME_IMAGE}
 
-    YOLO3D_VOLUME=apollo_yolo3d_volume_$USER
-    docker stop ${YOLO3D_VOLUME} > /dev/null 2>&1
+    #YOLO3D_VOLUME=apollo_yolo3d_volume_$USER
+    #docker stop ${YOLO3D_VOLUME} > /dev/null 2>&1
 
-    YOLO3D_VOLUME_IMAGE=${DOCKER_REPO}:yolo3d_volume-${ARCH}-latest
-    docker pull ${YOLO3D_VOLUME_IMAGE}
-    docker run -it -d --rm --name ${YOLO3D_VOLUME} ${YOLO3D_VOLUME_IMAGE}
+    #YOLO3D_VOLUME_IMAGE=${DOCKER_REPO}:yolo3d_volume-${ARCH}-latest
+    #docker pull ${YOLO3D_VOLUME_IMAGE}
+    #docker run -it -d --rm --name ${YOLO3D_VOLUME} ${YOLO3D_VOLUME_IMAGE}
 
     info "Starting docker container \"${APOLLO_DEV}\" ..."
 
@@ -318,6 +318,8 @@ function main(){
         --shm-size 2G \
         --pid=host \
         -v /dev/null:/dev/raw1394 \
+		-v /usr/src:/usr/src \
+		-v /lib/modules:/lib/modules \
         $IMG \
         /bin/bash
 

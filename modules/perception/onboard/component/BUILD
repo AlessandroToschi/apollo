@@ -7,6 +7,7 @@ cc_binary(
     linkshared = True,
     linkstatic = False,
     deps = [":perception_component_inner_camera"],
+    
 )
 
 cc_library(
@@ -68,7 +69,9 @@ cc_library(
         "//modules/v2x/common:v2x_proxy_gflags",
         "//modules/v2x/proto:v2x_traffic_light_proto",
         "@eigen",
+        "//third_party/gperftools:gperf",
     ],
+
 )
 
 cc_binary(

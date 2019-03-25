@@ -243,6 +243,19 @@ void FusionCameraDetectionComponent::OnReceiveImage(
     const std::shared_ptr<apollo::drivers::Image> &message,
     const std::string &camera_name) {
   std::lock_guard<std::mutex> lock(mutex_);
+
+  if(!message->mutable_header()->frame_id().compare("END"))
+  {
+    AINFO << "MI SPENGOOOOOOO";
+    google::FlushLogFiles(google::INFO);
+    apollo::cyber::SetState(apollo::cyber::State::STATE_SHUTTING_DOWN);
+    return;
+  }
+
+  ++seq_num_;
+  std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.txt";
+  ProfilerStart(prof_file_name.c_str());
+  const auto start_time = apollo::cyber::Time::Now();
   const double msg_timestamp = message->measurement_time() + timestamp_offset_;
   AINFO << "Enter FusionCameraDetectionComponent::Proc(), "
         << " camera_name: " << camera_name
@@ -255,7 +268,7 @@ void FusionCameraDetectionComponent::OnReceiveImage(
     return;
   }
   last_timestamp_ = msg_timestamp;
-  ++seq_num_;
+  
 
   // for e2e lantency statistics
   {
@@ -308,6 +321,12 @@ void FusionCameraDetectionComponent::OnReceiveImage(
           << GLOG_TIMESTAMP(end_timestamp) << "]:cur_latency[" << end_latency
           << "]";
   }
+
+  const auto end_time = apollo::cyber::Time::Now();
+  const auto response_time = end_time - start_time;
+  AINFO << "Response time of " << seq_num_ << ": " 
+        << (double)response_time.ToNanosecond() / 1E6;
+  ProfilerStop();
 }
 
 int FusionCameraDetectionComponent::InitConfig() {

@@ -6,6 +6,7 @@ cc_library(
     name = "glog",
     includes = [
         ".",
+		"/usr/include/gperftools",
     ],
     linkopts = [
 	"-L/usr/local/lib",

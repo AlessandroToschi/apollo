@@ -8,6 +8,7 @@ bool ImageProviderComponent::Init()
 {
     AINFO << this->ConfigFilePath();
     AINFO << FLAGS_dataset_root_folder;
+    AINFO << apollo::cyber::Binary::GetName();
 
     std::string image_list_content;
 
@@ -37,7 +38,7 @@ bool ImageProviderComponent::Init()
 
 bool ImageProviderComponent::Proc()
 {
-    if(images_index >= images_list.size())
+    if(images_index >= images_list.size() + 1)
     {
         if(FLAGS_continuous_mode)
         {
@@ -47,16 +48,44 @@ bool ImageProviderComponent::Proc()
         else
         {
             AINFO << "ImageProvider will end the scenario.";
-            apollo::cyber::AsyncShutdown();
-            return false;
+            apollo::cyber::SetState(apollo::cyber::State::STATE_SHUTTING_DOWN);
+            return true;
         }
     }
 
-    //double start_time = cyber::Time::Now().ToSecond();
+    cv::Mat image;
+    auto proto_image = std::make_shared<Image>();
 
-    cv::Mat image = cv::imread(FLAGS_dataset_root_folder + FLAGS_dataset_image_folder_name + images_list[images_index]);
-    cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
-    cv::resize(image, image, cv::Size(1920, 1080), 1.0, 1.0, cv::INTER_CUBIC);
+    if(images_index == images_list.size() && !FLAGS_continuous_mode)
+    {
+        
+        proto_image->mutable_header()->set_frame_id("END");
+    }
+    else
+    {
+        image = cv::imread(FLAGS_dataset_root_folder + FLAGS_dataset_image_folder_name + images_list[images_index]);
+        cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
+        cv::resize(image, image, cv::Size(1920, 1080), 1.0, 1.0, cv::INTER_CUBIC);
+
+        proto_image->mutable_header()->set_frame_id(FLAGS_camera_frame_id);
+        proto_image->mutable_header()->set_timestamp_sec(cyber::Time::Now().ToSecond());
+        proto_image->set_width(image.cols);
+        proto_image->set_height(image.rows);
+        proto_image->mutable_data()->reserve(image.cols * image.rows * 3);
+        proto_image->set_encoding("rgb8");
+        proto_image->set_step(3 * image.cols);
+        proto_image->set_measurement_time(cyber::Time::Now().ToSecond());
+        proto_image->set_data(image.data, image.cols * image.rows * 3);
+    }
+    
+    writer_->Write(proto_image);
+
+    images_index++;
+
+    if(image.data != nullptr)
+    {
+        image.release();
+    }
 
     /*
     CameraImagePtr raw_image;
@@ -69,30 +98,21 @@ bool ImageProviderComponent::Proc()
     raw_image->image = reinterpret_cast<char*>(calloc(raw_image->image_size, sizeof(char)));
     */
 
-    auto proto_image = std::make_shared<Image>();
-    proto_image->mutable_header()->set_frame_id(FLAGS_camera_frame_id);
-    proto_image->mutable_header()->set_timestamp_sec(cyber::Time::Now().ToSecond());
-    proto_image->set_width(image.cols);
-    proto_image->set_height(image.rows);
-    proto_image->mutable_data()->reserve(image.cols * image.rows * 3);
-    proto_image->set_encoding("rgb8");
-    proto_image->set_step(3 * image.cols);
-    proto_image->set_measurement_time(cyber::Time::Now().ToSecond());
+
 
     //memcpy(raw_image->image, image.data, raw_image->image_size);
 
-    proto_image->set_data(image.data, image.cols * image.rows * 3);
+    
 
-    images_index++;
 
-    writer_->Write(proto_image);
 
-    image.release();
+    
+
+    
 
     //images_index = (uint)images_list.size();
     
     return true;
 }
-
 }
 }
