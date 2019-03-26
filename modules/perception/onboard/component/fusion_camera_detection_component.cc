@@ -18,6 +18,7 @@
 #include <yaml-cpp/yaml.h>
 #include <boost/algorithm/string.hpp>
 #include <boost/format.hpp>
+#include <sys/types.h>
 
 #include "cyber/common/file.h"
 #include "cyber/common/log.h"
@@ -246,15 +247,21 @@ void FusionCameraDetectionComponent::OnReceiveImage(
 
   if(!message->mutable_header()->frame_id().compare("END"))
   {
-    AINFO << "MI SPENGOOOOOOO";
+    AINFO << "Will shutdown.";
     google::FlushLogFiles(google::INFO);
     apollo::cyber::SetState(apollo::cyber::State::STATE_SHUTTING_DOWN);
     return;
   }
 
   ++seq_num_;
-  std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.txt";
-  ProfilerStart(prof_file_name.c_str());
+  std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.data";
+  std::string profiling_command = "perf record -o " + prof_file_name +
+                                  " --call-grap dwarf --event cycles:P,instructions:P,cpu-clock:P,task-clock:P" +
+                                  " sleep 1 -F 4000 -p " + std::to_string(getpid());
+  AINFO << profiling_command;
+  //system(profiling_command.c_str());
+  //ProfilerStart(prof_file_name.c_str());
+
   const auto start_time = apollo::cyber::Time::Now();
   const double msg_timestamp = message->measurement_time() + timestamp_offset_;
   AINFO << "Enter FusionCameraDetectionComponent::Proc(), "
@@ -271,14 +278,14 @@ void FusionCameraDetectionComponent::OnReceiveImage(
   
 
   // for e2e lantency statistics
-  {
-    const double cur_time = lib::TimeUtil::GetCurrentTime();
-    const double start_latency = (cur_time - message->measurement_time()) * 1e3;
-    AINFO << "FRAME_STATISTICS:Camera:Start:msg_time[" << camera_name << "-"
-          << GLOG_TIMESTAMP(message->measurement_time()) << "]:cur_time["
-          << GLOG_TIMESTAMP(cur_time) << "]:cur_latency[" << start_latency
-          << "]";
-  }
+  //{
+  //  const double cur_time = lib::TimeUtil::GetCurrentTime();
+  //  const double start_latency = (cur_time - message->measurement_time()) * 1e3;
+  //  AINFO << "FRAME_STATISTICS:Camera:Start:msg_time[" << camera_name << "-"
+  //        << GLOG_TIMESTAMP(message->measurement_time()) << "]:cur_time["
+  //        << GLOG_TIMESTAMP(cur_time) << "]:cur_latency[" << start_latency
+  //        << "]";
+  //}
 
   // protobuf msg
   std::shared_ptr<apollo::perception::PerceptionObstacles> out_message(
@@ -303,30 +310,31 @@ void FusionCameraDetectionComponent::OnReceiveImage(
     return;
   }
 
-  bool send_sensorframe_ret = sensorframe_writer_->Write(prefused_message);
-  AINFO << "send out prefused msg, ts: " << std::to_string(msg_timestamp)
-        << "ret: " << send_sensorframe_ret;
+  sensorframe_writer_->Write(prefused_message);
+  //bool send_sensorframe_ret = 
+  //AINFO << "send out prefused msg, ts: " << std::to_string(msg_timestamp)
+  //      << "ret: " << send_sensorframe_ret;
   // Send output msg
   if (output_final_obstacles_) {
     writer_->Write(out_message);
   }
   // for e2e lantency statistics
-  {
-    const double end_timestamp =
-        apollo::perception::lib::TimeUtil::GetCurrentTime();
-    const double end_latency =
-        (end_timestamp - message->measurement_time()) * 1e3;
-    AINFO << "FRAME_STATISTICS:Camera:End:msg_time[" << camera_name << "-"
-          << GLOG_TIMESTAMP(message->measurement_time()) << "]:cur_time["
-          << GLOG_TIMESTAMP(end_timestamp) << "]:cur_latency[" << end_latency
-          << "]";
-  }
+  //{
+  //  const double end_timestamp =
+  //      apollo::perception::lib::TimeUtil::GetCurrentTime();
+  //  const double end_latency =
+  //      (end_timestamp - message->measurement_time()) * 1e3;
+  //  AINFO << "FRAME_STATISTICS:Camera:End:msg_time[" << camera_name << "-"
+  //        << GLOG_TIMESTAMP(message->measurement_time()) << "]:cur_time["
+  //        << GLOG_TIMESTAMP(end_timestamp) << "]:cur_latency[" << end_latency
+  //        << "]";
+  //}
 
   const auto end_time = apollo::cyber::Time::Now();
   const auto response_time = end_time - start_time;
   AINFO << "Response time of " << seq_num_ << ": " 
         << (double)response_time.ToNanosecond() / 1E6;
-  ProfilerStop();
+  //ProfilerStop();
 }
 
 int FusionCameraDetectionComponent::InitConfig() {
@@ -636,7 +644,7 @@ int FusionCameraDetectionComponent::InternalProc(
   } else {
     camera_frame.project_matrix.setIdentity();
   }
-  AINFO << "qua ci arrivo";
+  //AINFO << "qua ci arrivo";
   ++frame_id_;
   // Run camera perception pipeline
   camera_obstacle_pipeline_->GetCalibrationService(
@@ -650,10 +658,10 @@ int FusionCameraDetectionComponent::InternalProc(
     prefused_message->error_code_ = *error_code;
     return cyber::FAIL;
   }
-  AINFO << "##" << camera_name << ": pitch "
-        << camera_frame.calibration_service->QueryPitchAngle()
-        << " | camera_grond_height "
-        << camera_frame.calibration_service->QueryCameraToGroundHeight();
+  //AINFO << "##" << camera_name << ": pitch "
+  //      << camera_frame.calibration_service->QueryPitchAngle()
+  //      << " | camera_grond_height "
+  //      << camera_frame.calibration_service->QueryCameraToGroundHeight();
   prefused_message->frame_->objects = camera_frame.tracked_objects;
   // TODO(gaohan02, wanji): check the boxes with 0-width in perception-camera
   prefused_message->frame_->objects.clear();

@@ -21,6 +21,9 @@ cc_library(
     hdrs = [
         "image_provider_component.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"image_provider\\"',
+    ],
     deps = [
         "//cyber",
         "//modules/drivers/camera/proto:sensor_camera_proto",
