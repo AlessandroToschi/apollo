@@ -17,6 +17,7 @@
 
 #include <utility>
 
+#include "cyber/cyber.h"
 #include "cyber/common/file.h"
 #include "cyber/common/log.h"
 #include "modules/perception/base/object.h"
@@ -308,38 +309,53 @@ bool ObstacleCameraPerception::Perception(
   ObstacleTrackerOptions tracker_options;
   FeatureExtractorOptions extractor_options;
   PERCEPTION_PERF_BLOCK_START();
-  frame->camera_k_matrix =
-      name_intrinsic_map_.at(frame->data_provider->sensor_name());
+  frame->camera_k_matrix = name_intrinsic_map_.at(frame->data_provider->sensor_name());
   CHECK(frame->calibration_service != nullptr);
 
+  apollo::cyber::Time start_time, end_time;
+  std::map<std::string, double> times;
+
   //  lane detector and postprocessor: work on front_6mm only
-  if (lane_calibration_working_sensor_name_ ==
-      frame->data_provider->sensor_name()) {
+  if (lane_calibration_working_sensor_name_ == frame->data_provider->sensor_name()) 
+  {
     LaneDetectorOptions lane_detetor_options;
     LanePostprocessorOptions lane_postprocessor_options;
+
+    start_time = apollo::cyber::Time::Now();
     if (!lane_detector_->Detect(lane_detetor_options, frame)) {
       AERROR << "Failed to detect lane.";
       return false;
     }
-    PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(
-        frame->data_provider->sensor_name(), "LaneDetector");
+    end_time = apollo::cyber::Time::Now();
+    times["LaneDetector::Detect"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
 
+    PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(), "LaneDetector");
+
+    start_time = apollo::cyber::Time::Now();
     if (!(lane_postprocessor_->Process2D(lane_postprocessor_options, frame))) {
       AERROR << "Failed to postprocess lane 2D.";
       return false;
     }
+    end_time = apollo::cyber::Time::Now();
+    times["LanePostprocessor::Process2D"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(
         frame->data_provider->sensor_name(), "LanePostprocessor2D");
 
     // calibration service
+    start_time = apollo::cyber::Time::Now();
     frame->calibration_service->Update(frame);
+    end_time = apollo::cyber::Time::Now();
+    times["CalibrationService::Update"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(
         frame->data_provider->sensor_name(), "CalibrationService");
 
+    start_time = apollo::cyber::Time::Now();
     if (!(lane_postprocessor_->Process3D(lane_postprocessor_options, frame))) {
       AERROR << "Failed to postprocess lane 3D.";
       return false;
     }
+    end_time = apollo::cyber::Time::Now();
+    times["LanePostprocessor::Process3D"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(
         frame->data_provider->sensor_name(), "LanePostprocessor3D");
 
@@ -364,33 +380,42 @@ bool ObstacleCameraPerception::Perception(
   }
 
   // obstacle
+  start_time = apollo::cyber::Time::Now();
   if (!tracker_->Predict(tracker_options, frame)) {
     AERROR << "Failed to predict.";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["Tracker::Predict"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "Predict");
 
   std::shared_ptr<BaseObstacleDetector> detector =
       name_detector_map_.at(frame->data_provider->sensor_name());
 
+  start_time = apollo::cyber::Time::Now();
   if (!detector->Detect(detector_options, frame)) {
     AERROR << "Failed to detect.";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["YoloObstacleDetector::Detect"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "detect");
 
   // save all detections results as kitti format
   WriteDetections(perception_param_.debug_param().has_detection_out_dir(),
                   perception_param_.debug_param().detection_out_dir() + "/" +
-                      std::to_string(frame->frame_id) + ".txt",
+                      std::to_string(frame->frame_id + 1) + ".txt",
                   frame->detected_objects);
   if (extractor_ != nullptr) {
+    start_time = apollo::cyber::Time::Now();
     if (!extractor_->Extract(extractor_options, frame)) {
       AERROR << "Failed to extractor";
       return false;
     }
+    end_time = apollo::cyber::Time::Now();
+    times["FeatureExtractor::Extract"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   }
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "external_feature");
@@ -398,49 +423,63 @@ bool ObstacleCameraPerception::Perception(
   // save detection results with bbox, detection_feature
   WriteDetections(perception_param_.debug_param().has_detect_feature_dir(),
                   perception_param_.debug_param().detect_feature_dir() + "/" +
-                      std::to_string(frame->frame_id) + ".txt",
+                      std::to_string(frame->frame_id + 1) + ".txt",
                   frame);
   // set the sensor name of each object
   for (size_t i = 0; i < frame->detected_objects.size(); i++) {
     frame->detected_objects[i]->camera_supplement.sensor_name =
         frame->data_provider->sensor_name();
   }
+
+  start_time = apollo::cyber::Time::Now();
   if (!tracker_->Associate2D(tracker_options, frame)) {
     AERROR << "Failed to associate2d.";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["Tracker::Associate2D"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "Associate2D");
 
+  start_time = apollo::cyber::Time::Now();
   if (!transformer_->Transform(transformer_options, frame)) {
     AERROR << "Failed to transform";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["Transformer::Transform"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "Transform");
 
   // obstacle postprocessor
   obstacle_postprocessor_options.do_refinement_with_calibration_service =
       frame->calibration_service != nullptr;
+  start_time = apollo::cyber::Time::Now();
   if (!obstacle_postprocessor_->Process(obstacle_postprocessor_options,
                                         frame)) {
     AERROR << "Failed to post process obstacles";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["ObstaclePostprocessor::Process"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "PostprocessObsacle");
-
+  start_time = apollo::cyber::Time::Now();
   if (!tracker_->Associate3D(tracker_options, frame)) {
     AERROR << "Failed to Associate3D.";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["Tracker::Associate3D"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "Associate3D");
-
+  start_time = apollo::cyber::Time::Now();
   if (!tracker_->Track(tracker_options, frame)) {
     AERROR << "Failed to track.";
     return false;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["Tracker::Track"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "Track");
 
@@ -456,14 +495,20 @@ bool ObstacleCameraPerception::Perception(
   WriteDetections(
       perception_param_.debug_param().has_tracked_detection_out_dir(),
       perception_param_.debug_param().tracked_detection_out_dir() + "/" +
-          std::to_string(frame->frame_id) + ".txt",
+          std::to_string(frame->frame_id + 1) + ".txt",
       frame->tracked_objects);
 
   // fill polygon & set anchor point
+  start_time = apollo::cyber::Time::Now();
   for (auto &obj : frame->tracked_objects) {
     FillObjectPolygonFromBBox3D(obj.get());
     obj->anchor_point = obj->center;
   }
+  end_time = apollo::cyber::Time::Now();
+  times["FillObjectPolygon"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
+
+  WriteTimes(true, "/apollo/debug_output/" + std::to_string(frame->frame_id + 1) + "_times.txt", times);
+
   return true;
 }
 }  // namespace camera

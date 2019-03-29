@@ -18,6 +18,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <map>
 
 #include "modules/perception/base/object.h"
 #include "modules/perception/camera/common/camera_frame.h"
@@ -42,6 +43,8 @@ int WriteCalibrationOutput(bool enable, const std::string &out_path,
 void WriteFusionTracking(std::ofstream &fout, int frame_num,
                          const std::string &camera_name,
                          const std::vector<base::ObjectPtr> &tracked_object);
+
+int WriteTimes(bool enable, const std::string &out_path, std::map<std::string, double> times);
 }  // namespace camera
 }  // namespace perception
 }  // namespace apollo

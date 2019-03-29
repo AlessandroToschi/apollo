@@ -192,7 +192,7 @@ int WriteDetections(const bool enable, const std::string &out_path,
   {
     return 0;
   }
-  const float *feature_ptr = frame->track_feature_blob->cpu_data();
+  //const float *feature_ptr = frame->track_feature_blob->cpu_data();
   int feature_dim =
       frame->track_feature_blob->count() / frame->track_feature_blob->num();
   AINFO << "feature_dim:" << feature_dim;
@@ -202,11 +202,11 @@ int WriteDetections(const bool enable, const std::string &out_path,
     outf << " " << rect.y;
     outf << " " << rect.width;
     outf << " " << rect.height;
-    outf << " " << obj->type_probs[static_cast<int>(obj->type)];
-    for (int i = 0; i < feature_dim; i++) {
-      outf << " " << *feature_ptr;
-      feature_ptr += 1;
-    }
+    //outf << " " << obj->type_probs[static_cast<int>(obj->type)];
+    //for (int i = 0; i < feature_dim; i++) {
+    //  outf << " " << *feature_ptr;
+    //  feature_ptr += 1;
+    //}
     outf << std::endl;
   }
   return 0;
@@ -355,6 +355,40 @@ void WriteFusionTracking(std::ofstream &fout, int frame_num,
   } else {
     AERROR << "Unknown camera name";
   }
+}
+
+int WriteTimes(bool enable, const std::string &out_path, std::map<std::string, double> times)
+{
+  if(!enable)
+  {
+    return -1;
+  }
+
+  FILE *file_save = fopen(out_path.data(), "wt");
+
+  if(!file_save)
+  {
+    return -1;
+  }
+
+  fprintf(file_save, "%s: %f\n", "LaneDetector::Detect", times["LaneDetector::Detect"]);
+  fprintf(file_save, "%s: %f\n", "LanePostprocessor::Process2D", times["LanePostprocessor::Process2D"]);
+  fprintf(file_save, "%s: %f\n", "CalibrationService::Update", times["CalibrationService::Update"]);
+  fprintf(file_save, "%s: %f\n", "LanePostprocessor::Process3D", times["LanePostprocessor::Process3D"]);
+  fprintf(file_save, "%s: %f\n", "Tracker::Predict", times["Tracker::Predict"]);
+  fprintf(file_save, "%s: %f\n", "YoloObstacleDetector::Detect", times["YoloObstacleDetector::Detect"]);
+  fprintf(file_save, "%s: %f\n", "FeatureExtractor::Extract", times["FeatureExtractor::Extract"]);
+  fprintf(file_save, "%s: %f\n", "Tracker::Associate2D", times["Tracker::Associate2D"]);
+  fprintf(file_save, "%s: %f\n", "Transformer::Transform", times["Transformer::Transform"]);
+  fprintf(file_save, "%s: %f\n", "ObstaclePostprocessor::Process", times["ObstaclePostprocessor::Process"]);
+  fprintf(file_save, "%s: %f\n", "Tracker::Associate3D", times["Tracker::Associate3D"]);
+  fprintf(file_save, "%s: %f\n", "Tracker::Track", times["Tracker::Track"]);
+  fprintf(file_save, "%s: %f\n", "FillObjectPolygon", times["FillObjectPolygon"]);
+
+  fclose(file_save);
+
+  return 1;
+
 }
 }  // namespace camera
 }  // namespace perception

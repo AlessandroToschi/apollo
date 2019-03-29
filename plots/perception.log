@@ -1,12 +1,12 @@
-Log file created at: 2019/03/24 14:55:49
+Log file created at: 2019/03/27 09:41:09
 Running on machine: in_dev_docker
 Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I0324 14:55:49.231048 30294 class_loader_utility.h:78]  registerclass:MotionService,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
-I0324 14:55:49.235167 30294 class_loader_utility.h:78]  registerclass:FusionCameraDetectionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
-I0324 14:55:49.235241 30294 class_loader_utility.h:78]  registerclass:MotionService,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
-I0324 14:55:49.235260 30294 class_loader_utility.h:78]  registerclass:LaneDetectionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
-I0324 14:55:49.235301 30294 class_loader_utility.h:78]  registerclass:TrafficLightsPerceptionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
-I0324 14:55:49.264957 30294 fusion_camera_detection_component.cc:414]  
+I0327 09:41:09.157747 27410 class_loader_utility.h:78]  registerclass:MotionService,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
+I0327 09:41:09.165143 27410 class_loader_utility.h:78]  registerclass:FusionCameraDetectionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
+I0327 09:41:09.165175 27410 class_loader_utility.h:78]  registerclass:MotionService,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
+I0327 09:41:09.165187 27410 class_loader_utility.h:78]  registerclass:LaneDetectionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
+I0327 09:41:09.165216 27410 class_loader_utility.h:78]  registerclass:TrafficLightsPerceptionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_camera.so
+I0327 09:41:09.172866 27410 fusion_camera_detection_component.cc:427]  
       FusionCameraDetectionComponent InitConfig success
       camera_names:    front_6mm, front_12mm
       camera_obstacle_perception_conf_dir:    /apollo/modules/perception/production/conf/perception/camera
@@ -22,790 +22,659 @@ I0324 14:55:49.264957 30294 fusion_camera_detection_component.cc:414]
       output_final_obstacles:    1
       prefused_channel_name:    /perception/inner/PrefusedObjects
       write_visual_img_:    0
-I0324 14:55:49.278762 30294 fusion_camera_detection_component.cc:463]  
+I0327 09:41:09.179271 27410 fusion_camera_detection_component.cc:476]  
       camera_names: front_6mm front_12mm
       tf_camera_frame_ids: front_6mm front_12mm
       image_width: 1920
       image_height: 1080
       image_channel_num: 3
-I0324 14:56:07.095710 30294 fusion_camera_detection_component.cc:474]  camera_obstacle_pipeline_->Init() succeed
-I0324 14:56:07.095860 30294 fusion_camera_detection_component.cc:502]  data_provider_init_options.device_id: 0 camera_name: front_6mm
-I0324 14:56:08.305133 30294 fusion_camera_detection_component.cc:502]  data_provider_init_options.device_id: 0 camera_name: front_12mm
-I0324 14:56:08.311269 30294 fusion_camera_detection_component.cc:520]  #intrinsics of front_6mm: 1983.97 0000000 998.341
+I0327 09:41:24.121026 27410 fusion_camera_detection_component.cc:487]  camera_obstacle_pipeline_->Init() succeed
+I0327 09:41:24.121124 27410 fusion_camera_detection_component.cc:515]  data_provider_init_options.device_id: 0 camera_name: front_6mm
+I0327 09:41:24.367146 27410 fusion_camera_detection_component.cc:515]  data_provider_init_options.device_id: 0 camera_name: front_12mm
+I0327 09:41:24.372572 27410 fusion_camera_detection_component.cc:533]  #intrinsics of front_6mm: 1983.97 0000000 998.341
 0000000 1981.63 621.618
 0000000 0000000 0000001
-I0324 14:56:08.311573 30294 fusion_camera_detection_component.cc:527]  #extrinsics of front_6mm: 000.0348996 0-0.0139537 0000.999293 0000.580393
+I0327 09:41:24.372849 27410 fusion_camera_detection_component.cc:540]  #extrinsics of front_6mm: 000.0348996 0-0.0139537 0000.999293 0000.580393
 00-0.999366 00.00649329 000.0349928 000.0727572
 -0.00697698 00-0.999882 0-0.0137182 00-0.211861
 00000000000 00000000000 00000000000 00000000001
-I0324 14:56:08.311605 30294 fusion_camera_detection_component.cc:520]  #intrinsics of front_12mm: 3928.28 0000000 927.354
+I0327 09:41:24.372880 27410 fusion_camera_detection_component.cc:533]  #intrinsics of front_12mm: 3928.28 0000000 927.354
 0000000 3915.64 0663.03
 0000000 0000000 0000001
-I0324 14:56:08.311805 30294 fusion_camera_detection_component.cc:527]  #extrinsics of front_12mm: 00.0348995 -0.0279048 000.999001 0000.30928
+I0327 09:41:24.373067 27410 fusion_camera_detection_component.cc:540]  #extrinsics of front_12mm: 00.0348995 -0.0279048 000.999001 0000.30928
 0-0.999001 0-0.028885 00.0340926 000.383603
 00.0279048 0-0.999193 0-0.028885 0-0.279942
 0000000000 0000000000 0000000000 0000000001
-I0324 14:56:08.311991 30294 fusion_camera_detection_component.cc:69]  -0.211861
-I0324 14:56:08.312162 30294 fusion_camera_detection_component.cc:69]  -0.279942
-I0324 14:56:08.312187 30294 fusion_camera_detection_component.cc:164]  pitch diff: 3.12643
-I0324 14:56:08.312191 30294 fusion_camera_detection_component.cc:553]  project_matrix_: 00000.504623 0000.0137924 00000523.091
+I0327 09:41:24.373247 27410 fusion_camera_detection_component.cc:70]  -0.211861
+I0327 09:41:24.373412 27410 fusion_camera_detection_component.cc:70]  -0.279942
+I0327 09:41:24.373436 27410 fusion_camera_detection_component.cc:165]  pitch diff: 3.12643
+I0327 09:41:24.373440 27410 fusion_camera_detection_component.cc:566]  project_matrix_: 00000.504623 0000.0137924 00000523.091
 00-0.0176666 00000.503303 00000334.273
 -1.18582e-07 -3.87896e-06 000001.00257
-I0324 14:56:08.312211 30294 fusion_camera_detection_component.cc:554]  pitch_diff_:3.12643
-I0324 14:56:08.312213 30294 fusion_camera_detection_component.cc:567]  listener name: front_6mm_fusion_camera_listener
-I0324 14:56:08.312477 30294 fusion_camera_detection_component.cc:567]  listener name: front_12mm_fusion_camera_listener
-I0324 14:56:08.312582 30294 fusion_camera_detection_component.cc:91]  /apollo/modules/perception/data/params/velodyne128_novatel_extrinsics.yaml does not exist!
-I0324 14:56:08.312589 30294 fusion_camera_detection_component.cc:222]  velodyne128_novatel_extrinsics: 1 0 0 0
+I0327 09:41:24.373459 27410 fusion_camera_detection_component.cc:567]  pitch_diff_:3.12643
+I0327 09:41:24.373462 27410 fusion_camera_detection_component.cc:580]  listener name: front_6mm_fusion_camera_listener
+I0327 09:41:24.373708 27410 fusion_camera_detection_component.cc:580]  listener name: front_12mm_fusion_camera_listener
+I0327 09:41:24.373847 27410 fusion_camera_detection_component.cc:92]  /apollo/modules/perception/data/params/velodyne128_novatel_extrinsics.yaml does not exist!
+I0327 09:41:24.373852 27410 fusion_camera_detection_component.cc:223]  velodyne128_novatel_extrinsics: 1 0 0 0
 0 1 0 0
 0 0 1 0
 0 0 0 1
-I0324 14:56:16.253873 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.247210
-I0324 14:56:16.253892 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.247209549]:cur_time[1553410576.253891945]:cur_latency[6.682395935]
-I0324 14:56:16.254559 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.419096 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.419570 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.247210ret: 1
-I0324 14:56:16.419580 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.247209549]:cur_time[1553410576.419579983]:cur_latency[172.370433807]
-I0324 14:56:16.419589 30301 fusion_camera_detection_component.cc:324]  Response time of 1: 165.747
-I0324 14:56:16.419834 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.349725
-I0324 14:56:16.419842 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.349725008]:cur_time[1553410576.419841051]:cur_latency[70.116043091]
-I0324 14:56:16.420831 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.503612 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.504029 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.349725ret: 1
-I0324 14:56:16.504038 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.349725008]:cur_time[1553410576.504038095]:cur_latency[154.313087463]
-I0324 14:56:16.504046 30301 fusion_camera_detection_component.cc:324]  Response time of 2: 84.2166
-I0324 14:56:16.504295 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.446720
-I0324 14:56:16.504302 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.446720362]:cur_time[1553410576.504302025]:cur_latency[57.581663132]
-I0324 14:56:16.505092 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.593286 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.593871 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.446720ret: 1
-I0324 14:56:16.593883 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.446720362]:cur_time[1553410576.593883991]:cur_latency[147.163629532]
-I0324 14:56:16.593892 30301 fusion_camera_detection_component.cc:324]  Response time of 3: 89.6021
-I0324 14:56:16.594115 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.551627
-I0324 14:56:16.594121 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.551626921]:cur_time[1553410576.594120979]:cur_latency[42.494058609]
-I0324 14:56:16.595005 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.678014 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.678488 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.551627ret: 1
-I0324 14:56:16.678498 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.551626921]:cur_time[1553410576.678498030]:cur_latency[126.871109009]
-I0324 14:56:16.678506 30301 fusion_camera_detection_component.cc:324]  Response time of 4: 84.3971
-I0324 14:56:16.678743 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.647656
-I0324 14:56:16.678750 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.647655725]:cur_time[1553410576.678750038]:cur_latency[31.094312668]
-I0324 14:56:16.679530 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.760071 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.761440 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.647656ret: 1
-I0324 14:56:16.761453 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.647655725]:cur_time[1553410576.761452913]:cur_latency[113.797187805]
-I0324 14:56:16.761461 30301 fusion_camera_detection_component.cc:324]  Response time of 5: 82.7231
-I0324 14:56:16.761682 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.749728
-I0324 14:56:16.761688 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.749727964]:cur_time[1553410576.761688948]:cur_latency[11.960983276]
-I0324 14:56:16.762557 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.846508 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.847111 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.749728ret: 1
-I0324 14:56:16.847126 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.749727964]:cur_time[1553410576.847125053]:cur_latency[97.397089005]
-I0324 14:56:16.847139 30301 fusion_camera_detection_component.cc:324]  Response time of 6: 85.4625
-I0324 14:56:16.853996 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.847879
-I0324 14:56:16.854017 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.847878933]:cur_time[1553410576.854017019]:cur_latency[6.138086319]
-I0324 14:56:16.854881 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:16.942518 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:16.942960 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.847879ret: 1
-I0324 14:56:16.942970 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.847878933]:cur_time[1553410576.942969084]:cur_latency[95.090150833]
-I0324 14:56:16.942979 30307 fusion_camera_detection_component.cc:324]  Response time of 7: 88.9979
-I0324 14:56:16.955700 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410576.948989
-I0324 14:56:16.955721 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410576.948989153]:cur_time[1553410576.955720901]:cur_latency[6.731748581]
-I0324 14:56:16.956566 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.036159 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.036732 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410576.948989ret: 1
-I0324 14:56:17.036747 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410576.948989153]:cur_time[1553410577.036746979]:cur_latency[87.757825851]
-I0324 14:56:17.036757 30308 fusion_camera_detection_component.cc:324]  Response time of 8: 81.0724
-I0324 14:56:17.057271 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.049917
-I0324 14:56:17.057291 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.049917459]:cur_time[1553410577.057291031]:cur_latency[7.373571396]
-I0324 14:56:17.058130 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.136236 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.136695 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.049917ret: 1
-I0324 14:56:17.136708 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.049917459]:cur_time[1553410577.136707067]:cur_latency[86.789608002]
-I0324 14:56:17.136715 30309 fusion_camera_detection_component.cc:324]  Response time of 9: 79.4599
-I0324 14:56:17.152575 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.146828
-I0324 14:56:17.152595 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.146828175]:cur_time[1553410577.152594090]:cur_latency[5.765914917]
-I0324 14:56:17.153328 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.232659 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.235386 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.146828ret: 1
-I0324 14:56:17.235399 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.146828175]:cur_time[1553410577.235399961]:cur_latency[88.571786880]
-I0324 14:56:17.235409 30310 fusion_camera_detection_component.cc:324]  Response time of 10: 82.8481
-I0324 14:56:17.252380 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.246740
-I0324 14:56:17.252399 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.246739864]:cur_time[1553410577.252398968]:cur_latency[5.659103394]
-I0324 14:56:17.253096 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.338687 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.339139 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.246740ret: 1
-I0324 14:56:17.339148 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.246739864]:cur_time[1553410577.339148998]:cur_latency[92.409133911]
-I0324 14:56:17.339156 30311 fusion_camera_detection_component.cc:324]  Response time of 11: 86.7904
-I0324 14:56:17.354110 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.347442
-I0324 14:56:17.354127 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.347441673]:cur_time[1553410577.354126930]:cur_latency[6.685256958]
-I0324 14:56:17.354779 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.433684 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.436240 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.347442ret: 1
-I0324 14:56:17.436252 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.347441673]:cur_time[1553410577.436253071]:cur_latency[88.811397552]
-I0324 14:56:17.436261 30312 fusion_camera_detection_component.cc:324]  Response time of 12: 82.1664
-I0324 14:56:17.456089 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.449444
-I0324 14:56:17.456109 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.449444056]:cur_time[1553410577.456109047]:cur_latency[6.664991379]
-I0324 14:56:17.457038 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.536301 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.536715 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.449444ret: 1
-I0324 14:56:17.536725 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.449444056]:cur_time[1553410577.536724091]:cur_latency[87.280035019]
-I0324 14:56:17.536731 30297 fusion_camera_detection_component.cc:324]  Response time of 13: 80.657
-I0324 14:56:17.555714 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.549014
-I0324 14:56:17.555733 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.549013853]:cur_time[1553410577.555732965]:cur_latency[6.719112396]
-I0324 14:56:17.556640 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.647338 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.647948 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.549014ret: 1
-I0324 14:56:17.647961 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.549013853]:cur_time[1553410577.647962093]:cur_latency[98.948240280]
-I0324 14:56:17.647974 30298 fusion_camera_detection_component.cc:324]  Response time of 14: 92.2719
-I0324 14:56:17.657377 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.650246
-I0324 14:56:17.657397 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.650245905]:cur_time[1553410577.657397032]:cur_latency[7.151126862]
-I0324 14:56:17.658167 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.737953 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.738418 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.650246ret: 1
-I0324 14:56:17.738428 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.650245905]:cur_time[1553410577.738428116]:cur_latency[88.182210922]
-I0324 14:56:17.738436 30299 fusion_camera_detection_component.cc:324]  Response time of 15: 81.0735
-I0324 14:56:17.752557 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.746755
-I0324 14:56:17.752575 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.746755362]:cur_time[1553410577.752576113]:cur_latency[5.820751190]
-I0324 14:56:17.753352 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.831739 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.832222 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.746755ret: 1
-I0324 14:56:17.832232 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.746755362]:cur_time[1553410577.832231998]:cur_latency[85.476636887]
-I0324 14:56:17.832240 30300 fusion_camera_detection_component.cc:324]  Response time of 16: 79.6982
-I0324 14:56:17.855686 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.848893
-I0324 14:56:17.855706 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.848892689]:cur_time[1553410577.855705976]:cur_latency[6.813287735]
-I0324 14:56:17.856550 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:17.934983 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:17.935464 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.848893ret: 1
-I0324 14:56:17.935474 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.848892689]:cur_time[1553410577.935475111]:cur_latency[86.582422256]
-I0324 14:56:17.935482 30302 fusion_camera_detection_component.cc:324]  Response time of 17: 79.8108
-I0324 14:56:17.957278 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410577.950100
-I0324 14:56:17.957296 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410577.950100183]:cur_time[1553410577.957295895]:cur_latency[7.195711136]
-I0324 14:56:17.958084 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.036242 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.036685 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410577.950100ret: 1
-I0324 14:56:18.036695 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410577.950100183]:cur_time[1553410578.036695957]:cur_latency[86.595773697]
-I0324 14:56:18.036703 30303 fusion_camera_detection_component.cc:324]  Response time of 18: 79.4436
-I0324 14:56:18.056533 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.050102
-I0324 14:56:18.056551 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.050101757]:cur_time[1553410578.056550980]:cur_latency[6.449222565]
-I0324 14:56:18.057385 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.135808 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.136278 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.050102ret: 1
-I0324 14:56:18.136288 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.050101757]:cur_time[1553410578.136287928]:cur_latency[86.186170578]
-I0324 14:56:18.136296 30304 fusion_camera_detection_component.cc:324]  Response time of 19: 79.7774
-I0324 14:56:18.156344 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.149846
-I0324 14:56:18.156363 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.149845600]:cur_time[1553410578.156362057]:cur_latency[6.516456604]
-I0324 14:56:18.157222 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.236066 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.236547 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.149846ret: 1
-I0324 14:56:18.236558 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.149845600]:cur_time[1553410578.236557961]:cur_latency[86.712360382]
-I0324 14:56:18.236567 30305 fusion_camera_detection_component.cc:324]  Response time of 20: 80.237
-I0324 14:56:18.253863 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.246902
-I0324 14:56:18.253885 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.246901512]:cur_time[1553410578.253885031]:cur_latency[6.983518600]
-I0324 14:56:18.254714 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.336972 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.337383 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.246902ret: 1
-I0324 14:56:18.337393 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.246901512]:cur_time[1553410578.337393045]:cur_latency[90.491533279]
-I0324 14:56:18.337400 30306 fusion_camera_detection_component.cc:324]  Response time of 21: 83.5529
-I0324 14:56:18.353735 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.347730
-I0324 14:56:18.353754 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.347729921]:cur_time[1553410578.353754044]:cur_latency[6.024122238]
-I0324 14:56:18.354482 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.429359 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.429841 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.347730ret: 1
-I0324 14:56:18.429852 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.347729921]:cur_time[1553410578.429852009]:cur_latency[82.122087479]
-I0324 14:56:18.429859 30301 fusion_camera_detection_component.cc:324]  Response time of 22: 76.1508
-I0324 14:56:18.451745 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.446087
-I0324 14:56:18.451763 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.446087360]:cur_time[1553410578.451762915]:cur_latency[5.675554276]
-I0324 14:56:18.452455 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.530644 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.531157 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.446087ret: 1
-I0324 14:56:18.531167 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.446087360]:cur_time[1553410578.531167984]:cur_latency[85.080623627]
-I0324 14:56:18.531177 30307 fusion_camera_detection_component.cc:324]  Response time of 23: 79.445
-I0324 14:56:18.558235 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.550678
-I0324 14:56:18.558256 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.550678492]:cur_time[1553410578.558255911]:cur_latency[7.577419281]
-I0324 14:56:18.559180 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.640921 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.641425 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.550678ret: 1
-I0324 14:56:18.641434 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.550678492]:cur_time[1553410578.641434908]:cur_latency[90.756416321]
-I0324 14:56:18.641443 30308 fusion_camera_detection_component.cc:324]  Response time of 24: 83.2251
-I0324 14:56:18.656421 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.649595
-I0324 14:56:18.656440 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.649595022]:cur_time[1553410578.656440973]:cur_latency[6.845951080]
-I0324 14:56:18.657429 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.737375 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.737865 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.649595ret: 1
-I0324 14:56:18.737875 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.649595022]:cur_time[1553410578.737874985]:cur_latency[88.279962540]
-I0324 14:56:18.737884 30309 fusion_camera_detection_component.cc:324]  Response time of 25: 81.4789
-I0324 14:56:18.753216 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.747153
-I0324 14:56:18.753234 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.747152567]:cur_time[1553410578.753233910]:cur_latency[6.081342697]
-I0324 14:56:18.754057 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.831537 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.832016 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.747153ret: 1
-I0324 14:56:18.832026 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.747152567]:cur_time[1553410578.832026958]:cur_latency[84.874391556]
-I0324 14:56:18.832034 30310 fusion_camera_detection_component.cc:324]  Response time of 26: 78.8376
-I0324 14:56:18.853178 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.846629
-I0324 14:56:18.853197 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.846628666]:cur_time[1553410578.853197098]:cur_latency[6.568431854]
-I0324 14:56:18.853960 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:18.931466 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:18.932422 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.846629ret: 1
-I0324 14:56:18.932435 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.846628666]:cur_time[1553410578.932435036]:cur_latency[85.806369781]
-I0324 14:56:18.932446 30311 fusion_camera_detection_component.cc:324]  Response time of 27: 79.2886
-I0324 14:56:18.953572 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410578.947449
-I0324 14:56:18.953593 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410578.947449446]:cur_time[1553410578.953593016]:cur_latency[6.143569946]
-I0324 14:56:18.954490 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.033586 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.034072 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410578.947449ret: 1
-I0324 14:56:19.034082 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410578.947449446]:cur_time[1553410579.034082890]:cur_latency[86.633443832]
-I0324 14:56:19.034093 30312 fusion_camera_detection_component.cc:324]  Response time of 28: 80.5422
-I0324 14:56:19.055627 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.048865
-I0324 14:56:19.055646 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.048865080]:cur_time[1553410579.055646896]:cur_latency[6.781816483]
-I0324 14:56:19.056483 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.135041 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.135526 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.048865ret: 1
-I0324 14:56:19.135537 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.048865080]:cur_time[1553410579.135536909]:cur_latency[86.671829224]
-I0324 14:56:19.135545 30297 fusion_camera_detection_component.cc:324]  Response time of 29: 79.9376
-I0324 14:56:19.157269 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.149963
-I0324 14:56:19.157287 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.149962902]:cur_time[1553410579.157286882]:cur_latency[7.323980331]
-I0324 14:56:19.158102 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.235725 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.236217 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.149963ret: 1
-I0324 14:56:19.236227 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.149962902]:cur_time[1553410579.236227036]:cur_latency[86.264133453]
-I0324 14:56:19.236235 30298 fusion_camera_detection_component.cc:324]  Response time of 30: 78.9876
-I0324 14:56:19.256394 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.249982
-I0324 14:56:19.256414 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.249982357]:cur_time[1553410579.256413937]:cur_latency[6.431579590]
-I0324 14:56:19.257267 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.333952 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.334434 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.249982ret: 1
-I0324 14:56:19.334444 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.249982357]:cur_time[1553410579.334444046]:cur_latency[84.461688995]
-I0324 14:56:19.334451 30299 fusion_camera_detection_component.cc:324]  Response time of 31: 78.072
-I0324 14:56:19.354764 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.348966
-I0324 14:56:19.354784 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.348965883]:cur_time[1553410579.354784012]:cur_latency[5.818128586]
-I0324 14:56:19.355561 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.432121 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.432585 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.348966ret: 1
-I0324 14:56:19.432595 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.348965883]:cur_time[1553410579.432595015]:cur_latency[83.629131317]
-I0324 14:56:19.432603 30300 fusion_camera_detection_component.cc:324]  Response time of 32: 77.855
-I0324 14:56:19.452209 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.447623
-I0324 14:56:19.452229 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.447623491]:cur_time[1553410579.452228069]:cur_latency[4.604578018]
-I0324 14:56:19.452858 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.527168 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.527631 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.447623ret: 1
-I0324 14:56:19.527640 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.447623491]:cur_time[1553410579.527640104]:cur_latency[80.016613007]
-I0324 14:56:19.527648 30302 fusion_camera_detection_component.cc:324]  Response time of 33: 75.456
-I0324 14:56:19.549665 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.546045
-I0324 14:56:19.549685 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.546045065]:cur_time[1553410579.549685001]:cur_latency[3.639936447]
-I0324 14:56:19.550365 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.625444 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.625922 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.546045ret: 1
-I0324 14:56:19.625933 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.546045065]:cur_time[1553410579.625932932]:cur_latency[79.887866974]
-I0324 14:56:19.625943 30303 fusion_camera_detection_component.cc:324]  Response time of 34: 76.295
-I0324 14:56:19.650462 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.646465
-I0324 14:56:19.650485 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.646465302]:cur_time[1553410579.650484085]:cur_latency[4.018783569]
-I0324 14:56:19.651485 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.729874 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.730384 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.646465ret: 1
-I0324 14:56:19.730393 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.646465302]:cur_time[1553410579.730392933]:cur_latency[83.927631378]
-I0324 14:56:19.730399 30304 fusion_camera_detection_component.cc:324]  Response time of 35: 79.9527
-I0324 14:56:19.754794 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.749392
-I0324 14:56:19.754814 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.749391556]:cur_time[1553410579.754813910]:cur_latency[5.422353745]
-I0324 14:56:19.755700 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.830909 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.831393 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.749392ret: 1
-I0324 14:56:19.831403 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.749391556]:cur_time[1553410579.831403017]:cur_latency[82.011461258]
-I0324 14:56:19.831413 30305 fusion_camera_detection_component.cc:324]  Response time of 36: 76.6374
-I0324 14:56:19.854331 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.849157
-I0324 14:56:19.854351 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.849157333]:cur_time[1553410579.854351044]:cur_latency[5.193710327]
-I0324 14:56:19.855357 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:19.937800 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:19.938381 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.849157ret: 1
-I0324 14:56:19.938395 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.849157333]:cur_time[1553410579.938395023]:cur_latency[89.237689972]
-I0324 14:56:19.938410 30306 fusion_camera_detection_component.cc:324]  Response time of 37: 84.0979
-I0324 14:56:19.958711 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410579.952786
-I0324 14:56:19.958737 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410579.952786207]:cur_time[1553410579.958736897]:cur_latency[5.950689316]
-I0324 14:56:19.959673 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.043094 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.043790 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410579.952786ret: 1
-I0324 14:56:20.043807 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410579.952786207]:cur_time[1553410580.043807030]:cur_latency[91.020822525]
-I0324 14:56:20.043820 30301 fusion_camera_detection_component.cc:324]  Response time of 38: 85.1362
-I0324 14:56:20.059607 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.053576
-I0324 14:56:20.059630 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.053575516]:cur_time[1553410580.059629917]:cur_latency[6.054401398]
-I0324 14:56:20.060518 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.141626 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.142199 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.053576ret: 1
-I0324 14:56:20.142212 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.053575516]:cur_time[1553410580.142211914]:cur_latency[88.636398315]
-I0324 14:56:20.142227 30307 fusion_camera_detection_component.cc:324]  Response time of 39: 82.6404
-I0324 14:56:20.155580 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.150512
-I0324 14:56:20.155603 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.150512457]:cur_time[1553410580.155602932]:cur_latency[5.090475082]
-I0324 14:56:20.156538 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.237684 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.238248 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.150512ret: 1
-I0324 14:56:20.238262 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.150512457]:cur_time[1553410580.238261938]:cur_latency[87.749481201]
-I0324 14:56:20.238273 30308 fusion_camera_detection_component.cc:324]  Response time of 40: 82.719
-I0324 14:56:20.256364 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.251073
-I0324 14:56:20.256388 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.251073360]:cur_time[1553410580.256387949]:cur_latency[5.314588547]
-I0324 14:56:20.257328 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.340397 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.340970 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.251073ret: 1
-I0324 14:56:20.340983 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.251073360]:cur_time[1553410580.340982914]:cur_latency[89.909553528]
-I0324 14:56:20.340992 30309 fusion_camera_detection_component.cc:324]  Response time of 41: 84.6473
-I0324 14:56:20.359750 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.353317
-I0324 14:56:20.359774 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.353316545]:cur_time[1553410580.359774113]:cur_latency[6.457567215]
-I0324 14:56:20.360651 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.441983 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.442561 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.353317ret: 1
-I0324 14:56:20.442575 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.353316545]:cur_time[1553410580.442574978]:cur_latency[89.258432388]
-I0324 14:56:20.442589 30310 fusion_camera_detection_component.cc:324]  Response time of 42: 82.8655
-I0324 14:56:20.459565 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.454116
-I0324 14:56:20.459589 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.454115868]:cur_time[1553410580.459589005]:cur_latency[5.473136902]
-I0324 14:56:20.460523 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.540884 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.541457 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.454116ret: 1
-I0324 14:56:20.541471 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.454115868]:cur_time[1553410580.541471004]:cur_latency[87.355136871]
-I0324 14:56:20.541486 30311 fusion_camera_detection_component.cc:324]  Response time of 43: 81.9394
-I0324 14:56:20.558737 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.553113
-I0324 14:56:20.558759 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.553112745]:cur_time[1553410580.558759928]:cur_latency[5.647182465]
-I0324 14:56:20.559684 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.641402 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.643177 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.553113ret: 1
-I0324 14:56:20.643193 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.553112745]:cur_time[1553410580.643193007]:cur_latency[90.080261230]
-I0324 14:56:20.643205 30312 fusion_camera_detection_component.cc:324]  Response time of 44: 84.4908
-I0324 14:56:20.658627 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.652583
-I0324 14:56:20.658650 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.652582884]:cur_time[1553410580.658649921]:cur_latency[6.067037582]
-I0324 14:56:20.659519 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.744798 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.745481 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.652583ret: 1
-I0324 14:56:20.745501 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.652582884]:cur_time[1553410580.745497942]:cur_latency[92.915058136]
-I0324 14:56:20.745514 30297 fusion_camera_detection_component.cc:324]  Response time of 45: 86.9145
-I0324 14:56:20.758536 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.753495
-I0324 14:56:20.758560 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.753494978]:cur_time[1553410580.758559942]:cur_latency[5.064964294]
-I0324 14:56:20.759483 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.840041 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.840600 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.753495ret: 1
-I0324 14:56:20.840615 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.753494978]:cur_time[1553410580.840614080]:cur_latency[87.119102478]
-I0324 14:56:20.840622 30298 fusion_camera_detection_component.cc:324]  Response time of 46: 82.1104
-I0324 14:56:20.859972 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.854342
-I0324 14:56:20.859995 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.854342222]:cur_time[1553410580.859996080]:cur_latency[5.653858185]
-I0324 14:56:20.860921 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:20.941768 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:20.942278 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.854342ret: 1
-I0324 14:56:20.942289 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.854342222]:cur_time[1553410580.942289114]:cur_latency[87.946891785]
-I0324 14:56:20.942298 30299 fusion_camera_detection_component.cc:324]  Response time of 47: 82.3481
-I0324 14:56:20.953788 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410580.948854
-I0324 14:56:20.953809 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410580.948853731]:cur_time[1553410580.953809023]:cur_latency[4.955291748]
-I0324 14:56:20.954669 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.030094 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.030565 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410580.948854ret: 1
-I0324 14:56:21.030575 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410580.948853731]:cur_time[1553410581.030575037]:cur_latency[81.721305847]
-I0324 14:56:21.030581 30300 fusion_camera_detection_component.cc:324]  Response time of 48: 76.8111
-I0324 14:56:21.054055 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.049643
-I0324 14:56:21.054073 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.049642801]:cur_time[1553410581.054074049]:cur_latency[4.431247711]
-I0324 14:56:21.054868 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.131920 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.132388 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.049643ret: 1
-I0324 14:56:21.132397 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.049642801]:cur_time[1553410581.132397890]:cur_latency[82.755088806]
-I0324 14:56:21.132405 30302 fusion_camera_detection_component.cc:324]  Response time of 49: 78.3663
-I0324 14:56:21.153967 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.149441
-I0324 14:56:21.153986 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.149440527]:cur_time[1553410581.153986931]:cur_latency[4.546403885]
-I0324 14:56:21.154772 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.230623 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.231094 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.149441ret: 1
-I0324 14:56:21.231104 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.149440527]:cur_time[1553410581.231103897]:cur_latency[81.663370132]
-I0324 14:56:21.231112 30303 fusion_camera_detection_component.cc:324]  Response time of 50: 77.1626
-I0324 14:56:21.253846 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.249034
-I0324 14:56:21.253865 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.249034405]:cur_time[1553410581.253864050]:cur_latency[4.829645157]
-I0324 14:56:21.254581 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.330106 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.330557 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.249034ret: 1
-I0324 14:56:21.330567 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.249034405]:cur_time[1553410581.330566883]:cur_latency[81.532478333]
-I0324 14:56:21.330575 30304 fusion_camera_detection_component.cc:324]  Response time of 51: 76.7437
-I0324 14:56:21.349596 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.346103
-I0324 14:56:21.349612 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.346102715]:cur_time[1553410581.349611998]:cur_latency[3.509283066]
-I0324 14:56:21.350306 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.425927 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.426389 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.346103ret: 1
-I0324 14:56:21.426399 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.346102715]:cur_time[1553410581.426398993]:cur_latency[80.296278000]
-I0324 14:56:21.426405 30305 fusion_camera_detection_component.cc:324]  Response time of 52: 76.8251
-I0324 14:56:21.453644 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.449089
-I0324 14:56:21.453662 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.449088812]:cur_time[1553410581.453663111]:cur_latency[4.574298859]
-I0324 14:56:21.454517 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.530869 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.531344 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.449089ret: 1
-I0324 14:56:21.531354 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.449088812]:cur_time[1553410581.531354904]:cur_latency[82.266092300]
-I0324 14:56:21.531361 30306 fusion_camera_detection_component.cc:324]  Response time of 53: 77.7354
-I0324 14:56:21.553999 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.549000
-I0324 14:56:21.554019 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.549000263]:cur_time[1553410581.554018974]:cur_latency[5.018711090]
-I0324 14:56:21.554759 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.627966 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.628428 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.549000ret: 1
-I0324 14:56:21.628438 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.549000263]:cur_time[1553410581.628437996]:cur_latency[79.437732697]
-I0324 14:56:21.628444 30301 fusion_camera_detection_component.cc:324]  Response time of 54: 74.4698
-I0324 14:56:21.654214 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.649796
-I0324 14:56:21.654234 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.649796247]:cur_time[1553410581.654233932]:cur_latency[4.437685013]
-I0324 14:56:21.655073 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.733201 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.733676 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.649796ret: 1
-I0324 14:56:21.733685 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.649796247]:cur_time[1553410581.733685970]:cur_latency[83.889722824]
-I0324 14:56:21.733692 30307 fusion_camera_detection_component.cc:324]  Response time of 55: 79.4948
-I0324 14:56:21.754143 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.749545
-I0324 14:56:21.754163 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.749545097]:cur_time[1553410581.754163980]:cur_latency[4.618883133]
-I0324 14:56:21.754950 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.831624 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.832098 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.749545ret: 1
-I0324 14:56:21.832108 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.749545097]:cur_time[1553410581.832107067]:cur_latency[82.561969757]
-I0324 14:56:21.832116 30308 fusion_camera_detection_component.cc:324]  Response time of 56: 77.9907
-I0324 14:56:21.851614 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.846740
-I0324 14:56:21.851634 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.846740246]:cur_time[1553410581.851633072]:cur_latency[4.892826080]
-I0324 14:56:21.852414 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:21.928033 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:21.928508 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.846740ret: 1
-I0324 14:56:21.928517 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.846740246]:cur_time[1553410581.928518057]:cur_latency[81.777811050]
-I0324 14:56:21.928526 30309 fusion_camera_detection_component.cc:324]  Response time of 57: 76.9327
-I0324 14:56:21.953446 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410581.949046
-I0324 14:56:21.953466 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410581.949046135]:cur_time[1553410581.953466892]:cur_latency[4.420757294]
-I0324 14:56:21.954280 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.033018 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.033488 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410581.949046ret: 1
-I0324 14:56:22.033499 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410581.949046135]:cur_time[1553410582.033498049]:cur_latency[84.451913834]
-I0324 14:56:22.033507 30310 fusion_camera_detection_component.cc:324]  Response time of 58: 80.0768
-I0324 14:56:22.050925 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.046874
-I0324 14:56:22.050946 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.046873808]:cur_time[1553410582.050945997]:cur_latency[4.072189331]
-I0324 14:56:22.051678 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.127476 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.127938 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.046874ret: 1
-I0324 14:56:22.127948 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.046873808]:cur_time[1553410582.127948046]:cur_latency[81.074237823]
-I0324 14:56:22.127956 30311 fusion_camera_detection_component.cc:324]  Response time of 59: 77.0495
-I0324 14:56:22.150869 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.146385
-I0324 14:56:22.150888 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.146385193]:cur_time[1553410582.150887966]:cur_latency[4.502773285]
-I0324 14:56:22.151520 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.227183 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.227656 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.146385ret: 1
-I0324 14:56:22.227666 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.146385193]:cur_time[1553410582.227665901]:cur_latency[81.280708313]
-I0324 14:56:22.227674 30312 fusion_camera_detection_component.cc:324]  Response time of 60: 76.8176
-I0324 14:56:22.251574 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.247631
-I0324 14:56:22.251593 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.247631311]:cur_time[1553410582.251593113]:cur_latency[3.961801529]
-I0324 14:56:22.252257 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.328812 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.329283 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.247631ret: 1
-I0324 14:56:22.329293 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.247631311]:cur_time[1553410582.329292059]:cur_latency[81.660747528]
-I0324 14:56:22.329298 30297 fusion_camera_detection_component.cc:324]  Response time of 61: 77.7401
-I0324 14:56:22.353741 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.349005
-I0324 14:56:22.353761 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.349004507]:cur_time[1553410582.353761911]:cur_latency[4.757404327]
-I0324 14:56:22.354571 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.432567 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.433045 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.349005ret: 1
-I0324 14:56:22.433055 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.349004507]:cur_time[1553410582.433054924]:cur_latency[84.050416946]
-I0324 14:56:22.433063 30298 fusion_camera_detection_component.cc:324]  Response time of 62: 79.3383
-I0324 14:56:22.450156 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.445617
-I0324 14:56:22.450173 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.445617437]:cur_time[1553410582.450174093]:cur_latency[4.556655884]
-I0324 14:56:22.450896 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.526656 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.527099 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.445617ret: 1
-I0324 14:56:22.527108 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.445617437]:cur_time[1553410582.527108908]:cur_latency[81.491470337]
-I0324 14:56:22.527114 30299 fusion_camera_detection_component.cc:324]  Response time of 63: 76.9739
-I0324 14:56:22.552230 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.548153
-I0324 14:56:22.552250 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.548152685]:cur_time[1553410582.552251101]:cur_latency[4.098415375]
-I0324 14:56:22.553028 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.629102 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.629587 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.548153ret: 1
-I0324 14:56:22.629597 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.548152685]:cur_time[1553410582.629596949]:cur_latency[81.444263458]
-I0324 14:56:22.629604 30300 fusion_camera_detection_component.cc:324]  Response time of 64: 77.3935
-I0324 14:56:22.651072 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.646596
-I0324 14:56:22.651091 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.646595955]:cur_time[1553410582.651091099]:cur_latency[4.495143890]
-I0324 14:56:22.651948 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.728791 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.729279 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.646596ret: 1
-I0324 14:56:22.729288 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.646595955]:cur_time[1553410582.729289055]:cur_latency[82.693099976]
-I0324 14:56:22.729296 30302 fusion_camera_detection_component.cc:324]  Response time of 65: 78.2459
-I0324 14:56:22.754268 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.749063
-I0324 14:56:22.754288 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.749063015]:cur_time[1553410582.754287958]:cur_latency[5.224943161]
-I0324 14:56:22.755038 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.832264 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.832752 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.749063ret: 1
-I0324 14:56:22.832763 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.749063015]:cur_time[1553410582.832762957]:cur_latency[83.699941635]
-I0324 14:56:22.832772 30303 fusion_camera_detection_component.cc:324]  Response time of 66: 78.5195
-I0324 14:56:22.854858 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.850533
-I0324 14:56:22.854878 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.850533485]:cur_time[1553410582.854877949]:cur_latency[4.344463348]
-I0324 14:56:22.855705 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:22.931646 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:22.932122 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.850533ret: 1
-I0324 14:56:22.932132 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.850533485]:cur_time[1553410582.932132959]:cur_latency[81.599473953]
-I0324 14:56:22.932140 30304 fusion_camera_detection_component.cc:324]  Response time of 67: 77.3014
-I0324 14:56:22.955184 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410582.950256
-I0324 14:56:22.955204 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410582.950256109]:cur_time[1553410582.955204010]:cur_latency[4.947900772]
-I0324 14:56:22.956099 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.032826 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.033305 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410582.950256ret: 1
-I0324 14:56:23.033314 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410582.950256109]:cur_time[1553410583.033314943]:cur_latency[83.058834076]
-I0324 14:56:23.033324 30305 fusion_camera_detection_component.cc:324]  Response time of 68: 78.1576
-I0324 14:56:23.054822 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.049509
-I0324 14:56:23.054844 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.049509048]:cur_time[1553410583.054845095]:cur_latency[5.336046219]
-I0324 14:56:23.055676 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.138953 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.139523 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.049509ret: 1
-I0324 14:56:23.139535 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.049509048]:cur_time[1553410583.139534950]:cur_latency[90.025901794]
-I0324 14:56:23.139546 30306 fusion_camera_detection_component.cc:324]  Response time of 69: 84.7466
-I0324 14:56:23.150693 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.146642
-I0324 14:56:23.150714 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.146641731]:cur_time[1553410583.150715113]:cur_latency[4.073381424]
-I0324 14:56:23.151518 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.226653 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.227144 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.146642ret: 1
-I0324 14:56:23.227155 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.146641731]:cur_time[1553410583.227155924]:cur_latency[80.514192581]
-I0324 14:56:23.227164 30301 fusion_camera_detection_component.cc:324]  Response time of 70: 76.4904
-I0324 14:56:23.251296 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.247144
-I0324 14:56:23.251315 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.247144222]:cur_time[1553410583.251316071]:cur_latency[4.171848297]
-I0324 14:56:23.252041 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.328264 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.328730 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.247144ret: 1
-I0324 14:56:23.328739 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.247144222]:cur_time[1553410583.328738928]:cur_latency[81.594705582]
-I0324 14:56:23.328747 30307 fusion_camera_detection_component.cc:324]  Response time of 71: 77.4692
-I0324 14:56:23.350962 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.346495
-I0324 14:56:23.350980 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.346494913]:cur_time[1553410583.350980043]:cur_latency[4.485130310]
-I0324 14:56:23.351613 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.429239 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.429708 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.346495ret: 1
-I0324 14:56:23.429718 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.346494913]:cur_time[1553410583.429717064]:cur_latency[83.222150803]
-I0324 14:56:23.429723 30308 fusion_camera_detection_component.cc:324]  Response time of 72: 78.7779
-I0324 14:56:23.451947 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.447987
-I0324 14:56:23.451966 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.447986603]:cur_time[1553410583.451966047]:cur_latency[3.979444504]
-I0324 14:56:23.452641 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.530856 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.531647 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.447987ret: 1
-I0324 14:56:23.531658 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.447986603]:cur_time[1553410583.531658888]:cur_latency[83.672285080]
-I0324 14:56:23.531667 30309 fusion_camera_detection_component.cc:324]  Response time of 73: 79.7378
-I0324 14:56:23.550827 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.546121
-I0324 14:56:23.550848 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.546121120]:cur_time[1553410583.550847054]:cur_latency[4.725933075]
-I0324 14:56:23.551756 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.629312 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.629791 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.546121ret: 1
-I0324 14:56:23.629801 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.546121120]:cur_time[1553410583.629801035]:cur_latency[83.679914474]
-I0324 14:56:23.629809 30310 fusion_camera_detection_component.cc:324]  Response time of 74: 79.001
-I0324 14:56:23.656661 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.651290
-I0324 14:56:23.656680 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.651289701]:cur_time[1553410583.656681061]:cur_latency[5.391359329]
-I0324 14:56:23.657496 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.735826 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.736302 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.651290ret: 1
-I0324 14:56:23.736312 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.651289701]:cur_time[1553410583.736311913]:cur_latency[85.022211075]
-I0324 14:56:23.736318 30311 fusion_camera_detection_component.cc:324]  Response time of 75: 79.6745
-I0324 14:56:23.750802 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.746805
-I0324 14:56:23.750826 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.746805429]:cur_time[1553410583.750825882]:cur_latency[4.020452499]
-I0324 14:56:23.751595 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.832813 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.833292 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.746805ret: 1
-I0324 14:56:23.833302 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.746805429]:cur_time[1553410583.833301067]:cur_latency[86.495637894]
-I0324 14:56:23.833309 30312 fusion_camera_detection_component.cc:324]  Response time of 76: 82.5245
-I0324 14:56:23.853813 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.849028
-I0324 14:56:23.853833 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.849027872]:cur_time[1553410583.853832960]:cur_latency[4.805088043]
-I0324 14:56:23.854658 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:23.931809 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:23.932288 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.849028ret: 1
-I0324 14:56:23.932298 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.849027872]:cur_time[1553410583.932297945]:cur_latency[83.270072937]
-I0324 14:56:23.932307 30297 fusion_camera_detection_component.cc:324]  Response time of 77: 78.5085
-I0324 14:56:23.954870 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410583.949440
-I0324 14:56:23.954890 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410583.949440479]:cur_time[1553410583.954890013]:cur_latency[5.449533463]
-I0324 14:56:23.955641 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.032909 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.033388 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410583.949440ret: 1
-I0324 14:56:24.033398 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410583.949440479]:cur_time[1553410584.033397913]:cur_latency[83.957433701]
-I0324 14:56:24.033406 30298 fusion_camera_detection_component.cc:324]  Response time of 78: 78.5556
-I0324 14:56:24.053828 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.049288
-I0324 14:56:24.053846 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.049288034]:cur_time[1553410584.053847075]:cur_latency[4.559040070]
-I0324 14:56:24.054646 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.134093 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.134593 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.049288ret: 1
-I0324 14:56:24.134604 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.049288034]:cur_time[1553410584.134603977]:cur_latency[85.315942764]
-I0324 14:56:24.134611 30299 fusion_camera_detection_component.cc:324]  Response time of 79: 80.8042
-I0324 14:56:24.155526 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.150818
-I0324 14:56:24.155546 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.150817633]:cur_time[1553410584.155546904]:cur_latency[4.729270935]
-I0324 14:56:24.156405 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.232975 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.233456 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.150818ret: 1
-I0324 14:56:24.233465 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.150817633]:cur_time[1553410584.233465910]:cur_latency[82.648277283]
-I0324 14:56:24.233474 30300 fusion_camera_detection_component.cc:324]  Response time of 80: 77.9676
-I0324 14:56:24.254174 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.248890
-I0324 14:56:24.254197 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.248889685]:cur_time[1553410584.254196882]:cur_latency[5.307197571]
-I0324 14:56:24.254976 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.335201 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.335697 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.248890ret: 1
-I0324 14:56:24.335708 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.248889685]:cur_time[1553410584.335707903]:cur_latency[86.818218231]
-I0324 14:56:24.335716 30302 fusion_camera_detection_component.cc:324]  Response time of 81: 81.5635
-I0324 14:56:24.350821 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.346864
-I0324 14:56:24.350853 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.346864223]:cur_time[1553410584.350853920]:cur_latency[3.989696503]
-I0324 14:56:24.351605 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.432121 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.432600 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.346864ret: 1
-I0324 14:56:24.432610 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.346864223]:cur_time[1553410584.432610035]:cur_latency[85.745811462]
-I0324 14:56:24.432618 30303 fusion_camera_detection_component.cc:324]  Response time of 82: 81.8161
-I0324 14:56:24.450171 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.446240
-I0324 14:56:24.450191 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.446239710]:cur_time[1553410584.450191021]:cur_latency[3.951311111]
-I0324 14:56:24.450865 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.526644 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.527108 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.446240ret: 1
-I0324 14:56:24.527118 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.446239710]:cur_time[1553410584.527117968]:cur_latency[80.878257751]
-I0324 14:56:24.527127 30304 fusion_camera_detection_component.cc:324]  Response time of 83: 76.9707
-I0324 14:56:24.551183 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.546645
-I0324 14:56:24.551203 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.546644688]:cur_time[1553410584.551203012]:cur_latency[4.558324814]
-I0324 14:56:24.551852 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.627635 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.628121 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.546645ret: 1
-I0324 14:56:24.628132 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.546644688]:cur_time[1553410584.628133059]:cur_latency[81.488370895]
-I0324 14:56:24.628141 30305 fusion_camera_detection_component.cc:324]  Response time of 84: 76.9757
-I0324 14:56:24.652591 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.647849
-I0324 14:56:24.652613 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.647848845]:cur_time[1553410584.652612925]:cur_latency[4.764080048]
-I0324 14:56:24.653599 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.732712 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.733199 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.647849ret: 1
-I0324 14:56:24.733209 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.647848845]:cur_time[1553410584.733208895]:cur_latency[85.360050201]
-I0324 14:56:24.733217 30306 fusion_camera_detection_component.cc:324]  Response time of 85: 80.6435
-I0324 14:56:24.755033 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.749745
-I0324 14:56:24.755056 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.749744654]:cur_time[1553410584.755057096]:cur_latency[5.312442780]
-I0324 14:56:24.756217 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.835604 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.836081 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.749745ret: 1
-I0324 14:56:24.836091 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.749744654]:cur_time[1553410584.836090088]:cur_latency[86.345434189]
-I0324 14:56:24.836098 30301 fusion_camera_detection_component.cc:324]  Response time of 86: 81.0896
-I0324 14:56:24.854699 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.849566
-I0324 14:56:24.854719 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.849565744]:cur_time[1553410584.854718924]:cur_latency[5.153179169]
-I0324 14:56:24.855525 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:24.932616 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:24.933105 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.849566ret: 1
-I0324 14:56:24.933115 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.849565744]:cur_time[1553410584.933115005]:cur_latency[83.549261093]
-I0324 14:56:24.933121 30307 fusion_camera_detection_component.cc:324]  Response time of 87: 78.442
-I0324 14:56:24.951548 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410584.947645
-I0324 14:56:24.951567 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410584.947645187]:cur_time[1553410584.951566935]:cur_latency[3.921747208]
-I0324 14:56:24.952287 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.029481 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.029968 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410584.947645ret: 1
-I0324 14:56:25.029978 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410584.947645187]:cur_time[1553410585.029978037]:cur_latency[82.332849503]
-I0324 14:56:25.029985 30308 fusion_camera_detection_component.cc:324]  Response time of 88: 78.4545
-I0324 14:56:25.054841 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.049972
-I0324 14:56:25.054865 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.049971819]:cur_time[1553410585.054864883]:cur_latency[4.893064499]
-I0324 14:56:25.055681 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.137912 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.138402 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.049972ret: 1
-I0324 14:56:25.138411 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.049971819]:cur_time[1553410585.138411999]:cur_latency[88.440179825]
-I0324 14:56:25.138419 30309 fusion_camera_detection_component.cc:324]  Response time of 89: 83.6004
-I0324 14:56:25.153935 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.148868
-I0324 14:56:25.153954 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.148868084]:cur_time[1553410585.153954983]:cur_latency[5.086898804]
-I0324 14:56:25.154690 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.233317 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.233811 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.148868ret: 1
-I0324 14:56:25.233822 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.148868084]:cur_time[1553410585.233822107]:cur_latency[84.954023361]
-I0324 14:56:25.233829 30310 fusion_camera_detection_component.cc:324]  Response time of 90: 79.9134
-I0324 14:56:25.254302 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.249761
-I0324 14:56:25.254320 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.249760628]:cur_time[1553410585.254321098]:cur_latency[4.560470581]
-I0324 14:56:25.255167 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.333406 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.333900 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.249761ret: 1
-I0324 14:56:25.333910 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.249760628]:cur_time[1553410585.333909988]:cur_latency[84.149360657]
-I0324 14:56:25.333919 30311 fusion_camera_detection_component.cc:324]  Response time of 91: 79.6382
-I0324 14:56:25.352291 30312 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.347948
-I0324 14:56:25.352313 30312 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.347948074]:cur_time[1553410585.352312088]:cur_latency[4.364013672]
-I0324 14:56:25.353135 30312 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.429872 30312 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.430366 30312 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.347948ret: 1
-I0324 14:56:25.430377 30312 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.347948074]:cur_time[1553410585.430377007]:cur_latency[82.428932190]
-I0324 14:56:25.430387 30312 fusion_camera_detection_component.cc:324]  Response time of 92: 78.1139
-I0324 14:56:25.451350 30297 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.446578
-I0324 14:56:25.451369 30297 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.446578026]:cur_time[1553410585.451369047]:cur_latency[4.791021347]
-I0324 14:56:25.452069 30297 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.529830 30297 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.530303 30297 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.446578ret: 1
-I0324 14:56:25.530313 30297 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.446578026]:cur_time[1553410585.530313015]:cur_latency[83.734989166]
-I0324 14:56:25.530319 30297 fusion_camera_detection_component.cc:324]  Response time of 93: 78.9879
-I0324 14:56:25.550534 30298 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.546827
-I0324 14:56:25.550554 30298 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.546826839]:cur_time[1553410585.550553083]:cur_latency[3.726243973]
-I0324 14:56:25.551221 30298 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.626624 30298 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.627085 30298 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.546827ret: 1
-I0324 14:56:25.627094 30298 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.546826839]:cur_time[1553410585.627094984]:cur_latency[80.268144608]
-I0324 14:56:25.627101 30298 fusion_camera_detection_component.cc:324]  Response time of 94: 76.5827
-I0324 14:56:25.649996 30299 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.646013
-I0324 14:56:25.650015 30299 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.646013260]:cur_time[1553410585.650015116]:cur_latency[4.001855850]
-I0324 14:56:25.650697 30299 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.727452 30299 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.727950 30299 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.646013ret: 1
-I0324 14:56:25.727962 30299 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.646013260]:cur_time[1553410585.727962017]:cur_latency[81.948757172]
-I0324 14:56:25.727969 30299 fusion_camera_detection_component.cc:324]  Response time of 95: 77.9875
-I0324 14:56:25.757498 30300 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.751891
-I0324 14:56:25.757519 30300 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.751891375]:cur_time[1553410585.757519960]:cur_latency[5.628585815]
-I0324 14:56:25.758477 30300 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.838799 30300 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.839291 30300 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.751891ret: 1
-I0324 14:56:25.839301 30300 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.751891375]:cur_time[1553410585.839301109]:cur_latency[87.409734726]
-I0324 14:56:25.839309 30300 fusion_camera_detection_component.cc:324]  Response time of 96: 81.8303
-I0324 14:56:25.854745 30302 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.849734
-I0324 14:56:25.854771 30302 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.849733591]:cur_time[1553410585.854770899]:cur_latency[5.037307739]
-I0324 14:56:25.855773 30302 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:25.935823 30302 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:25.936355 30302 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.849734ret: 1
-I0324 14:56:25.936367 30302 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.849733591]:cur_time[1553410585.936366081]:cur_latency[86.632490158]
-I0324 14:56:25.936375 30302 fusion_camera_detection_component.cc:324]  Response time of 97: 81.6525
-I0324 14:56:25.953843 30303 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410585.948476
-I0324 14:56:25.953867 30303 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410585.948475838]:cur_time[1553410585.953866005]:cur_latency[5.390167236]
-I0324 14:56:25.954849 30303 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.037555 30303 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.038120 30303 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410585.948476ret: 1
-I0324 14:56:26.038132 30303 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410585.948475838]:cur_time[1553410586.038131952]:cur_latency[89.656114578]
-I0324 14:56:26.038141 30303 fusion_camera_detection_component.cc:324]  Response time of 98: 84.3172
-I0324 14:56:26.056445 30304 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.050668
-I0324 14:56:26.056468 30304 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.050667763]:cur_time[1553410586.056467056]:cur_latency[5.799293518]
-I0324 14:56:26.057301 30304 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.138764 30304 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.139313 30304 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.050668ret: 1
-I0324 14:56:26.139325 30304 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.050667763]:cur_time[1553410586.139326096]:cur_latency[88.658332825]
-I0324 14:56:26.139333 30304 fusion_camera_detection_component.cc:324]  Response time of 99: 82.9085
-I0324 14:56:26.156632 30305 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.151424
-I0324 14:56:26.156654 30305 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.151423693]:cur_time[1553410586.156653881]:cur_latency[5.230188370]
-I0324 14:56:26.157608 30305 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.244731 30305 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.245406 30305 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.151424ret: 1
-I0324 14:56:26.245424 30305 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.151423693]:cur_time[1553410586.245421886]:cur_latency[93.998193741]
-I0324 14:56:26.245437 30305 fusion_camera_detection_component.cc:324]  Response time of 100: 88.8212
-I0324 14:56:26.255609 30306 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.250323
-I0324 14:56:26.255633 30306 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.250322580]:cur_time[1553410586.255633116]:cur_latency[5.310535431]
-I0324 14:56:26.256561 30306 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.339162 30306 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.339751 30306 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.250323ret: 1
-I0324 14:56:26.339766 30306 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.250322580]:cur_time[1553410586.339765072]:cur_latency[89.442491531]
-I0324 14:56:26.339779 30306 fusion_camera_detection_component.cc:324]  Response time of 101: 84.1888
-I0324 14:56:26.359519 30301 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.352812
-I0324 14:56:26.359542 30301 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.352811575]:cur_time[1553410586.359543085]:cur_latency[6.731510162]
-I0324 14:56:26.360431 30301 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.440407 30301 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.441022 30301 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.352812ret: 1
-I0324 14:56:26.441036 30301 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.352811575]:cur_time[1553410586.441035986]:cur_latency[88.224411011]
-I0324 14:56:26.441047 30301 fusion_camera_detection_component.cc:324]  Response time of 102: 81.5528
-I0324 14:56:26.458715 30307 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.453168
-I0324 14:56:26.458740 30307 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.453167915]:cur_time[1553410586.458739996]:cur_latency[5.572080612]
-I0324 14:56:26.459759 30307 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.542368 30307 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.542948 30307 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.453168ret: 1
-I0324 14:56:26.542963 30307 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.453167915]:cur_time[1553410586.542962074]:cur_latency[89.794158936]
-I0324 14:56:26.542973 30307 fusion_camera_detection_component.cc:324]  Response time of 103: 84.2842
-I0324 14:56:26.556565 30308 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.551270
-I0324 14:56:26.556588 30308 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.551270485]:cur_time[1553410586.556588888]:cur_latency[5.318403244]
-I0324 14:56:26.557515 30308 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.638424 30308 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.639092 30308 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.551270ret: 1
-I0324 14:56:26.639109 30308 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.551270485]:cur_time[1553410586.639108896]:cur_latency[87.838411331]
-I0324 14:56:26.639122 30308 fusion_camera_detection_component.cc:324]  Response time of 104: 82.5767
-I0324 14:56:26.658357 30309 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.651897
-I0324 14:56:26.658380 30309 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.651896715]:cur_time[1553410586.658380032]:cur_latency[6.483316422]
-I0324 14:56:26.659246 30309 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.740922 30309 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.741499 30309 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.651897ret: 1
-I0324 14:56:26.741513 30309 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.651896715]:cur_time[1553410586.741512060]:cur_latency[89.615345001]
-I0324 14:56:26.741521 30309 fusion_camera_detection_component.cc:324]  Response time of 105: 83.1863
-I0324 14:56:26.759497 30310 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.754218
-I0324 14:56:26.759521 30310 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.754218340]:cur_time[1553410586.759520054]:cur_latency[5.301713943]
-I0324 14:56:26.760434 30310 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.844686 30310 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.845280 30310 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.754218ret: 1
-I0324 14:56:26.845293 30310 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.754218340]:cur_time[1553410586.845293045]:cur_latency[91.074705124]
-I0324 14:56:26.845304 30310 fusion_camera_detection_component.cc:324]  Response time of 106: 85.8367
-I0324 14:56:26.857744 30311 fusion_camera_detection_component.cc:257]  Enter FusionCameraDetectionComponent::Proc(),  camera_name: front_6mm image ts: 1553410586.852414
-I0324 14:56:26.857769 30311 fusion_camera_detection_component.cc:274]  FRAME_STATISTICS:Camera:Start:msg_time[front_6mm-1553410586.852414131]:cur_time[1553410586.857768059]:cur_latency[5.353927612]
-I0324 14:56:26.858700 30311 fusion_camera_detection_component.cc:635]  qua ci arrivo
-I0324 14:56:26.937434 30311 fusion_camera_detection_component.cc:649]  ##front_6mm: pitch -1 | camera_grond_height -1
-I0324 14:56:26.937937 30311 fusion_camera_detection_component.cc:304]  send out prefused msg, ts: 1553410586.852414ret: 1
-I0324 14:56:26.937947 30311 fusion_camera_detection_component.cc:316]  FRAME_STATISTICS:Camera:End:msg_time[front_6mm-1553410586.852414131]:cur_time[1553410586.937947035]:cur_latency[85.532903671]
-I0324 14:56:26.937955 30311 fusion_camera_detection_component.cc:324]  Response time of 107: 80.2339
-I0324 14:56:26.938192 30311 fusion_camera_detection_component.cc:249]  MI SPENGOOOOOOO
+I0327 09:41:45.017163 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 1
+I0327 09:41:45.238657 27417 fusion_camera_detection_component.cc:336]  Response time of 1: 221.504
+W0327 09:41:45.238914 27417 channel_buffer.h:71]  channel[/apollo/sensor/camera/front_6mm/image] read buffer overflow, drop_message[1] pre_index[2] current_index[3] 
+I0327 09:41:45.238929 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 2
+I0327 09:41:45.326606 27417 fusion_camera_detection_component.cc:336]  Response time of 2: 87.6766
+W0327 09:41:45.326864 27417 channel_buffer.h:71]  channel[/apollo/sensor/camera/front_6mm/image] read buffer overflow, drop_message[1] pre_index[4] current_index[5] 
+I0327 09:41:45.326880 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 3
+I0327 09:41:45.408229 27417 fusion_camera_detection_component.cc:336]  Response time of 3: 81.3491
+I0327 09:41:45.408480 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 4
+I0327 09:41:45.489332 27417 fusion_camera_detection_component.cc:336]  Response time of 4: 80.853
+I0327 09:41:45.489590 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 5
+I0327 09:41:45.566599 27417 fusion_camera_detection_component.cc:336]  Response time of 5: 77.0094
+I0327 09:41:45.575186 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 6
+I0327 09:41:45.660162 27424 fusion_camera_detection_component.cc:336]  Response time of 6: 84.9889
+I0327 09:41:45.711642 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 7
+I0327 09:41:45.789412 27413 fusion_camera_detection_component.cc:336]  Response time of 7: 77.7786
+I0327 09:41:45.789659 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 8
+I0327 09:41:45.869410 27413 fusion_camera_detection_component.cc:336]  Response time of 8: 79.7501
+I0327 09:41:45.872241 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 9
+I0327 09:41:45.947898 27415 fusion_camera_detection_component.cc:336]  Response time of 9: 75.6674
+I0327 09:41:45.973238 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 10
+I0327 09:41:46.056020 27416 fusion_camera_detection_component.cc:336]  Response time of 10: 82.7895
+I0327 09:41:46.071413 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 11
+I0327 09:41:46.147707 27418 fusion_camera_detection_component.cc:336]  Response time of 11: 76.3013
+I0327 09:41:46.182771 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 12
+I0327 09:41:46.259382 27419 fusion_camera_detection_component.cc:336]  Response time of 12: 76.6177
+I0327 09:41:46.274123 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 13
+I0327 09:41:46.350092 27420 fusion_camera_detection_component.cc:336]  Response time of 13: 75.9765
+I0327 09:41:46.376827 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 14
+I0327 09:41:46.452448 27421 fusion_camera_detection_component.cc:336]  Response time of 14: 75.6288
+I0327 09:41:46.473708 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 15
+I0327 09:41:46.549679 27422 fusion_camera_detection_component.cc:336]  Response time of 15: 75.9766
+I0327 09:41:46.569164 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 16
+I0327 09:41:46.658869 27423 fusion_camera_detection_component.cc:336]  Response time of 16: 89.7134
+I0327 09:41:46.772557 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 17
+I0327 09:41:46.848371 27417 fusion_camera_detection_component.cc:336]  Response time of 17: 75.8274
+I0327 09:41:46.859340 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 18
+I0327 09:41:46.934913 27424 fusion_camera_detection_component.cc:336]  Response time of 18: 75.5874
+I0327 09:41:46.935151 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 19
+I0327 09:41:47.010455 27424 fusion_camera_detection_component.cc:336]  Response time of 19: 75.3054
+I0327 09:41:47.010690 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 20
+I0327 09:41:47.086660 27424 fusion_camera_detection_component.cc:336]  Response time of 20: 75.9721
+I0327 09:41:47.086902 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 21
+I0327 09:41:47.162012 27424 fusion_camera_detection_component.cc:336]  Response time of 21: 75.112
+I0327 09:41:47.178591 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 22
+I0327 09:41:47.258466 27416 fusion_camera_detection_component.cc:336]  Response time of 22: 79.8846
+I0327 09:41:47.274469 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 23
+I0327 09:41:47.362429 27418 fusion_camera_detection_component.cc:336]  Response time of 23: 87.9688
+I0327 09:41:47.387984 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 24
+I0327 09:41:47.463491 27419 fusion_camera_detection_component.cc:336]  Response time of 24: 75.5212
+I0327 09:41:47.473070 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 25
+I0327 09:41:47.548056 27420 fusion_camera_detection_component.cc:336]  Response time of 25: 74.9951
+I0327 09:41:47.577584 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 26
+I0327 09:41:47.652384 27421 fusion_camera_detection_component.cc:336]  Response time of 26: 74.8116
+I0327 09:41:47.778726 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 27
+I0327 09:41:47.855049 27422 fusion_camera_detection_component.cc:336]  Response time of 27: 76.3346
+I0327 09:41:47.855283 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 28
+I0327 09:41:47.930456 27422 fusion_camera_detection_component.cc:336]  Response time of 28: 75.1755
+I0327 09:41:47.930699 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 29
+I0327 09:41:48.006754 27422 fusion_camera_detection_component.cc:336]  Response time of 29: 76.0566
+I0327 09:41:48.006994 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 30
+I0327 09:41:48.082482 27422 fusion_camera_detection_component.cc:336]  Response time of 30: 75.4894
+I0327 09:41:48.082720 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 31
+I0327 09:41:48.158841 27422 fusion_camera_detection_component.cc:336]  Response time of 31: 76.1232
+I0327 09:41:48.178004 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 32
+I0327 09:41:48.253172 27415 fusion_camera_detection_component.cc:336]  Response time of 32: 75.183
+I0327 09:41:48.274111 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 33
+I0327 09:41:48.349896 27424 fusion_camera_detection_component.cc:336]  Response time of 33: 75.7998
+I0327 09:41:48.376250 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 34
+I0327 09:41:48.462591 27416 fusion_camera_detection_component.cc:336]  Response time of 34: 86.3615
+I0327 09:41:48.486903 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 35
+I0327 09:41:48.562968 27418 fusion_camera_detection_component.cc:336]  Response time of 35: 76.0773
+I0327 09:41:48.575522 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 36
+I0327 09:41:48.651470 27419 fusion_camera_detection_component.cc:336]  Response time of 36: 75.9639
+I0327 09:41:48.684268 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 37
+I0327 09:41:48.760686 27420 fusion_camera_detection_component.cc:336]  Response time of 37: 76.4269
+I0327 09:41:48.796535 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 38
+I0327 09:41:48.875932 27421 fusion_camera_detection_component.cc:336]  Response time of 38: 79.4181
+I0327 09:41:48.876164 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 39
+I0327 09:41:48.951578 27421 fusion_camera_detection_component.cc:336]  Response time of 39: 75.4162
+I0327 09:41:48.969795 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 40
+I0327 09:41:49.043761 27417 fusion_camera_detection_component.cc:336]  Response time of 40: 73.979
+I0327 09:41:49.090543 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 41
+I0327 09:41:49.167361 27414 fusion_camera_detection_component.cc:336]  Response time of 41: 76.8256
+I0327 09:41:49.173647 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 42
+I0327 09:41:49.249644 27413 fusion_camera_detection_component.cc:336]  Response time of 42: 76.006
+I0327 09:41:49.309772 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 43
+I0327 09:41:49.386763 27422 fusion_camera_detection_component.cc:336]  Response time of 43: 77.0101
+I0327 09:41:49.386999 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 44
+I0327 09:41:49.462591 27422 fusion_camera_detection_component.cc:336]  Response time of 44: 75.5933
+I0327 09:41:49.474345 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 45
+I0327 09:41:49.549985 27424 fusion_camera_detection_component.cc:336]  Response time of 45: 75.6551
+I0327 09:41:49.575673 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 46
+I0327 09:41:49.651458 27416 fusion_camera_detection_component.cc:336]  Response time of 46: 75.8015
+I0327 09:41:49.685072 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 47
+I0327 09:41:49.760198 27418 fusion_camera_detection_component.cc:336]  Response time of 47: 75.1363
+I0327 09:41:49.777880 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 48
+I0327 09:41:49.855654 27419 fusion_camera_detection_component.cc:336]  Response time of 48: 77.7885
+I0327 09:41:49.869390 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 49
+I0327 09:41:49.945842 27420 fusion_camera_detection_component.cc:336]  Response time of 49: 76.4656
+I0327 09:41:49.971859 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 50
+I0327 09:41:50.048329 27423 fusion_camera_detection_component.cc:336]  Response time of 50: 76.4788
+I0327 09:41:50.075500 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 51
+I0327 09:41:50.150660 27421 fusion_camera_detection_component.cc:336]  Response time of 51: 75.1706
+I0327 09:41:50.171109 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 52
+I0327 09:41:50.244868 27417 fusion_camera_detection_component.cc:336]  Response time of 52: 73.7729
+I0327 09:41:50.274631 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 53
+I0327 09:41:50.350391 27414 fusion_camera_detection_component.cc:336]  Response time of 53: 75.7719
+I0327 09:41:50.374234 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 54
+I0327 09:41:50.450358 27413 fusion_camera_detection_component.cc:336]  Response time of 54: 76.1337
+I0327 09:41:50.475504 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 55
+I0327 09:41:50.552150 27415 fusion_camera_detection_component.cc:336]  Response time of 55: 76.6568
+I0327 09:41:50.576877 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 56
+I0327 09:41:50.652341 27422 fusion_camera_detection_component.cc:336]  Response time of 56: 75.4798
+I0327 09:41:50.757109 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 57
+I0327 09:41:50.834169 27424 fusion_camera_detection_component.cc:336]  Response time of 57: 77.0782
+I0327 09:41:50.842823 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 58
+I0327 09:41:50.921536 27416 fusion_camera_detection_component.cc:336]  Response time of 58: 78.725
+I0327 09:41:50.921772 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 59
+I0327 09:41:50.997531 27416 fusion_camera_detection_component.cc:336]  Response time of 59: 75.7616
+I0327 09:41:51.222182 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 60
+I0327 09:41:51.300114 27419 fusion_camera_detection_component.cc:336]  Response time of 60: 77.9474
+W0327 09:41:51.300360 27419 channel_buffer.h:71]  channel[/apollo/sensor/camera/front_6mm/image] read buffer overflow, drop_message[2] pre_index[63] current_index[65] 
+I0327 09:41:51.300372 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 61
+I0327 09:41:51.375850 27419 fusion_camera_detection_component.cc:336]  Response time of 61: 75.4774
+I0327 09:41:51.391028 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 62
+I0327 09:41:51.464845 27417 fusion_camera_detection_component.cc:336]  Response time of 62: 73.8321
+I0327 09:41:51.498358 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 63
+I0327 09:41:51.574769 27414 fusion_camera_detection_component.cc:336]  Response time of 63: 76.4253
+I0327 09:41:51.585137 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 64
+I0327 09:41:51.660882 27413 fusion_camera_detection_component.cc:336]  Response time of 64: 75.7551
+I0327 09:41:51.673569 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 65
+I0327 09:41:51.749867 27415 fusion_camera_detection_component.cc:336]  Response time of 65: 76.3115
+I0327 09:41:51.772833 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 66
+I0327 09:41:51.848878 27422 fusion_camera_detection_component.cc:336]  Response time of 66: 76.0595
+I0327 09:41:51.876133 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 67
+I0327 09:41:51.951792 27424 fusion_camera_detection_component.cc:336]  Response time of 67: 75.671
+I0327 09:41:51.971144 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 68
+I0327 09:41:52.047070 27418 fusion_camera_detection_component.cc:336]  Response time of 68: 75.9436
+I0327 09:41:52.073655 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 69
+I0327 09:41:52.149260 27416 fusion_camera_detection_component.cc:336]  Response time of 69: 75.6169
+I0327 09:41:52.168982 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 70
+I0327 09:41:52.244808 27420 fusion_camera_detection_component.cc:336]  Response time of 70: 75.8418
+I0327 09:41:52.269779 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 71
+I0327 09:41:52.346735 27423 fusion_camera_detection_component.cc:336]  Response time of 71: 76.9661
+I0327 09:41:52.370867 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 72
+I0327 09:41:52.447103 27421 fusion_camera_detection_component.cc:336]  Response time of 72: 76.2497
+I0327 09:41:52.469354 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 73
+I0327 09:41:52.545318 27419 fusion_camera_detection_component.cc:336]  Response time of 73: 75.9797
+I0327 09:41:52.575834 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 74
+I0327 09:41:52.650018 27417 fusion_camera_detection_component.cc:336]  Response time of 74: 74.2055
+I0327 09:41:52.670342 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 75
+I0327 09:41:52.745931 27414 fusion_camera_detection_component.cc:336]  Response time of 75: 75.6028
+I0327 09:41:52.810277 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 76
+I0327 09:41:52.886548 27413 fusion_camera_detection_component.cc:336]  Response time of 76: 76.2915
+I0327 09:41:52.886786 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 77
+I0327 09:41:52.963222 27413 fusion_camera_detection_component.cc:336]  Response time of 77: 76.4369
+I0327 09:41:52.976593 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 78
+I0327 09:41:53.052574 27422 fusion_camera_detection_component.cc:336]  Response time of 78: 75.9971
+I0327 09:41:53.074748 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 79
+I0327 09:41:53.150332 27424 fusion_camera_detection_component.cc:336]  Response time of 79: 75.6016
+I0327 09:41:53.170183 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 80
+I0327 09:41:53.245815 27418 fusion_camera_detection_component.cc:336]  Response time of 80: 75.6406
+I0327 09:41:53.270141 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 81
+I0327 09:41:53.345633 27416 fusion_camera_detection_component.cc:336]  Response time of 81: 75.5074
+I0327 09:41:53.375130 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 82
+I0327 09:41:53.451573 27420 fusion_camera_detection_component.cc:336]  Response time of 82: 76.4575
+I0327 09:41:53.474045 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 83
+I0327 09:41:53.550976 27423 fusion_camera_detection_component.cc:336]  Response time of 83: 76.9444
+I0327 09:41:53.575284 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 84
+I0327 09:41:53.651194 27421 fusion_camera_detection_component.cc:336]  Response time of 84: 75.923
+I0327 09:41:53.670826 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 85
+I0327 09:41:53.746661 27419 fusion_camera_detection_component.cc:336]  Response time of 85: 75.8481
+I0327 09:41:53.774289 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 86
+I0327 09:41:53.847919 27417 fusion_camera_detection_component.cc:336]  Response time of 86: 73.6485
+I0327 09:41:53.872206 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 87
+I0327 09:41:53.947960 27414 fusion_camera_detection_component.cc:336]  Response time of 87: 75.7692
+I0327 09:41:53.976997 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 88
+I0327 09:41:54.052585 27415 fusion_camera_detection_component.cc:336]  Response time of 88: 75.6079
+I0327 09:41:54.067353 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 89
+I0327 09:41:54.143301 27413 fusion_camera_detection_component.cc:336]  Response time of 89: 75.9608
+I0327 09:41:54.170994 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 90
+I0327 09:41:54.246894 27422 fusion_camera_detection_component.cc:336]  Response time of 90: 75.9151
+I0327 09:41:54.273727 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 91
+I0327 09:41:54.349061 27424 fusion_camera_detection_component.cc:336]  Response time of 91: 75.3477
+I0327 09:41:54.369640 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 92
+I0327 09:41:54.445255 27418 fusion_camera_detection_component.cc:336]  Response time of 92: 75.6296
+I0327 09:41:54.472946 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 93
+I0327 09:41:54.548451 27416 fusion_camera_detection_component.cc:336]  Response time of 93: 75.5229
+I0327 09:41:54.583065 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 94
+I0327 09:41:54.658275 27420 fusion_camera_detection_component.cc:336]  Response time of 94: 75.2214
+I0327 09:41:54.672837 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 95
+I0327 09:41:54.749248 27423 fusion_camera_detection_component.cc:336]  Response time of 95: 76.4261
+I0327 09:41:54.776793 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 96
+I0327 09:41:54.852965 27421 fusion_camera_detection_component.cc:336]  Response time of 96: 76.1916
+I0327 09:41:54.874450 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 97
+I0327 09:41:54.951504 27419 fusion_camera_detection_component.cc:336]  Response time of 97: 77.0681
+I0327 09:41:54.967409 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 98
+I0327 09:41:55.041179 27417 fusion_camera_detection_component.cc:336]  Response time of 98: 73.7875
+I0327 09:41:55.067384 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 99
+I0327 09:41:55.142721 27414 fusion_camera_detection_component.cc:336]  Response time of 99: 75.3494
+I0327 09:41:55.170214 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 100
+I0327 09:41:55.245429 27415 fusion_camera_detection_component.cc:336]  Response time of 100: 75.226
+I0327 09:41:55.267529 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 101
+I0327 09:41:55.344014 27413 fusion_camera_detection_component.cc:336]  Response time of 101: 76.5045
+I0327 09:41:55.395223 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 102
+I0327 09:41:55.470881 27422 fusion_camera_detection_component.cc:336]  Response time of 102: 75.6724
+I0327 09:41:55.476269 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 103
+I0327 09:41:55.551528 27424 fusion_camera_detection_component.cc:336]  Response time of 103: 75.2788
+I0327 09:41:55.575136 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 104
+I0327 09:41:55.650533 27418 fusion_camera_detection_component.cc:336]  Response time of 104: 75.4092
+I0327 09:41:55.676610 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 105
+I0327 09:41:55.752305 27416 fusion_camera_detection_component.cc:336]  Response time of 105: 75.7112
+I0327 09:41:55.786739 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 106
+I0327 09:41:55.862763 27420 fusion_camera_detection_component.cc:336]  Response time of 106: 76.0374
+I0327 09:41:55.930483 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 107
+I0327 09:41:56.010304 27423 fusion_camera_detection_component.cc:336]  Response time of 107: 79.8456
+I0327 09:41:56.010545 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 108
+I0327 09:41:56.105880 27423 fusion_camera_detection_component.cc:336]  Response time of 108: 95.3352
+I0327 09:41:56.152727 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 109
+I0327 09:41:56.228134 27419 fusion_camera_detection_component.cc:336]  Response time of 109: 75.4211
+I0327 09:41:56.228382 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 110
+I0327 09:41:56.305176 27419 fusion_camera_detection_component.cc:336]  Response time of 110: 76.7957
+I0327 09:41:56.305423 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 111
+I0327 09:41:56.381695 27419 fusion_camera_detection_component.cc:336]  Response time of 111: 76.2735
+I0327 09:41:56.382361 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 112
+I0327 09:41:56.457522 27415 fusion_camera_detection_component.cc:336]  Response time of 112: 75.1676
+I0327 09:41:56.479178 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 113
+I0327 09:41:56.554810 27413 fusion_camera_detection_component.cc:336]  Response time of 113: 75.6477
+I0327 09:41:56.570946 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 114
+I0327 09:41:56.646643 27422 fusion_camera_detection_component.cc:336]  Response time of 114: 75.7104
+I0327 09:41:56.667862 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 115
+I0327 09:41:56.743088 27424 fusion_camera_detection_component.cc:336]  Response time of 115: 75.2427
+I0327 09:41:56.794211 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 116
+I0327 09:41:56.870265 27418 fusion_camera_detection_component.cc:336]  Response time of 116: 76.0731
+I0327 09:41:56.877524 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 117
+I0327 09:41:56.955693 27416 fusion_camera_detection_component.cc:336]  Response time of 117: 78.1854
+I0327 09:41:56.973815 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 118
+I0327 09:41:57.049430 27420 fusion_camera_detection_component.cc:336]  Response time of 118: 75.6303
+I0327 09:41:57.072970 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 119
+I0327 09:41:57.148195 27421 fusion_camera_detection_component.cc:336]  Response time of 119: 75.2406
+I0327 09:41:57.174010 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 120
+I0327 09:41:57.249490 27423 fusion_camera_detection_component.cc:336]  Response time of 120: 75.4948
+I0327 09:41:57.276129 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 121
+I0327 09:41:57.349447 27417 fusion_camera_detection_component.cc:336]  Response time of 121: 73.3381
+I0327 09:41:57.369828 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 122
+I0327 09:41:57.444859 27414 fusion_camera_detection_component.cc:336]  Response time of 122: 75.0444
+I0327 09:41:57.470882 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 123
+I0327 09:41:57.546540 27419 fusion_camera_detection_component.cc:336]  Response time of 123: 75.6712
+I0327 09:41:57.570871 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 124
+I0327 09:41:57.645891 27415 fusion_camera_detection_component.cc:336]  Response time of 124: 75.0348
+I0327 09:41:57.673015 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 125
+I0327 09:41:57.748178 27413 fusion_camera_detection_component.cc:336]  Response time of 125: 75.179
+I0327 09:41:57.771935 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 126
+I0327 09:41:57.847208 27422 fusion_camera_detection_component.cc:336]  Response time of 126: 75.289
+I0327 09:41:57.867493 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 127
+I0327 09:41:57.945420 27424 fusion_camera_detection_component.cc:336]  Response time of 127: 77.938
+I0327 09:41:57.969565 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 128
+I0327 09:41:58.044128 27418 fusion_camera_detection_component.cc:336]  Response time of 128: 74.5769
+I0327 09:41:58.071449 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 129
+I0327 09:41:58.146142 27416 fusion_camera_detection_component.cc:336]  Response time of 129: 74.7101
+I0327 09:41:58.173323 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 130
+I0327 09:41:58.248469 27420 fusion_camera_detection_component.cc:336]  Response time of 130: 75.1586
+I0327 09:41:58.275502 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 131
+I0327 09:41:58.350419 27421 fusion_camera_detection_component.cc:336]  Response time of 131: 74.9311
+I0327 09:41:58.371731 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 132
+I0327 09:41:58.446370 27423 fusion_camera_detection_component.cc:336]  Response time of 132: 74.6556
+I0327 09:41:58.472096 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 133
+I0327 09:41:58.545235 27417 fusion_camera_detection_component.cc:336]  Response time of 133: 73.1512
+I0327 09:41:58.570758 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 134
+I0327 09:41:58.645169 27414 fusion_camera_detection_component.cc:336]  Response time of 134: 74.4222
+I0327 09:41:58.696395 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 135
+I0327 09:41:58.772428 27419 fusion_camera_detection_component.cc:336]  Response time of 135: 76.0557
+I0327 09:41:58.772675 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 136
+I0327 09:41:58.847115 27419 fusion_camera_detection_component.cc:336]  Response time of 136: 74.442
+I0327 09:41:58.876883 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 137
+I0327 09:41:58.953316 27413 fusion_camera_detection_component.cc:336]  Response time of 137: 76.4487
+I0327 09:41:58.970165 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 138
+I0327 09:41:59.044744 27422 fusion_camera_detection_component.cc:336]  Response time of 138: 74.5975
+I0327 09:41:59.067384 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 139
+I0327 09:41:59.141939 27424 fusion_camera_detection_component.cc:336]  Response time of 139: 74.5696
+I0327 09:41:59.173485 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 140
+I0327 09:41:59.248061 27418 fusion_camera_detection_component.cc:336]  Response time of 140: 74.59
+I0327 09:41:59.277287 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 141
+I0327 09:41:59.352896 27416 fusion_camera_detection_component.cc:336]  Response time of 141: 75.6228
+I0327 09:41:59.376593 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 142
+I0327 09:41:59.451601 27420 fusion_camera_detection_component.cc:336]  Response time of 142: 75.0203
+I0327 09:41:59.473556 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 143
+I0327 09:41:59.548306 27421 fusion_camera_detection_component.cc:336]  Response time of 143: 74.7628
+I0327 09:41:59.569826 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 144
+I0327 09:41:59.644765 27423 fusion_camera_detection_component.cc:336]  Response time of 144: 74.9514
+I0327 09:41:59.774763 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 145
+I0327 09:41:59.848558 27417 fusion_camera_detection_component.cc:336]  Response time of 145: 73.8092
+I0327 09:41:59.848805 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 146
+I0327 09:41:59.924286 27417 fusion_camera_detection_component.cc:336]  Response time of 146: 75.4833
+I0327 09:41:59.924536 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 147
+I0327 09:42:00.001487 27417 fusion_camera_detection_component.cc:336]  Response time of 147: 76.9518
+I0327 09:42:00.001737 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 148
+I0327 09:42:00.076205 27417 fusion_camera_detection_component.cc:336]  Response time of 148: 74.4703
+I0327 09:42:00.076452 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 149
+I0327 09:42:00.149549 27417 fusion_camera_detection_component.cc:336]  Response time of 149: 73.0998
+I0327 09:42:00.169229 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 150
+I0327 09:42:00.244896 27422 fusion_camera_detection_component.cc:336]  Response time of 150: 75.6826
+I0327 09:42:00.275768 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 151
+I0327 09:42:00.350337 27424 fusion_camera_detection_component.cc:336]  Response time of 151: 74.5787
+I0327 09:42:00.367411 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 152
+I0327 09:42:00.441978 27418 fusion_camera_detection_component.cc:336]  Response time of 152: 74.5789
+I0327 09:42:00.473599 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 153
+I0327 09:42:00.548691 27416 fusion_camera_detection_component.cc:336]  Response time of 153: 75.1079
+I0327 09:42:00.570116 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 154
+I0327 09:42:00.644964 27420 fusion_camera_detection_component.cc:336]  Response time of 154: 74.8587
+I0327 09:42:00.709789 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 155
+I0327 09:42:00.785475 27421 fusion_camera_detection_component.cc:336]  Response time of 155: 75.7032
+I0327 09:42:00.785722 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 156
+I0327 09:42:00.860417 27421 fusion_camera_detection_component.cc:336]  Response time of 156: 74.697
+I0327 09:42:00.891088 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 157
+I0327 09:42:00.969729 27414 fusion_camera_detection_component.cc:336]  Response time of 157: 78.6588
+I0327 09:42:00.970472 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 158
+I0327 09:42:01.045099 27415 fusion_camera_detection_component.cc:336]  Response time of 158: 74.6336
+I0327 09:42:01.075893 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 159
+I0327 09:42:01.151162 27419 fusion_camera_detection_component.cc:336]  Response time of 159: 75.2862
+I0327 09:42:01.170891 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 160
+I0327 09:42:01.246284 27413 fusion_camera_detection_component.cc:336]  Response time of 160: 75.4082
+I0327 09:42:01.292968 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 161
+I0327 09:42:01.368417 27417 fusion_camera_detection_component.cc:336]  Response time of 161: 75.4737
+I0327 09:42:01.372509 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 162
+I0327 09:42:01.447983 27422 fusion_camera_detection_component.cc:336]  Response time of 162: 75.4872
+I0327 09:42:01.490751 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 163
+I0327 09:42:01.566246 27424 fusion_camera_detection_component.cc:336]  Response time of 163: 75.5105
+I0327 09:42:01.575487 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 164
+I0327 09:42:01.650645 27418 fusion_camera_detection_component.cc:336]  Response time of 164: 75.1756
+I0327 09:42:01.761535 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 165
+I0327 09:42:01.844543 27416 fusion_camera_detection_component.cc:336]  Response time of 165: 83.0479
+I0327 09:42:01.844781 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 166
+I0327 09:42:01.920559 27416 fusion_camera_detection_component.cc:336]  Response time of 166: 75.7801
+I0327 09:42:01.920805 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 167
+I0327 09:42:01.999261 27416 fusion_camera_detection_component.cc:336]  Response time of 167: 78.4594
+I0327 09:42:01.999506 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 168
+I0327 09:42:02.075495 27416 fusion_camera_detection_component.cc:336]  Response time of 168: 75.9901
+I0327 09:42:02.075740 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 169
+I0327 09:42:02.150291 27416 fusion_camera_detection_component.cc:336]  Response time of 169: 74.5532
+I0327 09:42:02.187641 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 170
+I0327 09:42:02.264149 27415 fusion_camera_detection_component.cc:336]  Response time of 170: 76.5291
+I0327 09:42:02.271077 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 171
+I0327 09:42:02.346479 27419 fusion_camera_detection_component.cc:336]  Response time of 171: 75.4155
+I0327 09:42:02.369200 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 172
+I0327 09:42:02.444456 27413 fusion_camera_detection_component.cc:336]  Response time of 172: 75.2702
+I0327 09:42:02.475317 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 173
+I0327 09:42:02.548946 27417 fusion_camera_detection_component.cc:336]  Response time of 173: 73.6464
+I0327 09:42:02.568349 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 174
+I0327 09:42:02.643308 27422 fusion_camera_detection_component.cc:336]  Response time of 174: 74.9763
+I0327 09:42:02.776600 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 175
+I0327 09:42:02.851580 27424 fusion_camera_detection_component.cc:336]  Response time of 175: 74.9901
+I0327 09:42:02.851822 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 176
+I0327 09:42:02.927544 27424 fusion_camera_detection_component.cc:336]  Response time of 176: 75.7247
+I0327 09:42:02.927783 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 177
+I0327 09:42:03.006866 27424 fusion_camera_detection_component.cc:336]  Response time of 177: 79.0859
+I0327 09:42:03.007105 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 178
+I0327 09:42:03.082460 27424 fusion_camera_detection_component.cc:336]  Response time of 178: 75.3565
+I0327 09:42:03.082698 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 179
+I0327 09:42:03.157641 27424 fusion_camera_detection_component.cc:336]  Response time of 179: 74.9457
+I0327 09:42:03.174485 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 180
+I0327 09:42:03.250047 27414 fusion_camera_detection_component.cc:336]  Response time of 180: 75.5768
+I0327 09:42:03.276473 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 181
+I0327 09:42:03.352022 27416 fusion_camera_detection_component.cc:336]  Response time of 181: 75.5633
+I0327 09:42:03.390998 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 182
+I0327 09:42:03.466931 27415 fusion_camera_detection_component.cc:336]  Response time of 182: 75.9479
+I0327 09:42:03.470615 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 183
+I0327 09:42:03.546344 27419 fusion_camera_detection_component.cc:336]  Response time of 183: 75.7432
+I0327 09:42:03.567909 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 184
+I0327 09:42:03.642971 27413 fusion_camera_detection_component.cc:336]  Response time of 184: 75.076
+I0327 09:42:03.785631 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 185
+I0327 09:42:03.859220 27417 fusion_camera_detection_component.cc:336]  Response time of 185: 73.6043
+I0327 09:42:03.859460 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 186
+I0327 09:42:03.932778 27417 fusion_camera_detection_component.cc:336]  Response time of 186: 73.3211
+I0327 09:42:03.933017 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 187
+I0327 09:42:04.008502 27417 fusion_camera_detection_component.cc:336]  Response time of 187: 75.4877
+I0327 09:42:04.008747 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 188
+I0327 09:42:04.082180 27417 fusion_camera_detection_component.cc:336]  Response time of 188: 73.4345
+I0327 09:42:04.082422 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 189
+I0327 09:42:04.156414 27417 fusion_camera_detection_component.cc:336]  Response time of 189: 73.996
+I0327 09:42:04.175335 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 190
+I0327 09:42:04.250035 27421 fusion_camera_detection_component.cc:336]  Response time of 190: 74.7156
+I0327 09:42:04.267549 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 191
+I0327 09:42:04.342433 27424 fusion_camera_detection_component.cc:336]  Response time of 191: 74.8984
+I0327 09:42:04.373021 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 192
+I0327 09:42:04.447937 27414 fusion_camera_detection_component.cc:336]  Response time of 192: 74.9262
+I0327 09:42:04.473276 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 193
+I0327 09:42:04.548540 27416 fusion_camera_detection_component.cc:336]  Response time of 193: 75.2828
+I0327 09:42:04.570178 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 194
+I0327 09:42:04.644811 27415 fusion_camera_detection_component.cc:336]  Response time of 194: 74.649
+I0327 09:42:04.724433 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 195
+I0327 09:42:04.801981 27419 fusion_camera_detection_component.cc:336]  Response time of 195: 77.5731
+I0327 09:42:04.802228 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 196
+I0327 09:42:04.877440 27419 fusion_camera_detection_component.cc:336]  Response time of 196: 75.2143
+I0327 09:42:04.879226 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 197
+I0327 09:42:04.954387 27422 fusion_camera_detection_component.cc:336]  Response time of 197: 75.1738
+I0327 09:42:04.976604 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 198
+I0327 09:42:05.051468 27418 fusion_camera_detection_component.cc:336]  Response time of 198: 74.8826
+I0327 09:42:05.078405 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 199
+I0327 09:42:05.152972 27420 fusion_camera_detection_component.cc:336]  Response time of 199: 74.5834
+I0327 09:42:05.169878 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 200
+I0327 09:42:05.244635 27423 fusion_camera_detection_component.cc:336]  Response time of 200: 74.7718
+I0327 09:42:05.287585 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 201
+I0327 09:42:05.361856 27417 fusion_camera_detection_component.cc:336]  Response time of 201: 74.291
+I0327 09:42:05.371405 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 202
+I0327 09:42:05.446218 27421 fusion_camera_detection_component.cc:336]  Response time of 202: 74.8239
+I0327 09:42:05.485031 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 203
+I0327 09:42:05.560261 27424 fusion_camera_detection_component.cc:336]  Response time of 203: 75.2448
+I0327 09:42:05.575078 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 204
+I0327 09:42:05.650106 27414 fusion_camera_detection_component.cc:336]  Response time of 204: 75.049
+I0327 09:42:05.749332 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 205
+I0327 09:42:05.825192 27416 fusion_camera_detection_component.cc:336]  Response time of 205: 75.8767
+I0327 09:42:05.865433 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 206
+I0327 09:42:05.941198 27415 fusion_camera_detection_component.cc:336]  Response time of 206: 75.7798
+I0327 09:42:05.999588 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 207
+I0327 09:42:06.077147 27413 fusion_camera_detection_component.cc:336]  Response time of 207: 77.5798
+W0327 09:42:06.077383 27413 channel_buffer.h:71]  channel[/apollo/sensor/camera/front_6mm/image] read buffer overflow, drop_message[1] pre_index[212] current_index[213] 
+I0327 09:42:06.077395 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 208
+I0327 09:42:06.151854 27413 fusion_camera_detection_component.cc:336]  Response time of 208: 74.4575
+I0327 09:42:06.240943 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 209
+I0327 09:42:06.317987 27418 fusion_camera_detection_component.cc:336]  Response time of 209: 77.0622
+I0327 09:42:06.318225 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 210
+I0327 09:42:06.398056 27418 fusion_camera_detection_component.cc:336]  Response time of 210: 79.8316
+I0327 09:42:06.398298 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 211
+I0327 09:42:06.473083 27418 fusion_camera_detection_component.cc:336]  Response time of 211: 74.7865
+I0327 09:42:06.477792 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 212
+I0327 09:42:06.551275 27417 fusion_camera_detection_component.cc:336]  Response time of 212: 73.4957
+I0327 09:42:06.567708 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 213
+I0327 09:42:06.643091 27421 fusion_camera_detection_component.cc:336]  Response time of 213: 75.394
+I0327 09:42:06.746801 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 214
+I0327 09:42:06.822573 27424 fusion_camera_detection_component.cc:336]  Response time of 214: 75.7898
+I0327 09:42:06.841919 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 215
+I0327 09:42:06.916743 27414 fusion_camera_detection_component.cc:336]  Response time of 215: 74.8354
+I0327 09:42:06.916996 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 216
+I0327 09:42:06.993422 27414 fusion_camera_detection_component.cc:336]  Response time of 216: 76.4284
+I0327 09:42:06.993664 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 217
+I0327 09:42:07.068799 27414 fusion_camera_detection_component.cc:336]  Response time of 217: 75.1371
+I0327 09:42:07.071849 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 218
+I0327 09:42:07.146797 27419 fusion_camera_detection_component.cc:336]  Response time of 218: 74.9579
+I0327 09:42:07.176626 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 219
+I0327 09:42:07.251963 27422 fusion_camera_detection_component.cc:336]  Response time of 219: 75.3514
+I0327 09:42:07.278797 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 220
+I0327 09:42:07.353945 27413 fusion_camera_detection_component.cc:336]  Response time of 220: 75.1594
+I0327 09:42:07.367424 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 221
+I0327 09:42:07.442772 27420 fusion_camera_detection_component.cc:336]  Response time of 221: 75.36
+I0327 09:42:07.476253 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 222
+I0327 09:42:07.551229 27423 fusion_camera_detection_component.cc:336]  Response time of 222: 74.9989
+I0327 09:42:07.575196 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 223
+I0327 09:42:07.650038 27418 fusion_camera_detection_component.cc:336]  Response time of 223: 74.8609
+I0327 09:42:07.705720 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 224
+I0327 09:42:07.780251 27417 fusion_camera_detection_component.cc:336]  Response time of 224: 74.5455
+I0327 09:42:07.780486 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 225
+I0327 09:42:07.853633 27417 fusion_camera_detection_component.cc:336]  Response time of 225: 73.1493
+I0327 09:42:07.895999 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 226
+I0327 09:42:07.971031 27424 fusion_camera_detection_component.cc:336]  Response time of 226: 75.0471
+I0327 09:42:07.976840 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 227
+I0327 09:42:08.054457 27416 fusion_camera_detection_component.cc:336]  Response time of 227: 77.6304
+I0327 09:42:08.067503 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 228
+I0327 09:42:08.142715 27415 fusion_camera_detection_component.cc:336]  Response time of 228: 75.2268
+I0327 09:42:08.193114 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 229
+I0327 09:42:08.268342 27414 fusion_camera_detection_component.cc:336]  Response time of 229: 75.2413
+I0327 09:42:08.271227 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 230
+I0327 09:42:08.346865 27419 fusion_camera_detection_component.cc:336]  Response time of 230: 75.6481
+I0327 09:42:08.371152 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 231
+I0327 09:42:08.446722 27422 fusion_camera_detection_component.cc:336]  Response time of 231: 75.5819
+I0327 09:42:08.473769 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 232
+I0327 09:42:08.549237 27413 fusion_camera_detection_component.cc:336]  Response time of 232: 75.4796
+I0327 09:42:08.576156 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 233
+I0327 09:42:08.651065 27420 fusion_camera_detection_component.cc:336]  Response time of 233: 74.925
+I0327 09:42:08.767817 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 234
+I0327 09:42:08.844451 27423 fusion_camera_detection_component.cc:336]  Response time of 234: 76.6436
+I0327 09:42:08.845460 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 235
+I0327 09:42:08.920243 27418 fusion_camera_detection_component.cc:336]  Response time of 235: 74.7928
+I0327 09:42:08.920483 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 236
+I0327 09:42:08.998827 27418 fusion_camera_detection_component.cc:336]  Response time of 236: 78.3455
+I0327 09:42:08.999071 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 237
+I0327 09:42:09.075248 27418 fusion_camera_detection_component.cc:336]  Response time of 237: 76.1784
+I0327 09:42:09.075485 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 238
+I0327 09:42:09.150243 27418 fusion_camera_detection_component.cc:336]  Response time of 238: 74.7601
+I0327 09:42:09.177780 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 239
+I0327 09:42:09.252979 27416 fusion_camera_detection_component.cc:336]  Response time of 239: 75.2144
+I0327 09:42:09.273509 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 240
+I0327 09:42:09.348677 27415 fusion_camera_detection_component.cc:336]  Response time of 240: 75.1826
+I0327 09:42:09.403164 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 241
+I0327 09:42:09.478677 27414 fusion_camera_detection_component.cc:336]  Response time of 241: 75.5279
+I0327 09:42:09.478922 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 242
+I0327 09:42:09.553714 27414 fusion_camera_detection_component.cc:336]  Response time of 242: 74.7911
+I0327 09:42:09.568876 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 243
+I0327 09:42:09.644912 27422 fusion_camera_detection_component.cc:336]  Response time of 243: 76.0529
+I0327 09:42:09.746140 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 244
+I0327 09:42:09.821283 27413 fusion_camera_detection_component.cc:336]  Response time of 244: 75.16
+I0327 09:42:09.821540 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 245
+I0327 09:42:09.897545 27413 fusion_camera_detection_component.cc:336]  Response time of 245: 76.0078
+I0327 09:42:09.897788 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 246
+I0327 09:42:09.973805 27413 fusion_camera_detection_component.cc:336]  Response time of 246: 76.021
+I0327 09:42:09.975343 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 247
+I0327 09:42:10.052973 27421 fusion_camera_detection_component.cc:336]  Response time of 247: 77.6377
+I0327 09:42:10.073933 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 248
+I0327 09:42:10.147382 27417 fusion_camera_detection_component.cc:336]  Response time of 248: 73.4646
+I0327 09:42:10.172387 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 249
+I0327 09:42:10.247858 27424 fusion_camera_detection_component.cc:336]  Response time of 249: 75.4854
+I0327 09:42:10.270388 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 250
+I0327 09:42:10.345746 27418 fusion_camera_detection_component.cc:336]  Response time of 250: 75.372
+I0327 09:42:10.393028 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 251
+I0327 09:42:10.470063 27416 fusion_camera_detection_component.cc:336]  Response time of 251: 77.0629
+I0327 09:42:10.472952 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 252
+I0327 09:42:10.548372 27415 fusion_camera_detection_component.cc:336]  Response time of 252: 75.4288
+I0327 09:42:10.574268 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 253
+I0327 09:42:10.649611 27419 fusion_camera_detection_component.cc:336]  Response time of 253: 75.3611
+I0327 09:42:10.767732 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 254
+I0327 09:42:10.843695 27414 fusion_camera_detection_component.cc:336]  Response time of 254: 75.976
+I0327 09:42:10.843952 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 255
+I0327 09:42:10.918983 27414 fusion_camera_detection_component.cc:336]  Response time of 255: 75.0335
+I0327 09:42:10.919225 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 256
+I0327 09:42:10.995537 27414 fusion_camera_detection_component.cc:336]  Response time of 256: 76.3132
+I0327 09:42:10.995779 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 257
+I0327 09:42:11.074796 27414 fusion_camera_detection_component.cc:336]  Response time of 257: 79.0194
+I0327 09:42:11.076869 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 258
+I0327 09:42:11.151937 27413 fusion_camera_detection_component.cc:336]  Response time of 258: 75.078
+I0327 09:42:11.171221 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 259
+I0327 09:42:11.246551 27421 fusion_camera_detection_component.cc:336]  Response time of 259: 75.3441
+I0327 09:42:11.270251 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 260
+I0327 09:42:11.343793 27417 fusion_camera_detection_component.cc:336]  Response time of 260: 73.5566
+I0327 09:42:11.374789 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 261
+I0327 09:42:11.450316 27424 fusion_camera_detection_component.cc:336]  Response time of 261: 75.545
+I0327 09:42:11.469885 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 262
+I0327 09:42:11.545573 27418 fusion_camera_detection_component.cc:336]  Response time of 262: 75.708
+I0327 09:42:11.578702 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 263
+I0327 09:42:11.653594 27416 fusion_camera_detection_component.cc:336]  Response time of 263: 74.9073
+I0327 09:42:11.743887 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 264
+I0327 09:42:11.819730 27415 fusion_camera_detection_component.cc:336]  Response time of 264: 75.8609
+I0327 09:42:11.819964 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 265
+I0327 09:42:11.894943 27415 fusion_camera_detection_component.cc:336]  Response time of 265: 74.9805
+I0327 09:42:11.895192 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 266
+I0327 09:42:11.970645 27415 fusion_camera_detection_component.cc:336]  Response time of 266: 75.4557
+I0327 09:42:11.974134 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 267
+I0327 09:42:12.051201 27420 fusion_camera_detection_component.cc:336]  Response time of 267: 77.0777
+I0327 09:42:12.075331 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 268
+I0327 09:42:12.150867 27423 fusion_camera_detection_component.cc:336]  Response time of 268: 75.5481
+I0327 09:42:12.183727 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 269
+I0327 09:42:12.260778 27414 fusion_camera_detection_component.cc:336]  Response time of 269: 77.0701
+I0327 09:42:12.270923 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 270
+I0327 09:42:12.346164 27413 fusion_camera_detection_component.cc:336]  Response time of 270: 75.258
+I0327 09:42:12.374166 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 271
+I0327 09:42:12.449612 27421 fusion_camera_detection_component.cc:336]  Response time of 271: 75.4615
+I0327 09:42:12.477380 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 272
+I0327 09:42:12.551414 27417 fusion_camera_detection_component.cc:336]  Response time of 272: 74.0491
+I0327 09:42:12.571501 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 273
+I0327 09:42:12.647469 27424 fusion_camera_detection_component.cc:336]  Response time of 273: 75.9825
+I0327 09:42:12.739310 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 274
+I0327 09:42:12.815049 27418 fusion_camera_detection_component.cc:336]  Response time of 274: 75.7616
+I0327 09:42:12.815292 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 275
+I0327 09:42:12.890367 27418 fusion_camera_detection_component.cc:336]  Response time of 275: 75.0756
+I0327 09:42:12.890601 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 276
+I0327 09:42:12.966027 27418 fusion_camera_detection_component.cc:336]  Response time of 276: 75.4271
+I0327 09:42:12.967800 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 277
+I0327 09:42:13.043661 27422 fusion_camera_detection_component.cc:336]  Response time of 277: 75.8733
+I0327 09:42:13.073807 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 278
+I0327 09:42:13.149560 27415 fusion_camera_detection_component.cc:336]  Response time of 278: 75.7677
+I0327 09:42:13.176051 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 279
+I0327 09:42:13.251895 27420 fusion_camera_detection_component.cc:336]  Response time of 279: 75.8556
+I0327 09:42:13.272423 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 280
+I0327 09:42:13.347520 27423 fusion_camera_detection_component.cc:336]  Response time of 280: 75.1086
+I0327 09:42:13.397053 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 281
+I0327 09:42:13.473453 27414 fusion_camera_detection_component.cc:336]  Response time of 281: 76.4157
+I0327 09:42:13.478329 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 282
+I0327 09:42:13.553727 27413 fusion_camera_detection_component.cc:336]  Response time of 282: 75.4122
+I0327 09:42:13.575074 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 283
+I0327 09:42:13.650280 27421 fusion_camera_detection_component.cc:336]  Response time of 283: 75.2217
+I0327 09:42:13.741668 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 284
+I0327 09:42:13.815493 27417 fusion_camera_detection_component.cc:336]  Response time of 284: 73.8396
+I0327 09:42:13.815740 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 285
+I0327 09:42:13.892947 27417 fusion_camera_detection_component.cc:336]  Response time of 285: 77.2087
+I0327 09:42:13.893194 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 286
+I0327 09:42:13.967456 27417 fusion_camera_detection_component.cc:336]  Response time of 286: 74.2637
+I0327 09:42:13.977038 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 287
+I0327 09:42:14.052362 27419 fusion_camera_detection_component.cc:336]  Response time of 287: 75.3412
+I0327 09:42:14.071192 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 288
+I0327 09:42:14.146082 27418 fusion_camera_detection_component.cc:336]  Response time of 288: 74.904
+I0327 09:42:14.173095 27422 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 289
+I0327 09:42:14.248021 27422 fusion_camera_detection_component.cc:336]  Response time of 289: 74.9406
+I0327 09:42:14.298120 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 290
+I0327 09:42:14.373468 27415 fusion_camera_detection_component.cc:336]  Response time of 290: 75.3632
+I0327 09:42:14.373713 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 291
+I0327 09:42:14.448983 27415 fusion_camera_detection_component.cc:336]  Response time of 291: 75.2728
+I0327 09:42:14.470309 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 292
+I0327 09:42:14.545161 27423 fusion_camera_detection_component.cc:336]  Response time of 292: 74.8658
+I0327 09:42:14.569772 27414 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 293
+I0327 09:42:14.644341 27414 fusion_camera_detection_component.cc:336]  Response time of 293: 74.5841
+I0327 09:42:14.682345 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 294
+I0327 09:42:14.757549 27413 fusion_camera_detection_component.cc:336]  Response time of 294: 75.2161
+I0327 09:42:14.782428 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 295
+I0327 09:42:14.857851 27421 fusion_camera_detection_component.cc:336]  Response time of 295: 75.4388
+I0327 09:42:14.873219 27424 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 296
+I0327 09:42:14.948604 27424 fusion_camera_detection_component.cc:336]  Response time of 296: 75.4031
+I0327 09:42:14.990340 27416 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 297
+I0327 09:42:15.067497 27416 fusion_camera_detection_component.cc:336]  Response time of 297: 77.1844
+I0327 09:42:15.075657 27417 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 298
+I0327 09:42:15.149193 27417 fusion_camera_detection_component.cc:336]  Response time of 298: 73.5499
+I0327 09:42:15.173032 27419 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 299
+I0327 09:42:15.248001 27419 fusion_camera_detection_component.cc:336]  Response time of 299: 74.9804
+I0327 09:42:15.310549 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 300
+I0327 09:42:15.386729 27418 fusion_camera_detection_component.cc:336]  Response time of 300: 76.2059
+I0327 09:42:15.386965 27418 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 301
+I0327 09:42:15.462039 27418 fusion_camera_detection_component.cc:336]  Response time of 301: 75.0759
+I0327 09:42:15.476394 27420 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 302
+I0327 09:42:15.551645 27420 fusion_camera_detection_component.cc:336]  Response time of 302: 75.2672
+I0327 09:42:15.577037 27415 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 303
+I0327 09:42:15.652734 27415 fusion_camera_detection_component.cc:336]  Response time of 303: 75.7103
+I0327 09:42:15.720934 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 304
+I0327 09:42:15.796321 27423 fusion_camera_detection_component.cc:336]  Response time of 304: 75.4023
+I0327 09:42:15.796566 27423 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 305
+I0327 09:42:15.872040 27423 fusion_camera_detection_component.cc:336]  Response time of 305: 75.4756
+I0327 09:42:15.875640 27413 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 306
+I0327 09:42:15.951135 27413 fusion_camera_detection_component.cc:336]  Response time of 306: 75.5078
+I0327 09:42:15.974357 27421 fusion_camera_detection_component.cc:271]  FusionCameraDetectionComponent::OnReceiveImage for frame id: 307
+I0327 09:42:16.051156 27421 fusion_camera_detection_component.cc:336]  Response time of 307: 76.8117
+I0327 09:42:16.053210 27424 fusion_camera_detection_component.cc:250]  Will shutdown.

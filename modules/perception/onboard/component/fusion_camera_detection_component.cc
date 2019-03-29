@@ -183,6 +183,9 @@ bool FusionCameraDetectionComponent::Init() {
   camera_debug_writer_ =
       node_->CreateWriter<apollo::perception::camera::CameraDebug>(
           camera_debug_channel_name_);
+
+  profiler_writer = node_->CreateWriter<apollo::scenario::profiler::proto::ProfilerInfo>("/profiler/profiler_info");
+
   if (InitSensorInfo() != cyber::SUCC) {
     AERROR << "InitSensorInfo() failed.";
     return false;
@@ -254,20 +257,28 @@ void FusionCameraDetectionComponent::OnReceiveImage(
   }
 
   ++seq_num_;
-  std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.data";
-  std::string profiling_command = "perf record -o " + prof_file_name +
-                                  " --call-grap dwarf --event cycles:P,instructions:P,cpu-clock:P,task-clock:P" +
-                                  " sleep 1 -F 4000 -p " + std::to_string(getpid());
-  AINFO << profiling_command;
+
+  auto profiler_info_proto = std::make_shared<apollo::scenario::profiler::proto::ProfilerInfo>();
+  profiler_info_proto->set_frame_id(seq_num_);
+  profiler_info_proto->set_pid(getpid());
+  profiler_info_proto->set_action("START");
+
+  profiler_writer->Write(profiler_info_proto);
+  //std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.data";
+  //std::string profiling_command = "perf record -o " + prof_file_name +
+  //                                " --call-grap dwarf --event cycles:P,instructions:P,cpu-clock:P,task-clock:P" +
+  //                                " sleep 1 -F 4000 -p " + std::to_string(getpid());
+  //AINFO << profiling_command;
   //system(profiling_command.c_str());
   //ProfilerStart(prof_file_name.c_str());
 
   const auto start_time = apollo::cyber::Time::Now();
   const double msg_timestamp = message->measurement_time() + timestamp_offset_;
-  AINFO << "Enter FusionCameraDetectionComponent::Proc(), "
-        << " camera_name: " << camera_name
-        << " image ts: " + std::to_string(msg_timestamp);
+  //AINFO << "Enter FusionCameraDetectionComponent::Proc(), "
+  //      << " camera_name: " << camera_name
+  //      << " image ts: " + std::to_string(msg_timestamp);
   // timestamp should be almost monotonic
+  AINFO << "FusionCameraDetectionComponent::OnReceiveImage for frame id: " + std::to_string(seq_num_);
   if (last_timestamp_ - msg_timestamp > ts_diff_) {
     AINFO << "Received an old message. Last ts is " << std::setprecision(19)
           << last_timestamp_ << " current ts is " << msg_timestamp

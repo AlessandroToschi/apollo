@@ -1,0 +1,18 @@
+module_config
+{
+    module_library : "/apollo/bazel-bin/modules/scenario/profiler/libprofiler.so"
+
+    components : 
+    {
+        class_name : "ProfilerComponent"
+        config :
+        {
+            name : "profiler_component"
+            readers : [
+                {
+                    channel : "/profiler/profiler_info"
+                }
+            ]
+        }
+    }
+}

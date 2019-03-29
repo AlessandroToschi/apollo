@@ -68,6 +68,7 @@ cc_library(
         "//modules/transform/proto:transform_proto",
         "//modules/v2x/common:v2x_proxy_gflags",
         "//modules/v2x/proto:v2x_traffic_light_proto",
+        "//modules/scenario/proto:profiler_proto_library",
         "@eigen",
         "//third_party/gperftools:gperf",
     ],

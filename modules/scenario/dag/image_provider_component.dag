@@ -1,0 +1,15 @@
+module_config
+{
+    module_library : "/apollo/bazel-bin/modules/scenario/image_provider/libimage_provider_component.so"
+
+    timer_components : 
+    {
+        class_name : "ImageProviderComponent"
+        config :
+        {
+            name : "image_provider"
+            interval : 100
+            flag_file_path: "/apollo/modules/scenario/conf/image_provider_component.conf"
+        }
+    }
+}

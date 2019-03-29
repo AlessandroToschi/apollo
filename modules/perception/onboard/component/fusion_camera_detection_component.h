@@ -38,6 +38,7 @@
 #include "modules/perception/onboard/transform_wrapper/transform_wrapper.h"
 #include "modules/perception/proto/perception_camera.pb.h"
 #include "modules/perception/proto/perception_obstacle.pb.h"
+#include "modules/scenario/proto/profiler_info.pb.h"
 
 namespace apollo {
 namespace perception {
@@ -179,6 +180,8 @@ class FusionCameraDetectionComponent : public apollo::cyber::Component<> {
   std::shared_ptr<
       apollo::cyber::Writer<apollo::perception::camera::CameraDebug>>
       camera_debug_writer_;
+
+  std::shared_ptr<apollo::cyber::Writer<apollo::scenario::profiler::proto::ProfilerInfo>> profiler_writer;
 
   camera::Visualizer visualize_;
   bool write_visual_img_;

@@ -1,0 +1,9 @@
+syntax = "proto2";
+package apollo.scenario.profiler.proto;
+
+message ProfilerInfo
+{
+    optional uint32 frame_id = 1;
+    optional uint64 pid = 2;
+    optional string action = 3;
+};
