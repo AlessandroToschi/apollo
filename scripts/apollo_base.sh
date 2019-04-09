@@ -113,6 +113,7 @@ function set_lib_path() {
     export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
     export C_INCLUDE_PATH=/usr/local/cuda-8.0/include:$C_INCLUDE_PATH
     export CPLUS_INCLUDE_PATH=/usr/local/cuda-8.0/include:$CPLUS_INCLUDE_PATH
+	export NVBLAS_CONFIG_FILE=/usr/local/cuda/nvblas.conf
   fi
 }
 

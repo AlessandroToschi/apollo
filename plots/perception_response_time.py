@@ -4,7 +4,7 @@ import math
 import numpy as np
 
 def plot_power_temps(powers, temps):
-    figure, axes1 = plt.subplot(figsize=(20, 10))
+    figure, axes1 = plt.subplots(figsize=(20, 10))
     axes1.plot(range(1, len(powers) + 1), powers, color="blue")
     axes1.set_yticks(range(20, 120, 5))
     axes1.set_ylabel("GPU Power [W]")
@@ -27,8 +27,8 @@ def get_powers_temps(frame_id):
         lines = lines[1:]
         for line in lines:
             components = line.strip().split(';')
-            powers.append(int(components[0][:-1]))
-            temps.append(int(components[1][:-1]))
+            powers.append(int(components[0]))
+            temps.append(int(components[1]))
     return (powers, temps)
 
 def plot_gant_timess(timess):

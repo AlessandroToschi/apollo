@@ -122,15 +122,15 @@ bool SegmentationComponent::InternalProc(
 
   PERCEPTION_PERF_BLOCK_START();
   Eigen::Affine3d pose = Eigen::Affine3d::Identity();
-  const double lidar_query_tf_timestamp =
-      timestamp - lidar_query_tf_offset_ * 0.001;
-  if (!lidar2world_trans_.GetSensor2worldTrans(lidar_query_tf_timestamp,
-                                               &pose)) {
-    out_message->error_code_ = apollo::common::ErrorCode::PERCEPTION_ERROR_TF;
-    AERROR << "Failed to get pose at time: "
-           << std::to_string(lidar_query_tf_timestamp);
-    return false;
-  }
+  //const double lidar_query_tf_timestamp =
+  //    timestamp - lidar_query_tf_offset_ * 0.001;
+  //if (!lidar2world_trans_.GetSensor2worldTrans(lidar_query_tf_timestamp,
+  //                                             &pose)) {
+  //  out_message->error_code_ = apollo::common::ErrorCode::PERCEPTION_ERROR_TF;
+  //  AERROR << "Failed to get pose at time: "
+  //         << std::to_string(lidar_query_tf_timestamp);
+  //  return false;
+  //}
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(
       sensor_name_, "segmentation_1::get_lidar_to_world_pose");
 
@@ -138,7 +138,7 @@ bool SegmentationComponent::InternalProc(
 
   lidar::LidarObstacleSegmentationOptions segment_opts;
   segment_opts.sensor_name = sensor_name_;
-  lidar2world_trans_.GetExtrinsics(&segment_opts.sensor2novatel_extrinsics);
+  //lidar2world_trans_.GetExtrinsics(&segment_opts.sensor2novatel_extrinsics);
   lidar::LidarProcessResult ret =
       segmentor_->Process(segment_opts, in_message, frame.get());
   if (ret.error_code != lidar::LidarErrorCode::Succeed) {

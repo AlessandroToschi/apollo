@@ -71,7 +71,7 @@
 # enabled state of local pose extrapolation when failed to query pose
 # type: bool
 # default: false
---obs_enable_local_pose_extrapolation=false
+--obs_enable_local_pose_extrapolation=true
 
 # local pose cache size
 # type: double

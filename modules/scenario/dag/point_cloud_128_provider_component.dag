@@ -1,0 +1,15 @@
+module_config
+{
+    module_library : "/apollo/bazel-bin/modules/scenario/point_cloud_provider/libpoint_cloud_provider_component.so"
+
+    timer_components : 
+    {
+        class_name : "PointCloudProviderComponent"
+        config :
+        {
+            name : "point_cloud_128_provider"
+            interval : 100
+            flag_file_path: "/apollo/modules/scenario/conf/point_cloud_128_provider_component.conf"
+        }
+    }
+}

@@ -13,9 +13,9 @@ bool ImageProviderComponent::Init()
 
     std::string image_list_content;
 
-    if(!apollo::cyber::common::GetContent(FLAGS_dataset_root_folder + FLAGS_dataset_image_list_file_name, &image_list_content))
+    if(!apollo::cyber::common::GetContent(FLAGS_dataset_root_folder + FLAGS_dataset_image_folder_name + FLAGS_dataset_image_list_file_name, &image_list_content))
     {
-        AERROR << "Unable to open the image list: " << FLAGS_dataset_root_folder + FLAGS_dataset_image_list_file_name;
+        AERROR << "Unable to open the image list: " << FLAGS_dataset_root_folder + FLAGS_dataset_image_folder_name + FLAGS_dataset_image_list_file_name;
         return false;
     }
 
