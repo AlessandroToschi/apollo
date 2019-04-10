@@ -31,6 +31,18 @@ def get_powers_temps(frame_id):
             temps.append(int(components[1]))
     return (powers, temps)
 
+def get_times_for_key(key, timess):
+    return np.array([time[key] for time in timess])
+
+def print_average_times(timess):
+    time_stats = []
+    keys = timess[0].keys()
+    for key in keys:
+        values = get_times_for_key(key, timess)
+        mean = np.round(np.average(values), decimals=2)
+        std_dev = np.round(np.sqrt(np.var(values)), decimals=2)
+        print("{} mean: {} std_dev: {}".format(key, mean, std_dev))
+
 def plot_gant_timess(timess):
     figure, axes1 = plt.subplots(figsize=(20,10))
     ld_p =      np.round(np.average(np.array([time["LaneDetector::Detect:"] for time in timess])), decimals=2)
@@ -210,10 +222,11 @@ def main():
             powers, temps = get_powers_temps(frames_ids[-1])
             powerss += powers
             tempss += temps
-    plot_response_time_obstracles(response_times, frames_ids, obj_detects_per_frame)
-    plot_times_obstacles(timess, frames_ids, obj_detects_per_frame)
-    plot_gant_timess(timess)
-    plot_power_temps(powerss, tempss)
+    print_average_times(timess)
+    #plot_response_time_obstracles(response_times, frames_ids, obj_detects_per_frame)
+    #plot_times_obstacles(timess, frames_ids, obj_detects_per_frame)
+    #plot_gant_timess(timess)
+    #plot_power_temps(powerss, tempss)
 
 
 if __name__ == "__main__":
