@@ -390,6 +390,25 @@ int WriteTimes(bool enable, const std::string &out_path, std::map<std::string, d
   return 1;
 
 }
+
+int WriteTimes2(const std::string &out_path, const std::map<std::string, double> &times)
+{
+  FILE *file_save = fopen(out_path.data(), "wt");
+
+  if(!file_save)
+  {
+    return -1;
+  }
+
+  for(const auto &pair : times)
+  {
+    fprintf(file_save, "%s: %f\n", pair.first, pair.second);
+  }
+
+  fclose(file_save);
+
+  return 1;
+}
 }  // namespace camera
 }  // namespace perception
 }  // namespace apollo

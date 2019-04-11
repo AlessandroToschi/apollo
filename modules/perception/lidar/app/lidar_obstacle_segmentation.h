@@ -74,6 +74,7 @@ class LidarObstacleSegmentation {
   std::string segmentor_name_;
   bool use_map_manager_ = true;
   bool use_object_filter_bank_ = true;
+  std::map<std::string, double> times;
 };  // class LidarObstacleSegmentation
 
 }  // namespace lidar

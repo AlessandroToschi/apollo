@@ -119,6 +119,7 @@ bool SegmentationComponent::InternalProc(
   frame->cloud = base::PointFCloudPool::Instance().Get();
   frame->timestamp = timestamp;
   frame->sensor_info = sensor_info_;
+  frame->frame_id = s_seq_num_;
 
   PERCEPTION_PERF_BLOCK_START();
   Eigen::Affine3d pose = Eigen::Affine3d::Identity();
@@ -139,8 +140,8 @@ bool SegmentationComponent::InternalProc(
   lidar::LidarObstacleSegmentationOptions segment_opts;
   segment_opts.sensor_name = sensor_name_;
   //lidar2world_trans_.GetExtrinsics(&segment_opts.sensor2novatel_extrinsics);
-  lidar::LidarProcessResult ret =
-      segmentor_->Process(segment_opts, in_message, frame.get());
+  lidar::LidarProcessResult ret = segmentor_->Process(segment_opts, in_message, frame.get());
+
   if (ret.error_code != lidar::LidarErrorCode::Succeed) {
     out_message->error_code_ =
         apollo::common::ErrorCode::PERCEPTION_ERROR_PROCESS;

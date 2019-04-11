@@ -103,17 +103,34 @@ LidarProcessResult LidarObstacleSegmentation::Process(
     LidarFrame* frame) {
   const auto& sensor_name = options.sensor_name;
 
+  times.clear();
+  apollo::cyber::Time start_time, end_time;
+
   PERCEPTION_PERF_FUNCTION_WITH_INDICATOR(options.sensor_name);
 
   PERCEPTION_PERF_BLOCK_START();
   PointCloudPreprocessorOptions preprocessor_options;
-  preprocessor_options.sensor2novatel_extrinsics =
-      options.sensor2novatel_extrinsics;
-  if (cloud_preprocessor_.Preprocess(preprocessor_options, message, frame)) {
+  preprocessor_options.sensor2novatel_extrinsics = options.sensor2novatel_extrinsics;
+
+  start_time = apollo::cyber::Time::Now();
+
+  if (cloud_preprocessor_.Preprocess(preprocessor_options, message, frame)) 
+  {
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "preprocess");
-    return ProcessCommon(options, frame);
-  } else {
+
+    end_time = apollo::cyber::Time::Now();
+    times["CloudPreprocessor::Preprocess"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
+
+    LidarProcessResult result = ProcessCommon(options, frame);
+
+    WriteTimes2("/apollo/debug_output/" + std::to_string(frame->frame_id) + "_seg.txt", times);
+
+    return result;
+  } 
+  else 
+  {
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "preprocess");
+    
     return LidarProcessResult(LidarErrorCode::PointCloudPreprocessorError,
                               "Failed to preprocess point cloud.");
   }
@@ -123,7 +140,10 @@ LidarProcessResult LidarObstacleSegmentation::ProcessCommon(
     const LidarObstacleSegmentationOptions& options, LidarFrame* frame) {
   const auto& sensor_name = options.sensor_name;
 
+  apollo::cyber::Time start_time, end_time;
+
   PERCEPTION_PERF_BLOCK_START();
+  start_time = apollo::cyber::Time::Now();
   if (use_map_manager_) {
     MapManagerOptions map_manager_options;
     if (!map_manager_.Update(map_manager_options, frame)) {
@@ -131,27 +151,41 @@ LidarProcessResult LidarObstacleSegmentation::ProcessCommon(
                                 "Failed to update map structure.");
     }
   }
+
+  end_time = apollo::cyber::Time::Now();
+  times["MapManager::Update"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "map_manager");
 
   SegmentationOptions segmentation_options;
+  start_time = apollo::cyber::Time::Now();
   if (!segmentor_->Segment(segmentation_options, frame)) {
     return LidarProcessResult(LidarErrorCode::SegmentationError,
                               "Failed to segment.");
   }
+
+  end_time = apollo::cyber::Time::Now();
+  times["Segmentor::Segment"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "segmentation");
 
   ObjectBuilderOptions builder_options;
+  start_time = apollo::cyber::Time::Now();
   if (!builder_.Build(builder_options, frame)) {
     return LidarProcessResult(LidarErrorCode::ObjectBuilderError,
                               "Failed to build objects.");
   }
+
+  end_time = apollo::cyber::Time::Now();
+  times["ObjectBuilder::Build"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "object_builder");
 
   ObjectFilterOptions filter_options;
+  start_time = apollo::cyber::Time::Now();
   if (!filter_bank_.Filter(filter_options, frame)) {
     return LidarProcessResult(LidarErrorCode::ObjectFilterError,
                               "Failed to filter objects.");
   }
+  end_time = apollo::cyber::Time::Now();
+  times["ObjectFilter::Filter"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "filter_bank");
 
   return LidarProcessResult(LidarErrorCode::Succeed);

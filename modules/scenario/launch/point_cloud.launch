@@ -4,9 +4,9 @@
         <dag_conf>/apollo/modules/scenario/dag/point_cloud_128_provider_component.dag</dag_conf>
         <process_name>point_cloud_128_provider</process_name>
     </module>
-    <module>
-        <name>PointCloud16Provider</name>
-        <dag_conf>/apollo/modules/scenario/dag/point_cloud_16_provider_component.dag</dag_conf>
-        <process_name>point_cloud_16_provider</process_name>
-    </module>
+    #<module>
+    #    <name>PointCloud16Provider</name>
+    #    <dag_conf>/apollo/modules/scenario/dag/point_cloud_16_provider_component.dag</dag_conf>
+    #    <process_name>point_cloud_16_provider</process_name>
+    #</module>
 </cyber>

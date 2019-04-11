@@ -48,12 +48,17 @@ bool RecognitionComponent::Proc(
         << std::to_string(message->timestamp_) << " current timestamp: "
         << std::to_string(lib::TimeUtil::GetCurrentTime());
 
+  apollo::cyber::Time start_time, end_time;
+  start_time = apollo::cyber::Time::Now();
+
   std::shared_ptr<SensorFrameMessage> out_message =
       std::make_shared<SensorFrameMessage>();
 
   if (InternalProc(message, out_message)) {
     writer_->Write(out_message);
     AINFO << "Send lidar recognition output message.";
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "Response time for frame " << in_message->seq_num_ << ": " << (double)(end_time - start_time).ToNanosecond() / 1E6;
     return true;
   }
   return false;

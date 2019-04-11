@@ -54,6 +54,8 @@ struct LidarFrame {
   // reserve string
   std::string reserve;
 
+  uint32_t frame_id;
+
   void Reset() {
     if (cloud) {
       cloud->clear();
@@ -73,6 +75,7 @@ struct LidarFrame {
     tracked_objects.clear();
     roi_indices.indices.clear();
     non_ground_indices.indices.clear();
+    frame_id = 0;
   }
 };  // struct LidarFrame
 
