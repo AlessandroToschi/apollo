@@ -45,6 +45,8 @@ void WriteFusionTracking(std::ofstream &fout, int frame_num,
                          const std::vector<base::ObjectPtr> &tracked_object);
 
 int WriteTimes(bool enable, const std::string &out_path, std::map<std::string, double> times);
+
+int WriteTimes2(const std::string &out_path, const std::map<std::string, double> &times);
 }  // namespace camera
 }  // namespace perception
 }  // namespace apollo

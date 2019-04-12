@@ -402,7 +402,7 @@ int WriteTimes2(const std::string &out_path, const std::map<std::string, double>
 
   for(const auto &pair : times)
   {
-    fprintf(file_save, "%s: %f\n", pair.first, pair.second);
+    fprintf(file_save, "%s: %f\n", pair.first.c_str(), pair.second);
   }
 
   fclose(file_save);

@@ -18,6 +18,7 @@
 #include "cyber/common/file.h"
 #include "modules/perception/lib/config_manager/config_manager.h"
 #include "modules/perception/lib/utils/perf.h"
+#include "modules/perception/camera/app/debug_info.h"
 #include "modules/perception/lidar/app/proto/lidar_obstacle_segmentation_config.pb.h"
 #include "modules/perception/lidar/common/lidar_log.h"
 #include "modules/perception/lidar/lib/scene_manager/scene_manager.h"
@@ -123,7 +124,7 @@ LidarProcessResult LidarObstacleSegmentation::Process(
 
     LidarProcessResult result = ProcessCommon(options, frame);
 
-    WriteTimes2("/apollo/debug_output/" + std::to_string(frame->frame_id) + "_seg.txt", times);
+    apollo::perception::camera::WriteTimes2("/apollo/debug_output/" + std::to_string(frame->frame_id) + "_seg.txt", times);
 
     return result;
   } 

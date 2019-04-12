@@ -31,6 +31,7 @@ cc_library(
         "//modules/perception/lidar/lib/pointcloud_preprocessor",
         "//modules/perception/lidar/lib/scene_manager",
         "//modules/perception/proto:perception_config_schema_proto",
+        "//modules/perception/camera/app:debug_info",
         "@eigen",
     ],
 )
@@ -67,6 +68,7 @@ cc_test(
         "//external:gflags",
         "//modules/perception/common/io:io_util",
         "@gtest//:main",
+        "//modules/perception/camera/app:debug_info"
     ],
 )
 

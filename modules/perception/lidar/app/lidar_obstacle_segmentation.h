@@ -20,6 +20,10 @@
 
 #include "Eigen/Dense"
 
+#include "cyber/cyber.h"
+#include "cyber/common/file.h"
+#include "cyber/common/log.h"
+#include "modules/perception/camera/app/debug_info.h"
 #include "modules/perception/lidar/common/lidar_error_code.h"
 #include "modules/perception/lidar/lib/interface/base_classifier.h"
 #include "modules/perception/lidar/lib/interface/base_segmentation.h"

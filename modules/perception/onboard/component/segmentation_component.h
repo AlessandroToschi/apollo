@@ -19,6 +19,9 @@
 #include <string>
 
 #include "cyber/cyber.h"
+#include "cyber/common/file.h"
+#include "cyber/common/log.h"
+#include "modules/perception/camera/app/debug_info.h"
 #include "modules/drivers/proto/pointcloud.pb.h"
 #include "modules/perception/lidar/app/lidar_obstacle_segmentation.h"
 #include "modules/perception/lidar/common/lidar_frame.h"

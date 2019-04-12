@@ -16,6 +16,7 @@
 #include <gtest/gtest.h>
 
 #include "modules/perception/common/io/io_util.h"
+#include "modules/perception/camera/app/debug_info.h"
 #include "modules/perception/common/perception_gflags.h"
 #include "modules/perception/lidar/app/lidar_obstacle_segmentation.h"
 #include "modules/perception/lidar/app/lidar_obstacle_tracking.h"
