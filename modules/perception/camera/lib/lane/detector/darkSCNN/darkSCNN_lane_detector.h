@@ -20,7 +20,8 @@
 #include <vector>
 
 #include "opencv2/opencv.hpp"
-
+#include <cuda.h>
+#include <cuda_profiler_api.h>
 #include "modules/perception/base/camera.h"
 #include "modules/perception/camera/common/camera_frame.h"
 #include "modules/perception/camera/common/data_provider.h"

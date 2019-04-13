@@ -22,6 +22,7 @@
 #include "modules/perception/camera/common/util.h"
 #include "modules/perception/inference/inference_factory.h"
 #include "modules/perception/inference/utils/resize.h"
+#include "cudaProfiler.h"
 
 namespace apollo {
 namespace perception {
@@ -161,6 +162,11 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
     return false;
   }
 
+  if(frame->frame_id == 10)
+  {
+    cudaProfilerStart();
+  }
+
   auto start = std::chrono::high_resolution_clock::now();
   auto data_provider = frame->data_provider;
   CHECK_EQ(input_width_, data_provider->src_width())
@@ -171,6 +177,8 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
       << data_provider->src_height();
 
   // use data provider to crop input image
+
+
   CHECK(data_provider->GetImage(data_provider_image_option_, &image_src_));
 
   //  bottom 0 is data
@@ -217,6 +225,10 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
     //            0);
     masks.push_back(tmp);
   }
+
+
+
+
   std::vector<int> cnt_pixels(13, 0);
   cv::Mat mask_color(lane_output_height_, lane_output_width_, CV_32FC1);
   mask_color.setTo(cv::Scalar(0));
@@ -246,6 +258,13 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
   ADEBUG << "Avg detection infer time: " << time_1 / time_num
          << " Avg detection merge output time: " << time_2 / time_num;
   ADEBUG << "Lane detection done!";
+
+  if(frame->frame_id == 11)
+  {
+    cudaProfilerStop();
+  }
+
+
   return true;
 }
 

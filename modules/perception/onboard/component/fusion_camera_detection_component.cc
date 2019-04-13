@@ -268,7 +268,7 @@ void FusionCameraDetectionComponent::OnReceiveImage(
   //std::string profiling_command = "perf record -o " + prof_file_name +
   //                                " --call-grap dwarf --event cycles:P,instructions:P,cpu-clock:P,task-clock:P" +
   //                                " sleep 1 -F 4000 -p " + std::to_string(getpid());
-  //AINFO << profiling_command;
+  //AINFO << profiling_command;o
   //system(profiling_command.c_str());
   //ProfilerStart(prof_file_name.c_str());
 

@@ -8,7 +8,7 @@ module_config
         config :
         {
             name : "point_cloud_128_provider"
-            interval : 100
+            interval : 200
             flag_file_path: "/apollo/modules/scenario/conf/point_cloud_128_provider_component.conf"
         }
     }

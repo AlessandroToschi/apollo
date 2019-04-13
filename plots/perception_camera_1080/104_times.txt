@@ -1,0 +1,13 @@
+LaneDetector::Detect: 38.176643
+LanePostprocessor::Process2D: 0.708711
+CalibrationService::Update: 0.038160
+LanePostprocessor::Process3D: 0.014539
+Tracker::Predict: 0.008798
+YoloObstacleDetector::Detect: 9.628291
+FeatureExtractor::Extract: 0.000000
+Tracker::Associate2D: 1.102723
+Transformer::Transform: 0.228096
+ObstaclePostprocessor::Process: 0.064091
+Tracker::Associate3D: 0.440594
+Tracker::Track: 0.000160
+FillObjectPolygon: 0.005538
