@@ -1,0 +1,710 @@
+Log file created at: 2019/04/14 13:50:56
+Running on machine: in_dev_docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0414 13:50:56.239342  6286 class_loader_utility.h:78]  registerclass:FusionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_lidar.so
+I0414 13:50:56.239394  6286 class_loader_utility.h:78]  registerclass:LidarOutputComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_lidar.so
+I0414 13:50:56.239423  6286 class_loader_utility.h:78]  registerclass:RadarDetectionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_lidar.so
+I0414 13:50:56.239456  6286 class_loader_utility.h:78]  registerclass:RecognitionComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_lidar.so
+I0414 13:50:56.239485  6286 class_loader_utility.h:78]  registerclass:SegmentationComponent,apollo::cyber::ComponentBase,/apollo/bazel-bin/modules/perception/onboard/component/libperception_component_lidar.so
+I0414 13:51:04.734447  6286 recognition_component.cc:34]  Lidar Component Configs: main_sensor_name: "velodyne128"
+output_channel_name: "/perception/inner/PrefusedObjects"
+I0414 13:51:28.815573  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221088.815551
+I0414 13:51:28.815594  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221088.815592]:cur_latency[1.55522e+12]
+I0414 13:51:28.913532  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:28.913568  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221088.913559
+I0414 13:51:28.915033  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221088.915027]:cur_latency[1.55522e+12]
+I0414 13:51:28.915047  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:28.915051  6295 recognition_component.cc:61]  Response time for frame 1: 1.47774
+I0414 13:51:29.016983  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221089.016885
+I0414 13:51:29.017053  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221089.017040]:cur_latency[1.55522e+12]
+I0414 13:51:29.049507  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:29.049526  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221089.049524
+I0414 13:51:29.052492  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221089.052491]:cur_latency[1.55522e+12]
+I0414 13:51:29.052500  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:29.052505  6299 recognition_component.cc:61]  Response time for frame 2: 2.97538
+I0414 13:51:29.212985  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221089.212958
+I0414 13:51:29.213016  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221089.213012]:cur_latency[1.55522e+12]
+I0414 13:51:29.241569  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:29.241588  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221089.241585
+I0414 13:51:29.241709  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221089.241708]:cur_latency[1.55522e+12]
+I0414 13:51:29.241726  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:29.241731  6292 recognition_component.cc:61]  Response time for frame 3: 0.139522
+I0414 13:51:29.416399  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221089.416382
+I0414 13:51:29.416429  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221089.416424]:cur_latency[1.55522e+12]
+I0414 13:51:29.446040  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:29.446063  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221089.446056
+I0414 13:51:29.446939  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221089.446936]:cur_latency[1.55522e+12]
+I0414 13:51:29.446952  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:29.446960  6294 recognition_component.cc:61]  Response time for frame 4: 0.889068
+I0414 13:51:29.625016  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221089.624911
+I0414 13:51:29.625097  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221089.625080]:cur_latency[1.55522e+12]
+I0414 13:51:29.655645  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:29.655668  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221089.655664
+I0414 13:51:29.656473  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221089.656470]:cur_latency[1.55522e+12]
+I0414 13:51:29.656484  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:29.656491  6298 recognition_component.cc:61]  Response time for frame 5: 0.815824
+I0414 13:51:29.820557  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221089.820512
+I0414 13:51:29.820629  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221089.820616]:cur_latency[1.55522e+12]
+I0414 13:51:29.853340  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:29.853358  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221089.853356
+I0414 13:51:29.855047  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221089.855045]:cur_latency[1.55522e+12]
+I0414 13:51:29.855056  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:29.855059  6291 recognition_component.cc:61]  Response time for frame 6: 1.69757
+I0414 13:51:30.019181  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221090.019167
+I0414 13:51:30.019206  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221090.019202]:cur_latency[1.55522e+12]
+I0414 13:51:30.047560  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:30.047578  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221090.047575
+I0414 13:51:30.048545  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221090.048543]:cur_latency[1.55522e+12]
+I0414 13:51:30.048553  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:30.048557  6296 recognition_component.cc:61]  Response time for frame 7: 0.974875
+I0414 13:51:30.206470  6288 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221090.206454
+I0414 13:51:30.206491  6288 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221090.206489]:cur_latency[1.55522e+12]
+I0414 13:51:30.232467  6288 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:30.232482  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221090.232479
+I0414 13:51:30.233376  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221090.233375]:cur_latency[1.55522e+12]
+I0414 13:51:30.233386  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:30.233387  6288 recognition_component.cc:61]  Response time for frame 8: 0.90062
+I0414 13:51:30.421278  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221090.421192
+I0414 13:51:30.421357  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221090.421342]:cur_latency[1.55522e+12]
+I0414 13:51:30.451751  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:30.451764  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221090.451762
+I0414 13:51:30.452335  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221090.452334]:cur_latency[1.55522e+12]
+I0414 13:51:30.452343  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:30.452347  6293 recognition_component.cc:61]  Response time for frame 9: 0.578414
+I0414 13:51:30.615804  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221090.615791
+I0414 13:51:30.615826  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221090.615824]:cur_latency[1.55522e+12]
+I0414 13:51:30.641321  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:30.641338  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221090.641335
+I0414 13:51:30.641737  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221090.641736]:cur_latency[1.55522e+12]
+I0414 13:51:30.641747  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:30.641750  6295 recognition_component.cc:61]  Response time for frame 10: 0.407969
+I0414 13:51:30.823755  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221090.823716
+I0414 13:51:30.823829  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221090.823820]:cur_latency[1.55522e+12]
+I0414 13:51:30.870507  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:30.870532  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221090.870521
+I0414 13:51:30.872301  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221090.872298]:cur_latency[1.55522e+12]
+I0414 13:51:30.872313  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:30.872318  6288 recognition_component.cc:61]  Response time for frame 11: 1.77623
+I0414 13:51:31.020931  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221091.020893
+I0414 13:51:31.021003  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221091.020993]:cur_latency[1.55522e+12]
+I0414 13:51:31.051865  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:31.051883  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221091.051881
+I0414 13:51:31.053306  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221091.053305]:cur_latency[1.55522e+12]
+I0414 13:51:31.053314  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:31.053318  6291 recognition_component.cc:61]  Response time for frame 12: 1.43094
+I0414 13:51:31.207020  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221091.207003
+I0414 13:51:31.207044  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221091.207041]:cur_latency[1.55522e+12]
+I0414 13:51:31.237581  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:31.237593  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221091.237591
+I0414 13:51:31.240630  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221091.240629]:cur_latency[1.55522e+12]
+I0414 13:51:31.240638  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:31.240641  6297 recognition_component.cc:61]  Response time for frame 13: 3.04479
+I0414 13:51:31.412330  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221091.412314
+I0414 13:51:31.412358  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221091.412356]:cur_latency[1.55522e+12]
+I0414 13:51:31.439191  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:31.439213  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221091.439205
+I0414 13:51:31.439522  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221091.439520]:cur_latency[1.55522e+12]
+I0414 13:51:31.439532  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:31.439535  6288 recognition_component.cc:61]  Response time for frame 14: 0.318048
+I0414 13:51:31.620919  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221091.620873
+I0414 13:51:31.620991  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221091.620978]:cur_latency[1.55522e+12]
+I0414 13:51:31.666497  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:31.666527  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221091.666522
+I0414 13:51:31.667357  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221091.667355]:cur_latency[1.55522e+12]
+I0414 13:51:31.667369  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:31.667374  6290 recognition_component.cc:61]  Response time for frame 15: 0.839221
+I0414 13:51:31.821408  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221091.821372
+I0414 13:51:31.821475  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221091.821467]:cur_latency[1.55522e+12]
+I0414 13:51:31.866394  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:31.866415  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221091.866411
+I0414 13:51:31.867466  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221091.867464]:cur_latency[1.55522e+12]
+I0414 13:51:31.867477  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:31.867482  6296 recognition_component.cc:61]  Response time for frame 16: 1.06413
+I0414 13:51:32.015650  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221092.015637
+I0414 13:51:32.015671  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221092.015670]:cur_latency[1.55522e+12]
+I0414 13:51:32.041091  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:32.041106  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221092.041100
+I0414 13:51:32.042121  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221092.042120]:cur_latency[1.55522e+12]
+I0414 13:51:32.042129  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:32.042132  6299 recognition_component.cc:61]  Response time for frame 17: 1.01576
+I0414 13:51:32.219194  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221092.219164
+I0414 13:51:32.219259  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221092.219250]:cur_latency[1.55522e+12]
+I0414 13:51:32.249151  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:32.249169  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221092.249167
+I0414 13:51:32.250195  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221092.250194]:cur_latency[1.55522e+12]
+I0414 13:51:32.250203  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:32.250206  6292 recognition_component.cc:61]  Response time for frame 18: 1.034
+I0414 13:51:32.409973  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221092.409954
+I0414 13:51:32.410009  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221092.410006]:cur_latency[1.55522e+12]
+I0414 13:51:32.448506  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:32.448532  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221092.448528
+I0414 13:51:32.451375  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221092.451372]:cur_latency[1.55522e+12]
+I0414 13:51:32.451385  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:32.451390  6295 recognition_component.cc:61]  Response time for frame 19: 2.85173
+I0414 13:51:32.619366  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221092.619332
+I0414 13:51:32.619432  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221092.619424]:cur_latency[1.55522e+12]
+I0414 13:51:32.661487  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:32.661506  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221092.661498
+I0414 13:51:32.662276  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221092.662272]:cur_latency[1.55522e+12]
+I0414 13:51:32.662286  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:32.662288  6288 recognition_component.cc:61]  Response time for frame 20: 0.7746
+I0414 13:51:32.810173  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221092.810154
+I0414 13:51:32.810199  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221092.810197]:cur_latency[1.55522e+12]
+I0414 13:51:32.839968  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:32.840006  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221092.839991
+I0414 13:51:32.840945  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221092.840942]:cur_latency[1.55522e+12]
+I0414 13:51:32.840955  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:32.840960  6290 recognition_component.cc:61]  Response time for frame 21: 0.935629
+I0414 13:51:33.014837  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221093.014824
+I0414 13:51:33.014859  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221093.014858]:cur_latency[1.55522e+12]
+I0414 13:51:33.041050  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:33.041066  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221093.041064
+I0414 13:51:33.042537  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221093.042535]:cur_latency[1.55522e+12]
+I0414 13:51:33.042546  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:33.042549  6294 recognition_component.cc:61]  Response time for frame 22: 1.48048
+I0414 13:51:33.212182  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221093.212168
+I0414 13:51:33.212209  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221093.212207]:cur_latency[1.55522e+12]
+I0414 13:51:33.244596  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:33.244618  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221093.244611
+I0414 13:51:33.247867  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221093.247866]:cur_latency[1.55522e+12]
+I0414 13:51:33.247876  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:33.247879  6288 recognition_component.cc:61]  Response time for frame 23: 3.25387
+I0414 13:51:33.410217  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221093.410198
+I0414 13:51:33.410251  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221093.410248]:cur_latency[1.55522e+12]
+I0414 13:51:33.440521  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:33.440557  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221093.440553
+I0414 13:51:33.441376  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221093.441374]:cur_latency[1.55522e+12]
+I0414 13:51:33.441385  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:33.441388  6293 recognition_component.cc:61]  Response time for frame 24: 0.828511
+I0414 13:51:33.616514  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221093.616500
+I0414 13:51:33.616541  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221093.616539]:cur_latency[1.55522e+12]
+I0414 13:51:33.643389  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:33.643406  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221093.643404
+I0414 13:51:33.644023  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221093.644021]:cur_latency[1.55522e+12]
+I0414 13:51:33.644032  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:33.644035  6297 recognition_component.cc:61]  Response time for frame 25: 0.625451
+I0414 13:51:33.820096  6289 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221093.820026
+I0414 13:51:33.820168  6289 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221093.820154]:cur_latency[1.55522e+12]
+I0414 13:51:33.865731  6289 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:33.865752  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221093.865748
+I0414 13:51:33.866283  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221093.866281]:cur_latency[1.55522e+12]
+I0414 13:51:33.866293  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:33.866298  6289 recognition_component.cc:61]  Response time for frame 26: 0.542045
+I0414 13:51:34.019116  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221094.019081
+I0414 13:51:34.019188  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221094.019177]:cur_latency[1.55522e+12]
+I0414 13:51:34.048825  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:34.048844  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221094.048841
+I0414 13:51:34.049901  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221094.049899]:cur_latency[1.55522e+12]
+I0414 13:51:34.049911  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:34.049916  6291 recognition_component.cc:61]  Response time for frame 27: 1.0659
+I0414 13:51:34.215780  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221094.215765
+I0414 13:51:34.215801  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221094.215799]:cur_latency[1.55522e+12]
+I0414 13:51:34.241170  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:34.241185  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221094.241183
+I0414 13:51:34.241829  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221094.241828]:cur_latency[1.55522e+12]
+I0414 13:51:34.241837  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:34.241839  6295 recognition_component.cc:61]  Response time for frame 28: 0.650908
+I0414 13:51:34.407577  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221094.407564
+I0414 13:51:34.407600  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221094.407599]:cur_latency[1.55522e+12]
+I0414 13:51:34.434648  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:34.434669  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221094.434665
+I0414 13:51:34.435925  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221094.435922]:cur_latency[1.55522e+12]
+I0414 13:51:34.435932  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:34.435935  6298 recognition_component.cc:61]  Response time for frame 29: 1.26363
+I0414 13:51:34.621340  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221094.621302
+I0414 13:51:34.621412  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221094.621402]:cur_latency[1.55522e+12]
+I0414 13:51:34.650807  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:34.650826  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221094.650824
+I0414 13:51:34.651844  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221094.651841]:cur_latency[1.55522e+12]
+I0414 13:51:34.651854  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:34.651857  6292 recognition_component.cc:61]  Response time for frame 30: 1.02859
+I0414 13:51:34.812252  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221094.812235
+I0414 13:51:34.812281  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221094.812278]:cur_latency[1.55522e+12]
+I0414 13:51:34.846220  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:34.846236  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221094.846233
+I0414 13:51:34.849344  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221094.849342]:cur_latency[1.55522e+12]
+I0414 13:51:34.849354  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:34.849357  6296 recognition_component.cc:61]  Response time for frame 31: 3.11756
+I0414 13:51:35.016345  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221095.016333
+I0414 13:51:35.016369  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221095.016368]:cur_latency[1.55522e+12]
+I0414 13:51:35.042896  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:35.042920  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221095.042912
+I0414 13:51:35.043422  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221095.043419]:cur_latency[1.55522e+12]
+I0414 13:51:35.043432  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:35.043435  6298 recognition_component.cc:61]  Response time for frame 32: 0.506512
+I0414 13:51:35.219202  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221095.219162
+I0414 13:51:35.219266  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221095.219258]:cur_latency[1.55522e+12]
+I0414 13:51:35.249045  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:35.249063  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221095.249053
+I0414 13:51:35.250524  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221095.250523]:cur_latency[1.55522e+12]
+I0414 13:51:35.250532  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:35.250535  6292 recognition_component.cc:61]  Response time for frame 33: 1.46429
+I0414 13:51:35.421690  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221095.421651
+I0414 13:51:35.421761  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221095.421752]:cur_latency[1.55522e+12]
+I0414 13:51:35.464591  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:35.464617  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221095.464611
+I0414 13:51:35.465080  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221095.465072]:cur_latency[1.55522e+12]
+I0414 13:51:35.465096  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:35.465102  6295 recognition_component.cc:61]  Response time for frame 34: 0.477353
+I0414 13:51:35.614974  6288 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221095.614961
+I0414 13:51:35.614995  6288 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221095.614994]:cur_latency[1.55522e+12]
+I0414 13:51:35.641875  6288 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:35.641889  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221095.641887
+I0414 13:51:35.642701  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221095.642699]:cur_latency[1.55522e+12]
+I0414 13:51:35.642710  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:35.642714  6288 recognition_component.cc:61]  Response time for frame 35: 0.819936
+I0414 13:51:35.816397  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221095.816384
+I0414 13:51:35.816422  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221095.816420]:cur_latency[1.55522e+12]
+I0414 13:51:35.844799  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:35.844815  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221095.844814
+I0414 13:51:35.846303  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221095.846301]:cur_latency[1.55522e+12]
+I0414 13:51:35.846310  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:35.846313  6290 recognition_component.cc:61]  Response time for frame 36: 1.49428
+I0414 13:51:36.021380  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221096.021336
+I0414 13:51:36.021452  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221096.021444]:cur_latency[1.55522e+12]
+I0414 13:51:36.065937  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:36.065959  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221096.065954
+I0414 13:51:36.066727  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221096.066725]:cur_latency[1.55522e+12]
+I0414 13:51:36.066735  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:36.066738  6296 recognition_component.cc:61]  Response time for frame 37: 0.771902
+I0414 13:51:36.219296  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221096.219265
+I0414 13:51:36.219363  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221096.219355]:cur_latency[1.55522e+12]
+I0414 13:51:36.260751  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:36.260779  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221096.260774
+I0414 13:51:36.261570  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221096.261565]:cur_latency[1.55522e+12]
+I0414 13:51:36.261586  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:36.261592  6298 recognition_component.cc:61]  Response time for frame 38: 0.806231
+I0414 13:51:36.423949  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221096.423907
+I0414 13:51:36.424023  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221096.424011]:cur_latency[1.55522e+12]
+I0414 13:51:36.454284  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:36.454303  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221096.454301
+I0414 13:51:36.455519  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221096.455517]:cur_latency[1.55522e+12]
+I0414 13:51:36.455528  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:36.455533  6291 recognition_component.cc:61]  Response time for frame 39: 1.22398
+I0414 13:51:36.609191  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221096.609173
+I0414 13:51:36.609225  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221096.609222]:cur_latency[1.55522e+12]
+I0414 13:51:36.644042  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:36.644080  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221096.644074
+I0414 13:51:36.648241  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221096.648237]:cur_latency[1.55522e+12]
+I0414 13:51:36.648250  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:36.648254  6295 recognition_component.cc:61]  Response time for frame 40: 4.16629
+I0414 13:51:36.825058  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221096.825026
+I0414 13:51:36.825129  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221096.825119]:cur_latency[1.55522e+12]
+I0414 13:51:36.870967  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:36.870985  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221096.870981
+I0414 13:51:36.872149  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221096.872147]:cur_latency[1.55522e+12]
+I0414 13:51:36.872157  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:36.872160  6299 recognition_component.cc:61]  Response time for frame 41: 1.17209
+I0414 13:51:37.019649  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221097.019611
+I0414 13:51:37.019719  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221097.019710]:cur_latency[1.55522e+12]
+I0414 13:51:37.065148  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:37.065172  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221097.065168
+I0414 13:51:37.069219  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221097.069217]:cur_latency[1.55522e+12]
+I0414 13:51:37.069231  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:37.069236  6292 recognition_component.cc:61]  Response time for frame 42: 4.05939
+I0414 13:51:37.215837  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221097.215826
+I0414 13:51:37.215858  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221097.215856]:cur_latency[1.55522e+12]
+I0414 13:51:37.240960  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:37.240983  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221097.240970
+I0414 13:51:37.241739  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221097.241735]:cur_latency[1.55522e+12]
+I0414 13:51:37.241750  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:37.241755  6295 recognition_component.cc:61]  Response time for frame 43: 0.758846
+I0414 13:51:37.423992  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221097.423956
+I0414 13:51:37.424058  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221097.424050]:cur_latency[1.55522e+12]
+I0414 13:51:37.466272  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:37.466300  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221097.466285
+I0414 13:51:37.467448  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221097.467446]:cur_latency[1.55522e+12]
+I0414 13:51:37.467458  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:37.467463  6299 recognition_component.cc:61]  Response time for frame 44: 1.14736
+I0414 13:51:37.619073  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221097.619036
+I0414 13:51:37.619145  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221097.619134]:cur_latency[1.55522e+12]
+I0414 13:51:37.664556  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:37.664587  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221097.664580
+I0414 13:51:37.665921  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221097.665916]:cur_latency[1.55522e+12]
+I0414 13:51:37.665937  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:37.665946  6293 recognition_component.cc:61]  Response time for frame 45: 1.35069
+I0414 13:51:37.813930  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221097.813896
+I0414 13:51:37.813988  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221097.813981]:cur_latency[1.55522e+12]
+I0414 13:51:37.843869  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:37.843883  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221097.843881
+I0414 13:51:37.844956  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221097.844955]:cur_latency[1.55522e+12]
+I0414 13:51:37.844964  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:37.844965  6294 recognition_component.cc:61]  Response time for frame 46: 1.07907
+I0414 13:51:38.011844  6289 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221098.011833
+I0414 13:51:38.011868  6289 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221098.011866]:cur_latency[1.55522e+12]
+I0414 13:51:38.039237  6289 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:38.039255  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221098.039252
+I0414 13:51:38.040436  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221098.040432]:cur_latency[1.55522e+12]
+I0414 13:51:38.040444  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:38.040448  6289 recognition_component.cc:61]  Response time for frame 47: 1.18839
+I0414 13:51:38.221208  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221098.221170
+I0414 13:51:38.221276  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221098.221268]:cur_latency[1.55522e+12]
+I0414 13:51:38.271610  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:38.271630  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221098.271625
+I0414 13:51:38.275372  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221098.275370]:cur_latency[1.55522e+12]
+I0414 13:51:38.275384  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:38.275390  6291 recognition_component.cc:61]  Response time for frame 48: 3.7544
+I0414 13:51:38.420089  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221098.420076
+I0414 13:51:38.420117  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221098.420114]:cur_latency[1.55522e+12]
+I0414 13:51:38.446974  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:38.446993  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221098.446990
+I0414 13:51:38.448348  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221098.448346]:cur_latency[1.55522e+12]
+I0414 13:51:38.448357  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:38.448362  6297 recognition_component.cc:61]  Response time for frame 49: 1.36381
+I0414 13:51:38.621970  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221098.621938
+I0414 13:51:38.622036  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221098.622027]:cur_latency[1.55522e+12]
+I0414 13:51:38.668560  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:38.668583  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221098.668579
+I0414 13:51:38.670842  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221098.670840]:cur_latency[1.55522e+12]
+I0414 13:51:38.670850  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:38.670857  6299 recognition_component.cc:61]  Response time for frame 50: 2.26739
+I0414 13:51:38.809718  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221098.809699
+I0414 13:51:38.809751  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221098.809747]:cur_latency[1.55522e+12]
+I0414 13:51:38.845423  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:38.845449  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221098.845445
+I0414 13:51:38.847635  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221098.847633]:cur_latency[1.55522e+12]
+I0414 13:51:38.847645  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:38.847648  6290 recognition_component.cc:61]  Response time for frame 51: 2.19381
+I0414 13:51:39.021291  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221099.021254
+I0414 13:51:39.021361  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221099.021353]:cur_latency[1.55522e+12]
+I0414 13:51:39.052372  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:39.052392  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221099.052389
+I0414 13:51:39.053268  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221099.053267]:cur_latency[1.55522e+12]
+I0414 13:51:39.053277  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:39.053280  6295 recognition_component.cc:61]  Response time for frame 52: 0.884466
+I0414 13:51:39.216780  6288 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221099.216770
+I0414 13:51:39.216802  6288 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221099.216798]:cur_latency[1.55522e+12]
+I0414 13:51:39.242615  6288 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:39.242637  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221099.242633
+I0414 13:51:39.243767  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221099.243764]:cur_latency[1.55522e+12]
+I0414 13:51:39.243777  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:39.243782  6288 recognition_component.cc:61]  Response time for frame 53: 1.13979
+I0414 13:51:39.412380  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221099.412363
+I0414 13:51:39.412411  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221099.412407]:cur_latency[1.55522e+12]
+I0414 13:51:39.442880  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:39.442909  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221099.442901
+I0414 13:51:39.443449  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221099.443443]:cur_latency[1.55522e+12]
+I0414 13:51:39.443466  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:39.443475  6293 recognition_component.cc:61]  Response time for frame 54: 0.555543
+I0414 13:51:39.608330  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221099.608311
+I0414 13:51:39.608356  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221099.608354]:cur_latency[1.55522e+12]
+I0414 13:51:39.641587  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:39.641609  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221099.641606
+I0414 13:51:39.643693  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221099.643690]:cur_latency[1.55522e+12]
+I0414 13:51:39.643707  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:39.643712  6296 recognition_component.cc:61]  Response time for frame 55: 2.09831
+I0414 13:51:39.815834  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221099.815820
+I0414 13:51:39.815856  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221099.815855]:cur_latency[1.55522e+12]
+I0414 13:51:39.841423  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:39.841440  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221099.841438
+I0414 13:51:39.843106  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221099.843105]:cur_latency[1.55522e+12]
+I0414 13:51:39.843113  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:39.843116  6298 recognition_component.cc:61]  Response time for frame 56: 1.67266
+I0414 13:51:40.011790  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221100.011761
+I0414 13:51:40.011837  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221100.011832]:cur_latency[1.55522e+12]
+I0414 13:51:40.057132  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:40.057171  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221100.057150
+I0414 13:51:40.057934  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221100.057930]:cur_latency[1.55522e+12]
+I0414 13:51:40.057947  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:40.057952  6290 recognition_component.cc:61]  Response time for frame 57: 0.754301
+I0414 13:51:40.219034  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221100.218995
+I0414 13:51:40.219099  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221100.219091]:cur_latency[1.55522e+12]
+I0414 13:51:40.249624  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:40.249639  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221100.249637
+I0414 13:51:40.251482  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221100.251479]:cur_latency[1.55522e+12]
+I0414 13:51:40.251489  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:40.251493  6297 recognition_component.cc:61]  Response time for frame 58: 1.84903
+I0414 13:51:40.411283  6289 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221100.411272
+I0414 13:51:40.411304  6289 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221100.411303]:cur_latency[1.55522e+12]
+I0414 13:51:40.437208  6289 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:40.437225  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221100.437223
+I0414 13:51:40.438817  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221100.438814]:cur_latency[1.55522e+12]
+I0414 13:51:40.438824  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:40.438828  6289 recognition_component.cc:61]  Response time for frame 59: 1.59879
+I0414 13:51:40.616418  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221100.616401
+I0414 13:51:40.616444  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221100.616442]:cur_latency[1.55522e+12]
+I0414 13:51:40.643399  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:40.643414  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221100.643411
+I0414 13:51:40.644098  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221100.644096]:cur_latency[1.55522e+12]
+I0414 13:51:40.644106  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:40.644111  6292 recognition_component.cc:61]  Response time for frame 60: 0.692154
+I0414 13:51:40.821030  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221100.820988
+I0414 13:51:40.821105  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221100.821096]:cur_latency[1.55522e+12]
+I0414 13:51:40.872866  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:40.872891  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221100.872888
+I0414 13:51:40.877930  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221100.877928]:cur_latency[1.55522e+12]
+I0414 13:51:40.877941  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:40.877946  6295 recognition_component.cc:61]  Response time for frame 61: 5.04824
+I0414 13:51:41.011193  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221101.011163
+I0414 13:51:41.011240  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221101.011234]:cur_latency[1.55522e+12]
+I0414 13:51:41.055394  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:41.055419  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221101.055415
+I0414 13:51:41.058050  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221101.058048]:cur_latency[1.55522e+12]
+I0414 13:51:41.058063  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:41.058068  6299 recognition_component.cc:61]  Response time for frame 62: 2.6442
+I0414 13:51:41.214933  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221101.214921
+I0414 13:51:41.214956  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221101.214954]:cur_latency[1.55522e+12]
+I0414 13:51:41.240576  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:41.240593  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221101.240591
+I0414 13:51:41.241403  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221101.241401]:cur_latency[1.55522e+12]
+I0414 13:51:41.241413  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:41.241420  6291 recognition_component.cc:61]  Response time for frame 63: 0.820789
+I0414 13:51:41.418253  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221101.418213
+I0414 13:51:41.418320  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221101.418312]:cur_latency[1.55522e+12]
+I0414 13:51:41.465443  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:41.465466  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221101.465463
+I0414 13:51:41.469871  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221101.469868]:cur_latency[1.55522e+12]
+I0414 13:51:41.469882  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:41.469887  6296 recognition_component.cc:61]  Response time for frame 64: 4.4139
+I0414 13:51:41.619627  6288 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221101.619585
+I0414 13:51:41.619698  6288 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221101.619687]:cur_latency[1.55522e+12]
+I0414 13:51:41.648845  6288 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:41.648860  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221101.648858
+I0414 13:51:41.649657  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221101.649655]:cur_latency[1.55522e+12]
+I0414 13:51:41.649663  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:41.649665  6288 recognition_component.cc:61]  Response time for frame 65: 0.801241
+I0414 13:51:41.818913  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221101.818882
+I0414 13:51:41.818984  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221101.818975]:cur_latency[1.55522e+12]
+I0414 13:51:41.866828  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:41.866849  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221101.866847
+I0414 13:51:41.870851  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221101.870849]:cur_latency[1.55522e+12]
+I0414 13:51:41.870862  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:41.870865  6290 recognition_component.cc:61]  Response time for frame 66: 4.0103
+I0414 13:51:42.007313  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221102.007296
+I0414 13:51:42.007338  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221102.007336]:cur_latency[1.55522e+12]
+I0414 13:51:42.033601  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:42.033617  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221102.033614
+I0414 13:51:42.034451  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221102.034449]:cur_latency[1.55522e+12]
+I0414 13:51:42.034456  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:42.034459  6294 recognition_component.cc:61]  Response time for frame 67: 0.838963
+I0414 13:51:42.214855  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221102.214839
+I0414 13:51:42.214876  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221102.214875]:cur_latency[1.55522e+12]
+I0414 13:51:42.241003  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:42.241029  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221102.241019
+I0414 13:51:42.241820  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221102.241818]:cur_latency[1.55522e+12]
+I0414 13:51:42.241829  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:42.241832  6288 recognition_component.cc:61]  Response time for frame 68: 0.797175
+I0414 13:51:42.411525  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221102.411509
+I0414 13:51:42.411552  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221102.411551]:cur_latency[1.55522e+12]
+I0414 13:51:42.442020  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:42.442044  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221102.442040
+I0414 13:51:42.443715  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221102.443713]:cur_latency[1.55522e+12]
+I0414 13:51:42.443723  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:42.443727  6293 recognition_component.cc:61]  Response time for frame 69: 1.67933
+I0414 13:51:42.614814  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221102.614798
+I0414 13:51:42.614835  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221102.614834]:cur_latency[1.55522e+12]
+I0414 13:51:42.641582  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:42.641598  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221102.641596
+I0414 13:51:42.644352  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221102.644351]:cur_latency[1.55522e+12]
+I0414 13:51:42.644359  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:42.644362  6297 recognition_component.cc:61]  Response time for frame 70: 2.76121
+I0414 13:51:42.818882  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221102.818843
+I0414 13:51:42.818951  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221102.818942]:cur_latency[1.55522e+12]
+I0414 13:51:42.864665  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:42.864701  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221102.864694
+I0414 13:51:42.865960  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221102.865958]:cur_latency[1.55522e+12]
+I0414 13:51:42.865970  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:42.865973  6299 recognition_component.cc:61]  Response time for frame 71: 1.26469
+I0414 13:51:43.019528  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221103.019492
+I0414 13:51:43.019598  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221103.019589]:cur_latency[1.55522e+12]
+I0414 13:51:43.066232  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:43.066267  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221103.066260
+I0414 13:51:43.069636  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221103.069631]:cur_latency[1.55522e+12]
+I0414 13:51:43.069653  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:43.069663  6292 recognition_component.cc:61]  Response time for frame 72: 3.38431
+I0414 13:51:43.218179  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221103.218137
+I0414 13:51:43.218247  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221103.218238]:cur_latency[1.55522e+12]
+I0414 13:51:43.263811  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:43.263840  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221103.263835
+I0414 13:51:43.266424  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221103.266422]:cur_latency[1.55522e+12]
+I0414 13:51:43.266438  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:43.266444  6295 recognition_component.cc:61]  Response time for frame 73: 2.59835
+I0414 13:51:43.419003  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221103.418960
+I0414 13:51:43.419076  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221103.419067]:cur_latency[1.55522e+12]
+I0414 13:51:43.465385  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:43.465412  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221103.465398
+I0414 13:51:43.467229  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221103.467226]:cur_latency[1.55522e+12]
+I0414 13:51:43.467238  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:43.467242  6289 recognition_component.cc:61]  Response time for frame 74: 1.81373
+I0414 13:51:43.615044  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221103.615010
+I0414 13:51:43.615097  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221103.615090]:cur_latency[1.55522e+12]
+I0414 13:51:43.647495  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:43.647513  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221103.647511
+I0414 13:51:43.649384  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221103.649383]:cur_latency[1.55522e+12]
+I0414 13:51:43.649391  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:43.649394  6291 recognition_component.cc:61]  Response time for frame 75: 1.87765
+I0414 13:51:43.819056  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221103.819038
+I0414 13:51:43.819078  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221103.819077]:cur_latency[1.55522e+12]
+I0414 13:51:43.847918  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:43.847931  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221103.847929
+I0414 13:51:43.849304  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221103.849302]:cur_latency[1.55522e+12]
+I0414 13:51:43.849313  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:43.849315  6296 recognition_component.cc:61]  Response time for frame 76: 1.3807
+I0414 13:51:44.017397  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221104.017356
+I0414 13:51:44.017469  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221104.017460]:cur_latency[1.55522e+12]
+I0414 13:51:44.060998  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:44.061023  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221104.061019
+I0414 13:51:44.064585  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221104.064583]:cur_latency[1.55522e+12]
+I0414 13:51:44.064594  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:44.064595  6298 recognition_component.cc:61]  Response time for frame 77: 3.56668
+I0414 13:51:44.212404  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221104.212388
+I0414 13:51:44.212429  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221104.212427]:cur_latency[1.55522e+12]
+I0414 13:51:44.242928  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:44.242941  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221104.242939
+I0414 13:51:44.244707  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221104.244705]:cur_latency[1.55522e+12]
+I0414 13:51:44.244716  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:44.244719  6293 recognition_component.cc:61]  Response time for frame 78: 1.77406
+I0414 13:51:44.419752  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221104.419714
+I0414 13:51:44.419826  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221104.419816]:cur_latency[1.55522e+12]
+I0414 13:51:44.464586  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:44.464624  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221104.464601
+I0414 13:51:44.467231  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221104.467227]:cur_latency[1.55522e+12]
+I0414 13:51:44.467241  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:44.467243  6296 recognition_component.cc:61]  Response time for frame 79: 2.59987
+I0414 13:51:44.619098  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221104.619060
+I0414 13:51:44.619165  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221104.619157]:cur_latency[1.55522e+12]
+I0414 13:51:44.664358  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:44.664392  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221104.664378
+I0414 13:51:44.665586  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221104.665581]:cur_latency[1.55522e+12]
+I0414 13:51:44.665601  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:44.665607  6298 recognition_component.cc:61]  Response time for frame 80: 1.19546
+I0414 13:51:44.815222  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221104.815206
+I0414 13:51:44.815246  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221104.815244]:cur_latency[1.55522e+12]
+I0414 13:51:44.842315  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:44.842334  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221104.842332
+I0414 13:51:44.843618  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221104.843615]:cur_latency[1.55522e+12]
+I0414 13:51:44.843631  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:44.843636  6291 recognition_component.cc:61]  Response time for frame 81: 1.29757
+I0414 13:51:45.020246  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221105.020207
+I0414 13:51:45.020318  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221105.020310]:cur_latency[1.55522e+12]
+I0414 13:51:45.051384  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:45.051403  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221105.051400
+I0414 13:51:45.053721  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221105.053719]:cur_latency[1.55522e+12]
+I0414 13:51:45.053730  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:45.053733  6294 recognition_component.cc:61]  Response time for frame 82: 2.32842
+I0414 13:51:45.210897  6288 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221105.210884
+I0414 13:51:45.210920  6288 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221105.210919]:cur_latency[1.55522e+12]
+I0414 13:51:45.237897  6288 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:45.237912  6288 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221105.237909
+I0414 13:51:45.240291  6288 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221105.240289]:cur_latency[1.55522e+12]
+I0414 13:51:45.240299  6288 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:45.240303  6288 recognition_component.cc:61]  Response time for frame 83: 2.38471
+I0414 13:51:45.408380  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221105.408359
+I0414 13:51:45.408408  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221105.408406]:cur_latency[1.55522e+12]
+I0414 13:51:45.438215  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:45.438239  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221105.438236
+I0414 13:51:45.439254  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221105.439251]:cur_latency[1.55522e+12]
+I0414 13:51:45.439267  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:45.439273  6290 recognition_component.cc:61]  Response time for frame 84: 1.02874
+I0414 13:51:45.618901  6297 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221105.618857
+I0414 13:51:45.618968  6297 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221105.618960]:cur_latency[1.55522e+12]
+I0414 13:51:45.665685  6297 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:45.665709  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221105.665705
+I0414 13:51:45.669541  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221105.669539]:cur_latency[1.55522e+12]
+I0414 13:51:45.669553  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:45.669559  6297 recognition_component.cc:61]  Response time for frame 85: 3.84617
+I0414 13:51:45.823184  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221105.823151
+I0414 13:51:45.823252  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221105.823243]:cur_latency[1.55522e+12]
+I0414 13:51:45.869127  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:45.869161  6299 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221105.869155
+I0414 13:51:45.871091  6299 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221105.871088]:cur_latency[1.55522e+12]
+I0414 13:51:45.871109  6299 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:45.871114  6299 recognition_component.cc:61]  Response time for frame 86: 1.94561
+I0414 13:51:46.014837  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221106.014822
+I0414 13:51:46.014860  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221106.014859]:cur_latency[1.55522e+12]
+I0414 13:51:46.041698  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:46.041723  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221106.041720
+I0414 13:51:46.042706  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221106.042704]:cur_latency[1.55522e+12]
+I0414 13:51:46.042713  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:46.042717  6293 recognition_component.cc:61]  Response time for frame 87: 0.986772
+I0414 13:51:46.218116  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221106.218078
+I0414 13:51:46.218183  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221106.218175]:cur_latency[1.55522e+12]
+I0414 13:51:46.264392  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:46.264420  6297 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221106.264401
+I0414 13:51:46.267729  6297 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221106.267725]:cur_latency[1.55522e+12]
+I0414 13:51:46.267741  6297 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:46.267747  6297 recognition_component.cc:61]  Response time for frame 88: 3.31422
+I0414 13:51:46.417696  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221106.417685
+I0414 13:51:46.417718  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221106.417716]:cur_latency[1.55522e+12]
+I0414 13:51:46.444759  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:46.444774  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221106.444771
+I0414 13:51:46.449080  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221106.449078]:cur_latency[1.55522e+12]
+I0414 13:51:46.449087  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:46.449090  6298 recognition_component.cc:61]  Response time for frame 89: 4.31156
+I0414 13:51:46.609725  6292 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221106.609701
+I0414 13:51:46.609758  6292 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221106.609755]:cur_latency[1.55522e+12]
+I0414 13:51:46.642002  6292 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:46.642021  6292 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221106.642017
+I0414 13:51:46.643251  6292 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221106.643248]:cur_latency[1.55522e+12]
+I0414 13:51:46.643260  6292 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:46.643265  6292 recognition_component.cc:61]  Response time for frame 90: 1.23878
+I0414 13:51:46.810686  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221106.810666
+I0414 13:51:46.810709  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221106.810707]:cur_latency[1.55522e+12]
+I0414 13:51:46.837340  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:46.837360  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221106.837358
+I0414 13:51:46.838995  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221106.838992]:cur_latency[1.55522e+12]
+I0414 13:51:46.839004  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:46.839010  6295 recognition_component.cc:61]  Response time for frame 91: 1.64329
+I0414 13:51:47.018098  6289 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221107.018065
+I0414 13:51:47.018167  6289 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221107.018157]:cur_latency[1.55522e+12]
+I0414 13:51:47.048002  6289 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:47.048019  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221107.048017
+I0414 13:51:47.049715  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221107.049713]:cur_latency[1.55522e+12]
+I0414 13:51:47.049723  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:47.049727  6289 recognition_component.cc:61]  Response time for frame 92: 1.70339
+I0414 13:51:47.217178  6293 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221107.217139
+I0414 13:51:47.217247  6293 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221107.217239]:cur_latency[1.55522e+12]
+I0414 13:51:47.263208  6293 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:47.263242  6293 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221107.263236
+I0414 13:51:47.264931  6293 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221107.264929]:cur_latency[1.55522e+12]
+I0414 13:51:47.264942  6293 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:47.264950  6293 recognition_component.cc:61]  Response time for frame 93: 1.69958
+I0414 13:51:47.414527  6294 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221107.414515
+I0414 13:51:47.414546  6294 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221107.414544]:cur_latency[1.55522e+12]
+I0414 13:51:47.439807  6294 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:47.439824  6294 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221107.439822
+I0414 13:51:47.440768  6294 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221107.440766]:cur_latency[1.55522e+12]
+I0414 13:51:47.440778  6294 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:47.440783  6294 recognition_component.cc:61]  Response time for frame 94: 0.953303
+I0414 13:51:47.617218  6298 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221107.617180
+I0414 13:51:47.617270  6298 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221107.617264]:cur_latency[1.55522e+12]
+I0414 13:51:47.649755  6298 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:47.649780  6298 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221107.649775
+I0414 13:51:47.653115  6298 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221107.653113]:cur_latency[1.55522e+12]
+I0414 13:51:47.653123  6298 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:47.653127  6298 recognition_component.cc:61]  Response time for frame 95: 3.34235
+I0414 13:51:47.812096  6290 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221107.812078
+I0414 13:51:47.812126  6290 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221107.812124]:cur_latency[1.55522e+12]
+I0414 13:51:47.845628  6290 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:47.845654  6290 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221107.845650
+I0414 13:51:47.848212  6290 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221107.848209]:cur_latency[1.55522e+12]
+I0414 13:51:47.848225  6290 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:47.848233  6290 recognition_component.cc:61]  Response time for frame 96: 2.57348
+I0414 13:51:48.014717  6296 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221108.014703
+I0414 13:51:48.014739  6296 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221108.014737]:cur_latency[1.55522e+12]
+I0414 13:51:48.044287  6296 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:48.044306  6296 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221108.044304
+I0414 13:51:48.049211  6296 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221108.049210]:cur_latency[1.55522e+12]
+I0414 13:51:48.049219  6296 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:48.049221  6296 recognition_component.cc:61]  Response time for frame 97: 4.91161
+I0414 13:51:48.217281  6299 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221108.217241
+I0414 13:51:48.217350  6299 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221108.217340]:cur_latency[1.55522e+12]
+I0414 13:51:48.265305  6299 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:48.265328  6289 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221108.265315
+I0414 13:51:48.268579  6289 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221108.268577]:cur_latency[1.55522e+12]
+I0414 13:51:48.268590  6289 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:48.268595  6289 recognition_component.cc:61]  Response time for frame 98: 3.25573
+I0414 13:51:48.419479  6291 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221108.419437
+I0414 13:51:48.419548  6291 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221108.419539]:cur_latency[1.55522e+12]
+I0414 13:51:48.449878  6291 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:48.449898  6291 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221108.449894
+I0414 13:51:48.452390  6291 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221108.452388]:cur_latency[1.55522e+12]
+I0414 13:51:48.452396  6291 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:48.452400  6291 recognition_component.cc:61]  Response time for frame 99: 2.4978
+I0414 13:51:48.614979  6295 segmentation_component.cc:57]  Enter segmentation component, message timestamp: 1.555221 current timestamp: 1555221108.614964
+I0414 13:51:48.615001  6295 segmentation_component.cc:107]  FRAME_STATISTICS:Lidar:Start:msg_time[1.555221velodyne128:Start:msg_time[]:cur_time[1555221108.615000]:cur_latency[1.55522e+12]
+I0414 13:51:48.641520  6295 segmentation_component.cc:67]  Send lidar segment output message.
+I0414 13:51:48.641537  6295 recognition_component.cc:47]  Enter Tracking component, message timestamp: 1.555221 current timestamp: 1555221108.641535
+I0414 13:51:48.644197  6295 recognition_component.cc:128]  FRAME_STATISTICS:Lidar:End:msg_time[1.555221]:cur_time[1555221108.644194]:cur_latency[1.55522e+12]
+I0414 13:51:48.644208  6295 recognition_component.cc:59]  Send lidar recognition output message.
+I0414 13:51:48.644212  6295 recognition_component.cc:61]  Response time for frame 100: 2.67091

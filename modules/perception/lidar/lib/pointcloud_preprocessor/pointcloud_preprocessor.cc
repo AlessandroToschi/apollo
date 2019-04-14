@@ -108,8 +108,10 @@ bool PointCloudPreprocessor::Preprocess(
       point.intensity = static_cast<float>(pt.intensity());
       frame->cloud->push_back(point, static_cast<double>(pt.timestamp()) * 1e-9,
                               FLT_MAX, i, 0);
+    
     }
     TransformCloud(frame->cloud, frame->lidar2world_pose, frame->world_cloud);
+    AINFO << "FROM: " << message->point_size() << "TO: " << frame->cloud->size();
   }
   return true;
 }

@@ -10,6 +10,9 @@ cc_library(
     hdrs = [
         "pointcloud_preprocessor.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"preprocessor\\"',
+    ],
     deps = [
         "//cyber",
         "//modules/common/configs:vehicle_config_helper",

@@ -11,6 +11,9 @@ cc_library(
     hdrs = [
         "cnn_segmentation.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"segmentation\\"',
+    ],
     deps = [
         ":disjoint_set",
         ":feature_generator",

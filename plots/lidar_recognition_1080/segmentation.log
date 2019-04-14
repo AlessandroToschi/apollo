@@ -1,0 +1,607 @@
+Log file created at: 2019/04/14 13:50:56
+Running on machine: in_dev_docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0414 13:50:56.289754  6286 cnn_segmentation.cc:48]  --    param_file: /apollo/modules/perception/production/./data/perception/lidar/models/cnnseg/velodyne128/cnnseg_param.conf
+I0414 13:50:56.289764  6286 cnn_segmentation.cc:49]  --    proto_file: /apollo/modules/perception/production/./data/perception/lidar/models/cnnseg/velodyne128/deploy.prototxt
+I0414 13:50:56.289767  6286 cnn_segmentation.cc:50]  --    weight_file: /apollo/modules/perception/production/./data/perception/lidar/models/cnnseg/velodyne128/deploy.caffemodel
+I0414 13:50:56.289770  6286 cnn_segmentation.cc:51]  --    engine_file: /apollo/modules/perception/production/./data/perception/lidar/models/cnnseg/velodyne128/engine.conf
+I0414 13:51:28.820113  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:28.820127  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:28.820787  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:28.821756  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.681385	Ground-detector time: 0.971508
+I0414 13:51:28.860863  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:28.861274  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.08769	 feature: 14.2913	 infer: 18.9803	 fg-seg: 7.43004	 join: 0.000156	 collect: 0.409477
+I0414 13:51:29.025610  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:29.025620  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:29.025823  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:29.026721  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.215648	Ground-detector time: 0.898572
+I0414 13:51:29.046566  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:29.047329  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.078927	 feature: 0.215575	 infer: 12.9983	 fg-seg: 7.6963	 join: 0.000137	 collect: 0.762318
+I0414 13:51:29.219934  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:29.219947  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:29.220441  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:29.221393  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.509575	Ground-detector time: 0.952372
+I0414 13:51:29.241235  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:29.241379  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.109055	 feature: 0.169729	 infer: 12.9115	 fg-seg: 8.14809	 join: 0.000146	 collect: 0.139772
+I0414 13:51:29.422812  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:29.422827  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:29.423327  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:29.424512  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.51863	Ground-detector time: 1.18447
+I0414 13:51:29.444948  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:29.445427  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.125523	 feature: 0.178095	 infer: 12.9108	 fg-seg: 8.96786	 join: 0.000277	 collect: 0.474958
+I0414 13:51:29.634315  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:29.634325  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:29.634613  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:29.635560  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.302394	Ground-detector time: 0.946145
+I0414 13:51:29.655006  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:29.655299  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.092338	 feature: 0.221408	 infer: 12.9079	 fg-seg: 7.50736	 join: 0.00019	 collect: 0.290692
+I0414 13:51:29.829401  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:29.829411  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:29.829639  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:29.830587  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.242111	Ground-detector time: 0.947743
+I0414 13:51:29.851416  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:29.851969  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.099681	 feature: 0.175382	 infer: 13.0888	 fg-seg: 8.6891	 join: 0.000179	 collect: 0.550627
+I0414 13:51:30.024747  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:30.024760  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:30.025017  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:30.026305  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.270815	Ground-detector time: 1.29043
+I0414 13:51:30.046725  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:30.047217  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.167466	 feature: 0.248302	 infer: 12.8489	 fg-seg: 8.72261	 join: 0.000136	 collect: 0.490413
+I0414 13:51:30.210981  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:30.210992  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:30.211199  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:30.212150  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.21919	Ground-detector time: 0.952606
+I0414 13:51:30.231668  6288 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:30.232000  6288 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.094796	 feature: 0.224358	 infer: 12.9216	 fg-seg: 7.45409	 join: 0.000183	 collect: 0.329705
+I0414 13:51:30.430580  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:30.430593  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:30.430836  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:30.431778  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.258297	Ground-detector time: 0.941707
+I0414 13:51:30.451090  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:30.451354  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.09173	 feature: 0.188149	 infer: 12.9256	 fg-seg: 7.34046	 join: 0.000482	 collect: 0.261855
+I0414 13:51:30.620225  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:30.620236  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:30.620688  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:30.621592  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.465653	Ground-detector time: 0.902785
+I0414 13:51:30.640952  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:30.641114  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.088109	 feature: 0.167692	 infer: 12.908	 fg-seg: 7.59844	 join: 0.00016	 collect: 0.161062
+I0414 13:51:30.842643  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:30.842686  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:30.843307  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:30.846318  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.672767	Ground-detector time: 3.01086
+I0414 13:51:30.868741  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:30.869247  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.368722	 feature: 0.373096	 infer: 12.9396	 fg-seg: 12.4763	 join: 0.000279	 collect: 0.501031
+I0414 13:51:31.029999  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:31.030011  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:31.030216  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:31.031131  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.219439	Ground-detector time: 0.915363
+I0414 13:51:31.050633  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:31.050997  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.091163	 feature: 0.220668	 infer: 12.943	 fg-seg: 7.4157	 join: 0.000133	 collect: 0.36067
+I0414 13:51:31.212257  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:31.212270  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:31.212512  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:31.213512  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.258092	Ground-detector time: 0.99984
+I0414 13:51:31.234454  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:31.235280  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.110431	 feature: 0.229325	 infer: 13.744	 fg-seg: 8.15101	 join: 0.000163	 collect: 0.823755
+I0414 13:51:31.418244  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:31.418257  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:31.418480  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:31.419517  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.239093	Ground-detector time: 1.03727
+I0414 13:51:31.438859  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:31.438985  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.107601	 feature: 0.227067	 infer: 12.9062	 fg-seg: 7.41854	 join: 0.000217	 collect: 0.125547
+I0414 13:51:31.640904  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:31.640947  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:31.641758  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:31.645715  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.856226	Ground-detector time: 3.96196
+I0414 13:51:31.665664  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:31.666035  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.593178	 feature: 0.50258	 infer: 12.8846	 fg-seg: 10.8086	 join: 0.000265	 collect: 0.366587
+I0414 13:51:31.840723  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:31.840766  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:31.841740  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:31.845711  6346 cnn_segmentation.cc:216]  Roi-filter time: 1.0213	Ground-detector time: 3.97396
+I0414 13:51:31.865525  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:31.866006  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.6355	 feature: 0.477244	 infer: 12.8904	 fg-seg: 10.8286	 join: 0.000224	 collect: 0.479111
+I0414 13:51:32.019855  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:32.019865  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:32.020073  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:32.020929  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.221677	Ground-detector time: 0.856214
+I0414 13:51:32.040432  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:32.040700  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.084381	 feature: 0.225854	 infer: 12.9106	 fg-seg: 7.39218	 join: 0.000157	 collect: 0.265404
+I0414 13:51:32.227560  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:32.227571  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:32.227795  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:32.228658  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.238763	Ground-detector time: 0.862192
+I0414 13:51:32.248199  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:32.248473  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.085106	 feature: 0.188282	 infer: 12.9447	 fg-seg: 7.45747	 join: 0.000143	 collect: 0.272081
+I0414 13:51:32.420495  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:32.420523  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:32.420939  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:32.422966  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.451202	Ground-detector time: 2.02712
+I0414 13:51:32.446823  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:32.447324  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.228308	 feature: 0.301093	 infer: 12.9019	 fg-seg: 12.9578	 join: 0.000283	 collect: 0.496127
+I0414 13:51:32.638497  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:32.638540  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:32.639158  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:32.641754  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.668915	Ground-detector time: 2.59877
+I0414 13:51:32.661007  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:32.661195  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.363741	 feature: 0.373197	 infer: 12.895	 fg-seg: 8.95144	 join: 0.000223	 collect: 0.186956
+I0414 13:51:32.817028  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:32.817046  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:32.817333  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:32.818650  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.307967	Ground-detector time: 1.3176
+I0414 13:51:32.839437  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:32.839634  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.147847	 feature: 0.207709	 infer: 12.94	 fg-seg: 9.15552	 join: 0.000238	 collect: 0.197131
+I0414 13:51:33.019287  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:33.019299  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:33.019531  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:33.020439  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.245158	Ground-detector time: 0.908942
+I0414 13:51:33.039978  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:33.040345  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.090179	 feature: 0.245107	 infer: 13.0379	 fg-seg: 7.35439	 join: 0.00017	 collect: 0.364934
+I0414 13:51:33.218560  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:33.218576  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:33.218833  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:33.220031  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.276413	Ground-detector time: 1.19777
+I0414 13:51:33.241087  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:33.241962  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.134361	 feature: 0.240013	 infer: 12.9894	 fg-seg: 9.20562	 join: 0.00023	 collect: 0.872281
+I0414 13:51:33.416757  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:33.416774  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:33.417016  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:33.418015  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.261125	Ground-detector time: 0.999188
+I0414 13:51:33.438951  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:33.439396  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.111489	 feature: 0.230974	 infer: 13.7777	 fg-seg: 8.1134	 join: 0.000202	 collect: 0.442062
+I0414 13:51:33.622402  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:33.622416  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:33.622647  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:33.623658  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.246906	Ground-detector time: 1.01169
+I0414 13:51:33.642966  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:33.643126  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.119726	 feature: 0.22949	 infer: 12.8957	 fg-seg: 7.36013	 join: 0.000149	 collect: 0.159794
+I0414 13:51:33.839632  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:33.839674  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:33.840468  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:33.844365  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.837765	Ground-detector time: 3.90176
+I0414 13:51:33.864670  6289 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:33.865079  6289 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.593948	 feature: 0.491255	 infer: 12.8842	 fg-seg: 11.0992	 join: 0.000229	 collect: 0.40518
+I0414 13:51:34.027703  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:34.027714  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:34.027917  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:34.028791  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.21825	Ground-detector time: 0.873966
+I0414 13:51:34.048364  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:34.048563  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.090641	 feature: 0.221179	 infer: 12.9041	 fg-seg: 7.48365	 join: 0.000234	 collect: 0.196789
+I0414 13:51:34.220276  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:34.220286  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:34.220513  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:34.221412  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.239935	Ground-detector time: 0.899022
+I0414 13:51:34.240685  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:34.240850  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.089631	 feature: 0.189342	 infer: 12.8977	 fg-seg: 7.26868	 join: 0.000115	 collect: 0.16308
+I0414 13:51:34.412591  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:34.412603  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:34.412827  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:34.413801  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.239681	Ground-detector time: 0.974067
+I0414 13:51:34.433849  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:34.434109  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.099297	 feature: 0.231818	 infer: 13.2149	 fg-seg: 7.74646	 join: 0.000172	 collect: 0.258795
+I0414 13:51:34.629835  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:34.629846  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:34.630069  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:34.630959  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.23648	Ground-detector time: 0.890325
+I0414 13:51:34.650411  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:34.650571  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087227	 feature: 0.183242	 infer: 12.9225	 fg-seg: 7.41933	 join: 0.000169	 collect: 0.159007
+I0414 13:51:34.819042  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:34.819061  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:34.819355  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:34.820947  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.314597	Ground-detector time: 1.59296
+I0414 13:51:34.843515  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:34.844403  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.240196	 feature: 0.229604	 infer: 13.016	 fg-seg: 10.9999	 join: 0.000298	 collect: 0.882089
+I0414 13:51:35.021327  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:35.021338  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:35.021615  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:35.022801  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.288483	Ground-detector time: 1.18737
+I0414 13:51:35.042448  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:35.042651  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.161792	 feature: 0.267335	 infer: 12.9116	 fg-seg: 7.78758	 join: 0.00016	 collect: 0.203229
+I0414 13:51:35.227600  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:35.227610  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:35.227821  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:35.228673  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.223728	Ground-detector time: 0.852375
+I0414 13:51:35.248174  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:35.248431  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.084412	 feature: 0.17974	 infer: 12.8929	 fg-seg: 7.45206	 join: 0.000137	 collect: 0.256661
+I0414 13:51:35.441567  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:35.441610  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:35.442235  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:35.445514  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.677745	Ground-detector time: 3.27861
+I0414 13:51:35.464252  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:35.464404  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.375886	 feature: 0.351606	 infer: 12.8907	 fg-seg: 9.12773	 join: 0.000199	 collect: 0.151374
+I0414 13:51:35.619731  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:35.619743  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:35.619953  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:35.620929  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.224988	Ground-detector time: 0.976617
+I0414 13:51:35.641453  6288 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:35.641628  6288 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.103661	 feature: 0.22242	 infer: 12.9129	 fg-seg: 8.51791	 join: 0.00017	 collect: 0.171068
+I0414 13:51:35.821764  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:35.821776  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:35.822010  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:35.823247  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.247122	Ground-detector time: 1.23864
+I0414 13:51:35.843551  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:35.844147  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.173953	 feature: 0.198413	 infer: 12.9972	 fg-seg: 8.42746	 join: 0.000198	 collect: 0.593965
+I0414 13:51:36.040287  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:36.040328  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:36.041039  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:36.045121  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.756752	Ground-detector time: 4.08401
+I0414 13:51:36.065196  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:36.065536  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.619761	 feature: 0.455491	 infer: 12.9481	 fg-seg: 10.9144	 join: 0.000323	 collect: 0.340117
+I0414 13:51:36.237607  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:36.237650  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:36.238250  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:36.241099  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.650875	Ground-detector time: 2.85093
+I0414 13:51:36.260283  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:36.260452  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.366765	 feature: 0.370036	 infer: 12.9591	 fg-seg: 9.03959	 join: 0.000195	 collect: 0.168484
+I0414 13:51:36.432823  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:36.432834  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:36.433051  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:36.433989  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.231024	Ground-detector time: 0.936722
+I0414 13:51:36.453435  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:36.453692  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.094629	 feature: 0.181224	 infer: 13.0049	 fg-seg: 7.36658	 join: 0.000162	 collect: 0.255519
+I0414 13:51:36.617691  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:36.617712  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:36.618041  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:36.619500  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.353709	Ground-detector time: 1.46048
+I0414 13:51:36.641206  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:36.641933  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.171303	 feature: 0.267871	 infer: 13.253	 fg-seg: 9.86061	 join: 0.00017	 collect: 0.724021
+I0414 13:51:36.844653  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:36.844696  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:36.846827  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:36.850755  6346 cnn_segmentation.cc:216]  Roi-filter time: 2.17598	Ground-detector time: 3.93294
+I0414 13:51:36.869933  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:36.870417  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.599426	 feature: 0.504818	 infer: 12.9091	 fg-seg: 11.2968	 join: 0.000313	 collect: 0.47952
+I0414 13:51:37.038439  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:37.038482  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:37.039114  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:37.042196  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.683815	Ground-detector time: 3.08234
+I0414 13:51:37.062842  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:37.063612  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.375014	 feature: 0.38557	 infer: 13.2898	 fg-seg: 10.4182	 join: 0.000241	 collect: 0.766632
+I0414 13:51:37.220185  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:37.220196  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:37.220420  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:37.221352  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.237786	Ground-detector time: 0.932707
+I0414 13:51:37.240609  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:37.240743  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087787	 feature: 0.195986	 infer: 12.9751	 fg-seg: 7.20084	 join: 0.000179	 collect: 0.133642
+I0414 13:51:37.442975  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:37.443018  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:37.443662  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:37.446434  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.695733	Ground-detector time: 2.77178
+I0414 13:51:37.465680  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:37.465898  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.378917	 feature: 0.373356	 infer: 12.9684	 fg-seg: 9.04495	 join: 0.000233	 collect: 0.214157
+I0414 13:51:37.636692  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:37.636734  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:37.637322  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:37.640202  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.639486	Ground-detector time: 2.88095
+I0414 13:51:37.663025  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:37.663476  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.367273	 feature: 0.360051	 infer: 13.0065	 fg-seg: 12.6604	 join: 0.000313	 collect: 0.447054
+I0414 13:51:37.822926  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:37.822937  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:37.823137  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:37.824075  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.212489	Ground-detector time: 0.938594
+I0414 13:51:37.843540  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:37.843678  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.102479	 feature: 0.227297	 infer: 13.0227	 fg-seg: 7.29819	 join: 0.000161	 collect: 0.137438
+I0414 13:51:38.016513  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:38.016526  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:38.016744  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:38.017705  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.234792	Ground-detector time: 0.960778
+I0414 13:51:38.038548  6289 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:38.038772  6289 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.099156	 feature: 0.229618	 infer: 13.5791	 fg-seg: 8.16433	 join: 0.000141	 collect: 0.221099
+I0414 13:51:38.239059  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:38.239102  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:38.239698  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:38.242630  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.648445	Ground-detector time: 2.9318
+I0414 13:51:38.267493  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:38.268571  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.34786	 feature: 0.356473	 infer: 13.0082	 fg-seg: 14.7862	 join: 0.000295	 collect: 1.07376
+I0414 13:51:38.425992  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:38.426004  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:38.426401  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:38.427361  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.411295	Ground-detector time: 0.960808
+I0414 13:51:38.446527  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:38.446707  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.103853	 feature: 0.166	 infer: 12.9528	 fg-seg: 7.34753	 join: 0.000197	 collect: 0.180987
+I0414 13:51:38.640137  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:38.640179  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:38.640878  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:38.644809  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.744601	Ground-detector time: 3.93284
+I0414 13:51:38.667176  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:38.667771  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.607292	 feature: 0.444191	 infer: 12.9994	 fg-seg: 13.0151	 join: 0.000468	 collect: 0.587899
+I0414 13:51:38.817538  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:38.817559  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:38.817924  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:38.819896  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.389656	Ground-detector time: 1.97259
+I0414 13:51:38.843873  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:38.844575  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.295531	 feature: 0.302384	 infer: 13.2244	 fg-seg: 12.5271	 join: 0.000271	 collect: 0.69746
+I0414 13:51:39.030352  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:39.030364  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:39.030617  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:39.031560  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.268	Ground-detector time: 0.943317
+I0414 13:51:39.051795  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:39.051980  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.103379	 feature: 0.201557	 infer: 13.7079	 fg-seg: 7.46934	 join: 0.000165	 collect: 0.183043
+I0414 13:51:39.221068  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:39.221079  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:39.221287  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:39.222229  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.220605	Ground-detector time: 0.942492
+I0414 13:51:39.241948  6288 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:39.242173  6288 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.094303	 feature: 0.227589	 infer: 12.9872	 fg-seg: 7.60632	 join: 0.00025	 collect: 0.223535
+I0414 13:51:39.419059  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:39.419076  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:39.419342  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:39.420604  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.287975	Ground-detector time: 1.26223
+I0414 13:51:39.442441  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:39.442633  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.148123	 feature: 0.210883	 infer: 12.9536	 fg-seg: 10.1123	 join: 0.000255	 collect: 0.19115
+I0414 13:51:39.614936  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:39.614953  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:39.615242  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:39.616997  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.306334	Ground-detector time: 1.75664
+I0414 13:51:39.640275  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:39.640866  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.228926	 feature: 0.231857	 infer: 13.0307	 fg-seg: 11.8589	 join: 0.000267	 collect: 0.589205
+I0414 13:51:39.820186  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:39.820197  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:39.820415  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:39.821329  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.231083	Ground-detector time: 0.914352
+I0414 13:51:39.840771  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:39.841039  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087082	 feature: 0.191174	 infer: 12.9754	 fg-seg: 7.36583	 join: 0.000157	 collect: 0.266336
+I0414 13:51:40.027766  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:40.027809  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:40.028462  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:40.031369  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.703241	Ground-detector time: 2.9088
+I0414 13:51:40.056550  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:40.056766  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.387807	 feature: 0.361991	 infer: 12.9736	 fg-seg: 15.1228	 join: 0.000328	 collect: 0.215875
+I0414 13:51:40.227593  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:40.227604  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:40.227805  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:40.228690  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.214024	Ground-detector time: 0.885233
+I0414 13:51:40.248945  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:40.249177  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.093068	 feature: 0.220212	 infer: 12.9635	 fg-seg: 8.11263	 join: 0.000145	 collect: 0.230698
+I0414 13:51:40.415962  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:40.415976  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:40.416213  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:40.417089  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.252708	Ground-detector time: 0.877503
+I0414 13:51:40.436465  6289 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:40.436766  6289 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.097048	 feature: 0.195115	 infer: 12.9849	 fg-seg: 7.26391	 join: 0.000136	 collect: 0.299705
+I0414 13:51:40.622195  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:40.622208  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:40.622429  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:40.623441  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.237526	Ground-detector time: 1.01148
+I0414 13:51:40.643043  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:40.643175  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.118228	 feature: 0.227085	 infer: 13.0829	 fg-seg: 7.45763	 join: 0.000173	 collect: 0.131552
+I0414 13:51:40.839565  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:40.839608  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:40.840217  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:40.843149  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.660819	Ground-detector time: 2.93349
+I0414 13:51:40.867854  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:40.869140  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.361182	 feature: 0.391187	 infer: 13.1118	 fg-seg: 14.4861	 join: 0.000259	 collect: 1.28236
+I0414 13:51:41.024663  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:41.024700  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:41.025300  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:41.028439  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.640117	Ground-detector time: 3.14158
+I0414 13:51:41.053092  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:41.054008  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.488661	 feature: 0.407964	 infer: 12.9942	 fg-seg: 14.5649	 join: 0.000326	 collect: 0.91308
+I0414 13:51:41.219595  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:41.219607  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:41.219820  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:41.220762  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.227602	Ground-detector time: 0.940932
+I0414 13:51:41.240170  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:41.240295  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.089578	 feature: 0.228908	 infer: 13.0297	 fg-seg: 7.26314	 join: 0.000158	 collect: 0.125139
+I0414 13:51:41.435678  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:41.435719  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:41.436420  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:41.440138  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.744405	Ground-detector time: 3.7218
+I0414 13:51:41.462812  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:41.463722  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.585572	 feature: 0.44096	 infer: 12.9797	 fg-seg: 13.1577	 join: 0.00025	 collect: 0.907094
+I0414 13:51:41.627993  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:41.628005  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:41.628242  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:41.629129  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.249874	Ground-detector time: 0.888395
+I0414 13:51:41.648535  6288 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:41.648663  6288 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087642	 feature: 0.202121	 infer: 13.0218	 fg-seg: 7.26562	 join: 0.000457	 collect: 0.127318
+I0414 13:51:41.837519  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:41.837563  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:41.838264  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:41.842145  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.748244	Ground-detector time: 3.88344
+I0414 13:51:41.863965  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:41.864917  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.611248	 feature: 0.443024	 infer: 12.9809	 fg-seg: 12.4396	 join: 0.00029	 collect: 0.947437
+I0414 13:51:42.012666  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:42.012678  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:42.012907  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:42.013811  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.243461	Ground-detector time: 0.904627
+I0414 13:51:42.033228  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:42.033358  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.08957	 feature: 0.239087	 infer: 12.9766	 fg-seg: 7.2927	 join: 0.000144	 collect: 0.128115
+I0414 13:51:42.219640  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:42.219650  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:42.219877  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:42.220855  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.238969	Ground-detector time: 0.979643
+I0414 13:51:42.240613  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:42.240753  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.122132	 feature: 0.232343	 infer: 12.9501	 fg-seg: 7.70566	 join: 0.00018	 collect: 0.140089
+I0414 13:51:42.417639  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:42.417654  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:42.417937  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:42.419431  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.299993	Ground-detector time: 1.49506
+I0414 13:51:42.441148  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:42.441555  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.219945	 feature: 0.266789	 infer: 12.9648	 fg-seg: 10.0686	 join: 0.000588	 collect: 0.405646
+I0414 13:51:42.619176  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:42.619187  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:42.619408  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:42.620317  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.234253	Ground-detector time: 0.909638
+I0414 13:51:42.640334  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:42.640811  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.086288	 feature: 0.234913	 infer: 13.2984	 fg-seg: 7.574	 join: 0.00016	 collect: 0.474822
+I0414 13:51:42.837152  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:42.837195  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:42.837903  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:42.841815  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.754286	Ground-detector time: 3.91428
+I0414 13:51:42.863806  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:42.864171  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.598508	 feature: 0.456894	 infer: 13.9931	 fg-seg: 11.6361	 join: 0.000293	 collect: 0.362221
+I0414 13:51:43.038627  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:43.038671  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:43.039291  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:43.042769  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.671903	Ground-detector time: 3.47763
+I0414 13:51:43.064954  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:43.065374  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.406964	 feature: 0.358244	 infer: 12.9595	 fg-seg: 12.6743	 join: 0.000284	 collect: 0.415694
+I0414 13:51:43.235874  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:43.235918  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:43.236519  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:43.239483  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.652707	Ground-detector time: 2.96588
+I0414 13:51:43.263046  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:43.263325  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.364345	 feature: 0.363541	 infer: 13.6542	 fg-seg: 12.8527	 join: 0.000248	 collect: 0.278854
+I0414 13:51:43.436746  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:43.436792  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:43.437492  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:43.440723  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.752493	Ground-detector time: 3.23689
+I0414 13:51:43.463865  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:43.464287  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.353736	 feature: 0.358008	 infer: 14.1082	 fg-seg: 12.3369	 join: 0.000232	 collect: 0.420073
+I0414 13:51:43.623883  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:43.623904  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:43.624213  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:43.625530  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.336254	Ground-detector time: 1.31736
+I0414 13:51:43.646458  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:43.646745  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.152912	 feature: 0.258756	 infer: 14.3784	 fg-seg: 7.8295	 join: 0.000142	 collect: 0.285557
+I0414 13:51:43.824504  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:43.824517  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:43.824762  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:43.826053  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.25932	Ground-detector time: 1.29154
+I0414 13:51:43.846967  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:43.847406  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.186614	 feature: 0.269498	 infer: 12.9602	 fg-seg: 9.05685	 join: 0.000231	 collect: 0.437162
+I0414 13:51:44.035768  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:44.035800  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:44.036311  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:44.038372  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.549246	Ground-detector time: 2.06311
+I0414 13:51:44.058248  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:44.058944  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.251323	 feature: 0.320248	 infer: 13.1127	 fg-seg: 8.86026	 join: 0.000121	 collect: 0.692164
+I0414 13:51:44.216892  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:44.216903  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:44.217133  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:44.218237  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.241367	Ground-detector time: 1.10579
+I0414 13:51:44.240973  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:44.241708  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.148318	 feature: 0.252727	 infer: 15.2826	 fg-seg: 8.40609	 join: 0.000223	 collect: 0.732338
+I0414 13:51:44.437749  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:44.437791  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:44.438361  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:44.441309  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.620487	Ground-detector time: 2.94853
+I0414 13:51:44.463702  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:44.463994  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.338047	 feature: 0.373264	 infer: 12.9618	 fg-seg: 12.3384	 join: 0.000277	 collect: 0.290606
+I0414 13:51:44.637935  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:44.637979  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:44.638697  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:44.642705  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.765131	Ground-detector time: 4.0104
+I0414 13:51:44.663627  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:44.663933  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.619938	 feature: 0.448162	 infer: 13.0066	 fg-seg: 11.6452	 join: 0.000248	 collect: 0.305846
+I0414 13:51:44.820828  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:44.820842  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:44.821094  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:44.822156  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.268201	Ground-detector time: 1.06331
+I0414 13:51:44.841747  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:44.841933  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.119722	 feature: 0.199977	 infer: 12.9497	 fg-seg: 7.68554	 join: 0.000178	 collect: 0.185638
+I0414 13:51:45.029248  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:45.029260  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:45.029479  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:45.030536  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.232675	Ground-detector time: 1.05859
+I0414 13:51:45.050747  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:45.051030  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.107867	 feature: 0.18749	 infer: 13.0162	 fg-seg: 8.22476	 join: 0.000153	 collect: 0.280429
+I0414 13:51:45.215575  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:45.215587  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:45.215821  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:45.216972  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.247276	Ground-detector time: 1.15311
+I0414 13:51:45.236989  6288 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:45.237341  6288 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.128361	 feature: 0.228115	 infer: 12.9777	 fg-seg: 8.10178	 join: 0.000205	 collect: 0.351669
+I0414 13:51:45.415104  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:45.415120  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:45.415382  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:45.416568  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.281296	Ground-detector time: 1.18644
+I0414 13:51:45.437777  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:45.437944  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.14943	 feature: 0.242856	 infer: 13.8816	 fg-seg: 8.4445	 join: 0.000212	 collect: 0.167073
+I0414 13:51:45.636905  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:45.636950  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:45.637537  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:45.640506  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.63867	Ground-detector time: 2.97156
+I0414 13:51:45.663448  6297 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:45.664083  6297 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.356724	 feature: 0.35581	 infer: 12.9913	 fg-seg: 12.9049	 join: 0.000231	 collect: 0.631527
+I0414 13:51:45.842656  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:45.842700  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:45.843430  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:45.847409  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.777894	Ground-detector time: 3.98023
+I0414 13:51:45.868388  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:45.868728  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.630057	 feature: 0.448093	 infer: 13.021	 fg-seg: 11.6624	 join: 0.000299	 collect: 0.339245
+I0414 13:51:46.019595  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:46.019608  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:46.019826  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:46.021003  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.232194	Ground-detector time: 1.17695
+I0414 13:51:46.041119  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:46.041345  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.163569	 feature: 0.197243	 infer: 12.9497	 fg-seg: 8.22305	 join: 0.000224	 collect: 0.225369
+I0414 13:51:46.236776  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:46.236819  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:46.237426  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:46.240504  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.656672	Ground-detector time: 3.08035
+I0414 13:51:46.263154  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:46.263576  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.356348	 feature: 0.369952	 infer: 12.9718	 fg-seg: 12.7366	 join: 0.000257	 collect: 0.418275
+I0414 13:51:46.422184  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:46.422195  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:46.422452  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:46.423347  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.271272	Ground-detector time: 0.894658
+I0414 13:51:46.443089  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:46.443581  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.095164	 feature: 0.217022	 infer: 12.9772	 fg-seg: 7.62495	 join: 0.000132	 collect: 0.489857
+I0414 13:51:46.617785  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:46.617805  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:46.618113  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:46.619473  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.331538	Ground-detector time: 1.36102
+I0414 13:51:46.641429  6292 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:46.641649  6292 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.154886	 feature: 0.365781	 infer: 13.5993	 fg-seg: 9.56423	 join: 0.000202	 collect: 0.218236
+I0414 13:51:46.815057  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:46.815068  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:46.815268  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:46.816190  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.213699	Ground-detector time: 0.921697
+I0414 13:51:46.836295  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:46.836544  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087099	 feature: 0.220757	 infer: 13.0805	 fg-seg: 7.88513	 join: 0.000133	 collect: 0.248845
+I0414 13:51:47.026705  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:47.026715  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:47.026927  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:47.027812  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.224604	Ground-detector time: 0.88477
+I0414 13:51:47.047385  6289 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:47.047619  6289 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.087279	 feature: 0.230812	 infer: 13.0204	 fg-seg: 7.37682	 join: 0.000162	 collect: 0.232062
+I0414 13:51:47.235751  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:47.235795  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:47.236517  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:47.240372  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.768899	Ground-detector time: 3.85817
+I0414 13:51:47.262334  6293 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:47.262686  6293 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.630701	 feature: 0.450908	 infer: 13.2687	 fg-seg: 12.2633	 join: 0.000291	 collect: 0.350389
+I0414 13:51:47.418915  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:47.418926  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:47.419131  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:47.420009  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.218052	Ground-detector time: 0.87951
+I0414 13:51:47.439366  6294 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:47.439512  6294 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.094833	 feature: 0.185103	 infer: 12.9427	 fg-seg: 7.26503	 join: 0.000152	 collect: 0.144195
+I0414 13:51:47.624843  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:47.624855  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:47.625085  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:47.625936  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.2436	Ground-detector time: 0.851526
+I0414 13:51:47.648788  6298 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:47.649197  6298 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.083219	 feature: 0.196225	 infer: 15.9575	 fg-seg: 7.74263	 join: 0.000526	 collect: 0.405554
+I0414 13:51:47.818971  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:47.818989  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:47.819258  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:47.820528  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.29154	Ground-detector time: 1.27083
+I0414 13:51:47.844302  6290 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:47.844707  6290 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.159118	 feature: 0.245875	 infer: 13.0217	 fg-seg: 11.9429	 join: 0.000228	 collect: 0.402477
+I0414 13:51:48.019289  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:48.019299  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:48.019533  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:48.020437  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.247578	Ground-detector time: 0.903513
+I0414 13:51:48.040838  6296 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:48.041638  6296 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.092328	 feature: 0.191754	 infer: 13.1151	 fg-seg: 8.19219	 join: 0.000175	 collect: 0.798468
+I0414 13:51:48.235144  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:48.235188  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:48.235867  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:48.239609  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.726091	Ground-detector time: 3.74467
+I0414 13:51:48.262598  6299 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:48.263420  6299 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.586372	 feature: 0.459476	 infer: 13.019	 fg-seg: 13.4182	 join: 0.000258	 collect: 0.819466
+I0414 13:51:48.428258  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:48.428270  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:48.428493  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:48.429440  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.237602	Ground-detector time: 0.946275
+I0414 13:51:48.448972  6291 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:48.449247  6291 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.094857	 feature: 0.183347	 infer: 13.0267	 fg-seg: 7.44611	 join: 0.00018	 collect: 0.274184
+I0414 13:51:48.620162  6346 cnn_segmentation.cc:185]  before roi filter
+I0414 13:51:48.620173  6346 cnn_segmentation.cc:193]  Fail to call roi filter, use origin cloud.
+I0414 13:51:48.620564  6346 cnn_segmentation.cc:206]  after roi filter
+I0414 13:51:48.621470  6346 cnn_segmentation.cc:216]  Roi-filter time: 0.405487	Ground-detector time: 0.905619
+I0414 13:51:48.640933  6295 cnn_segmentation.cc:325]  Use origin cloud and copy height
+I0414 13:51:48.641186  6295 cnn_segmentation.cc:303]  CNNSEG: mapping: 0.111985	 feature: 0.169261	 infer: 13.0585	 fg-seg: 7.46718	 join: 0.000187	 collect: 0.251903
