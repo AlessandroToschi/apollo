@@ -162,10 +162,10 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
     return false;
   }
 
-  if(frame->frame_id == 10)
-  {
-    cudaProfilerStart();
-  }
+  //if(frame->frame_id == 10)
+  //{
+  //  cudaProfilerStart();
+  //}
 
   auto start = std::chrono::high_resolution_clock::now();
   auto data_provider = frame->data_provider;
@@ -259,10 +259,10 @@ bool DarkSCNNLaneDetector::Detect(const LaneDetectorOptions &options,
          << " Avg detection merge output time: " << time_2 / time_num;
   ADEBUG << "Lane detection done!";
 
-  if(frame->frame_id == 11)
-  {
-    cudaProfilerStop();
-  }
+  //if(frame->frame_id == 11)
+  //{
+  //  cudaProfilerStop();
+  //}
 
 
   return true;

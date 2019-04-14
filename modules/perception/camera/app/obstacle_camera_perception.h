@@ -20,6 +20,8 @@
 #include <memory>
 #include <string>
 
+#include <cuda.h>
+#include <cuda_profiler_api.h>
 #include "modules/perception/camera/app/perception.pb.h"
 #include "modules/perception/camera/common/camera_frame.h"
 #include "modules/perception/camera/common/object_template_manager.h"

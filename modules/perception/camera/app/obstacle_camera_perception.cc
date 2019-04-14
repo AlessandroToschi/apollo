@@ -321,6 +321,8 @@ bool ObstacleCameraPerception::Perception(
     LaneDetectorOptions lane_detetor_options;
     LanePostprocessorOptions lane_postprocessor_options;
 
+
+
     start_time = apollo::cyber::Time::Now();
     if (!lane_detector_->Detect(lane_detetor_options, frame)) {
       AERROR << "Failed to detect lane.";
@@ -328,6 +330,8 @@ bool ObstacleCameraPerception::Perception(
     }
     end_time = apollo::cyber::Time::Now();
     times["LaneDetector::Detect"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
+
+
 
     PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(), "LaneDetector");
 
@@ -393,6 +397,8 @@ bool ObstacleCameraPerception::Perception(
   std::shared_ptr<BaseObstacleDetector> detector =
       name_detector_map_.at(frame->data_provider->sensor_name());
 
+
+
   start_time = apollo::cyber::Time::Now();
   if (!detector->Detect(detector_options, frame)) {
     AERROR << "Failed to detect.";
@@ -402,8 +408,7 @@ bool ObstacleCameraPerception::Perception(
   times["YoloObstacleDetector::Detect"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(frame->data_provider->sensor_name(),
                                            "detect");
-
-  // save all detections results as kitti format
+    // save all detections results as kitti format
   WriteDetections(perception_param_.debug_param().has_detection_out_dir(),
                   perception_param_.debug_param().detection_out_dir() + "/" +
                       std::to_string(frame->frame_id + 1) + ".txt",
@@ -508,6 +513,16 @@ bool ObstacleCameraPerception::Perception(
   times["FillObjectPolygon"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
 
   WriteTimes(true, "/apollo/debug_output/" + std::to_string(frame->frame_id + 1) + "_times.txt", times);
+
+  if(frame->frame_id == 10) 
+  {
+    cudaProfilerStart();
+  }
+
+  if(frame->frame_id == 11) 
+  {
+    cudaProfilerStop();
+  }
 
   return true;
 }

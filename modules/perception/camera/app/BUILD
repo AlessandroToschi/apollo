@@ -63,6 +63,7 @@ cc_library(
         "//modules/perception/inference/utils:inference_util_lib",
         "//modules/perception/lib/utils",
         "@yaml_cpp//:yaml",
+        "@cuda",
     ],
 )
 
