@@ -18,6 +18,10 @@
 #include <memory>
 #include <string>
 
+#include "cyber/cyber.h"
+#include "cyber/common/file.h"
+#include "cyber/common/log.h"
+
 #include "modules/drivers/proto/pointcloud.pb.h"
 #include "modules/perception/lidar/common/lidar_frame.h"
 

@@ -126,6 +126,15 @@ LidarProcessResult LidarObstacleSegmentation::Process(
 
     apollo::perception::camera::WriteTimes2("/apollo/debug_output/" + std::to_string(frame->frame_id) + "_seg.txt", times);
 
+    if(frame->frame_id == 10)
+    {
+      cudaProfilerStart();
+    }
+    else if(frame->frame_id == 11)
+    {
+      cudaProfilerStop();
+    }
+
     return result;
   } 
   else 

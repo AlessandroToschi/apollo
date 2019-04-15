@@ -18,8 +18,10 @@
 #include <memory>
 #include <string>
 
-#include "Eigen/Dense"
+#include <cuda.h>
+#include <cuda_profiler_api.h>
 
+#include "Eigen/Dense"
 #include "cyber/cyber.h"
 #include "cyber/common/file.h"
 #include "cyber/common/log.h"

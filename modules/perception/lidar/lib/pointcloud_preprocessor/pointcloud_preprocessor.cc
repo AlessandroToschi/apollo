@@ -65,6 +65,8 @@ bool PointCloudPreprocessor::Preprocess(
     const PointCloudPreprocessorOptions& options,
     const std::shared_ptr<apollo::drivers::PointCloud const>& message,
     LidarFrame* frame) const {
+  apollo::cyber::Time start_time, end_time;
+  start_time = apollo::cyber::Time::Now();
   if (frame == nullptr) {
     return false;
   }
@@ -75,9 +77,17 @@ bool PointCloudPreprocessor::Preprocess(
     frame->world_cloud = base::PointDCloudPool::Instance().Get();
   }
   frame->cloud->set_timestamp(message->measurement_time());
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "-1: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
+  start_time = apollo::cyber::Time::Now();
   if (message->point_size() > 0) {
+    start_time = apollo::cyber::Time::Now();
     frame->cloud->reserve(message->point_size());
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "-2: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
+    start_time = apollo::cyber::Time::Now();
     base::PointF point;
+    int counter = 0;
     for (int i = 0; i < message->point_size(); ++i) {
       const apollo::drivers::PointXYZIT& pt = message->point(i);
       if (filter_naninf_points_) {
@@ -108,10 +118,16 @@ bool PointCloudPreprocessor::Preprocess(
       point.intensity = static_cast<float>(pt.intensity());
       frame->cloud->push_back(point, static_cast<double>(pt.timestamp()) * 1e-9,
                               FLT_MAX, i, 0);
+      counter += 1;
     
     }
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "1: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
+    start_time = apollo::cyber::Time::Now();
     TransformCloud(frame->cloud, frame->lidar2world_pose, frame->world_cloud);
-    AINFO << "FROM: " << message->point_size() << "TO: " << frame->cloud->size();
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "2: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
+    AINFO << "FROM: " << message->point_size() << " TO: " << counter;
   }
   return true;
 }
@@ -158,6 +174,9 @@ bool PointCloudPreprocessor::Preprocess(
       ++i;
     }
     frame->cloud->resize(i);
+
+
+
     TransformCloud(frame->cloud, frame->lidar2world_pose, frame->world_cloud);
     AINFO << "Preprocessor filter points: " << size << " to " << i;
   }

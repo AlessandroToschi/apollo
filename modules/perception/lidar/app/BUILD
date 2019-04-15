@@ -33,6 +33,7 @@ cc_library(
         "//modules/perception/proto:perception_config_schema_proto",
         "//modules/perception/camera/app:debug_info",
         "@eigen",
+        "@cuda",
     ],
 )
 
