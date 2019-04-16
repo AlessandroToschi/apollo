@@ -514,6 +514,7 @@ bool ObstacleCameraPerception::Perception(
 
   WriteTimes(true, "/apollo/debug_output/" + std::to_string(frame->frame_id + 1) + "_times.txt", times);
 
+  /*
   if(frame->frame_id == 10) 
   {
     cudaProfilerStart();
@@ -523,7 +524,7 @@ bool ObstacleCameraPerception::Perception(
   {
     cudaProfilerStop();
   }
-
+  */
   return true;
 }
 }  // namespace camera

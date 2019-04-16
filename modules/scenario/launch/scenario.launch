@@ -5,8 +5,8 @@
         <process_name>image_provider</process_name>
     </module>
     <module>
-        <name>Profiler</name>
-        <dag_conf>/apollo/modules/scenario/dag/profiler_component.dag</dag_conf>
-        <process_name>profiler</process_name>
+        <name>PointCloud128Provider</name>
+        <dag_conf>/apollo/modules/scenario/dag/point_cloud_128_provider_component.dag</dag_conf>
+        <process_name>point_cloud_128_provider</process_name>
     </module>
 </cyber>

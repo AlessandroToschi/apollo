@@ -22,7 +22,11 @@ cc_library(
     hdrs = [
         "mlf_engine.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"tracker\\"',
+    ],
     deps = [
+        "//cyber",
         "//cyber/common:file",
         "//modules/perception/lib/config_manager",
         "//modules/perception/lidar/lib/interface:base_multi_target_tracker",

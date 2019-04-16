@@ -53,12 +53,14 @@ bool RecognitionComponent::Proc(
 
   std::shared_ptr<SensorFrameMessage> out_message =
       std::make_shared<SensorFrameMessage>();
+  
+  AINFO << "Lidar obstacles: " << message->lidar_frame_->segmented_objects.size();
 
   if (InternalProc(message, out_message)) {
     writer_->Write(out_message);
     AINFO << "Send lidar recognition output message.";
     end_time = apollo::cyber::Time::Now();
-    AINFO << "Response time for frame " << message->seq_num_ << ": " << (double)(end_time - start_time).ToNanosecond() / 1E6;
+    AINFO << "Recognition Response time for frame " << message->seq_num_ << ": " << (double)(end_time - start_time).ToNanosecond() / 1E6;
     return true;
   }
   return false;

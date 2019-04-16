@@ -73,6 +73,8 @@ bool MlfEngine::Init(const MultiTargetTrackerInitOptions& options) {
 
 bool MlfEngine::Track(const MultiTargetTrackerOptions& options,
                       LidarFrame* frame) {
+
+  apollo::cyber::Time start_time, end_time;
   // 0. modify objects timestamp if necessary
   if (use_frame_timestamp_) {
     for (auto& object : frame->segmented_objects) {
@@ -86,29 +88,44 @@ bool MlfEngine::Track(const MultiTargetTrackerOptions& options,
   sensor_to_local_pose_ = frame->lidar2world_pose;
   sensor_to_local_pose_.pretranslate(global_to_local_offset_);
   // 2. split fg and bg objects, and transform to tracked objects
+  start_time = apollo::cyber::Time::Now();
   SplitAndTransformToTrackedObjects(frame->segmented_objects,
                                     frame->sensor_info);
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "Split: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   // 3. assign tracked objects to tracks
   MlfTrackObjectMatcherOptions match_options;
+  start_time = apollo::cyber::Time::Now();
   TrackObjectMatchAndAssign(match_options, foreground_objects_, "foreground",
                             &foreground_track_data_);
   TrackObjectMatchAndAssign(match_options, background_objects_, "background",
                             &background_track_data_);
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "Matching: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   // 4. state filter in tracker if is main sensor
   bool is_main_sensor =
       (main_sensor_.find(frame->sensor_info.name) != main_sensor_.end());
   if (is_main_sensor) {
+    start_time = apollo::cyber::Time::Now();
     TrackStateFilter(foreground_track_data_, frame->timestamp);
     TrackStateFilter(background_track_data_, frame->timestamp);
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "TrackingState: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   }
   // 5. track to object if is main sensor
   frame->tracked_objects.clear();
   if (is_main_sensor) {
+    start_time = apollo::cyber::Time::Now();
     CollectTrackedResult(frame);
+    end_time = apollo::cyber::Time::Now();
+    AINFO << "CollectTracking: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   }
   // 6. remove stale data
+  start_time = apollo::cyber::Time::Now();
   RemoveStaleTrackData("foreground", frame->timestamp, &foreground_track_data_);
   RemoveStaleTrackData("background", frame->timestamp, &background_track_data_);
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "Stale: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   AINFO << "MlfEngine publish objects: " << frame->tracked_objects.size()
         << " sensor_name: " << frame->sensor_info.name
         << " at timestamp: " << std::to_string(frame->timestamp);

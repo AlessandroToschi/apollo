@@ -67,19 +67,28 @@ LidarProcessResult LidarObstacleTracking::Process(
 
   PERCEPTION_PERF_FUNCTION_WITH_INDICATOR(sensor_name);
 
+  apollo::cyber::Time start_time, end_time;
+  start_time = apollo::cyber::Time::Now();
+
   PERCEPTION_PERF_BLOCK_START();
   MultiTargetTrackerOptions tracker_options;
   if (!multi_target_tracker_->Track(tracker_options, frame)) {
     return LidarProcessResult(LidarErrorCode::TrackerError,
                               "Fail to track objects.");
   }
+
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "Lidar Tracking: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "tracker");
 
+  start_time = apollo::cyber::Time::Now();
   ClassifierOptions fusion_classifier_options;
   if (!fusion_classifier_->Classify(fusion_classifier_options, frame)) {
     return LidarProcessResult(LidarErrorCode::ClassifierError,
                               "Fail to fuse object types.");
   }
+  end_time = apollo::cyber::Time::Now();
+  AINFO << "Lidar Classifier: " << (double)(end_time - start_time).ToNanosecond() / 1E6;
   PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(sensor_name, "type_fusion");
 
   return LidarProcessResult(LidarErrorCode::Succeed);

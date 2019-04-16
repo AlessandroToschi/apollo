@@ -18,6 +18,7 @@ cc_library(
     hdrs = [
         "lidar_obstacle_segmentation.h",
     ],
+    
     deps = [
         "//cyber",
         "//modules/common/proto:error_code_proto",
@@ -44,6 +45,9 @@ cc_library(
     ],
     hdrs = [
         "lidar_obstacle_tracking.h",
+    ],
+    copts = [
+        '-DMODULE_NAME=\\"lidar_tracking\\"',
     ],
     deps = [
         "//cyber",
