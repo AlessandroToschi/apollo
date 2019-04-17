@@ -1,0 +1,1094 @@
+Log file created at: 2019/04/16 11:06:23
+Running on machine: in_dev_docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0416 11:06:23.609586  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 32 background: 0
+I0416 11:06:23.609591  9903 mlf_engine.cc:95]  Split: 0.09996
+I0416 11:06:23.609596  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 0 unassigned_objects 32
+I0416 11:06:23.609623  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:23.609627  9903 mlf_engine.cc:104]  Matching: 0.031579
+I0416 11:06:23.610226  9903 mlf_engine.cc:113]  TrackingState: 0.595897
+I0416 11:06:23.610365  9903 mlf_engine.cc:121]  CollectTracking: 0.13026
+I0416 11:06:23.610373  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 32 to 32
+I0416 11:06:23.610375  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:23.610378  9903 mlf_engine.cc:128]  Stale: 0.00648
+I0416 11:06:23.610380  9903 mlf_engine.cc:129]  MlfEngine publish objects: 32 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:23.804572  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:23.804579  9908 mlf_engine.cc:95]  Split: 0.264313
+I0416 11:06:23.804709  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 30 unassigned_objects 10
+I0416 11:06:23.804723  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:23.804728  9908 mlf_engine.cc:104]  Matching: 0.146011
+I0416 11:06:23.806113  9908 mlf_engine.cc:113]  TrackingState: 1.37955
+I0416 11:06:23.806406  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 32 num_objects: 42
+I0416 11:06:23.806421  9908 mlf_engine.cc:121]  CollectTracking: 0.298013
+I0416 11:06:23.806426  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 42 to 42
+I0416 11:06:23.806428  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:23.806432  9908 mlf_engine.cc:128]  Stale: 0.006547
+I0416 11:06:23.806437  9908 mlf_engine.cc:129]  MlfEngine publish objects: 10 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:23.998879  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 0 background: 0
+I0416 11:06:23.998888  9900 mlf_engine.cc:95]  Split: 0.011333
+I0416 11:06:23.998900  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 42 unassigned_objects 0
+I0416 11:06:23.998908  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:23.998914  9900 mlf_engine.cc:104]  Matching: 0.016218
+I0416 11:06:23.998930  9900 mlf_engine.cc:113]  TrackingState: 0.008911
+I0416 11:06:23.999014  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 42 num_objects: 42
+I0416 11:06:23.999038  9900 mlf_engine.cc:121]  CollectTracking: 0.096168
+I0416 11:06:23.999048  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 42 to 42
+I0416 11:06:23.999053  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:23.999060  9900 mlf_engine.cc:128]  Stale: 0.012591
+I0416 11:06:23.999068  9900 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:24.203316  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 11 background: 0
+I0416 11:06:24.203323  9904 mlf_engine.cc:95]  Split: 0.060109
+I0416 11:06:24.203495  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 42 unassigned_objects 11
+I0416 11:06:24.203519  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:24.203526  9904 mlf_engine.cc:104]  Matching: 0.197012
+I0416 11:06:24.203827  9904 mlf_engine.cc:113]  TrackingState: 0.296742
+I0416 11:06:24.203987  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 42 num_objects: 53
+I0416 11:06:24.204006  9904 mlf_engine.cc:121]  CollectTracking: 0.168438
+I0416 11:06:24.204013  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 53 to 53
+I0416 11:06:24.204016  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:24.204022  9904 mlf_engine.cc:128]  Stale: 0.009562
+I0416 11:06:24.204030  9904 mlf_engine.cc:129]  MlfEngine publish objects: 11 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:24.393095  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 10 background: 0
+I0416 11:06:24.393100  9907 mlf_engine.cc:95]  Split: 0.046353
+I0416 11:06:24.393257  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 52 unassigned_objects 9
+I0416 11:06:24.393275  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:24.393278  9907 mlf_engine.cc:104]  Matching: 0.174723
+I0416 11:06:24.393501  9907 mlf_engine.cc:113]  TrackingState: 0.217613
+I0416 11:06:24.393625  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 52 num_objects: 62
+I0416 11:06:24.393641  9907 mlf_engine.cc:121]  CollectTracking: 0.131963
+I0416 11:06:24.393646  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 62 to 62
+I0416 11:06:24.393649  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:24.393652  9907 mlf_engine.cc:128]  Stale: 0.005817
+I0416 11:06:24.393657  9907 mlf_engine.cc:129]  MlfEngine publish objects: 10 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:24.603183  9899 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 6 background: 0
+I0416 11:06:24.603191  9899 mlf_engine.cc:95]  Split: 0.272855
+I0416 11:06:24.603384  9899 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 58 unassigned_objects 2
+I0416 11:06:24.603399  9899 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:24.603402  9899 mlf_engine.cc:104]  Matching: 0.204482
+I0416 11:06:24.605376  9899 mlf_engine.cc:113]  TrackingState: 1.96129
+I0416 11:06:24.605736  9899 mlf_engine.cc:224]  MlfEngine, num_predict: 61 num_objects: 64
+I0416 11:06:24.605765  9899 mlf_engine.cc:121]  CollectTracking: 0.370434
+I0416 11:06:24.605774  9899 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 64 to 64
+I0416 11:06:24.605779  9899 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:24.605782  9899 mlf_engine.cc:128]  Stale: 0.008538
+I0416 11:06:24.605787  9899 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:24.788622  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 27 background: 0
+I0416 11:06:24.788630  9906 mlf_engine.cc:95]  Split: 0.084237
+I0416 11:06:24.789134  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 60 unassigned_objects 23
+I0416 11:06:24.789170  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:24.789175  9906 mlf_engine.cc:104]  Matching: 0.539806
+I0416 11:06:24.789382  9906 mlf_engine.cc:113]  TrackingState: 0.198315
+I0416 11:06:24.789577  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 63 num_objects: 87
+I0416 11:06:24.789598  9906 mlf_engine.cc:121]  CollectTracking: 0.205698
+I0416 11:06:24.789605  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 87 to 87
+I0416 11:06:24.789609  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:24.789614  9906 mlf_engine.cc:128]  Stale: 0.010071
+I0416 11:06:24.789619  9906 mlf_engine.cc:129]  MlfEngine publish objects: 24 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:25.000581  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:25.000586  9897 mlf_engine.cc:95]  Split: 0.072584
+I0416 11:06:25.000885  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 81 unassigned_objects 6
+I0416 11:06:25.000900  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:25.000902  9897 mlf_engine.cc:104]  Matching: 0.311371
+I0416 11:06:25.001137  9897 mlf_engine.cc:113]  TrackingState: 0.230823
+I0416 11:06:25.001297  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 87 num_objects: 93
+I0416 11:06:25.001320  9897 mlf_engine.cc:121]  CollectTracking: 0.172532
+I0416 11:06:25.001325  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 93 to 93
+I0416 11:06:25.001327  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:25.001329  9897 mlf_engine.cc:128]  Stale: 0.005784
+I0416 11:06:25.001333  9897 mlf_engine.cc:129]  MlfEngine publish objects: 6 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:25.195246  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 9 background: 0
+I0416 11:06:25.195251  9902 mlf_engine.cc:95]  Split: 0.048991
+I0416 11:06:25.195477  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 88 unassigned_objects 4
+I0416 11:06:25.195490  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:25.195493  9902 mlf_engine.cc:104]  Matching: 0.23822
+I0416 11:06:25.195761  9902 mlf_engine.cc:113]  TrackingState: 0.263553
+I0416 11:06:25.195919  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 88 num_objects: 97
+I0416 11:06:25.195940  9902 mlf_engine.cc:121]  CollectTracking: 0.169075
+I0416 11:06:25.195945  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 97 to 97
+I0416 11:06:25.195948  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:25.195952  9902 mlf_engine.cc:128]  Stale: 0.008272
+I0416 11:06:25.195957  9902 mlf_engine.cc:129]  MlfEngine publish objects: 9 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:25.419811  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 5 background: 0
+I0416 11:06:25.419818  9905 mlf_engine.cc:95]  Split: 0.031901
+I0416 11:06:25.419981  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 97 unassigned_objects 5
+I0416 11:06:25.419993  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:25.419996  9905 mlf_engine.cc:104]  Matching: 0.170375
+I0416 11:06:25.420028  9905 mlf_engine.cc:113]  TrackingState: 0.027624
+I0416 11:06:25.420145  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 97 num_objects: 102
+I0416 11:06:25.420166  9905 mlf_engine.cc:121]  CollectTracking: 0.129461
+I0416 11:06:25.420171  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 102 to 102
+I0416 11:06:25.420176  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:25.420178  9905 mlf_engine.cc:128]  Stale: 0.007951
+I0416 11:06:25.420183  9905 mlf_engine.cc:129]  MlfEngine publish objects: 5 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:27.638921  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 13 background: 0
+I0416 11:06:27.638947  9898 mlf_engine.cc:95]  Split: 0.376937
+I0416 11:06:27.640215  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 97 unassigned_objects 8
+I0416 11:06:27.640275  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:27.640286  9898 mlf_engine.cc:104]  Matching: 1.32105
+I0416 11:06:27.643146  9898 mlf_engine.cc:113]  TrackingState: 2.84368
+I0416 11:06:27.643978  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 97 num_objects: 110
+I0416 11:06:27.644068  9898 mlf_engine.cc:121]  CollectTracking: 0.88613
+I0416 11:06:27.644094  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 110 to 110
+I0416 11:06:27.644110  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:27.644135  9898 mlf_engine.cc:128]  Stale: 0.044013
+I0416 11:06:27.644156  9898 mlf_engine.cc:129]  MlfEngine publish objects: 13 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:27.905627  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 5 background: 0
+I0416 11:06:27.905633  9901 mlf_engine.cc:95]  Split: 0.025967
+I0416 11:06:27.905833  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 109 unassigned_objects 4
+I0416 11:06:27.905843  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:27.905845  9901 mlf_engine.cc:104]  Matching: 0.208867
+I0416 11:06:27.905891  9901 mlf_engine.cc:113]  TrackingState: 0.041152
+I0416 11:06:27.906006  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 109 num_objects: 114
+I0416 11:06:27.906028  9901 mlf_engine.cc:121]  CollectTracking: 0.129035
+I0416 11:06:27.906033  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 114 to 114
+I0416 11:06:27.906035  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:27.906038  9901 mlf_engine.cc:128]  Stale: 0.005032
+I0416 11:06:27.906040  9901 mlf_engine.cc:129]  MlfEngine publish objects: 5 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:27.929682  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 9 background: 0
+I0416 11:06:27.929687  9908 mlf_engine.cc:95]  Split: 0.079925
+I0416 11:06:27.929962  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 8 unassigned_tracks 106 unassigned_objects 1
+I0416 11:06:27.929973  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:27.929976  9908 mlf_engine.cc:104]  Matching: 0.286098
+I0416 11:06:27.930598  9908 mlf_engine.cc:113]  TrackingState: 0.617604
+I0416 11:06:27.930698  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 106 num_objects: 115
+I0416 11:06:27.930725  9908 mlf_engine.cc:121]  CollectTracking: 0.120574
+I0416 11:06:27.930732  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 115 to 115
+I0416 11:06:27.930735  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:27.930738  9908 mlf_engine.cc:128]  Stale: 0.007238
+I0416 11:06:27.930743  9908 mlf_engine.cc:129]  MlfEngine publish objects: 9 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:27.997742  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 8 background: 0
+I0416 11:06:27.997747  9903 mlf_engine.cc:95]  Split: 0.206729
+I0416 11:06:27.997997  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 112 unassigned_objects 5
+I0416 11:06:27.998008  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:27.998010  9903 mlf_engine.cc:104]  Matching: 0.25918
+I0416 11:06:27.999933  9903 mlf_engine.cc:113]  TrackingState: 1.91768
+I0416 11:06:28.000319  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 112 num_objects: 120
+I0416 11:06:28.000344  9903 mlf_engine.cc:121]  CollectTracking: 0.400036
+I0416 11:06:28.000349  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 120 to 120
+I0416 11:06:28.000350  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:28.000352  9903 mlf_engine.cc:128]  Stale: 0.005207
+I0416 11:06:28.000356  9903 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:28.207944  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 8 background: 0
+I0416 11:06:28.207952  9897 mlf_engine.cc:95]  Split: 0.109891
+I0416 11:06:28.208261  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 113 unassigned_objects 1
+I0416 11:06:28.208272  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:28.208276  9897 mlf_engine.cc:104]  Matching: 0.320172
+I0416 11:06:28.209120  9897 mlf_engine.cc:113]  TrackingState: 0.841129
+I0416 11:06:28.209384  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 113 num_objects: 121
+I0416 11:06:28.209414  9897 mlf_engine.cc:121]  CollectTracking: 0.283365
+I0416 11:06:28.209421  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 121 to 121
+I0416 11:06:28.209425  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:28.209429  9897 mlf_engine.cc:128]  Stale: 0.009009
+I0416 11:06:28.209434  9897 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:28.420725  9899 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:28.420730  9899 mlf_engine.cc:95]  Split: 0.032346
+I0416 11:06:28.420910  9899 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 119 unassigned_objects 2
+I0416 11:06:28.420920  9899 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:28.420922  9899 mlf_engine.cc:104]  Matching: 0.188295
+I0416 11:06:28.421089  9899 mlf_engine.cc:113]  TrackingState: 0.162123
+I0416 11:06:28.421211  9899 mlf_engine.cc:224]  MlfEngine, num_predict: 119 num_objects: 123
+I0416 11:06:28.421236  9899 mlf_engine.cc:121]  CollectTracking: 0.134132
+I0416 11:06:28.421239  9899 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 123 to 123
+I0416 11:06:28.421241  9899 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:28.421243  9899 mlf_engine.cc:128]  Stale: 0.004971
+I0416 11:06:28.421247  9899 mlf_engine.cc:129]  MlfEngine publish objects: 4 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:28.597421  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 1 background: 0
+I0416 11:06:28.597426  9905 mlf_engine.cc:95]  Split: 0.037283
+I0416 11:06:28.597543  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 122 unassigned_objects 0
+I0416 11:06:28.597548  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:28.597551  9905 mlf_engine.cc:104]  Matching: 0.120271
+I0416 11:06:28.597563  9905 mlf_engine.cc:113]  TrackingState: 0.008566
+I0416 11:06:28.597653  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 123 num_objects: 123
+I0416 11:06:28.597679  9905 mlf_engine.cc:121]  CollectTracking: 0.108492
+I0416 11:06:28.597697  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 123 to 123
+I0416 11:06:28.597702  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:28.597703  9905 mlf_engine.cc:128]  Stale: 0.008228
+I0416 11:06:28.597707  9905 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:28.793402  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 14 background: 0
+I0416 11:06:28.793408  9898 mlf_engine.cc:95]  Split: 0.057428
+I0416 11:06:28.793915  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 120 unassigned_objects 11
+I0416 11:06:28.793934  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:28.793938  9898 mlf_engine.cc:104]  Matching: 0.525553
+I0416 11:06:28.794129  9898 mlf_engine.cc:113]  TrackingState: 0.186636
+I0416 11:06:28.794351  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 120 num_objects: 134
+I0416 11:06:28.794384  9898 mlf_engine.cc:121]  CollectTracking: 0.243114
+I0416 11:06:28.794390  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 134 to 134
+I0416 11:06:28.794396  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:28.794399  9898 mlf_engine.cc:128]  Stale: 0.009961
+I0416 11:06:28.794405  9898 mlf_engine.cc:129]  MlfEngine publish objects: 14 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:29.003973  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 1 background: 0
+I0416 11:06:29.003981  9901 mlf_engine.cc:95]  Split: 0.049802
+I0416 11:06:29.004197  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 133 unassigned_objects 0
+I0416 11:06:29.004210  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:29.004215  9901 mlf_engine.cc:104]  Matching: 0.2238
+I0416 11:06:29.004534  9901 mlf_engine.cc:113]  TrackingState: 0.310942
+I0416 11:06:29.004811  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 133 num_objects: 134
+I0416 11:06:29.004865  9901 mlf_engine.cc:121]  CollectTracking: 0.313618
+I0416 11:06:29.004873  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 134 to 134
+I0416 11:06:29.004881  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:29.004889  9901 mlf_engine.cc:128]  Stale: 0.01718
+I0416 11:06:29.004899  9901 mlf_engine.cc:129]  MlfEngine publish objects: 1 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:29.219185  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 7 background: 0
+I0416 11:06:29.219192  9906 mlf_engine.cc:95]  Split: 0.050536
+I0416 11:06:29.219491  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 130 unassigned_objects 3
+I0416 11:06:29.219502  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:29.219506  9906 mlf_engine.cc:104]  Matching: 0.308398
+I0416 11:06:29.219854  9906 mlf_engine.cc:113]  TrackingState: 0.343786
+I0416 11:06:29.220067  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 130 num_objects: 137
+I0416 11:06:29.220093  9906 mlf_engine.cc:121]  CollectTracking: 0.229368
+I0416 11:06:29.220098  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 137 to 137
+I0416 11:06:29.220100  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:29.220103  9906 mlf_engine.cc:128]  Stale: 0.005264
+I0416 11:06:29.220108  9906 mlf_engine.cc:129]  MlfEngine publish objects: 7 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:29.417681  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 14 background: 0
+I0416 11:06:29.417685  9907 mlf_engine.cc:95]  Split: 0.02919
+I0416 11:06:29.418176  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 133 unassigned_objects 10
+I0416 11:06:29.418191  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:29.418195  9907 mlf_engine.cc:104]  Matching: 0.503894
+I0416 11:06:29.418304  9907 mlf_engine.cc:113]  TrackingState: 0.106316
+I0416 11:06:29.418429  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 133 num_objects: 147
+I0416 11:06:29.418462  9907 mlf_engine.cc:121]  CollectTracking: 0.146213
+I0416 11:06:29.418467  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 147 to 147
+I0416 11:06:29.418469  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:29.418473  9907 mlf_engine.cc:128]  Stale: 0.007763
+I0416 11:06:29.418478  9907 mlf_engine.cc:129]  MlfEngine publish objects: 14 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:29.597640  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 16 background: 0
+I0416 11:06:29.597645  9902 mlf_engine.cc:95]  Split: 0.153054
+I0416 11:06:29.598193  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 9 unassigned_tracks 138 unassigned_objects 7
+I0416 11:06:29.598206  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:29.598209  9902 mlf_engine.cc:104]  Matching: 0.560634
+I0416 11:06:29.599617  9902 mlf_engine.cc:113]  TrackingState: 1.40425
+I0416 11:06:29.599926  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 138 num_objects: 154
+I0416 11:06:29.599954  9902 mlf_engine.cc:121]  CollectTracking: 0.32659
+I0416 11:06:29.599961  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 154 to 154
+I0416 11:06:29.599964  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:29.599967  9902 mlf_engine.cc:128]  Stale: 0.007332
+I0416 11:06:29.599972  9902 mlf_engine.cc:129]  MlfEngine publish objects: 16 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:29.795928  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 1 background: 0
+I0416 11:06:29.795933  9904 mlf_engine.cc:95]  Split: 0.012362
+I0416 11:06:29.796084  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 153 unassigned_objects 0
+I0416 11:06:29.796092  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:29.796097  9904 mlf_engine.cc:104]  Matching: 0.159504
+I0416 11:06:29.796154  9904 mlf_engine.cc:113]  TrackingState: 0.050449
+I0416 11:06:29.796283  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 153 num_objects: 154
+I0416 11:06:29.796316  9904 mlf_engine.cc:121]  CollectTracking: 0.150837
+I0416 11:06:29.796324  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 154 to 154
+I0416 11:06:29.796329  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:29.796332  9904 mlf_engine.cc:128]  Stale: 0.010771
+I0416 11:06:29.796339  9904 mlf_engine.cc:129]  MlfEngine publish objects: 1 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:30.020777  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 14 background: 0
+I0416 11:06:30.020787  9897 mlf_engine.cc:95]  Split: 0.121056
+I0416 11:06:30.021544  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 151 unassigned_objects 11
+I0416 11:06:30.021567  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:30.021572  9897 mlf_engine.cc:104]  Matching: 0.778606
+I0416 11:06:30.022054  9897 mlf_engine.cc:113]  TrackingState: 0.475764
+I0416 11:06:30.022377  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 153 num_objects: 165
+I0416 11:06:30.022430  9897 mlf_engine.cc:121]  CollectTracking: 0.35118
+I0416 11:06:30.022440  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 165 to 165
+I0416 11:06:30.022447  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:30.022452  9897 mlf_engine.cc:128]  Stale: 0.014365
+I0416 11:06:30.022457  9897 mlf_engine.cc:129]  MlfEngine publish objects: 12 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:30.199363  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 0 background: 0
+I0416 11:06:30.199367  9908 mlf_engine.cc:95]  Split: 0.006582
+I0416 11:06:30.199373  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 165 unassigned_objects 0
+I0416 11:06:30.199376  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:30.199379  9908 mlf_engine.cc:104]  Matching: 0.008572
+I0416 11:06:30.199407  9908 mlf_engine.cc:113]  TrackingState: 0.02364
+I0416 11:06:30.199517  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 165 num_objects: 165
+I0416 11:06:30.199585  9908 mlf_engine.cc:121]  CollectTracking: 0.165023
+I0416 11:06:30.199595  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 165 to 165
+I0416 11:06:30.199599  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:30.199600  9908 mlf_engine.cc:128]  Stale: 0.008066
+I0416 11:06:30.199604  9908 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:30.404400  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:30.404405  9903 mlf_engine.cc:95]  Split: 0.021337
+I0416 11:06:30.404649  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 162 unassigned_objects 1
+I0416 11:06:30.404659  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:30.404664  9903 mlf_engine.cc:104]  Matching: 0.252622
+I0416 11:06:30.404759  9903 mlf_engine.cc:113]  TrackingState: 0.088275
+I0416 11:06:30.404896  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 162 num_objects: 166
+I0416 11:06:30.404932  9903 mlf_engine.cc:121]  CollectTracking: 0.160915
+I0416 11:06:30.404939  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 166 to 166
+I0416 11:06:30.404945  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:30.404950  9903 mlf_engine.cc:128]  Stale: 0.011854
+I0416 11:06:30.404955  9903 mlf_engine.cc:129]  MlfEngine publish objects: 4 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:30.595965  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 11 background: 0
+I0416 11:06:30.595970  9900 mlf_engine.cc:95]  Split: 0.084357
+I0416 11:06:30.596462  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 161 unassigned_objects 6
+I0416 11:06:30.596477  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:30.596478  9900 mlf_engine.cc:104]  Matching: 0.503983
+I0416 11:06:30.596863  9900 mlf_engine.cc:113]  TrackingState: 0.37941
+I0416 11:06:30.597128  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 164 num_objects: 172
+I0416 11:06:30.597167  9900 mlf_engine.cc:121]  CollectTracking: 0.291483
+I0416 11:06:30.597173  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 172 to 172
+I0416 11:06:30.597177  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:30.597180  9900 mlf_engine.cc:128]  Stale: 0.007754
+I0416 11:06:30.597185  9900 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:30.797772  9899 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 2 background: 0
+I0416 11:06:30.797777  9899 mlf_engine.cc:95]  Split: 0.022404
+I0416 11:06:30.797969  9899 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 171 unassigned_objects 1
+I0416 11:06:30.797978  9899 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:30.797981  9899 mlf_engine.cc:104]  Matching: 0.199713
+I0416 11:06:30.798089  9899 mlf_engine.cc:113]  TrackingState: 0.10457
+I0416 11:06:30.798236  9899 mlf_engine.cc:224]  MlfEngine, num_predict: 171 num_objects: 173
+I0416 11:06:30.798269  9899 mlf_engine.cc:121]  CollectTracking: 0.170838
+I0416 11:06:30.798275  9899 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 173 to 173
+I0416 11:06:30.798280  9899 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:30.798281  9899 mlf_engine.cc:128]  Stale: 0.007422
+I0416 11:06:30.798286  9899 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.024051  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 1 background: 0
+I0416 11:06:31.024056  9906 mlf_engine.cc:95]  Split: 0.016739
+I0416 11:06:31.024271  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 172 unassigned_objects 0
+I0416 11:06:31.024281  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.024284  9906 mlf_engine.cc:104]  Matching: 0.221781
+I0416 11:06:31.024365  9906 mlf_engine.cc:113]  TrackingState: 0.075297
+I0416 11:06:31.024583  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 172 num_objects: 173
+I0416 11:06:31.024641  9906 mlf_engine.cc:121]  CollectTracking: 0.256822
+I0416 11:06:31.024648  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 173 to 173
+I0416 11:06:31.024652  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.024655  9906 mlf_engine.cc:128]  Stale: 0.00824
+I0416 11:06:31.024659  9906 mlf_engine.cc:129]  MlfEngine publish objects: 1 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.208253  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 5 background: 0
+I0416 11:06:31.208258  9898 mlf_engine.cc:95]  Split: 0.072659
+I0416 11:06:31.208549  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 169 unassigned_objects 1
+I0416 11:06:31.208559  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.208561  9898 mlf_engine.cc:104]  Matching: 0.298896
+I0416 11:06:31.209106  9898 mlf_engine.cc:113]  TrackingState: 0.539815
+I0416 11:06:31.209388  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 169 num_objects: 174
+I0416 11:06:31.209429  9898 mlf_engine.cc:121]  CollectTracking: 0.307794
+I0416 11:06:31.209436  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 174 to 174
+I0416 11:06:31.209442  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.209445  9898 mlf_engine.cc:128]  Stale: 0.010311
+I0416 11:06:31.209450  9898 mlf_engine.cc:129]  MlfEngine publish objects: 5 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.403605  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:31.403611  9901 mlf_engine.cc:95]  Split: 0.166634
+I0416 11:06:31.404247  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 8 unassigned_tracks 166 unassigned_objects 7
+I0416 11:06:31.404259  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.404263  9901 mlf_engine.cc:104]  Matching: 0.647636
+I0416 11:06:31.405905  9901 mlf_engine.cc:113]  TrackingState: 1.63758
+I0416 11:06:31.406245  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 166 num_objects: 181
+I0416 11:06:31.406280  9901 mlf_engine.cc:121]  CollectTracking: 0.363803
+I0416 11:06:31.406287  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 181 to 181
+I0416 11:06:31.406291  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.406294  9901 mlf_engine.cc:128]  Stale: 0.008082
+I0416 11:06:31.406299  9901 mlf_engine.cc:129]  MlfEngine publish objects: 15 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.606961  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 6 background: 0
+I0416 11:06:31.606966  9905 mlf_engine.cc:95]  Split: 0.041002
+I0416 11:06:31.607291  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 177 unassigned_objects 2
+I0416 11:06:31.607301  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.607303  9905 mlf_engine.cc:104]  Matching: 0.334285
+I0416 11:06:31.607527  9905 mlf_engine.cc:113]  TrackingState: 0.21938
+I0416 11:06:31.607731  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 177 num_objects: 183
+I0416 11:06:31.607767  9905 mlf_engine.cc:121]  CollectTracking: 0.229341
+I0416 11:06:31.607774  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 183 to 183
+I0416 11:06:31.607776  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.607780  9905 mlf_engine.cc:128]  Stale: 0.007245
+I0416 11:06:31.607784  9905 mlf_engine.cc:129]  MlfEngine publish objects: 6 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.824204  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 30 background: 0
+I0416 11:06:31.824213  9897 mlf_engine.cc:95]  Split: 0.184043
+I0416 11:06:31.825708  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 17 unassigned_tracks 166 unassigned_objects 13
+I0416 11:06:31.825736  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.825742  9897 mlf_engine.cc:104]  Matching: 1.52355
+I0416 11:06:31.826987  9897 mlf_engine.cc:113]  TrackingState: 1.23914
+I0416 11:06:31.827458  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 168 num_objects: 196
+I0416 11:06:31.827510  9897 mlf_engine.cc:121]  CollectTracking: 0.506942
+I0416 11:06:31.827517  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 196 to 196
+I0416 11:06:31.827522  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.827527  9897 mlf_engine.cc:128]  Stale: 0.010329
+I0416 11:06:31.827533  9897 mlf_engine.cc:129]  MlfEngine publish objects: 28 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:31.990502  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:31.990507  9908 mlf_engine.cc:95]  Split: 0.020256
+I0416 11:06:31.990818  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 194 unassigned_objects 2
+I0416 11:06:31.990828  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:31.990833  9908 mlf_engine.cc:104]  Matching: 0.320673
+I0416 11:06:31.990905  9908 mlf_engine.cc:113]  TrackingState: 0.06686
+I0416 11:06:31.991014  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 194 num_objects: 198
+I0416 11:06:31.991070  9908 mlf_engine.cc:121]  CollectTracking: 0.151792
+I0416 11:06:31.991075  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 198 to 198
+I0416 11:06:31.991080  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:31.991086  9908 mlf_engine.cc:128]  Stale: 0.010242
+I0416 11:06:31.991091  9908 mlf_engine.cc:129]  MlfEngine publish objects: 4 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:32.201423  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 7 background: 0
+I0416 11:06:32.201432  9904 mlf_engine.cc:95]  Split: 0.039427
+I0416 11:06:32.201968  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 192 unassigned_objects 1
+I0416 11:06:32.201985  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:32.201992  9904 mlf_engine.cc:104]  Matching: 0.552319
+I0416 11:06:32.202219  9904 mlf_engine.cc:113]  TrackingState: 0.218748
+I0416 11:06:32.202488  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 192 num_objects: 199
+I0416 11:06:32.202550  9904 mlf_engine.cc:121]  CollectTracking: 0.310768
+I0416 11:06:32.202560  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 199 to 199
+I0416 11:06:32.202565  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:32.202569  9904 mlf_engine.cc:128]  Stale: 0.010741
+I0416 11:06:32.202575  9904 mlf_engine.cc:129]  MlfEngine publish objects: 7 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:32.422667  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:32.422675  9907 mlf_engine.cc:95]  Split: 0.114958
+I0416 11:06:32.423154  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 195 unassigned_objects 0
+I0416 11:06:32.423166  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:32.423171  9907 mlf_engine.cc:104]  Matching: 0.488607
+I0416 11:06:32.423987  9907 mlf_engine.cc:113]  TrackingState: 0.810139
+I0416 11:06:32.424399  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 195 num_objects: 199
+I0416 11:06:32.424460  9907 mlf_engine.cc:121]  CollectTracking: 0.455691
+I0416 11:06:32.424469  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 199 to 199
+I0416 11:06:32.424474  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:32.424476  9907 mlf_engine.cc:128]  Stale: 0.008422
+I0416 11:06:32.424481  9907 mlf_engine.cc:129]  MlfEngine publish objects: 4 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:32.598263  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:32.598271  9902 mlf_engine.cc:95]  Split: 0.043365
+I0416 11:06:32.599269  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 192 unassigned_objects 5
+I0416 11:06:32.599290  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:32.599297  9902 mlf_engine.cc:104]  Matching: 1.01802
+I0416 11:06:32.599445  9902 mlf_engine.cc:113]  TrackingState: 0.143018
+I0416 11:06:32.599748  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 192 num_objects: 204
+I0416 11:06:32.599817  9902 mlf_engine.cc:121]  CollectTracking: 0.351588
+I0416 11:06:32.599828  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 204 to 204
+I0416 11:06:32.599833  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:32.599836  9902 mlf_engine.cc:128]  Stale: 0.010032
+I0416 11:06:32.599843  9902 mlf_engine.cc:129]  MlfEngine publish objects: 12 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:32.798599  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:32.798604  9903 mlf_engine.cc:95]  Split: 0.041894
+I0416 11:06:32.798933  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 202 unassigned_objects 2
+I0416 11:06:32.798945  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:32.798950  9903 mlf_engine.cc:104]  Matching: 0.342457
+I0416 11:06:32.799058  9903 mlf_engine.cc:113]  TrackingState: 0.101809
+I0416 11:06:32.799257  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 203 num_objects: 206
+I0416 11:06:32.799307  9903 mlf_engine.cc:121]  CollectTracking: 0.234421
+I0416 11:06:32.799312  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 206 to 206
+I0416 11:06:32.799315  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:32.799317  9903 mlf_engine.cc:128]  Stale: 0.006294
+I0416 11:06:32.799321  9903 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:33.005913  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 9 background: 0
+I0416 11:06:33.005921  9907 mlf_engine.cc:95]  Split: 0.27913
+I0416 11:06:33.006608  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 199 unassigned_objects 2
+I0416 11:06:33.006624  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:33.006633  9907 mlf_engine.cc:104]  Matching: 0.70507
+I0416 11:06:33.008388  9907 mlf_engine.cc:113]  TrackingState: 1.75052
+I0416 11:06:33.008610  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 200 num_objects: 208
+I0416 11:06:33.008674  9907 mlf_engine.cc:121]  CollectTracking: 0.269889
+I0416 11:06:33.008683  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 208 to 208
+I0416 11:06:33.008688  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:33.008692  9907 mlf_engine.cc:128]  Stale: 0.009701
+I0416 11:06:33.008697  9907 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:33.194236  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:33.194242  9901 mlf_engine.cc:95]  Split: 0.042079
+I0416 11:06:33.195063  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 13 unassigned_tracks 195 unassigned_objects 2
+I0416 11:06:33.195076  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:33.195080  9901 mlf_engine.cc:104]  Matching: 0.834284
+I0416 11:06:33.195281  9901 mlf_engine.cc:113]  TrackingState: 0.196659
+I0416 11:06:33.195425  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 195 num_objects: 210
+I0416 11:06:33.195479  9901 mlf_engine.cc:121]  CollectTracking: 0.184696
+I0416 11:06:33.195487  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 210 to 210
+I0416 11:06:33.195488  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:33.195492  9901 mlf_engine.cc:128]  Stale: 0.006473
+I0416 11:06:33.195494  9901 mlf_engine.cc:129]  MlfEngine publish objects: 15 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:33.399780  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:33.399788  9906 mlf_engine.cc:95]  Split: 0.094868
+I0416 11:06:33.400799  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 12 unassigned_tracks 198 unassigned_objects 3
+I0416 11:06:33.400821  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:33.400827  9906 mlf_engine.cc:104]  Matching: 1.0333
+I0416 11:06:33.401348  9906 mlf_engine.cc:113]  TrackingState: 0.513035
+I0416 11:06:33.401700  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 204 num_objects: 213
+I0416 11:06:33.401757  9906 mlf_engine.cc:121]  CollectTracking: 0.391273
+I0416 11:06:33.401765  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 213 to 213
+I0416 11:06:33.401769  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:33.401772  9906 mlf_engine.cc:128]  Stale: 0.007794
+I0416 11:06:33.401777  9906 mlf_engine.cc:129]  MlfEngine publish objects: 9 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:33.623214  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:33.623221  9900 mlf_engine.cc:95]  Split: 0.129982
+I0416 11:06:33.624169  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 206 unassigned_objects 5
+I0416 11:06:33.624187  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:33.624191  9900 mlf_engine.cc:104]  Matching: 0.964615
+I0416 11:06:33.624902  9900 mlf_engine.cc:113]  TrackingState: 0.704747
+I0416 11:06:33.625308  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 206 num_objects: 218
+I0416 11:06:33.625361  9900 mlf_engine.cc:121]  CollectTracking: 0.439693
+I0416 11:06:33.625370  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 218 to 218
+I0416 11:06:33.625372  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:33.625375  9900 mlf_engine.cc:128]  Stale: 0.005866
+I0416 11:06:33.625383  9900 mlf_engine.cc:129]  MlfEngine publish objects: 12 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:33.800258  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:33.800266  9901 mlf_engine.cc:95]  Split: 0.048156
+I0416 11:06:33.800668  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 214 unassigned_objects 0
+I0416 11:06:33.800678  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:33.800681  9901 mlf_engine.cc:104]  Matching: 0.411139
+I0416 11:06:33.800830  9901 mlf_engine.cc:113]  TrackingState: 0.143313
+I0416 11:06:33.800971  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 215 num_objects: 218
+I0416 11:06:33.801087  9901 mlf_engine.cc:121]  CollectTracking: 0.247601
+I0416 11:06:33.801106  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 218 to 218
+I0416 11:06:33.801110  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:33.801113  9901 mlf_engine.cc:128]  Stale: 0.009458
+I0416 11:06:33.801118  9901 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.001173  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 5 background: 0
+I0416 11:06:34.001178  9904 mlf_engine.cc:95]  Split: 0.036599
+I0416 11:06:34.001541  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 213 unassigned_objects 0
+I0416 11:06:34.001549  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.001551  9904 mlf_engine.cc:104]  Matching: 0.369034
+I0416 11:06:34.001688  9904 mlf_engine.cc:113]  TrackingState: 0.13238
+I0416 11:06:34.001889  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 215 num_objects: 218
+I0416 11:06:34.001935  9904 mlf_engine.cc:121]  CollectTracking: 0.233784
+I0416 11:06:34.001940  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 218 to 218
+I0416 11:06:34.001945  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.001950  9904 mlf_engine.cc:128]  Stale: 0.008554
+I0416 11:06:34.001953  9904 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.196930  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 0 background: 0
+I0416 11:06:34.196933  9907 mlf_engine.cc:95]  Split: 0.006153
+I0416 11:06:34.196939  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 218 unassigned_objects 0
+I0416 11:06:34.196941  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.196944  9907 mlf_engine.cc:104]  Matching: 0.007073
+I0416 11:06:34.196979  9907 mlf_engine.cc:113]  TrackingState: 0.032658
+I0416 11:06:34.197154  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 218 num_objects: 218
+I0416 11:06:34.197207  9907 mlf_engine.cc:121]  CollectTracking: 0.212831
+I0416 11:06:34.197213  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 218 to 218
+I0416 11:06:34.197216  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.197218  9907 mlf_engine.cc:128]  Stale: 0.006174
+I0416 11:06:34.197221  9907 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.422077  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 11 background: 0
+I0416 11:06:34.422092  9908 mlf_engine.cc:95]  Split: 0.112675
+I0416 11:06:34.423152  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 10 unassigned_tracks 208 unassigned_objects 1
+I0416 11:06:34.423188  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.423195  9908 mlf_engine.cc:104]  Matching: 1.09292
+I0416 11:06:34.423830  9908 mlf_engine.cc:113]  TrackingState: 0.626149
+I0416 11:06:34.424044  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 208 num_objects: 219
+I0416 11:06:34.424156  9908 mlf_engine.cc:121]  CollectTracking: 0.311483
+I0416 11:06:34.424170  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 219 to 219
+I0416 11:06:34.424175  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.424180  9908 mlf_engine.cc:128]  Stale: 0.012856
+I0416 11:06:34.424185  9908 mlf_engine.cc:129]  MlfEngine publish objects: 11 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.604838  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 16 background: 0
+I0416 11:06:34.604846  9905 mlf_engine.cc:95]  Split: 0.075084
+I0416 11:06:34.605984  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 12 unassigned_tracks 207 unassigned_objects 4
+I0416 11:06:34.606000  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.606004  9905 mlf_engine.cc:104]  Matching: 1.1537
+I0416 11:06:34.606314  9905 mlf_engine.cc:113]  TrackingState: 0.30498
+I0416 11:06:34.606637  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 209 num_objects: 223
+I0416 11:06:34.606698  9905 mlf_engine.cc:121]  CollectTracking: 0.364602
+I0416 11:06:34.606706  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 223 to 223
+I0416 11:06:34.606710  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.606714  9905 mlf_engine.cc:128]  Stale: 0.008515
+I0416 11:06:34.606717  9905 mlf_engine.cc:129]  MlfEngine publish objects: 14 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.826436  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 0 background: 0
+I0416 11:06:34.826440  9900 mlf_engine.cc:95]  Split: 0.008856
+I0416 11:06:34.826449  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 0 unassigned_tracks 223 unassigned_objects 0
+I0416 11:06:34.826455  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.826464  9900 mlf_engine.cc:104]  Matching: 0.017192
+I0416 11:06:34.826509  9900 mlf_engine.cc:113]  TrackingState: 0.036408
+I0416 11:06:34.826786  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 223 num_objects: 223
+I0416 11:06:34.826879  9900 mlf_engine.cc:121]  CollectTracking: 0.344953
+I0416 11:06:34.826890  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 223 to 223
+I0416 11:06:34.826894  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.826898  9900 mlf_engine.cc:128]  Stale: 0.010764
+I0416 11:06:34.826903  9900 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:34.998028  9899 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 18 background: 0
+I0416 11:06:34.998034  9899 mlf_engine.cc:95]  Split: 0.066039
+I0416 11:06:34.999040  9899 mlf_engine.cc:170]  MlfEngine: foreground assignments 13 unassigned_tracks 210 unassigned_objects 5
+I0416 11:06:34.999056  9899 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:34.999063  9899 mlf_engine.cc:104]  Matching: 1.02379
+I0416 11:06:34.999416  9899 mlf_engine.cc:113]  TrackingState: 0.347502
+I0416 11:06:34.999668  9899 mlf_engine.cc:224]  MlfEngine, num_predict: 213 num_objects: 228
+I0416 11:06:34.999716  9899 mlf_engine.cc:121]  CollectTracking: 0.286277
+I0416 11:06:34.999723  9899 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 228 to 228
+I0416 11:06:34.999728  9899 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:34.999733  9899 mlf_engine.cc:128]  Stale: 0.010533
+I0416 11:06:34.999738  9899 mlf_engine.cc:129]  MlfEngine publish objects: 15 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:35.203179  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:35.203184  9904 mlf_engine.cc:95]  Split: 0.063099
+I0416 11:06:35.203852  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 222 unassigned_objects 6
+I0416 11:06:35.203866  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:35.203868  9904 mlf_engine.cc:104]  Matching: 0.680428
+I0416 11:06:35.204257  9904 mlf_engine.cc:113]  TrackingState: 0.385595
+I0416 11:06:35.204545  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 222 num_objects: 234
+I0416 11:06:35.204592  9904 mlf_engine.cc:121]  CollectTracking: 0.319766
+I0416 11:06:35.204599  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 234 to 234
+I0416 11:06:35.204603  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:35.204607  9904 mlf_engine.cc:128]  Stale: 0.008821
+I0416 11:06:35.204612  9904 mlf_engine.cc:129]  MlfEngine publish objects: 12 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:35.398520  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 2 background: 0
+I0416 11:06:35.398524  9898 mlf_engine.cc:95]  Split: 0.017647
+I0416 11:06:35.398854  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 232 unassigned_objects 0
+I0416 11:06:35.398864  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:35.398867  9898 mlf_engine.cc:104]  Matching: 0.337328
+I0416 11:06:35.398942  9898 mlf_engine.cc:113]  TrackingState: 0.070699
+I0416 11:06:35.399165  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 232 num_objects: 234
+I0416 11:06:35.399228  9898 mlf_engine.cc:121]  CollectTracking: 0.268295
+I0416 11:06:35.399237  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 234 to 234
+I0416 11:06:35.399240  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:35.399243  9898 mlf_engine.cc:128]  Stale: 0.007887
+I0416 11:06:35.399247  9898 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:35.631582  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 9 background: 0
+I0416 11:06:35.631588  9901 mlf_engine.cc:95]  Split: 0.359298
+I0416 11:06:35.632387  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 9 unassigned_tracks 225 unassigned_objects 0
+I0416 11:06:35.632400  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:35.632403  9901 mlf_engine.cc:104]  Matching: 0.809454
+I0416 11:06:35.634091  9901 mlf_engine.cc:113]  TrackingState: 1.68247
+I0416 11:06:35.634608  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 226 num_objects: 234
+I0416 11:06:35.634668  9901 mlf_engine.cc:121]  CollectTracking: 0.558391
+I0416 11:06:35.634676  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 234 to 234
+I0416 11:06:35.634681  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:35.634685  9901 mlf_engine.cc:128]  Stale: 0.009605
+I0416 11:06:35.634690  9901 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:35.795367  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 7 background: 0
+I0416 11:06:35.795373  9903 mlf_engine.cc:95]  Split: 0.101958
+I0416 11:06:35.795836  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 228 unassigned_objects 1
+I0416 11:06:35.795846  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:35.795850  9903 mlf_engine.cc:104]  Matching: 0.473945
+I0416 11:06:35.796530  9903 mlf_engine.cc:113]  TrackingState: 0.673685
+I0416 11:06:35.796816  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 229 num_objects: 235
+I0416 11:06:35.796864  9903 mlf_engine.cc:121]  CollectTracking: 0.319318
+I0416 11:06:35.796869  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 235 to 235
+I0416 11:06:35.796872  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:35.796875  9903 mlf_engine.cc:128]  Stale: 0.00587
+I0416 11:06:35.796877  9903 mlf_engine.cc:129]  MlfEngine publish objects: 6 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:35.999866  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:35.999872  9897 mlf_engine.cc:95]  Split: 0.019797
+I0416 11:06:36.000207  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 231 unassigned_objects 0
+I0416 11:06:36.000214  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.000217  9897 mlf_engine.cc:104]  Matching: 0.340216
+I0416 11:06:36.000275  9897 mlf_engine.cc:113]  TrackingState: 0.05424
+I0416 11:06:36.000422  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 233 num_objects: 235
+I0416 11:06:36.000471  9897 mlf_engine.cc:121]  CollectTracking: 0.179609
+I0416 11:06:36.000478  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 235 to 235
+I0416 11:06:36.000481  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.000483  9897 mlf_engine.cc:128]  Stale: 0.007139
+I0416 11:06:36.000486  9897 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:36.210358  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 28 background: 0
+I0416 11:06:36.210364  9901 mlf_engine.cc:95]  Split: 0.148465
+I0416 11:06:36.211755  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 13 unassigned_tracks 222 unassigned_objects 15
+I0416 11:06:36.211771  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.211773  9901 mlf_engine.cc:104]  Matching: 1.40532
+I0416 11:06:36.212836  9901 mlf_engine.cc:113]  TrackingState: 1.05792
+I0416 11:06:36.213033  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 222 num_objects: 250
+I0416 11:06:36.213100  9901 mlf_engine.cc:121]  CollectTracking: 0.250913
+I0416 11:06:36.213106  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 250 to 250
+I0416 11:06:36.213109  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.213111  9901 mlf_engine.cc:128]  Stale: 0.005814
+I0416 11:06:36.213114  9901 mlf_engine.cc:129]  MlfEngine publish objects: 28 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:36.399107  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:36.399111  9905 mlf_engine.cc:95]  Split: 0.014936
+I0416 11:06:36.399493  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 247 unassigned_objects 1
+I0416 11:06:36.399504  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.399508  9905 mlf_engine.cc:104]  Matching: 0.394641
+I0416 11:06:36.399569  9905 mlf_engine.cc:113]  TrackingState: 0.055535
+I0416 11:06:36.399739  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 248 num_objects: 251
+I0416 11:06:36.399792  9905 mlf_engine.cc:121]  CollectTracking: 0.205941
+I0416 11:06:36.399801  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 251 to 251
+I0416 11:06:36.399804  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.399806  9905 mlf_engine.cc:128]  Stale: 0.00734
+I0416 11:06:36.399809  9905 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:36.601187  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 18 background: 0
+I0416 11:06:36.601193  9907 mlf_engine.cc:95]  Split: 0.153934
+I0416 11:06:36.602210  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 15 unassigned_tracks 236 unassigned_objects 3
+I0416 11:06:36.602223  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.602228  9907 mlf_engine.cc:104]  Matching: 1.02902
+I0416 11:06:36.603574  9907 mlf_engine.cc:113]  TrackingState: 1.33797
+I0416 11:06:36.604039  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 238 num_objects: 254
+I0416 11:06:36.604089  9907 mlf_engine.cc:121]  CollectTracking: 0.500744
+I0416 11:06:36.604097  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 254 to 254
+I0416 11:06:36.604104  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.604107  9907 mlf_engine.cc:128]  Stale: 0.011945
+I0416 11:06:36.604115  9907 mlf_engine.cc:129]  MlfEngine publish objects: 16 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:36.794754  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 4 background: 0
+I0416 11:06:36.794759  9901 mlf_engine.cc:95]  Split: 0.020994
+I0416 11:06:36.795145  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 4 unassigned_tracks 250 unassigned_objects 0
+I0416 11:06:36.795152  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.795155  9901 mlf_engine.cc:104]  Matching: 0.391498
+I0416 11:06:36.795204  9901 mlf_engine.cc:113]  TrackingState: 0.046539
+I0416 11:06:36.795315  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 252 num_objects: 254
+I0416 11:06:36.795380  9901 mlf_engine.cc:121]  CollectTracking: 0.163476
+I0416 11:06:36.795388  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 254 to 254
+I0416 11:06:36.795390  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.795392  9901 mlf_engine.cc:128]  Stale: 0.006371
+I0416 11:06:36.795395  9901 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:36.996950  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:36.996953  9906 mlf_engine.cc:95]  Split: 0.014669
+I0416 11:06:36.997316  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 252 unassigned_objects 1
+I0416 11:06:36.997328  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:36.997330  9906 mlf_engine.cc:104]  Matching: 0.372865
+I0416 11:06:36.997386  9906 mlf_engine.cc:113]  TrackingState: 0.052448
+I0416 11:06:36.997567  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 252 num_objects: 255
+I0416 11:06:36.997618  9906 mlf_engine.cc:121]  CollectTracking: 0.216711
+I0416 11:06:36.997623  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 255 to 255
+I0416 11:06:36.997627  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:36.997628  9906 mlf_engine.cc:128]  Stale: 0.005655
+I0416 11:06:36.997632  9906 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:37.202724  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 11 background: 0
+I0416 11:06:37.202731  9898 mlf_engine.cc:95]  Split: 0.061776
+I0416 11:06:37.203733  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 9 unassigned_tracks 246 unassigned_objects 2
+I0416 11:06:37.203752  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:37.203755  9898 mlf_engine.cc:104]  Matching: 1.01744
+I0416 11:06:37.204041  9898 mlf_engine.cc:113]  TrackingState: 0.281915
+I0416 11:06:37.204409  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 246 num_objects: 257
+I0416 11:06:37.204478  9898 mlf_engine.cc:121]  CollectTracking: 0.416496
+I0416 11:06:37.204488  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 257 to 257
+I0416 11:06:37.204493  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:37.204495  9898 mlf_engine.cc:128]  Stale: 0.010264
+I0416 11:06:37.204502  9898 mlf_engine.cc:129]  MlfEngine publish objects: 11 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:37.394851  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 22 background: 0
+I0416 11:06:37.394857  9902 mlf_engine.cc:95]  Split: 0.111724
+I0416 11:06:37.396211  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 16 unassigned_tracks 241 unassigned_objects 6
+I0416 11:06:37.396227  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:37.396231  9902 mlf_engine.cc:104]  Matching: 1.37002
+I0416 11:06:37.396950  9902 mlf_engine.cc:113]  TrackingState: 0.714113
+I0416 11:06:37.397372  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 244 num_objects: 263
+I0416 11:06:37.397425  9902 mlf_engine.cc:121]  CollectTracking: 0.459425
+I0416 11:06:37.397431  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 263 to 263
+I0416 11:06:37.397434  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:37.397436  9902 mlf_engine.cc:128]  Stale: 0.005919
+I0416 11:06:37.397439  9902 mlf_engine.cc:129]  MlfEngine publish objects: 19 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:37.622786  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:37.622793  9903 mlf_engine.cc:95]  Split: 0.038566
+I0416 11:06:37.623298  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 261 unassigned_objects 1
+I0416 11:06:37.623311  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:37.623317  9903 mlf_engine.cc:104]  Matching: 0.515262
+I0416 11:06:37.623481  9903 mlf_engine.cc:113]  TrackingState: 0.15921
+I0416 11:06:37.623687  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 261 num_objects: 264
+I0416 11:06:37.623854  9903 mlf_engine.cc:121]  CollectTracking: 0.362979
+I0416 11:06:37.623877  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 264 to 264
+I0416 11:06:37.623881  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:37.623884  9903 mlf_engine.cc:128]  Stale: 0.011343
+I0416 11:06:37.623889  9903 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:37.806946  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 13 background: 0
+I0416 11:06:37.806951  9900 mlf_engine.cc:95]  Split: 0.053488
+I0416 11:06:37.807797  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 12 unassigned_tracks 252 unassigned_objects 1
+I0416 11:06:37.807809  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:37.807813  9900 mlf_engine.cc:104]  Matching: 0.858596
+I0416 11:06:37.808130  9900 mlf_engine.cc:113]  TrackingState: 0.311042
+I0416 11:06:37.808409  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 254 num_objects: 265
+I0416 11:06:37.808462  9900 mlf_engine.cc:121]  CollectTracking: 0.316362
+I0416 11:06:37.808468  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 265 to 265
+I0416 11:06:37.808472  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:37.808475  9900 mlf_engine.cc:128]  Stale: 0.008374
+I0416 11:06:37.808480  9900 mlf_engine.cc:129]  MlfEngine publish objects: 11 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:37.992929  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:37.992939  9901 mlf_engine.cc:95]  Split: 0.059009
+I0416 11:06:37.994280  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 11 unassigned_tracks 254 unassigned_objects 4
+I0416 11:06:37.994299  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:37.994307  9901 mlf_engine.cc:104]  Matching: 1.35991
+I0416 11:06:37.994454  9901 mlf_engine.cc:113]  TrackingState: 0.139628
+I0416 11:06:37.994633  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 259 num_objects: 269
+I0416 11:06:37.994740  9901 mlf_engine.cc:121]  CollectTracking: 0.26088
+I0416 11:06:37.994752  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 269 to 269
+I0416 11:06:37.994757  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:37.994763  9901 mlf_engine.cc:128]  Stale: 0.013442
+I0416 11:06:37.994771  9901 mlf_engine.cc:129]  MlfEngine publish objects: 10 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:38.200412  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:38.200418  9904 mlf_engine.cc:95]  Split: 0.085416
+I0416 11:06:38.200842  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 266 unassigned_objects 0
+I0416 11:06:38.200851  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:38.200855  9904 mlf_engine.cc:104]  Matching: 0.432071
+I0416 11:06:38.201570  9904 mlf_engine.cc:113]  TrackingState: 0.709587
+I0416 11:06:38.201987  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 266 num_objects: 269
+I0416 11:06:38.202062  9904 mlf_engine.cc:121]  CollectTracking: 0.471133
+I0416 11:06:38.202071  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 269 to 269
+I0416 11:06:38.202078  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:38.202085  9904 mlf_engine.cc:128]  Stale: 0.014973
+I0416 11:06:38.202092  9904 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:38.404558  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 9 background: 0
+I0416 11:06:38.404563  9907 mlf_engine.cc:95]  Split: 0.078981
+I0416 11:06:38.405244  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 266 unassigned_objects 6
+I0416 11:06:38.405261  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:38.405264  9907 mlf_engine.cc:104]  Matching: 0.697631
+I0416 11:06:38.405937  9907 mlf_engine.cc:113]  TrackingState: 0.667648
+I0416 11:06:38.406250  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 266 num_objects: 275
+I0416 11:06:38.406303  9907 mlf_engine.cc:121]  CollectTracking: 0.350011
+I0416 11:06:38.406311  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 275 to 275
+I0416 11:06:38.406314  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:38.406316  9907 mlf_engine.cc:128]  Stale: 0.008012
+I0416 11:06:38.406322  9907 mlf_engine.cc:129]  MlfEngine publish objects: 9 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:38.605906  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 6 background: 0
+I0416 11:06:38.605911  9902 mlf_engine.cc:95]  Split: 0.05097
+I0416 11:06:38.606451  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 270 unassigned_objects 1
+I0416 11:06:38.606462  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:38.606464  9902 mlf_engine.cc:104]  Matching: 0.549474
+I0416 11:06:38.606813  9902 mlf_engine.cc:113]  TrackingState: 0.3448
+I0416 11:06:38.607095  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 270 num_objects: 276
+I0416 11:06:38.607147  9902 mlf_engine.cc:121]  CollectTracking: 0.315644
+I0416 11:06:38.607154  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 276 to 276
+I0416 11:06:38.607156  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:38.607158  9902 mlf_engine.cc:128]  Stale: 0.006002
+I0416 11:06:38.607161  9902 mlf_engine.cc:129]  MlfEngine publish objects: 6 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:38.795056  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:38.795061  9905 mlf_engine.cc:95]  Split: 0.150454
+I0416 11:06:38.795406  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 273 unassigned_objects 0
+I0416 11:06:38.795414  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:38.795418  9905 mlf_engine.cc:104]  Matching: 0.351637
+I0416 11:06:38.795441  9905 mlf_engine.cc:113]  TrackingState: 0.020727
+I0416 11:06:38.795647  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 276 num_objects: 276
+I0416 11:06:38.795699  9905 mlf_engine.cc:121]  CollectTracking: 0.244659
+I0416 11:06:38.795706  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 276 to 276
+I0416 11:06:38.795708  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:38.795712  9905 mlf_engine.cc:128]  Stale: 0.007778
+I0416 11:06:38.795717  9905 mlf_engine.cc:129]  MlfEngine publish objects: 0 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.003250  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:39.003257  9897 mlf_engine.cc:95]  Split: 0.178626
+I0416 11:06:39.004295  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 269 unassigned_objects 8
+I0416 11:06:39.004312  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.004317  9897 mlf_engine.cc:104]  Matching: 1.05617
+I0416 11:06:39.005192  9897 mlf_engine.cc:113]  TrackingState: 0.870092
+I0416 11:06:39.005609  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 271 num_objects: 284
+I0416 11:06:39.005669  9897 mlf_engine.cc:121]  CollectTracking: 0.45872
+I0416 11:06:39.005676  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 284 to 284
+I0416 11:06:39.005681  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:39.005683  9897 mlf_engine.cc:128]  Stale: 0.00832
+I0416 11:06:39.005686  9897 mlf_engine.cc:129]  MlfEngine publish objects: 13 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.204306  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 15 background: 0
+I0416 11:06:39.204311  9908 mlf_engine.cc:95]  Split: 0.045175
+I0416 11:06:39.205312  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 12 unassigned_tracks 272 unassigned_objects 3
+I0416 11:06:39.205323  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.205327  9908 mlf_engine.cc:104]  Matching: 1.0116
+I0416 11:06:39.205556  9908 mlf_engine.cc:113]  TrackingState: 0.226331
+I0416 11:06:39.205701  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 272 num_objects: 287
+I0416 11:06:39.205821  9908 mlf_engine.cc:121]  CollectTracking: 0.256495
+I0416 11:06:39.205835  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 287 to 287
+I0416 11:06:39.205838  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:39.205840  9908 mlf_engine.cc:128]  Stale: 0.007575
+I0416 11:06:39.205843  9908 mlf_engine.cc:129]  MlfEngine publish objects: 15 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.394520  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 2 background: 0
+I0416 11:06:39.394524  9906 mlf_engine.cc:95]  Split: 0.017465
+I0416 11:06:39.394876  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 285 unassigned_objects 0
+I0416 11:06:39.394884  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.394887  9906 mlf_engine.cc:104]  Matching: 0.357342
+I0416 11:06:39.394970  9906 mlf_engine.cc:113]  TrackingState: 0.079539
+I0416 11:06:39.395226  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 285 num_objects: 287
+I0416 11:06:39.395287  9906 mlf_engine.cc:121]  CollectTracking: 0.300839
+I0416 11:06:39.395293  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 287 to 287
+I0416 11:06:39.395296  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:39.395298  9906 mlf_engine.cc:128]  Stale: 0.006172
+I0416 11:06:39.395301  9906 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.604043  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 6 background: 0
+I0416 11:06:39.604049  9898 mlf_engine.cc:95]  Split: 0.047213
+I0416 11:06:39.604763  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 5 unassigned_tracks 282 unassigned_objects 1
+I0416 11:06:39.604779  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.604782  9898 mlf_engine.cc:104]  Matching: 0.727776
+I0416 11:06:39.605031  9898 mlf_engine.cc:113]  TrackingState: 0.243755
+I0416 11:06:39.605393  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 283 num_objects: 288
+I0416 11:06:39.605476  9898 mlf_engine.cc:121]  CollectTracking: 0.418859
+I0416 11:06:39.605485  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 288 to 288
+I0416 11:06:39.605489  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:39.605491  9898 mlf_engine.cc:128]  Stale: 0.008456
+I0416 11:06:39.605496  9898 mlf_engine.cc:129]  MlfEngine publish objects: 5 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.817494  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 20 background: 0
+I0416 11:06:39.817499  9902 mlf_engine.cc:95]  Split: 0.058386
+I0416 11:06:39.818785  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 10 unassigned_tracks 278 unassigned_objects 10
+I0416 11:06:39.818799  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.818802  9902 mlf_engine.cc:104]  Matching: 1.2996
+I0416 11:06:39.819077  9902 mlf_engine.cc:113]  TrackingState: 0.271556
+I0416 11:06:39.819396  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 278 num_objects: 298
+I0416 11:06:39.819452  9902 mlf_engine.cc:121]  CollectTracking: 0.358166
+I0416 11:06:39.819458  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 298 to 298
+I0416 11:06:39.819460  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:39.819463  9902 mlf_engine.cc:128]  Stale: 0.005924
+I0416 11:06:39.819465  9902 mlf_engine.cc:129]  MlfEngine publish objects: 20 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:39.998133  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 18 background: 0
+I0416 11:06:39.998138  9904 mlf_engine.cc:95]  Split: 0.076893
+I0416 11:06:39.999490  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 18 unassigned_tracks 280 unassigned_objects 0
+I0416 11:06:39.999500  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:39.999505  9904 mlf_engine.cc:104]  Matching: 1.36045
+I0416 11:06:39.999799  9904 mlf_engine.cc:113]  TrackingState: 0.289448
+I0416 11:06:40.000108  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 290 num_objects: 298
+I0416 11:06:40.000180  9904 mlf_engine.cc:121]  CollectTracking: 0.360462
+I0416 11:06:40.000187  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 298 to 298
+I0416 11:06:40.000191  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:40.000195  9904 mlf_engine.cc:128]  Stale: 0.008228
+I0416 11:06:40.000200  9904 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:40.197974  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 2 background: 0
+I0416 11:06:40.197979  9900 mlf_engine.cc:95]  Split: 0.018976
+I0416 11:06:40.198343  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 296 unassigned_objects 0
+I0416 11:06:40.198351  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:40.198354  9900 mlf_engine.cc:104]  Matching: 0.36968
+I0416 11:06:40.198410  9900 mlf_engine.cc:113]  TrackingState: 0.052327
+I0416 11:06:40.198642  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 296 num_objects: 298
+I0416 11:06:40.198729  9900 mlf_engine.cc:121]  CollectTracking: 0.296419
+I0416 11:06:40.198740  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 298 to 298
+I0416 11:06:40.198743  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:40.198746  9900 mlf_engine.cc:128]  Stale: 0.010056
+I0416 11:06:40.198752  9900 mlf_engine.cc:129]  MlfEngine publish objects: 2 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:40.404254  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 17 background: 0
+I0416 11:06:40.404259  9908 mlf_engine.cc:95]  Split: 0.106272
+I0416 11:06:40.405411  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 9 unassigned_tracks 289 unassigned_objects 8
+I0416 11:06:40.405423  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:40.405426  9908 mlf_engine.cc:104]  Matching: 1.16248
+I0416 11:06:40.406213  9908 mlf_engine.cc:113]  TrackingState: 0.783705
+I0416 11:06:40.406414  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 289 num_objects: 306
+I0416 11:06:40.406504  9908 mlf_engine.cc:121]  CollectTracking: 0.273098
+I0416 11:06:40.406512  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 306 to 306
+I0416 11:06:40.406515  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:40.406517  9908 mlf_engine.cc:128]  Stale: 0.006837
+I0416 11:06:40.406520  9908 mlf_engine.cc:129]  MlfEngine publish objects: 17 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:40.593312  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 10 background: 0
+I0416 11:06:40.593317  9903 mlf_engine.cc:95]  Split: 0.02283
+I0416 11:06:40.594111  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 300 unassigned_objects 4
+I0416 11:06:40.594125  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:40.594127  9903 mlf_engine.cc:104]  Matching: 0.807393
+I0416 11:06:40.594252  9903 mlf_engine.cc:113]  TrackingState: 0.119038
+I0416 11:06:40.594522  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 300 num_objects: 310
+I0416 11:06:40.594609  9903 mlf_engine.cc:121]  CollectTracking: 0.332926
+I0416 11:06:40.594619  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 310 to 310
+I0416 11:06:40.594625  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:40.594627  9903 mlf_engine.cc:128]  Stale: 0.010699
+I0416 11:06:40.594633  9903 mlf_engine.cc:129]  MlfEngine publish objects: 10 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:40.789077  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 6 background: 0
+I0416 11:06:40.789079  9907 mlf_engine.cc:95]  Split: 0.019979
+I0416 11:06:40.789683  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 307 unassigned_objects 3
+I0416 11:06:40.789695  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:40.789698  9907 mlf_engine.cc:104]  Matching: 0.615891
+I0416 11:06:40.789783  9907 mlf_engine.cc:113]  TrackingState: 0.08096
+I0416 11:06:40.790057  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 307 num_objects: 313
+I0416 11:06:40.790133  9907 mlf_engine.cc:121]  CollectTracking: 0.326751
+I0416 11:06:40.790143  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 313 to 313
+I0416 11:06:40.790146  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:40.790150  9907 mlf_engine.cc:128]  Stale: 0.01049
+I0416 11:06:40.790156  9907 mlf_engine.cc:129]  MlfEngine publish objects: 6 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:41.023422  9899 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 18 background: 0
+I0416 11:06:41.023432  9899 mlf_engine.cc:95]  Split: 0.092037
+I0416 11:06:41.025461  9899 mlf_engine.cc:170]  MlfEngine: foreground assignments 14 unassigned_tracks 299 unassigned_objects 4
+I0416 11:06:41.025483  9899 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:41.025487  9899 mlf_engine.cc:104]  Matching: 2.04929
+I0416 11:06:41.025996  9899 mlf_engine.cc:113]  TrackingState: 0.502757
+I0416 11:06:41.026291  9899 mlf_engine.cc:224]  MlfEngine, num_predict: 301 num_objects: 317
+I0416 11:06:41.026418  9899 mlf_engine.cc:121]  CollectTracking: 0.403676
+I0416 11:06:41.026430  9899 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 317 to 317
+I0416 11:06:41.026434  9899 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:41.026438  9899 mlf_engine.cc:128]  Stale: 0.010104
+I0416 11:06:41.026443  9899 mlf_engine.cc:129]  MlfEngine publish objects: 16 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:41.195083  9906 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 33 background: 0
+I0416 11:06:41.195088  9906 mlf_engine.cc:95]  Split: 0.148558
+I0416 11:06:41.197240  9906 mlf_engine.cc:170]  MlfEngine: foreground assignments 25 unassigned_tracks 292 unassigned_objects 8
+I0416 11:06:41.197259  9906 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:41.197263  9906 mlf_engine.cc:104]  Matching: 2.16863
+I0416 11:06:41.198531  9906 mlf_engine.cc:113]  TrackingState: 1.26126
+I0416 11:06:41.199085  9906 mlf_engine.cc:224]  MlfEngine, num_predict: 292 num_objects: 325
+I0416 11:06:41.199177  9906 mlf_engine.cc:121]  CollectTracking: 0.621961
+I0416 11:06:41.199188  9906 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 325 to 325
+I0416 11:06:41.199193  9906 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:41.199198  9906 mlf_engine.cc:128]  Stale: 0.014109
+I0416 11:06:41.199205  9906 mlf_engine.cc:129]  MlfEngine publish objects: 33 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:41.405964  9897 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 1 background: 0
+I0416 11:06:41.405969  9897 mlf_engine.cc:95]  Split: 0.024891
+I0416 11:06:41.406302  9897 mlf_engine.cc:170]  MlfEngine: foreground assignments 1 unassigned_tracks 324 unassigned_objects 0
+I0416 11:06:41.406309  9897 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:41.406312  9897 mlf_engine.cc:104]  Matching: 0.337932
+I0416 11:06:41.406464  9897 mlf_engine.cc:113]  TrackingState: 0.147864
+I0416 11:06:41.406713  9897 mlf_engine.cc:224]  MlfEngine, num_predict: 324 num_objects: 325
+I0416 11:06:41.406787  9897 mlf_engine.cc:121]  CollectTracking: 0.304823
+I0416 11:06:41.406795  9897 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 325 to 325
+I0416 11:06:41.406796  9897 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:41.406798  9897 mlf_engine.cc:128]  Stale: 0.006197
+I0416 11:06:41.406801  9897 mlf_engine.cc:129]  MlfEngine publish objects: 1 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:41.604069  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:41.604075  9908 mlf_engine.cc:95]  Split: 0.059291
+I0416 11:06:41.604485  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 3 unassigned_tracks 322 unassigned_objects 0
+I0416 11:06:41.604495  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:41.604497  9908 mlf_engine.cc:104]  Matching: 0.418746
+I0416 11:06:41.604861  9908 mlf_engine.cc:113]  TrackingState: 0.36046
+I0416 11:06:41.605020  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 324 num_objects: 325
+I0416 11:06:41.605105  9908 mlf_engine.cc:121]  CollectTracking: 0.225604
+I0416 11:06:41.605111  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 325 to 325
+I0416 11:06:41.605116  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:41.605119  9908 mlf_engine.cc:128]  Stale: 0.00824
+I0416 11:06:41.605124  9908 mlf_engine.cc:129]  MlfEngine publish objects: 1 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:41.793365  9905 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 10 background: 0
+I0416 11:06:41.793370  9905 mlf_engine.cc:95]  Split: 0.056121
+I0416 11:06:41.794320  9905 mlf_engine.cc:170]  MlfEngine: foreground assignments 8 unassigned_tracks 317 unassigned_objects 2
+I0416 11:06:41.794333  9905 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:41.794339  9905 mlf_engine.cc:104]  Matching: 0.964855
+I0416 11:06:41.794589  9905 mlf_engine.cc:113]  TrackingState: 0.242285
+I0416 11:06:41.794929  9905 mlf_engine.cc:224]  MlfEngine, num_predict: 320 num_objects: 327
+I0416 11:06:41.795006  9905 mlf_engine.cc:121]  CollectTracking: 0.394601
+I0416 11:06:41.795015  9905 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 327 to 327
+I0416 11:06:41.795018  9905 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:41.795020  9905 mlf_engine.cc:128]  Stale: 0.007316
+I0416 11:06:41.795024  9905 mlf_engine.cc:129]  MlfEngine publish objects: 7 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.002152  9898 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 7 background: 0
+I0416 11:06:42.002161  9898 mlf_engine.cc:95]  Split: 0.041137
+I0416 11:06:42.003175  9898 mlf_engine.cc:170]  MlfEngine: foreground assignments 7 unassigned_tracks 320 unassigned_objects 0
+I0416 11:06:42.003188  9898 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.003211  9898 mlf_engine.cc:104]  Matching: 1.02661
+I0416 11:06:42.003314  9898 mlf_engine.cc:113]  TrackingState: 0.098845
+I0416 11:06:42.003691  9898 mlf_engine.cc:224]  MlfEngine, num_predict: 323 num_objects: 327
+I0416 11:06:42.003783  9898 mlf_engine.cc:121]  CollectTracking: 0.442395
+I0416 11:06:42.003793  9898 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 327 to 327
+I0416 11:06:42.003798  9898 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.003804  9898 mlf_engine.cc:128]  Stale: 0.013736
+I0416 11:06:42.003810  9898 mlf_engine.cc:129]  MlfEngine publish objects: 4 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.220532  9901 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 3 background: 0
+I0416 11:06:42.220541  9901 mlf_engine.cc:95]  Split: 0.043713
+I0416 11:06:42.221173  9901 mlf_engine.cc:170]  MlfEngine: foreground assignments 2 unassigned_tracks 325 unassigned_objects 1
+I0416 11:06:42.221189  9901 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.221194  9901 mlf_engine.cc:104]  Matching: 0.646868
+I0416 11:06:42.221446  9901 mlf_engine.cc:113]  TrackingState: 0.244003
+I0416 11:06:42.221727  9901 mlf_engine.cc:224]  MlfEngine, num_predict: 325 num_objects: 328
+I0416 11:06:42.221871  9901 mlf_engine.cc:121]  CollectTracking: 0.389421
+I0416 11:06:42.221882  9901 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 328 to 328
+I0416 11:06:42.221886  9901 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.221890  9901 mlf_engine.cc:128]  Stale: 0.010621
+I0416 11:06:42.221896  9901 mlf_engine.cc:129]  MlfEngine publish objects: 3 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.394755  9903 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 21 background: 0
+I0416 11:06:42.394762  9903 mlf_engine.cc:95]  Split: 0.101117
+I0416 11:06:42.396873  9903 mlf_engine.cc:170]  MlfEngine: foreground assignments 20 unassigned_tracks 308 unassigned_objects 1
+I0416 11:06:42.396890  9903 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.396894  9903 mlf_engine.cc:104]  Matching: 2.12666
+I0416 11:06:42.397507  9903 mlf_engine.cc:113]  TrackingState: 0.607431
+I0416 11:06:42.397984  9903 mlf_engine.cc:224]  MlfEngine, num_predict: 308 num_objects: 329
+I0416 11:06:42.398067  9903 mlf_engine.cc:121]  CollectTracking: 0.538459
+I0416 11:06:42.398077  9903 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 329 to 329
+I0416 11:06:42.398079  9903 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.398082  9903 mlf_engine.cc:128]  Stale: 0.008148
+I0416 11:06:42.398087  9903 mlf_engine.cc:129]  MlfEngine publish objects: 21 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.601904  9900 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 10 background: 0
+I0416 11:06:42.601915  9900 mlf_engine.cc:95]  Split: 0.123946
+I0416 11:06:42.603581  9900 mlf_engine.cc:170]  MlfEngine: foreground assignments 8 unassigned_tracks 321 unassigned_objects 2
+I0416 11:06:42.603605  9900 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.603611  9900 mlf_engine.cc:104]  Matching: 1.68826
+I0416 11:06:42.604218  9900 mlf_engine.cc:113]  TrackingState: 0.599086
+I0416 11:06:42.604737  9900 mlf_engine.cc:224]  MlfEngine, num_predict: 323 num_objects: 331
+I0416 11:06:42.604849  9900 mlf_engine.cc:121]  CollectTracking: 0.599397
+I0416 11:06:42.604861  9900 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 331 to 331
+I0416 11:06:42.604868  9900 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.604874  9900 mlf_engine.cc:128]  Stale: 0.013711
+I0416 11:06:42.604882  9900 mlf_engine.cc:129]  MlfEngine publish objects: 8 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.827401  9908 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 16 background: 0
+I0416 11:06:42.827410  9908 mlf_engine.cc:95]  Split: 0.375889
+I0416 11:06:42.829107  9908 mlf_engine.cc:170]  MlfEngine: foreground assignments 13 unassigned_tracks 318 unassigned_objects 3
+I0416 11:06:42.829123  9908 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.829129  9908 mlf_engine.cc:104]  Matching: 1.7123
+I0416 11:06:42.832103  9908 mlf_engine.cc:113]  TrackingState: 2.96728
+I0416 11:06:42.832458  9908 mlf_engine.cc:224]  MlfEngine, num_predict: 318 num_objects: 334
+I0416 11:06:42.832540  9908 mlf_engine.cc:121]  CollectTracking: 0.416469
+I0416 11:06:42.832547  9908 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 334 to 334
+I0416 11:06:42.832551  9908 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.832553  9908 mlf_engine.cc:128]  Stale: 0.008777
+I0416 11:06:42.832558  9908 mlf_engine.cc:129]  MlfEngine publish objects: 16 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:42.990743  9904 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 8 background: 0
+I0416 11:06:42.990748  9904 mlf_engine.cc:95]  Split: 0.130918
+I0416 11:06:42.991478  9904 mlf_engine.cc:170]  MlfEngine: foreground assignments 6 unassigned_tracks 328 unassigned_objects 2
+I0416 11:06:42.991489  9904 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:42.991492  9904 mlf_engine.cc:104]  Matching: 0.738872
+I0416 11:06:42.992604  9904 mlf_engine.cc:113]  TrackingState: 1.10749
+I0416 11:06:42.993073  9904 mlf_engine.cc:224]  MlfEngine, num_predict: 329 num_objects: 336
+I0416 11:06:42.993141  9904 mlf_engine.cc:121]  CollectTracking: 0.518783
+I0416 11:06:42.993149  9904 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 336 to 336
+I0416 11:06:42.993152  9904 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:42.993155  9904 mlf_engine.cc:128]  Stale: 0.007709
+I0416 11:06:42.993160  9904 mlf_engine.cc:129]  MlfEngine publish objects: 7 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:43.194356  9907 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 12 background: 0
+I0416 11:06:43.194363  9907 mlf_engine.cc:95]  Split: 0.083959
+I0416 11:06:43.195669  9907 mlf_engine.cc:170]  MlfEngine: foreground assignments 11 unassigned_tracks 325 unassigned_objects 1
+I0416 11:06:43.195684  9907 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:43.195689  9907 mlf_engine.cc:104]  Matching: 1.31903
+I0416 11:06:43.196326  9907 mlf_engine.cc:113]  TrackingState: 0.627454
+I0416 11:06:43.196892  9907 mlf_engine.cc:224]  MlfEngine, num_predict: 325 num_objects: 337
+I0416 11:06:43.196982  9907 mlf_engine.cc:121]  CollectTracking: 0.627911
+I0416 11:06:43.196993  9907 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 337 to 337
+I0416 11:06:43.196998  9907 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:43.197003  9907 mlf_engine.cc:128]  Stale: 0.012606
+I0416 11:06:43.197007  9907 mlf_engine.cc:129]  MlfEngine publish objects: 12 sensor_name: velodyne128 at timestamp: 1.555384
+I0416 11:06:43.403594  9902 mlf_engine.cc:156]  MlfEngine: velodyne128 foreground: 22 background: 0
+I0416 11:06:43.403602  9902 mlf_engine.cc:95]  Split: 0.108706
+I0416 11:06:43.406353  9902 mlf_engine.cc:170]  MlfEngine: foreground assignments 18 unassigned_tracks 319 unassigned_objects 4
+I0416 11:06:43.406375  9902 mlf_engine.cc:170]  MlfEngine: background assignments 0 unassigned_tracks 0 unassigned_objects 0
+I0416 11:06:43.406379  9902 mlf_engine.cc:104]  Matching: 2.77022
+I0416 11:06:43.406880  9902 mlf_engine.cc:113]  TrackingState: 0.493892
+I0416 11:06:43.407543  9902 mlf_engine.cc:224]  MlfEngine, num_predict: 319 num_objects: 341
+I0416 11:06:43.407655  9902 mlf_engine.cc:121]  CollectTracking: 0.744977
+I0416 11:06:43.407666  9902 mlf_engine.cc:243]  MlfEngine: foreground remove stale tracks, from 341 to 341
+I0416 11:06:43.407671  9902 mlf_engine.cc:243]  MlfEngine: background remove stale tracks, from 0 to 0
+I0416 11:06:43.407675  9902 mlf_engine.cc:128]  Stale: 0.010638
+I0416 11:06:43.407680  9902 mlf_engine.cc:129]  MlfEngine publish objects: 22 sensor_name: velodyne128 at timestamp: 1.555384
