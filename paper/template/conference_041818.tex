@@ -5,8 +5,10 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{dblfloatfix}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -35,7 +37,7 @@ email address}
 
 \begin{abstract}
     Autonomous driving is a field that gathers many interest from the academics world and from industry leaders.\\
-    The software of an autonomous driving systems (ADS) incorporates the state-of-the-art from many disciplines, such as computer vision, robotics, geolocalization.
+    The software of an autonomous driving systems (ADS) incorporates the state-of-the-art from many disciplines, such as computer vision, robotics, geo-localization.
     Although the high level architecture of an autonomous driving system and the main algorithms used are known, the complete analysis of a real ADS is still difficult, especially for what concerns the modules interdependencies, interactions, either software and hardware, and pre- and post-processing.\\
     In this paper, we want to extract those point of views and quantify them according different architectural aspects: response times, memory movements, complexity and CPU-GPU relationship.\\
     The analysis is based on the open-source Apollo ADS developed by Baidu and is focused on the most important modules: perception, prediction and planning.
@@ -44,9 +46,35 @@ email address}
 \section{Introduction}
 Autonomous driving system has several design constraints \cite{b1} to be met in order to produce a safe and reliable output.
 
-Response time \cite{b1} is crucial for the predictability and accuracy of the system, especially when multiple sensor and components are present, each of them with a processing routine associated.
-The maximum response time, that has been adopted as standard in the field of autonomous driving, is 100 ms and should ensure a proper and safe reaction to any possible situation.
-Several processing routines use time deltas to perform corrections and projections of input and if those time-deltas are exceeding context-related thresholds then the input is discarded, losing some potential useful information, so limiting the response time will affect also the accuracy of the system. 
+Response time \cite{b1} is crucial for the predictability and accuracy of the system, especially when multiple sensors and components are present, each of them with a processing routine associated.
+The maximum response time, which has been adopted as standard in the field of autonomous driving, is 100 ms and should ensure a proper and safe reaction to any possible situation.
+Several processing routines use time deltas to perform corrections and projections of input and if those time-deltas are exceeding context-related thresholds then the input is discarded, losing some potential useful information, thus limiting the response time will affect also the accuracy of the system. 
+
+Apollo is a modular data-driven ADS, containing several modules, each of them pursues an high level feature of autonomous driving, such as perception, prediction, planning, control, localization.
+Modules can be treated as black boxes and described in terms of input/output relationships.
+This characterization enables the analysis of modules independently, provided that the inputs fed are feasible.
+Modules are further expressed in terms of set of components, which represent lower level tasks.
+Each component follows the same paradigm of modules, which means interactions within a module are based on input/output relationships through a publisher and subscriber architecture.
+
+Cyber is the Apollo's runtime framework that implements the communication among components.
+The publisher and subscriber communication adopted by Cyber is based on channels and messages.
+Messages are serialized objects, using the Google's Protocol Buffer, which then are broadcast on channel(s).
+Each component can be a reader or writer of multiple channels at the same time.
+
+Apollo supports multiple sensors, different prediction evaluators and several scenario-based planners.
+This rich environment carries out the need of having the right hardware equipment to support each task.
+CPU should be able to sustain many multi-threaded algorithms and provides enough cores to execute several processes concurrently.
+GPU is required for the execution of convolutional neural networks (CNN), vector and matrix operations, which are especially encountered in the perception module.
+
+\begin{figure}[htb]
+    
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/apollo_software_architecture.png}
+    \caption{Apollo Software Architecture}
+    \label{}
+\end{figure}
+
+\clearpage
 
 Autonomous driving requirements.\\
 Introduction to Apollo: what is it, how is it implemented, data communication.\\
