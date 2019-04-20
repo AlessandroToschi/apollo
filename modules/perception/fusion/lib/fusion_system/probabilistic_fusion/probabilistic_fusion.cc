@@ -110,6 +110,10 @@ bool ProbabilisticFusion::Fuse(const FusionOptions& options,
                                std::vector<base::ObjectPtr>* fused_objects) {
   CHECK(fused_objects != nullptr) << "fusion error: fused_objects is nullptr";
 
+  apollo::cyber::Time start, end;
+
+  start = apollo::cyber::Time::Now();
+
   auto* sensor_data_manager = SensorDataManager::Instance();
   // 1. save frame data
   data_mutex_.lock();
@@ -138,10 +142,15 @@ bool ProbabilisticFusion::Fuse(const FusionOptions& options,
     sensor_data_manager->AddSensorMeasurements(sensor_frame);
   }
 
+  end = apollo::cyber::Time::Now();
+
   data_mutex_.unlock();
   if (!is_publish_sensor) {
     return true;
   }
+
+  AINFO << "Measurements Insertion: " << (double)(end - start).ToNanosecond() / 1E6;
+  start = apollo::cyber::Time::Now();
 
   // 2. query related sensor_frames for fusion
   fuse_mutex_.lock();
@@ -150,13 +159,24 @@ bool ProbabilisticFusion::Fuse(const FusionOptions& options,
   sensor_data_manager->GetLatestFrames(fusion_time, &frames);
   AINFO << "Get " << frames.size() << " related frames for fusion";
 
+  end = apollo::cyber::Time::Now();
+  AINFO << "Latest Frames: " << (double)(end - start).ToNanosecond() / 1E6;
+  start = apollo::cyber::Time::Now();
+
   // 3. peform fusion on related frames
   for (size_t i = 0; i < frames.size(); ++i) {
     this->FuseFrame(frames[i]);
   }
 
+  end = apollo::cyber::Time::Now();
+  AINFO << "Fusion Frames: " << (double)(end - start).ToNanosecond() / 1E6;
+  start = apollo::cyber::Time::Now();
+
   // 4. collect fused objects
   this->CollectFusedObjects(fusion_time, fused_objects);
+
+  end = apollo::cyber::Time::Now();
+  AINFO << "Fusion Collection: " << (double)(end - start).ToNanosecond() / 1E6;
 
   fuse_mutex_.unlock();
   return true;

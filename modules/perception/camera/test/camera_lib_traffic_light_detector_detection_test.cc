@@ -15,6 +15,8 @@
  *****************************************************************************/
 
 #include "modules/perception/camera/lib/traffic_light/detector/detection/detection.h"
+#include "cyber/common/log.h"
+#include "gtest/gtest.h"
 
 namespace apollo {
 namespace perception {

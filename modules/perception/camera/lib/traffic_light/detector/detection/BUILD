@@ -24,6 +24,9 @@ cc_library(
     hdrs = [
         "detection.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"detector\\"',
+    ],
     deps = [
         ":cropbox",
         ":select",

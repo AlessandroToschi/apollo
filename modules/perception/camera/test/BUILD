@@ -659,29 +659,28 @@ cc_test(
         "@yaml_cpp//:yaml",
     ],
 )
-
-# cc_test(
-#     name = "camera_lib_traffic_light_detector_detection_test",
-#     srcs = [
-#         "camera_lib_traffic_light_detector_detection_test.cc",
-#     ],
-#     linkopts = [
-#         "-lopencv_core",
-#         "-lnvinfer_plugin",
-#         "-lopencv_imgproc",
-#         "-lopencv_highgui",
-#     ],
-#     deps = [
-#         "//modules/perception/camera/lib/traffic_light/detector/detection:detection",
-#         "//modules/perception/inference:inference_factory_lib",
-#         "//modules/perception/inference/operators:perception_inference_operators",
-#         "@caffe",
-#         "@com_google_protobuf//:protobuf",
-#         "@tensorrt",
-#         "@gtest//:main",
-#         "@yaml_cpp//:yaml",
-#     ]
-# )
+#cc_test(
+#    name = "camera_lib_traffic_light_detector_detection_test",
+#    srcs = [
+#        "camera_lib_traffic_light_detector_detection_test.cc",
+#    ],
+#    linkopts = [
+#        "-lopencv_core",
+#        "-lnvinfer_plugin",
+#        "-lopencv_imgproc",
+#        "-lopencv_highgui",
+#    ],
+#    deps = [
+#        "//modules/perception/camera/lib/traffic_light/detector/detection:detection",
+#        "//modules/perception/inference:inference_factory_lib",
+#        "//modules/perception/inference/operators:perception_inference_operators",
+#        "@caffe",
+#        "@com_google_protobuf//:protobuf",
+#        "@tensorrt",
+#        "@gtest//:main",
+#        "@yaml_cpp//:yaml",
+#    ]
+#)
 
 #cc_test(
 #    name = "camera_lib_traffic_light_detector_recognition_test",

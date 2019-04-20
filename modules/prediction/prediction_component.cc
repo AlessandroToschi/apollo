@@ -113,11 +113,12 @@ bool PredictionComponent::Proc(
     AERROR << "Prediction: cannot receive any localization message.";
     return false;
   }
+  AINFO << "CIAO";
   auto localization_msg = *ptr_localization_msg;
   MessageProcess::OnLocalization(localization_msg);
   auto end_time2 = std::chrono::system_clock::now();
   std::chrono::duration<double> diff = end_time2 - end_time1;
-  ADEBUG << "Time for updating PoseContainer: " << diff.count() * 1000
+  AINFO << "Time for updating PoseContainer: " << diff.count() * 1000
          << " msec.";
 
   // Read planning info. of last frame and call OnPlanning to update
@@ -130,7 +131,7 @@ bool PredictionComponent::Proc(
   }
   auto end_time3 = std::chrono::system_clock::now();
   diff = end_time3 - end_time2;
-  ADEBUG << "Time for updating ADCTrajectoryContainer: " << diff.count() * 1000
+  AINFO << "Time for updating ADCTrajectoryContainer: " << diff.count() * 1000
          << " msec.";
 
   // Get all perception_obstacles of this frame and call OnPerception to
@@ -140,7 +141,7 @@ bool PredictionComponent::Proc(
   MessageProcess::OnPerception(perception_msg, &prediction_obstacles);
   auto end_time4 = std::chrono::system_clock::now();
   diff = end_time4 - end_time3;
-  ADEBUG << "Time for updating PerceptionContainer: " << diff.count() * 1000
+  AINFO << "Time for updating PerceptionContainer: " << diff.count() * 1000
          << " msec.";
 
   // Postprocess prediction obstacles message

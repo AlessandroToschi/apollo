@@ -288,7 +288,7 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
     const std::shared_ptr<apollo::drivers::Image> msg,
     const std::string& camera_name) {
   std::lock_guard<std::mutex> lck(mutex_);
-  double receive_img_timestamp = lib::TimeUtil::GetCurrentTime();
+  //double receive_img_timestamp = lib::TimeUtil::GetCurrentTime();
   double image_msg_ts = msg->measurement_time();
   image_msg_ts += image_timestamp_offset_;
   last_sub_camera_image_ts_[camera_name] = image_msg_ts;
@@ -301,7 +301,17 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
           << GLOG_TIMESTAMP(cur_time) << "]:cur_latency[" << start_latency
           << "]";
   }
+  PERCEPTION_PERF_BLOCK_START();
+  const std::string perf_indicator = "trafficlights";
 
+  camera::TLPreprocessorOption preprocess_option;
+  preprocess_option.image_borders_size = &image_border_sizes_;
+
+  if (!UpdateCameraSelection(image_msg_ts, preprocess_option, &frame_)) {
+    AWARN << "add_cached_camera_selection failed, ts: "
+          << std::to_string(image_msg_ts);
+  }
+  /*
   const std::string perf_indicator = "trafficlights";
   PERCEPTION_PERF_BLOCK_START();
   if (!CheckCameraImageStatus(image_msg_ts, check_image_status_interval_thresh_,
@@ -349,7 +359,7 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
     //    SendSimulationMsg();
     return;
   }
-
+  */
   // Fill camera frame
   camera::DataProvider::ImageOptions image_options;
   image_options.target_color = base::Color::RGB;
@@ -358,10 +368,11 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
       image_height_, image_width_,
       reinterpret_cast<const uint8_t*>(msg->data().data()), msg->encoding());
   frame_.timestamp = image_msg_ts;
-  const auto fill_image_data_time =
-      PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator, "FillImageData");
+  //const auto fill_image_data_time =
+  //    PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator, "FillImageData");
 
   // caros monitor -- image system time diff
+  /*
   const auto& diff_image_sys_ts = image_msg_ts - receive_img_timestamp;
   if (fabs(diff_image_sys_ts) > image_sys_ts_diff_threshold_) {
     std::string metric_name = "perception traffic_light exception";
@@ -374,8 +385,8 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
           << ". Check if image timestamp drifts."
           << ", camera_id: " + camera_name
           << ", debug_string: " << debug_string;
-  }
-
+  */
+  /*
   if (!VerifyLightsProjection(image_msg_ts, preprocess_option, camera_name,
                               &frame_)) {
     AINFO << "VerifyLightsProjection on image failed, ts: "
@@ -389,19 +400,19 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
       PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator,
                                                "VerifyLightsProjection");
   last_proc_image_ts_ = lib::TimeUtil::GetCurrentTime();
-
+  */
   AINFO << "start proc.";
   traffic_light_pipeline_->Perception(camera_perception_options_, &frame_);
 
-  const auto traffic_lights_perception_time =
-      PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator,
-                                               "TrafficLightsPerception");
+  //const auto traffic_lights_perception_time =
+  //    PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator,
+  //                                             "TrafficLightsPerception");
   for (auto light : frame_.traffic_lights) {
     AINFO << "after tl pipeline " << light->id << " color "
           << static_cast<int>(light->status.color);
   }
 
-  SyncV2XTrafficLights(&frame_);
+  //SyncV2XTrafficLights(&frame_);
 
   std::shared_ptr<apollo::perception::TrafficLightDetection> out_msg =
       std::make_shared<apollo::perception::TrafficLightDetection>();
@@ -410,12 +421,12 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
            << GLOG_TIMESTAMP(msg->measurement_time());
     return;
   }
-
+  
   // send msg
   writer_->Write(out_msg);
 
   //  SendSimulationMsg();
-
+  /*
   const auto send_message_time =
       PERCEPTION_PERF_BLOCK_END_WITH_INDICATOR(perf_indicator, "SendMessage");
 
@@ -443,6 +454,7 @@ void TrafficLightsPerceptionComponent::OnReceiveImage(
           << GLOG_TIMESTAMP(end_timestamp) << "]:cur_latency[" << end_latency
           << "]";
   }
+  */
 }
 
 void TrafficLightsPerceptionComponent::OnReceiveV2XMsg(

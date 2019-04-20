@@ -234,10 +234,10 @@ bool TrafficLightDetection::Inference(
 
 bool TrafficLightDetection::Detect(const TrafficLightDetectorOptions &options,
                                    CameraFrame *frame) {
-  if (frame->traffic_lights.size() <= 0) {
-    AINFO << "no lights to detect";
-    return true;
-  }
+  //if (frame->traffic_lights.size() <= 0) {
+  //  AINFO << "no lights to detect";
+  //  return true;
+  //}
 
   const auto &data_provider = frame->data_provider;
   auto input_blob = rt_net_->get_blob(net_inputs_[0]);

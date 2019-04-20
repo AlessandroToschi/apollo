@@ -10,6 +10,9 @@ cc_library(
     hdrs = [
         "probabilistic_fusion.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"fusion\\"',
+    ],
     deps = [
         "//cyber",
         "//modules/common/time",

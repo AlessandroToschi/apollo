@@ -135,7 +135,7 @@ bool PointCloudProviderComponent::Proc()
             point_xyzit->set_y(buffer[i + 1]);
             point_xyzit->set_z(buffer[i + 2]);
             point_xyzit->set_intensity(uint(buffer[i + 3]));
-            //point_xyzit->set_timestamp(ulong(apollo::cyber::Time::Now().ToSecond()));
+            point_xyzit->set_timestamp(ulong(apollo::cyber::Time::Now().ToNanosecond()));
         }
         //point_clouds.push_back(point_cloud);
         delete[] buffer;
@@ -144,7 +144,7 @@ bool PointCloudProviderComponent::Proc()
     
     for(int i = 0; i < point_cloud->point_size(); i++)
     {
-        point_cloud->mutable_point(i)->set_timestamp(ulong(apollo::cyber::Time::Now().ToSecond()));
+        point_cloud->mutable_point(i)->set_timestamp(ulong(apollo::cyber::Time::Now().ToNanosecond()));
     }
 
     point_cloud->mutable_header()->set_frame_id(FLAGS_velodyne_id);

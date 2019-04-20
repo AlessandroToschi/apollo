@@ -1,5 +1,5 @@
-CloudPreprocessor::Preprocess: 4.919028
-MapManager::Update: 0.000089
-ObjectBuilder::Build: 0.850910
-ObjectFilter::Filter: 0.009536
-Segmentor::Segment: 22.066342
+CloudPreprocessor::Preprocess: 5.135539
+MapManager::Update: 0.000042
+ObjectBuilder::Build: 0.631923
+ObjectFilter::Filter: 0.006452
+Segmentor::Segment: 21.503094

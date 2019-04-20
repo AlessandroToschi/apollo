@@ -190,6 +190,9 @@ cc_library(
     hdrs = [
         "message_process.h",
     ],
+    copts = [
+        '-DMODULE_NAME=\\"prediction_process\\"',
+    ],
     deps = [
         "//cyber/common:file",
         "//modules/common/adapters:adapter_gflags",

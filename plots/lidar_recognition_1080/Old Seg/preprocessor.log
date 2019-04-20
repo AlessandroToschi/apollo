@@ -1,0 +1,1548 @@
+Log file created at: 2019/04/16 16:50:13
+Running on machine: in_dev_docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0416 16:50:13.872131   709 pointcloud_preprocessor.cc:81]  -1: 0.000992
+I0416 16:50:13.872145   709 pointcloud_preprocessor.cc:87]  -2: 0.007693
+I0416 16:50:13.877565   709 pointcloud_preprocessor.cc:125]  1: 5.41395
+I0416 16:50:13.878266   709 pointcloud_preprocessor.cc:129]  2: 0.680246
+I0416 16:50:13.878279   709 pointcloud_preprocessor.cc:130]  FROM: 30974 TO: 30974
+I0416 16:50:13.973635   705 pointcloud_preprocessor.cc:81]  -1: 0.000938
+I0416 16:50:13.973647   705 pointcloud_preprocessor.cc:87]  -2: 0.007853
+I0416 16:50:13.979071   705 pointcloud_preprocessor.cc:125]  1: 5.4177
+I0416 16:50:13.979728   705 pointcloud_preprocessor.cc:129]  2: 0.643603
+I0416 16:50:13.979737   705 pointcloud_preprocessor.cc:130]  FROM: 30989 TO: 30989
+I0416 16:50:14.062273   709 pointcloud_preprocessor.cc:81]  -1: 0.001021
+I0416 16:50:14.062304   709 pointcloud_preprocessor.cc:87]  -2: 0.024099
+I0416 16:50:14.067574   709 pointcloud_preprocessor.cc:125]  1: 5.26267
+I0416 16:50:14.068200   709 pointcloud_preprocessor.cc:129]  2: 0.612691
+I0416 16:50:14.068207   709 pointcloud_preprocessor.cc:130]  FROM: 30945 TO: 30945
+I0416 16:50:14.160882   708 pointcloud_preprocessor.cc:81]  -1: 0.001166
+I0416 16:50:14.160898   708 pointcloud_preprocessor.cc:87]  -2: 0.009364
+I0416 16:50:14.166249   708 pointcloud_preprocessor.cc:125]  1: 5.34419
+I0416 16:50:14.166848   708 pointcloud_preprocessor.cc:129]  2: 0.589163
+I0416 16:50:14.166855   708 pointcloud_preprocessor.cc:130]  FROM: 30932 TO: 30932
+I0416 16:50:14.261463   704 pointcloud_preprocessor.cc:81]  -1: 0.001316
+I0416 16:50:14.261478   704 pointcloud_preprocessor.cc:87]  -2: 0.009124
+I0416 16:50:14.267436   704 pointcloud_preprocessor.cc:125]  1: 5.9508
+I0416 16:50:14.268280   704 pointcloud_preprocessor.cc:129]  2: 0.828151
+I0416 16:50:14.268290   704 pointcloud_preprocessor.cc:130]  FROM: 30922 TO: 30922
+I0416 16:50:14.360960   699 pointcloud_preprocessor.cc:81]  -1: 0.000844
+I0416 16:50:14.360971   699 pointcloud_preprocessor.cc:87]  -2: 0.006639
+I0416 16:50:14.366169   699 pointcloud_preprocessor.cc:125]  1: 5.19422
+I0416 16:50:14.366767   699 pointcloud_preprocessor.cc:129]  2: 0.585729
+I0416 16:50:14.366772   699 pointcloud_preprocessor.cc:130]  FROM: 30882 TO: 30882
+I0416 16:50:14.461181   707 pointcloud_preprocessor.cc:81]  -1: 0.000862
+I0416 16:50:14.461194   707 pointcloud_preprocessor.cc:87]  -2: 0.007008
+I0416 16:50:14.466359   707 pointcloud_preprocessor.cc:125]  1: 5.1607
+I0416 16:50:14.466935   707 pointcloud_preprocessor.cc:129]  2: 0.567187
+I0416 16:50:14.466940   707 pointcloud_preprocessor.cc:130]  FROM: 30844 TO: 30844
+I0416 16:50:14.561594   700 pointcloud_preprocessor.cc:81]  -1: 0.000952
+I0416 16:50:14.561609   700 pointcloud_preprocessor.cc:87]  -2: 0.008717
+I0416 16:50:14.567409   700 pointcloud_preprocessor.cc:125]  1: 5.79408
+I0416 16:50:14.568078   700 pointcloud_preprocessor.cc:129]  2: 0.654237
+I0416 16:50:14.568085   700 pointcloud_preprocessor.cc:130]  FROM: 30782 TO: 30782
+I0416 16:50:14.661255   701 pointcloud_preprocessor.cc:81]  -1: 0.000856
+I0416 16:50:14.661267   701 pointcloud_preprocessor.cc:87]  -2: 0.005705
+I0416 16:50:14.666481   701 pointcloud_preprocessor.cc:125]  1: 5.20892
+I0416 16:50:14.667086   701 pointcloud_preprocessor.cc:129]  2: 0.598025
+I0416 16:50:14.667091   701 pointcloud_preprocessor.cc:130]  FROM: 30733 TO: 30733
+I0416 16:50:14.761178   705 pointcloud_preprocessor.cc:81]  -1: 0.001464
+I0416 16:50:14.761183   705 pointcloud_preprocessor.cc:87]  -2: 0.001123
+I0416 16:50:14.766139   705 pointcloud_preprocessor.cc:125]  1: 4.94937
+I0416 16:50:14.766607   705 pointcloud_preprocessor.cc:129]  2: 0.458966
+I0416 16:50:14.766613   705 pointcloud_preprocessor.cc:130]  FROM: 30688 TO: 30688
+I0416 16:50:14.860826   691 pointcloud_preprocessor.cc:81]  -1: 0.000887
+I0416 16:50:14.860831   691 pointcloud_preprocessor.cc:87]  -2: 0.001317
+I0416 16:50:14.865753   691 pointcloud_preprocessor.cc:125]  1: 4.91806
+I0416 16:50:14.866027   691 pointcloud_preprocessor.cc:129]  2: 0.268134
+I0416 16:50:14.866031   691 pointcloud_preprocessor.cc:130]  FROM: 30660 TO: 30660
+I0416 16:50:14.960839   706 pointcloud_preprocessor.cc:81]  -1: 0.00098
+I0416 16:50:14.960846   706 pointcloud_preprocessor.cc:87]  -2: 0.004448
+I0416 16:50:14.966051   706 pointcloud_preprocessor.cc:125]  1: 5.20075
+I0416 16:50:14.966614   706 pointcloud_preprocessor.cc:129]  2: 0.557379
+I0416 16:50:14.966619   706 pointcloud_preprocessor.cc:130]  FROM: 30643 TO: 30643
+I0416 16:50:15.069732   699 pointcloud_preprocessor.cc:81]  -1: 0.001129
+I0416 16:50:15.069741   699 pointcloud_preprocessor.cc:87]  -2: 0.001812
+I0416 16:50:15.079329   699 pointcloud_preprocessor.cc:125]  1: 9.57949
+I0416 16:50:15.080217   699 pointcloud_preprocessor.cc:129]  2: 0.875751
+I0416 16:50:15.080229   699 pointcloud_preprocessor.cc:130]  FROM: 30624 TO: 30624
+I0416 16:50:15.160827   709 pointcloud_preprocessor.cc:81]  -1: 0.001492
+I0416 16:50:15.160835   709 pointcloud_preprocessor.cc:87]  -2: 0.001269
+I0416 16:50:15.165786   709 pointcloud_preprocessor.cc:125]  1: 4.9469
+I0416 16:50:15.166067   709 pointcloud_preprocessor.cc:129]  2: 0.273693
+I0416 16:50:15.166072   709 pointcloud_preprocessor.cc:130]  FROM: 30564 TO: 30564
+I0416 16:50:15.260565   706 pointcloud_preprocessor.cc:81]  -1: 0.00086
+I0416 16:50:15.260571   706 pointcloud_preprocessor.cc:87]  -2: 0.001313
+I0416 16:50:15.265470   706 pointcloud_preprocessor.cc:125]  1: 4.89339
+I0416 16:50:15.265900   706 pointcloud_preprocessor.cc:129]  2: 0.426339
+I0416 16:50:15.265906   706 pointcloud_preprocessor.cc:130]  FROM: 30547 TO: 30547
+I0416 16:50:15.360630   707 pointcloud_preprocessor.cc:81]  -1: 0.000886
+I0416 16:50:15.360635   707 pointcloud_preprocessor.cc:87]  -2: 0.001092
+I0416 16:50:15.365517   707 pointcloud_preprocessor.cc:125]  1: 4.8766
+I0416 16:50:15.365973   707 pointcloud_preprocessor.cc:129]  2: 0.447342
+I0416 16:50:15.365978   707 pointcloud_preprocessor.cc:130]  FROM: 30404 TO: 30404
+I0416 16:50:15.460747   709 pointcloud_preprocessor.cc:81]  -1: 0.000981
+I0416 16:50:15.460750   709 pointcloud_preprocessor.cc:87]  -2: 0.001084
+I0416 16:50:15.465651   709 pointcloud_preprocessor.cc:125]  1: 4.89709
+I0416 16:50:15.466090   709 pointcloud_preprocessor.cc:129]  2: 0.432169
+I0416 16:50:15.466095   709 pointcloud_preprocessor.cc:130]  FROM: 30454 TO: 30454
+I0416 16:50:15.560627   702 pointcloud_preprocessor.cc:81]  -1: 0.000785
+I0416 16:50:15.560636   702 pointcloud_preprocessor.cc:87]  -2: 0.00388
+I0416 16:50:15.565768   702 pointcloud_preprocessor.cc:125]  1: 5.12464
+I0416 16:50:15.566350   702 pointcloud_preprocessor.cc:129]  2: 0.574253
+I0416 16:50:15.566356   702 pointcloud_preprocessor.cc:130]  FROM: 30415 TO: 30415
+I0416 16:50:15.666623   707 pointcloud_preprocessor.cc:81]  -1: 0.000892
+I0416 16:50:15.666627   707 pointcloud_preprocessor.cc:87]  -2: 0.001029
+I0416 16:50:15.671723   707 pointcloud_preprocessor.cc:125]  1: 5.09138
+I0416 16:50:15.672205   707 pointcloud_preprocessor.cc:129]  2: 0.470276
+I0416 16:50:15.672212   707 pointcloud_preprocessor.cc:130]  FROM: 30395 TO: 30395
+I0416 16:50:15.760881   709 pointcloud_preprocessor.cc:81]  -1: 0.000784
+I0416 16:50:15.760885   709 pointcloud_preprocessor.cc:87]  -2: 0.001204
+I0416 16:50:15.765756   709 pointcloud_preprocessor.cc:125]  1: 4.86736
+I0416 16:50:15.766202   709 pointcloud_preprocessor.cc:129]  2: 0.44028
+I0416 16:50:15.766207   709 pointcloud_preprocessor.cc:130]  FROM: 30331 TO: 30331
+I0416 16:50:15.861104   702 pointcloud_preprocessor.cc:81]  -1: 0.001076
+I0416 16:50:15.861109   702 pointcloud_preprocessor.cc:87]  -2: 0.00232
+I0416 16:50:15.865963   702 pointcloud_preprocessor.cc:125]  1: 4.8487
+I0416 16:50:15.866405   702 pointcloud_preprocessor.cc:129]  2: 0.435486
+I0416 16:50:15.866410   702 pointcloud_preprocessor.cc:130]  FROM: 30247 TO: 30247
+I0416 16:50:15.960942   707 pointcloud_preprocessor.cc:81]  -1: 0.000818
+I0416 16:50:15.960947   707 pointcloud_preprocessor.cc:87]  -2: 0.000984
+I0416 16:50:15.965819   707 pointcloud_preprocessor.cc:125]  1: 4.86939
+I0416 16:50:15.966245   707 pointcloud_preprocessor.cc:129]  2: 0.419571
+I0416 16:50:15.966251   707 pointcloud_preprocessor.cc:130]  FROM: 30261 TO: 30261
+I0416 16:50:16.063488   699 pointcloud_preprocessor.cc:81]  -1: 0.000813
+I0416 16:50:16.063494   699 pointcloud_preprocessor.cc:87]  -2: 0.001285
+I0416 16:50:16.068403   699 pointcloud_preprocessor.cc:125]  1: 4.90123
+I0416 16:50:16.068888   699 pointcloud_preprocessor.cc:129]  2: 0.477816
+I0416 16:50:16.068894   699 pointcloud_preprocessor.cc:130]  FROM: 30188 TO: 30188
+I0416 16:50:16.161068   706 pointcloud_preprocessor.cc:81]  -1: 0.000773
+I0416 16:50:16.161074   706 pointcloud_preprocessor.cc:87]  -2: 0.001457
+I0416 16:50:16.165985   706 pointcloud_preprocessor.cc:125]  1: 4.90639
+I0416 16:50:16.166435   706 pointcloud_preprocessor.cc:129]  2: 0.444088
+I0416 16:50:16.166440   706 pointcloud_preprocessor.cc:130]  FROM: 30099 TO: 30099
+I0416 16:50:16.269544   708 pointcloud_preprocessor.cc:81]  -1: 0.000813
+I0416 16:50:16.269549   708 pointcloud_preprocessor.cc:87]  -2: 0.001084
+I0416 16:50:16.274498   708 pointcloud_preprocessor.cc:125]  1: 4.94584
+I0416 16:50:16.275043   708 pointcloud_preprocessor.cc:129]  2: 0.538497
+I0416 16:50:16.275048   708 pointcloud_preprocessor.cc:130]  FROM: 30053 TO: 30053
+I0416 16:50:16.360697   704 pointcloud_preprocessor.cc:81]  -1: 0.000844
+I0416 16:50:16.360708   704 pointcloud_preprocessor.cc:87]  -2: 0.001176
+I0416 16:50:16.365545   704 pointcloud_preprocessor.cc:125]  1: 4.82964
+I0416 16:50:16.366065   704 pointcloud_preprocessor.cc:129]  2: 0.512248
+I0416 16:50:16.366072   704 pointcloud_preprocessor.cc:130]  FROM: 30017 TO: 30017
+I0416 16:50:16.468410   706 pointcloud_preprocessor.cc:81]  -1: 0.000813
+I0416 16:50:16.468415   706 pointcloud_preprocessor.cc:87]  -2: 0.001079
+I0416 16:50:16.473371   706 pointcloud_preprocessor.cc:125]  1: 4.9522
+I0416 16:50:16.473866   706 pointcloud_preprocessor.cc:129]  2: 0.487365
+I0416 16:50:16.473871   706 pointcloud_preprocessor.cc:130]  FROM: 29974 TO: 29974
+I0416 16:50:16.560349   691 pointcloud_preprocessor.cc:81]  -1: 0.000825
+I0416 16:50:16.560353   691 pointcloud_preprocessor.cc:87]  -2: 0.001262
+I0416 16:50:16.565188   691 pointcloud_preprocessor.cc:125]  1: 4.83063
+I0416 16:50:16.565462   691 pointcloud_preprocessor.cc:129]  2: 0.26587
+I0416 16:50:16.565467   691 pointcloud_preprocessor.cc:130]  FROM: 29996 TO: 29996
+I0416 16:50:16.670008   709 pointcloud_preprocessor.cc:81]  -1: 0.000776
+I0416 16:50:16.670018   709 pointcloud_preprocessor.cc:87]  -2: 0.005645
+I0416 16:50:16.675089   709 pointcloud_preprocessor.cc:125]  1: 5.06708
+I0416 16:50:16.675675   709 pointcloud_preprocessor.cc:129]  2: 0.578621
+I0416 16:50:16.675680   709 pointcloud_preprocessor.cc:130]  FROM: 30019 TO: 30019
+I0416 16:50:16.781256   699 pointcloud_preprocessor.cc:81]  -1: 0.000893
+I0416 16:50:16.781262   699 pointcloud_preprocessor.cc:87]  -2: 0.001254
+I0416 16:50:16.786289   699 pointcloud_preprocessor.cc:125]  1: 5.02261
+I0416 16:50:16.786772   699 pointcloud_preprocessor.cc:129]  2: 0.475626
+I0416 16:50:16.786778   699 pointcloud_preprocessor.cc:130]  FROM: 29981 TO: 29981
+I0416 16:50:16.860738   703 pointcloud_preprocessor.cc:81]  -1: 0.000975
+I0416 16:50:16.860750   703 pointcloud_preprocessor.cc:87]  -2: 0.005539
+I0416 16:50:16.865803   703 pointcloud_preprocessor.cc:125]  1: 5.04599
+I0416 16:50:16.866350   703 pointcloud_preprocessor.cc:129]  2: 0.540125
+I0416 16:50:16.866355   703 pointcloud_preprocessor.cc:130]  FROM: 29972 TO: 29972
+I0416 16:50:16.971858   700 pointcloud_preprocessor.cc:81]  -1: 0.000755
+I0416 16:50:16.971864   700 pointcloud_preprocessor.cc:87]  -2: 0.00107
+I0416 16:50:16.976763   700 pointcloud_preprocessor.cc:125]  1: 4.89403
+I0416 16:50:16.977210   700 pointcloud_preprocessor.cc:129]  2: 0.441063
+I0416 16:50:16.977216   700 pointcloud_preprocessor.cc:130]  FROM: 29965 TO: 29965
+I0416 16:50:17.060740   699 pointcloud_preprocessor.cc:81]  -1: 0.000762
+I0416 16:50:17.060745   699 pointcloud_preprocessor.cc:87]  -2: 0.00107
+I0416 16:50:17.065574   699 pointcloud_preprocessor.cc:125]  1: 4.82597
+I0416 16:50:17.066037   699 pointcloud_preprocessor.cc:129]  2: 0.456159
+I0416 16:50:17.066043   699 pointcloud_preprocessor.cc:130]  FROM: 29960 TO: 29960
+I0416 16:50:17.171845   704 pointcloud_preprocessor.cc:81]  -1: 0.001091
+I0416 16:50:17.171849   704 pointcloud_preprocessor.cc:87]  -2: 0.001046
+I0416 16:50:17.176656   704 pointcloud_preprocessor.cc:125]  1: 4.80276
+I0416 16:50:17.177109   704 pointcloud_preprocessor.cc:129]  2: 0.447188
+I0416 16:50:17.177114   704 pointcloud_preprocessor.cc:130]  FROM: 29962 TO: 29962
+I0416 16:50:17.269094   708 pointcloud_preprocessor.cc:81]  -1: 0.000815
+I0416 16:50:17.269098   708 pointcloud_preprocessor.cc:87]  -2: 0.001019
+I0416 16:50:17.273896   708 pointcloud_preprocessor.cc:125]  1: 4.79451
+I0416 16:50:17.274343   708 pointcloud_preprocessor.cc:129]  2: 0.438759
+I0416 16:50:17.274349   708 pointcloud_preprocessor.cc:130]  FROM: 29912 TO: 29912
+I0416 16:50:17.360961   705 pointcloud_preprocessor.cc:81]  -1: 0.000753
+I0416 16:50:17.360970   705 pointcloud_preprocessor.cc:87]  -2: 0.00639
+I0416 16:50:17.365931   705 pointcloud_preprocessor.cc:125]  1: 4.95572
+I0416 16:50:17.366446   705 pointcloud_preprocessor.cc:129]  2: 0.508746
+I0416 16:50:17.366451   705 pointcloud_preprocessor.cc:130]  FROM: 29961 TO: 29961
+I0416 16:50:17.474555   704 pointcloud_preprocessor.cc:81]  -1: 0.000949
+I0416 16:50:17.474560   704 pointcloud_preprocessor.cc:87]  -2: 0.001071
+I0416 16:50:17.480149   704 pointcloud_preprocessor.cc:125]  1: 5.58621
+I0416 16:50:17.480708   704 pointcloud_preprocessor.cc:129]  2: 0.552679
+I0416 16:50:17.480715   704 pointcloud_preprocessor.cc:130]  FROM: 30001 TO: 30001
+I0416 16:50:17.560521   699 pointcloud_preprocessor.cc:81]  -1: 0.000753
+I0416 16:50:17.560525   699 pointcloud_preprocessor.cc:87]  -2: 0.001281
+I0416 16:50:17.565402   699 pointcloud_preprocessor.cc:125]  1: 4.87051
+I0416 16:50:17.565874   699 pointcloud_preprocessor.cc:129]  2: 0.4668
+I0416 16:50:17.565881   699 pointcloud_preprocessor.cc:130]  FROM: 30008 TO: 30008
+I0416 16:50:17.695148   705 pointcloud_preprocessor.cc:81]  -1: 0.001777
+I0416 16:50:17.695168   705 pointcloud_preprocessor.cc:87]  -2: 0.003396
+I0416 16:50:17.710680   705 pointcloud_preprocessor.cc:125]  1: 15.4974
+I0416 16:50:17.712013   705 pointcloud_preprocessor.cc:129]  2: 1.3121
+I0416 16:50:17.712033   705 pointcloud_preprocessor.cc:130]  FROM: 30065 TO: 30065
+I0416 16:50:17.760717   704 pointcloud_preprocessor.cc:81]  -1: 0.000748
+I0416 16:50:17.760721   704 pointcloud_preprocessor.cc:87]  -2: 0.001121
+I0416 16:50:17.765555   704 pointcloud_preprocessor.cc:125]  1: 4.82995
+I0416 16:50:17.766016   704 pointcloud_preprocessor.cc:129]  2: 0.454507
+I0416 16:50:17.766022   704 pointcloud_preprocessor.cc:130]  FROM: 30039 TO: 30039
+I0416 16:50:17.876929   699 pointcloud_preprocessor.cc:81]  -1: 0.000882
+I0416 16:50:17.876933   699 pointcloud_preprocessor.cc:87]  -2: 0.001119
+I0416 16:50:17.881897   699 pointcloud_preprocessor.cc:125]  1: 4.95883
+I0416 16:50:17.882303   699 pointcloud_preprocessor.cc:129]  2: 0.396684
+I0416 16:50:17.882310   699 pointcloud_preprocessor.cc:130]  FROM: 30082 TO: 30082
+I0416 16:50:17.966846   700 pointcloud_preprocessor.cc:81]  -1: 0.000794
+I0416 16:50:17.966851   700 pointcloud_preprocessor.cc:87]  -2: 0.001571
+I0416 16:50:17.971709   700 pointcloud_preprocessor.cc:125]  1: 4.85204
+I0416 16:50:17.972146   700 pointcloud_preprocessor.cc:129]  2: 0.428314
+I0416 16:50:17.972152   700 pointcloud_preprocessor.cc:130]  FROM: 30090 TO: 30090
+I0416 16:50:18.069468   708 pointcloud_preprocessor.cc:81]  -1: 0.000831
+I0416 16:50:18.069473   708 pointcloud_preprocessor.cc:87]  -2: 0.001353
+I0416 16:50:18.074441   708 pointcloud_preprocessor.cc:125]  1: 4.96591
+I0416 16:50:18.074884   708 pointcloud_preprocessor.cc:129]  2: 0.434621
+I0416 16:50:18.074889   708 pointcloud_preprocessor.cc:130]  FROM: 30110 TO: 30110
+I0416 16:50:18.180296   709 pointcloud_preprocessor.cc:81]  -1: 0.000782
+I0416 16:50:18.180305   709 pointcloud_preprocessor.cc:87]  -2: 0.004857
+I0416 16:50:18.185251   709 pointcloud_preprocessor.cc:125]  1: 4.94329
+I0416 16:50:18.185815   709 pointcloud_preprocessor.cc:129]  2: 0.558089
+I0416 16:50:18.185820   709 pointcloud_preprocessor.cc:130]  FROM: 30108 TO: 30108
+I0416 16:50:18.260610   703 pointcloud_preprocessor.cc:81]  -1: 0.000808
+I0416 16:50:18.260615   703 pointcloud_preprocessor.cc:87]  -2: 0.001058
+I0416 16:50:18.265543   703 pointcloud_preprocessor.cc:125]  1: 4.92459
+I0416 16:50:18.266019   703 pointcloud_preprocessor.cc:129]  2: 0.469175
+I0416 16:50:18.266026   703 pointcloud_preprocessor.cc:130]  FROM: 30157 TO: 30157
+I0416 16:50:18.370501   707 pointcloud_preprocessor.cc:81]  -1: 0.00079
+I0416 16:50:18.370512   707 pointcloud_preprocessor.cc:87]  -2: 0.005286
+I0416 16:50:18.375442   707 pointcloud_preprocessor.cc:125]  1: 4.92575
+I0416 16:50:18.376015   707 pointcloud_preprocessor.cc:129]  2: 0.564814
+I0416 16:50:18.376020   707 pointcloud_preprocessor.cc:130]  FROM: 30070 TO: 30070
+I0416 16:50:18.471915   706 pointcloud_preprocessor.cc:81]  -1: 0.000822
+I0416 16:50:18.471918   706 pointcloud_preprocessor.cc:87]  -2: 0.000861
+I0416 16:50:18.476833   706 pointcloud_preprocessor.cc:125]  1: 4.91192
+I0416 16:50:18.477278   706 pointcloud_preprocessor.cc:129]  2: 0.436552
+I0416 16:50:18.477284   706 pointcloud_preprocessor.cc:130]  FROM: 30090 TO: 30090
+I0416 16:50:18.571769   699 pointcloud_preprocessor.cc:81]  -1: 0.001164
+I0416 16:50:18.571776   699 pointcloud_preprocessor.cc:87]  -2: 0.001665
+I0416 16:50:18.577769   699 pointcloud_preprocessor.cc:125]  1: 5.98646
+I0416 16:50:18.578341   699 pointcloud_preprocessor.cc:129]  2: 0.556721
+I0416 16:50:18.578351   699 pointcloud_preprocessor.cc:130]  FROM: 30024 TO: 30024
+I0416 16:50:18.663879   709 pointcloud_preprocessor.cc:81]  -1: 0.000758
+I0416 16:50:18.663885   709 pointcloud_preprocessor.cc:87]  -2: 0.001742
+I0416 16:50:18.668793   709 pointcloud_preprocessor.cc:125]  1: 4.90374
+I0416 16:50:18.669247   709 pointcloud_preprocessor.cc:129]  2: 0.447256
+I0416 16:50:18.669255   709 pointcloud_preprocessor.cc:130]  FROM: 30013 TO: 30013
+I0416 16:50:18.774610   703 pointcloud_preprocessor.cc:81]  -1: 0.000996
+I0416 16:50:18.774621   703 pointcloud_preprocessor.cc:87]  -2: 0.005557
+I0416 16:50:18.780508   703 pointcloud_preprocessor.cc:125]  1: 5.881
+I0416 16:50:18.781152   703 pointcloud_preprocessor.cc:129]  2: 0.635464
+I0416 16:50:18.781159   703 pointcloud_preprocessor.cc:130]  FROM: 30077 TO: 30077
+I0416 16:50:18.873030   699 pointcloud_preprocessor.cc:81]  -1: 0.000783
+I0416 16:50:18.873034   699 pointcloud_preprocessor.cc:87]  -2: 0.001068
+I0416 16:50:18.878089   699 pointcloud_preprocessor.cc:125]  1: 5.05039
+I0416 16:50:18.878788   699 pointcloud_preprocessor.cc:129]  2: 0.687881
+I0416 16:50:18.878798   699 pointcloud_preprocessor.cc:130]  FROM: 30087 TO: 30087
+I0416 16:50:18.974011   709 pointcloud_preprocessor.cc:81]  -1: 0.0007
+I0416 16:50:18.974015   709 pointcloud_preprocessor.cc:87]  -2: 0.000939
+I0416 16:50:18.978848   709 pointcloud_preprocessor.cc:125]  1: 4.82986
+I0416 16:50:18.979118   709 pointcloud_preprocessor.cc:129]  2: 0.26476
+I0416 16:50:18.979123   709 pointcloud_preprocessor.cc:130]  FROM: 30096 TO: 30096
+I0416 16:50:19.075022   703 pointcloud_preprocessor.cc:81]  -1: 0.000727
+I0416 16:50:19.075026   703 pointcloud_preprocessor.cc:87]  -2: 0.001215
+I0416 16:50:19.079936   703 pointcloud_preprocessor.cc:125]  1: 4.90566
+I0416 16:50:19.080323   703 pointcloud_preprocessor.cc:129]  2: 0.3813
+I0416 16:50:19.080328   703 pointcloud_preprocessor.cc:130]  FROM: 30062 TO: 30062
+I0416 16:50:19.188071   706 pointcloud_preprocessor.cc:81]  -1: 0.000883
+I0416 16:50:19.188076   706 pointcloud_preprocessor.cc:87]  -2: 0.001315
+I0416 16:50:19.193217   706 pointcloud_preprocessor.cc:125]  1: 5.1333
+I0416 16:50:19.193708   706 pointcloud_preprocessor.cc:129]  2: 0.475162
+I0416 16:50:19.193715   706 pointcloud_preprocessor.cc:130]  FROM: 30100 TO: 30100
+I0416 16:50:19.284782   702 pointcloud_preprocessor.cc:81]  -1: 0.001179
+I0416 16:50:19.284790   702 pointcloud_preprocessor.cc:87]  -2: 0.000913
+I0416 16:50:19.289767   702 pointcloud_preprocessor.cc:125]  1: 4.97163
+I0416 16:50:19.290586   702 pointcloud_preprocessor.cc:129]  2: 0.808429
+I0416 16:50:19.290596   702 pointcloud_preprocessor.cc:130]  FROM: 30059 TO: 30059
+I0416 16:50:19.434404   691 pointcloud_preprocessor.cc:81]  -1: 0.002205
+I0416 16:50:19.434428   691 pointcloud_preprocessor.cc:87]  -2: 0.004832
+I0416 16:50:19.453452   691 pointcloud_preprocessor.cc:125]  1: 19
+I0416 16:50:19.454216   691 pointcloud_preprocessor.cc:129]  2: 0.725073
+I0416 16:50:19.454233   691 pointcloud_preprocessor.cc:130]  FROM: 30027 TO: 30027
+I0416 16:50:19.607123   709 pointcloud_preprocessor.cc:81]  -1: 0.002364
+I0416 16:50:19.607147   709 pointcloud_preprocessor.cc:87]  -2: 0.004874
+I0416 16:50:19.633532   709 pointcloud_preprocessor.cc:125]  1: 26.3595
+I0416 16:50:19.634755   709 pointcloud_preprocessor.cc:129]  2: 1.17953
+I0416 16:50:19.634783   709 pointcloud_preprocessor.cc:130]  FROM: 30036 TO: 30036
+I0416 16:50:19.729540   700 pointcloud_preprocessor.cc:81]  -1: 0.001282
+I0416 16:50:19.729547   700 pointcloud_preprocessor.cc:87]  -2: 0.001533
+I0416 16:50:19.734575   700 pointcloud_preprocessor.cc:125]  1: 5.02491
+I0416 16:50:19.735056   700 pointcloud_preprocessor.cc:129]  2: 0.474389
+I0416 16:50:19.735062   700 pointcloud_preprocessor.cc:130]  FROM: 29953 TO: 29953
+I0416 16:50:19.783638   700 pointcloud_preprocessor.cc:81]  -1: 0.000901
+I0416 16:50:19.783649   700 pointcloud_preprocessor.cc:87]  -2: 0.006025
+I0416 16:50:19.789090   700 pointcloud_preprocessor.cc:125]  1: 5.4302
+I0416 16:50:19.789551   700 pointcloud_preprocessor.cc:129]  2: 0.449143
+I0416 16:50:19.789557   700 pointcloud_preprocessor.cc:130]  FROM: 29891 TO: 29891
+I0416 16:50:19.814200   705 pointcloud_preprocessor.cc:81]  -1: 0.001082
+I0416 16:50:19.814208   705 pointcloud_preprocessor.cc:87]  -2: 0.001419
+I0416 16:50:19.819378   705 pointcloud_preprocessor.cc:125]  1: 5.16446
+I0416 16:50:19.819828   705 pointcloud_preprocessor.cc:129]  2: 0.439691
+I0416 16:50:19.819834   705 pointcloud_preprocessor.cc:130]  FROM: 29764 TO: 29764
+I0416 16:50:19.982892   691 pointcloud_preprocessor.cc:81]  -1: 0.000982
+I0416 16:50:19.982897   691 pointcloud_preprocessor.cc:87]  -2: 0.001207
+I0416 16:50:19.990164   691 pointcloud_preprocessor.cc:125]  1: 7.25943
+I0416 16:50:19.990598   691 pointcloud_preprocessor.cc:129]  2: 0.422562
+I0416 16:50:19.990608   691 pointcloud_preprocessor.cc:130]  FROM: 29697 TO: 29697
+I0416 16:50:20.016964   691 pointcloud_preprocessor.cc:81]  -1: 0.002567
+I0416 16:50:20.016978   691 pointcloud_preprocessor.cc:87]  -2: 0.002008
+I0416 16:50:20.025336   691 pointcloud_preprocessor.cc:125]  1: 8.3479
+I0416 16:50:20.025915   691 pointcloud_preprocessor.cc:129]  2: 0.565791
+I0416 16:50:20.025924   691 pointcloud_preprocessor.cc:130]  FROM: 29614 TO: 29614
+I0416 16:50:20.098747   701 pointcloud_preprocessor.cc:81]  -1: 0.002016
+I0416 16:50:20.098757   701 pointcloud_preprocessor.cc:87]  -2: 0.001566
+I0416 16:50:20.103968   701 pointcloud_preprocessor.cc:125]  1: 5.17038
+I0416 16:50:20.104490   701 pointcloud_preprocessor.cc:129]  2: 0.489599
+I0416 16:50:20.104502   701 pointcloud_preprocessor.cc:130]  FROM: 29509 TO: 29509
+I0416 16:50:20.196568   703 pointcloud_preprocessor.cc:81]  -1: 0.000869
+I0416 16:50:20.196573   703 pointcloud_preprocessor.cc:87]  -2: 0.001171
+I0416 16:50:20.201294   703 pointcloud_preprocessor.cc:125]  1: 4.71628
+I0416 16:50:20.201658   703 pointcloud_preprocessor.cc:129]  2: 0.357411
+I0416 16:50:20.201663   703 pointcloud_preprocessor.cc:130]  FROM: 29382 TO: 29382
+I0416 16:50:20.388552   704 pointcloud_preprocessor.cc:81]  -1: 0.002106
+I0416 16:50:20.388577   704 pointcloud_preprocessor.cc:87]  -2: 0.003977
+I0416 16:50:20.405304   704 pointcloud_preprocessor.cc:125]  1: 16.7053
+I0416 16:50:20.406309   704 pointcloud_preprocessor.cc:129]  2: 0.970823
+I0416 16:50:20.406325   704 pointcloud_preprocessor.cc:130]  FROM: 29436 TO: 29436
+I0416 16:50:20.429898   704 pointcloud_preprocessor.cc:81]  -1: 0.002408
+I0416 16:50:20.429913   704 pointcloud_preprocessor.cc:87]  -2: 0.007593
+I0416 16:50:20.435894   704 pointcloud_preprocessor.cc:125]  1: 5.97273
+I0416 16:50:20.436725   704 pointcloud_preprocessor.cc:129]  2: 0.816221
+I0416 16:50:20.436736   704 pointcloud_preprocessor.cc:130]  FROM: 29477 TO: 29477
+I0416 16:50:20.475471   705 pointcloud_preprocessor.cc:81]  -1: 0.00115
+I0416 16:50:20.475484   705 pointcloud_preprocessor.cc:87]  -2: 0.002337
+I0416 16:50:20.481369   705 pointcloud_preprocessor.cc:125]  1: 5.87676
+I0416 16:50:20.481809   705 pointcloud_preprocessor.cc:129]  2: 0.429831
+I0416 16:50:20.481819   705 pointcloud_preprocessor.cc:130]  FROM: 29414 TO: 29414
+I0416 16:50:20.597359   709 pointcloud_preprocessor.cc:81]  -1: 0.000727
+I0416 16:50:20.597363   709 pointcloud_preprocessor.cc:87]  -2: 0.00115
+I0416 16:50:20.602066   709 pointcloud_preprocessor.cc:125]  1: 4.69885
+I0416 16:50:20.602334   709 pointcloud_preprocessor.cc:129]  2: 0.260625
+I0416 16:50:20.602339   709 pointcloud_preprocessor.cc:130]  FROM: 29111 TO: 29111
+I0416 16:50:20.777060   704 pointcloud_preprocessor.cc:81]  -1: 0.001761
+I0416 16:50:20.777084   704 pointcloud_preprocessor.cc:87]  -2: 0.004044
+I0416 16:50:20.797103   704 pointcloud_preprocessor.cc:125]  1: 20.0057
+I0416 16:50:20.798074   704 pointcloud_preprocessor.cc:129]  2: 0.945991
+I0416 16:50:20.798090   704 pointcloud_preprocessor.cc:130]  FROM: 28735 TO: 28735
+I0416 16:50:20.831373   705 pointcloud_preprocessor.cc:81]  -1: 0.001592
+I0416 16:50:20.831380   705 pointcloud_preprocessor.cc:87]  -2: 0.001744
+I0416 16:50:20.836053   705 pointcloud_preprocessor.cc:125]  1: 4.6663
+I0416 16:50:20.836382   705 pointcloud_preprocessor.cc:129]  2: 0.321605
+I0416 16:50:20.836390   705 pointcloud_preprocessor.cc:130]  FROM: 28520 TO: 28520
+I0416 16:50:20.878350   705 pointcloud_preprocessor.cc:81]  -1: 0.001347
+I0416 16:50:20.878361   705 pointcloud_preprocessor.cc:87]  -2: 0.006044
+I0416 16:50:20.883291   705 pointcloud_preprocessor.cc:125]  1: 4.92426
+I0416 16:50:20.883877   705 pointcloud_preprocessor.cc:129]  2: 0.576598
+I0416 16:50:20.883883   705 pointcloud_preprocessor.cc:130]  FROM: 28342 TO: 28342
+I0416 16:50:21.019606   704 pointcloud_preprocessor.cc:81]  -1: 0.000954
+I0416 16:50:21.019611   704 pointcloud_preprocessor.cc:87]  -2: 0.001459
+I0416 16:50:21.025553   704 pointcloud_preprocessor.cc:125]  1: 5.93631
+I0416 16:50:21.025907   704 pointcloud_preprocessor.cc:129]  2: 0.340814
+I0416 16:50:21.025913   704 pointcloud_preprocessor.cc:130]  FROM: 28301 TO: 28301
+I0416 16:50:21.074479   708 pointcloud_preprocessor.cc:81]  -1: 0.001094
+I0416 16:50:21.074496   708 pointcloud_preprocessor.cc:87]  -2: 0.008661
+I0416 16:50:21.080057   708 pointcloud_preprocessor.cc:125]  1: 5.54806
+I0416 16:50:21.080832   708 pointcloud_preprocessor.cc:129]  2: 0.761083
+I0416 16:50:21.080839   708 pointcloud_preprocessor.cc:130]  FROM: 28128 TO: 28128
+I0416 16:50:21.194736   691 pointcloud_preprocessor.cc:81]  -1: 0.000765
+I0416 16:50:21.194739   691 pointcloud_preprocessor.cc:87]  -2: 0.001261
+I0416 16:50:21.199604   691 pointcloud_preprocessor.cc:125]  1: 4.86057
+I0416 16:50:21.199914   691 pointcloud_preprocessor.cc:129]  2: 0.30315
+I0416 16:50:21.199919   691 pointcloud_preprocessor.cc:130]  FROM: 28080 TO: 28080
+I0416 16:50:21.280362   699 pointcloud_preprocessor.cc:81]  -1: 0.000888
+I0416 16:50:21.280370   699 pointcloud_preprocessor.cc:87]  -2: 0.002273
+I0416 16:50:21.284996   699 pointcloud_preprocessor.cc:125]  1: 4.62056
+I0416 16:50:21.285269   699 pointcloud_preprocessor.cc:129]  2: 0.263278
+I0416 16:50:21.285275   699 pointcloud_preprocessor.cc:130]  FROM: 28013 TO: 28013
+I0416 16:50:21.395514   704 pointcloud_preprocessor.cc:81]  -1: 0.000875
+I0416 16:50:21.395524   704 pointcloud_preprocessor.cc:87]  -2: 0.001438
+I0416 16:50:21.400019   704 pointcloud_preprocessor.cc:125]  1: 4.49214
+I0416 16:50:21.400324   704 pointcloud_preprocessor.cc:129]  2: 0.297562
+I0416 16:50:21.400329   704 pointcloud_preprocessor.cc:130]  FROM: 27984 TO: 27984
+I0416 16:50:21.577968   705 pointcloud_preprocessor.cc:81]  -1: 0.002696
+I0416 16:50:21.577998   705 pointcloud_preprocessor.cc:87]  -2: 0.006088
+I0416 16:50:21.597523   705 pointcloud_preprocessor.cc:125]  1: 19.4986
+I0416 16:50:21.598472   705 pointcloud_preprocessor.cc:129]  2: 0.919538
+I0416 16:50:21.598491   705 pointcloud_preprocessor.cc:130]  FROM: 28035 TO: 28035
+I0416 16:50:21.638247   709 pointcloud_preprocessor.cc:81]  -1: 0.001911
+I0416 16:50:21.638262   709 pointcloud_preprocessor.cc:87]  -2: 0.004234
+I0416 16:50:21.642974   709 pointcloud_preprocessor.cc:125]  1: 4.70022
+I0416 16:50:21.643388   709 pointcloud_preprocessor.cc:129]  2: 0.402036
+I0416 16:50:21.643400   709 pointcloud_preprocessor.cc:130]  FROM: 28238 TO: 28238
+I0416 16:50:21.686825   709 pointcloud_preprocessor.cc:81]  -1: 0.001107
+I0416 16:50:21.686834   709 pointcloud_preprocessor.cc:87]  -2: 0.006124
+I0416 16:50:21.692395   709 pointcloud_preprocessor.cc:125]  1: 5.55206
+I0416 16:50:21.693173   709 pointcloud_preprocessor.cc:129]  2: 0.762089
+I0416 16:50:21.693184   709 pointcloud_preprocessor.cc:130]  FROM: 28347 TO: 28347
+I0416 16:50:21.794960   705 pointcloud_preprocessor.cc:81]  -1: 0.000764
+I0416 16:50:21.794965   705 pointcloud_preprocessor.cc:87]  -2: 0.001401
+I0416 16:50:21.799561   705 pointcloud_preprocessor.cc:125]  1: 4.59178
+I0416 16:50:21.799823   705 pointcloud_preprocessor.cc:129]  2: 0.254675
+I0416 16:50:21.799827   705 pointcloud_preprocessor.cc:130]  FROM: 28546 TO: 28546
+I0416 16:50:21.863339   702 pointcloud_preprocessor.cc:81]  -1: 0.000882
+I0416 16:50:21.863343   702 pointcloud_preprocessor.cc:87]  -2: 0.001278
+I0416 16:50:21.867998   702 pointcloud_preprocessor.cc:125]  1: 4.65127
+I0416 16:50:21.868302   702 pointcloud_preprocessor.cc:129]  2: 0.296361
+I0416 16:50:21.868307   702 pointcloud_preprocessor.cc:130]  FROM: 28458 TO: 28458
+I0416 16:50:21.970170   700 pointcloud_preprocessor.cc:81]  -1: 0.001313
+I0416 16:50:21.970175   700 pointcloud_preprocessor.cc:87]  -2: 0.001217
+I0416 16:50:21.974874   700 pointcloud_preprocessor.cc:125]  1: 4.6926
+I0416 16:50:21.975138   700 pointcloud_preprocessor.cc:129]  2: 0.258535
+I0416 16:50:21.975143   700 pointcloud_preprocessor.cc:130]  FROM: 28475 TO: 28475
+I0416 16:50:22.070611   709 pointcloud_preprocessor.cc:81]  -1: 0.000824
+I0416 16:50:22.070616   709 pointcloud_preprocessor.cc:87]  -2: 0.001675
+I0416 16:50:22.075292   709 pointcloud_preprocessor.cc:125]  1: 4.67106
+I0416 16:50:22.075569   709 pointcloud_preprocessor.cc:129]  2: 0.265276
+I0416 16:50:22.075574   709 pointcloud_preprocessor.cc:130]  FROM: 28493 TO: 28493
+I0416 16:50:22.177536   706 pointcloud_preprocessor.cc:81]  -1: 0.00071
+I0416 16:50:22.177541   706 pointcloud_preprocessor.cc:87]  -2: 0.001524
+I0416 16:50:22.182934   706 pointcloud_preprocessor.cc:125]  1: 5.38966
+I0416 16:50:22.183373   706 pointcloud_preprocessor.cc:129]  2: 0.426377
+I0416 16:50:22.183380   706 pointcloud_preprocessor.cc:130]  FROM: 28476 TO: 28476
+I0416 16:50:22.369467   705 pointcloud_preprocessor.cc:81]  -1: 0.001912
+I0416 16:50:22.369487   705 pointcloud_preprocessor.cc:87]  -2: 0.004502
+I0416 16:50:22.389230   705 pointcloud_preprocessor.cc:125]  1: 19.723
+I0416 16:50:22.390439   705 pointcloud_preprocessor.cc:129]  2: 1.16044
+I0416 16:50:22.390460   705 pointcloud_preprocessor.cc:130]  FROM: 28497 TO: 28497
+I0416 16:50:22.414494   705 pointcloud_preprocessor.cc:81]  -1: 0.001338
+I0416 16:50:22.414503   705 pointcloud_preprocessor.cc:87]  -2: 0.005774
+I0416 16:50:22.420331   705 pointcloud_preprocessor.cc:125]  1: 5.82333
+I0416 16:50:22.420948   705 pointcloud_preprocessor.cc:129]  2: 0.604202
+I0416 16:50:22.420954   705 pointcloud_preprocessor.cc:130]  FROM: 28441 TO: 28441
+I0416 16:50:22.475090   702 pointcloud_preprocessor.cc:81]  -1: 0.0008
+I0416 16:50:22.475096   702 pointcloud_preprocessor.cc:87]  -2: 0.001927
+I0416 16:50:22.479801   702 pointcloud_preprocessor.cc:125]  1: 4.69909
+I0416 16:50:22.480073   702 pointcloud_preprocessor.cc:129]  2: 0.26445
+I0416 16:50:22.480079   702 pointcloud_preprocessor.cc:130]  FROM: 28423 TO: 28423
+I0416 16:50:22.578748   704 pointcloud_preprocessor.cc:81]  -1: 0.000811
+I0416 16:50:22.578752   704 pointcloud_preprocessor.cc:87]  -2: 0.00127
+I0416 16:50:22.583432   704 pointcloud_preprocessor.cc:125]  1: 4.6764
+I0416 16:50:22.583717   704 pointcloud_preprocessor.cc:129]  2: 0.271815
+I0416 16:50:22.583722   704 pointcloud_preprocessor.cc:130]  FROM: 28341 TO: 28341
+I0416 16:50:22.676033   706 pointcloud_preprocessor.cc:81]  -1: 0.000813
+I0416 16:50:22.676036   706 pointcloud_preprocessor.cc:87]  -2: 0.001236
+I0416 16:50:22.680554   706 pointcloud_preprocessor.cc:125]  1: 4.51422
+I0416 16:50:22.680820   706 pointcloud_preprocessor.cc:129]  2: 0.258318
+I0416 16:50:22.680825   706 pointcloud_preprocessor.cc:130]  FROM: 28106 TO: 28106
+I0416 16:50:22.776381   700 pointcloud_preprocessor.cc:81]  -1: 0.000912
+I0416 16:50:22.776391   700 pointcloud_preprocessor.cc:87]  -2: 0.002017
+I0416 16:50:22.780923   700 pointcloud_preprocessor.cc:125]  1: 4.52485
+I0416 16:50:22.781181   700 pointcloud_preprocessor.cc:129]  2: 0.246853
+I0416 16:50:22.781186   700 pointcloud_preprocessor.cc:130]  FROM: 27911 TO: 27911
+I0416 16:50:22.873315   704 pointcloud_preprocessor.cc:81]  -1: 0.001108
+I0416 16:50:22.873319   704 pointcloud_preprocessor.cc:87]  -2: 0.001472
+I0416 16:50:22.877933   704 pointcloud_preprocessor.cc:125]  1: 4.61013
+I0416 16:50:22.878224   704 pointcloud_preprocessor.cc:129]  2: 0.2841
+I0416 16:50:22.878229   704 pointcloud_preprocessor.cc:130]  FROM: 27506 TO: 27506
+I0416 16:50:22.978353   705 pointcloud_preprocessor.cc:81]  -1: 0.000786
+I0416 16:50:22.978358   705 pointcloud_preprocessor.cc:87]  -2: 0.001221
+I0416 16:50:22.982992   705 pointcloud_preprocessor.cc:125]  1: 4.63052
+I0416 16:50:22.983404   705 pointcloud_preprocessor.cc:129]  2: 0.398139
+I0416 16:50:22.983412   705 pointcloud_preprocessor.cc:130]  FROM: 27330 TO: 27330
+I0416 16:50:23.104794   707 pointcloud_preprocessor.cc:81]  -1: 0.000983
+I0416 16:50:23.104801   707 pointcloud_preprocessor.cc:87]  -2: 0.001624
+I0416 16:50:23.111346   707 pointcloud_preprocessor.cc:125]  1: 6.53882
+I0416 16:50:23.114435   707 pointcloud_preprocessor.cc:129]  2: 3.07897
+I0416 16:50:23.114450   707 pointcloud_preprocessor.cc:130]  FROM: 27199 TO: 27199
+I0416 16:50:23.173574   709 pointcloud_preprocessor.cc:81]  -1: 0.00073
+I0416 16:50:23.173580   709 pointcloud_preprocessor.cc:87]  -2: 0.001303
+I0416 16:50:23.178150   709 pointcloud_preprocessor.cc:125]  1: 4.5643
+I0416 16:50:23.178449   709 pointcloud_preprocessor.cc:129]  2: 0.292407
+I0416 16:50:23.178457   709 pointcloud_preprocessor.cc:130]  FROM: 27080 TO: 27080
+I0416 16:50:23.277673   704 pointcloud_preprocessor.cc:81]  -1: 0.000971
+I0416 16:50:23.277678   704 pointcloud_preprocessor.cc:87]  -2: 0.00115
+I0416 16:50:23.282152   704 pointcloud_preprocessor.cc:125]  1: 4.4723
+I0416 16:50:23.282414   704 pointcloud_preprocessor.cc:129]  2: 0.256007
+I0416 16:50:23.282419   704 pointcloud_preprocessor.cc:130]  FROM: 27163 TO: 27163
+I0416 16:50:23.387454   702 pointcloud_preprocessor.cc:81]  -1: 0.00076
+I0416 16:50:23.387457   702 pointcloud_preprocessor.cc:87]  -2: 0.001172
+I0416 16:50:23.392124   702 pointcloud_preprocessor.cc:125]  1: 4.662
+I0416 16:50:23.392623   702 pointcloud_preprocessor.cc:129]  2: 0.487253
+I0416 16:50:23.392633   702 pointcloud_preprocessor.cc:130]  FROM: 27359 TO: 27359
+I0416 16:50:23.494472   701 pointcloud_preprocessor.cc:81]  -1: 0.001078
+I0416 16:50:23.494479   701 pointcloud_preprocessor.cc:87]  -2: 0.001819
+I0416 16:50:23.499995   701 pointcloud_preprocessor.cc:125]  1: 5.50865
+I0416 16:50:23.500380   701 pointcloud_preprocessor.cc:129]  2: 0.374732
+I0416 16:50:23.500388   701 pointcloud_preprocessor.cc:130]  FROM: 27584 TO: 27584
+I0416 16:50:23.666368   699 pointcloud_preprocessor.cc:81]  -1: 0.002289
+I0416 16:50:23.666389   699 pointcloud_preprocessor.cc:87]  -2: 0.00583
+I0416 16:50:23.685371   699 pointcloud_preprocessor.cc:125]  1: 18.9643
+I0416 16:50:23.686470   699 pointcloud_preprocessor.cc:129]  2: 1.05742
+I0416 16:50:23.686491   699 pointcloud_preprocessor.cc:130]  FROM: 27836 TO: 27836
+I0416 16:50:23.770799   691 pointcloud_preprocessor.cc:81]  -1: 0.000797
+I0416 16:50:23.770804   691 pointcloud_preprocessor.cc:87]  -2: 0.001729
+I0416 16:50:23.776414   691 pointcloud_preprocessor.cc:125]  1: 5.60412
+I0416 16:50:23.776777   691 pointcloud_preprocessor.cc:129]  2: 0.35374
+I0416 16:50:23.776782   691 pointcloud_preprocessor.cc:130]  FROM: 27945 TO: 27945
+I0416 16:50:23.857082   707 pointcloud_preprocessor.cc:81]  -1: 0.000853
+I0416 16:50:23.857087   707 pointcloud_preprocessor.cc:87]  -2: 0.001446
+I0416 16:50:23.862238   707 pointcloud_preprocessor.cc:125]  1: 5.13998
+I0416 16:50:23.862790   707 pointcloud_preprocessor.cc:129]  2: 0.522416
+I0416 16:50:23.862800   707 pointcloud_preprocessor.cc:130]  FROM: 28081 TO: 28081
+I0416 16:50:23.886624   707 pointcloud_preprocessor.cc:81]  -1: 0.001076
+I0416 16:50:23.886631   707 pointcloud_preprocessor.cc:87]  -2: 0.000999
+I0416 16:50:23.891196   707 pointcloud_preprocessor.cc:125]  1: 4.55469
+I0416 16:50:23.891728   707 pointcloud_preprocessor.cc:129]  2: 0.498116
+I0416 16:50:23.891741   707 pointcloud_preprocessor.cc:130]  FROM: 27923 TO: 27923
+I0416 16:50:23.963438   701 pointcloud_preprocessor.cc:81]  -1: 0.000995
+I0416 16:50:23.963444   701 pointcloud_preprocessor.cc:87]  -2: 0.00181
+I0416 16:50:23.967908   701 pointcloud_preprocessor.cc:125]  1: 4.46017
+I0416 16:50:23.968232   701 pointcloud_preprocessor.cc:129]  2: 0.313902
+I0416 16:50:23.968240   701 pointcloud_preprocessor.cc:130]  FROM: 27773 TO: 27773
+I0416 16:50:24.084924   704 pointcloud_preprocessor.cc:81]  -1: 0.000829
+I0416 16:50:24.084929   704 pointcloud_preprocessor.cc:87]  -2: 0.001443
+I0416 16:50:24.089449   704 pointcloud_preprocessor.cc:125]  1: 4.51623
+I0416 16:50:24.089740   704 pointcloud_preprocessor.cc:129]  2: 0.283094
+I0416 16:50:24.089743   704 pointcloud_preprocessor.cc:130]  FROM: 27725 TO: 27725
+I0416 16:50:24.209112   703 pointcloud_preprocessor.cc:81]  -1: 0.001095
+I0416 16:50:24.209130   703 pointcloud_preprocessor.cc:87]  -2: 0.001967
+I0416 16:50:24.216264   703 pointcloud_preprocessor.cc:125]  1: 7.12023
+I0416 16:50:24.216666   703 pointcloud_preprocessor.cc:129]  2: 0.380426
+I0416 16:50:24.216676   703 pointcloud_preprocessor.cc:130]  FROM: 27689 TO: 27689
+I0416 16:50:24.263846   709 pointcloud_preprocessor.cc:81]  -1: 0.000962
+I0416 16:50:24.263850   709 pointcloud_preprocessor.cc:87]  -2: 0.001017
+I0416 16:50:24.268468   709 pointcloud_preprocessor.cc:125]  1: 4.61286
+I0416 16:50:24.268738   709 pointcloud_preprocessor.cc:129]  2: 0.262936
+I0416 16:50:24.268744   709 pointcloud_preprocessor.cc:130]  FROM: 27825 TO: 27825
+I0416 16:50:24.362974   691 pointcloud_preprocessor.cc:81]  -1: 0.000901
+I0416 16:50:24.362979   691 pointcloud_preprocessor.cc:87]  -2: 0.001709
+I0416 16:50:24.367460   691 pointcloud_preprocessor.cc:125]  1: 4.47576
+I0416 16:50:24.367755   691 pointcloud_preprocessor.cc:129]  2: 0.289656
+I0416 16:50:24.367760   691 pointcloud_preprocessor.cc:130]  FROM: 27890 TO: 27890
+I0416 16:50:24.465662   703 pointcloud_preprocessor.cc:81]  -1: 0.00077
+I0416 16:50:24.465667   703 pointcloud_preprocessor.cc:87]  -2: 0.001278
+I0416 16:50:24.470371   703 pointcloud_preprocessor.cc:125]  1: 4.69008
+I0416 16:50:24.470656   703 pointcloud_preprocessor.cc:129]  2: 0.271158
+I0416 16:50:24.470662   703 pointcloud_preprocessor.cc:130]  FROM: 28108 TO: 28108
+I0416 16:50:24.563282   707 pointcloud_preprocessor.cc:81]  -1: 0.000831
+I0416 16:50:24.563287   707 pointcloud_preprocessor.cc:87]  -2: 0.001218
+I0416 16:50:24.567878   707 pointcloud_preprocessor.cc:125]  1: 4.58789
+I0416 16:50:24.568444   707 pointcloud_preprocessor.cc:129]  2: 0.560097
+I0416 16:50:24.568450   707 pointcloud_preprocessor.cc:130]  FROM: 28115 TO: 28115
+I0416 16:50:24.663174   691 pointcloud_preprocessor.cc:81]  -1: 0.001223
+I0416 16:50:24.663182   691 pointcloud_preprocessor.cc:87]  -2: 0.001566
+I0416 16:50:24.667707   691 pointcloud_preprocessor.cc:125]  1: 4.52
+I0416 16:50:24.667974   691 pointcloud_preprocessor.cc:129]  2: 0.26057
+I0416 16:50:24.667980   691 pointcloud_preprocessor.cc:130]  FROM: 28110 TO: 28110
+I0416 16:50:24.762997   708 pointcloud_preprocessor.cc:81]  -1: 0.00084
+I0416 16:50:24.763002   708 pointcloud_preprocessor.cc:87]  -2: 0.001449
+I0416 16:50:24.767504   708 pointcloud_preprocessor.cc:125]  1: 4.49793
+I0416 16:50:24.767760   708 pointcloud_preprocessor.cc:129]  2: 0.249586
+I0416 16:50:24.767765   708 pointcloud_preprocessor.cc:130]  FROM: 27988 TO: 27988
+I0416 16:50:24.863085   699 pointcloud_preprocessor.cc:81]  -1: 0.000979
+I0416 16:50:24.863092   699 pointcloud_preprocessor.cc:87]  -2: 0.002012
+I0416 16:50:24.867600   699 pointcloud_preprocessor.cc:125]  1: 4.50362
+I0416 16:50:24.867854   699 pointcloud_preprocessor.cc:129]  2: 0.248212
+I0416 16:50:24.867859   699 pointcloud_preprocessor.cc:130]  FROM: 28027 TO: 28027
+I0416 16:50:24.963084   700 pointcloud_preprocessor.cc:81]  -1: 0.000784
+I0416 16:50:24.963089   700 pointcloud_preprocessor.cc:87]  -2: 0.001744
+I0416 16:50:24.967670   700 pointcloud_preprocessor.cc:125]  1: 4.57714
+I0416 16:50:24.967955   700 pointcloud_preprocessor.cc:129]  2: 0.278949
+I0416 16:50:24.967960   700 pointcloud_preprocessor.cc:130]  FROM: 28053 TO: 28053
+I0416 16:50:25.074561   708 pointcloud_preprocessor.cc:81]  -1: 0.000828
+I0416 16:50:25.074568   708 pointcloud_preprocessor.cc:87]  -2: 0.001268
+I0416 16:50:25.079195   708 pointcloud_preprocessor.cc:125]  1: 4.62237
+I0416 16:50:25.079622   708 pointcloud_preprocessor.cc:129]  2: 0.405425
+I0416 16:50:25.079636   708 pointcloud_preprocessor.cc:130]  FROM: 28268 TO: 28268
+I0416 16:50:25.163223   699 pointcloud_preprocessor.cc:81]  -1: 0.000896
+I0416 16:50:25.163228   699 pointcloud_preprocessor.cc:87]  -2: 0.001297
+I0416 16:50:25.167801   699 pointcloud_preprocessor.cc:125]  1: 4.56913
+I0416 16:50:25.168071   699 pointcloud_preprocessor.cc:129]  2: 0.260549
+I0416 16:50:25.168076   699 pointcloud_preprocessor.cc:130]  FROM: 28342 TO: 28342
+I0416 16:50:25.263499   705 pointcloud_preprocessor.cc:81]  -1: 0.000826
+I0416 16:50:25.263504   705 pointcloud_preprocessor.cc:87]  -2: 0.001718
+I0416 16:50:25.268229   705 pointcloud_preprocessor.cc:125]  1: 4.72108
+I0416 16:50:25.268507   705 pointcloud_preprocessor.cc:129]  2: 0.268922
+I0416 16:50:25.268512   705 pointcloud_preprocessor.cc:130]  FROM: 28425 TO: 28425
+I0416 16:50:25.363111   703 pointcloud_preprocessor.cc:81]  -1: 0.000891
+I0416 16:50:25.363116   703 pointcloud_preprocessor.cc:87]  -2: 0.001141
+I0416 16:50:25.367688   703 pointcloud_preprocessor.cc:125]  1: 4.5672
+I0416 16:50:25.367949   703 pointcloud_preprocessor.cc:129]  2: 0.255389
+I0416 16:50:25.367954   703 pointcloud_preprocessor.cc:130]  FROM: 28429 TO: 28429
+I0416 16:50:25.463177   707 pointcloud_preprocessor.cc:81]  -1: 0.000827
+I0416 16:50:25.463182   707 pointcloud_preprocessor.cc:87]  -2: 0.001125
+I0416 16:50:25.467772   707 pointcloud_preprocessor.cc:125]  1: 4.58487
+I0416 16:50:25.468438   707 pointcloud_preprocessor.cc:129]  2: 0.656161
+I0416 16:50:25.468444   707 pointcloud_preprocessor.cc:130]  FROM: 28411 TO: 28411
+I0416 16:50:25.571616   705 pointcloud_preprocessor.cc:81]  -1: 0.000941
+I0416 16:50:25.571625   705 pointcloud_preprocessor.cc:87]  -2: 0.001682
+I0416 16:50:25.576625   705 pointcloud_preprocessor.cc:125]  1: 4.9904
+I0416 16:50:25.576911   705 pointcloud_preprocessor.cc:129]  2: 0.269369
+I0416 16:50:25.576917   705 pointcloud_preprocessor.cc:130]  FROM: 28353 TO: 28353
+I0416 16:50:25.663033   703 pointcloud_preprocessor.cc:81]  -1: 0.001045
+I0416 16:50:25.663039   703 pointcloud_preprocessor.cc:87]  -2: 0.00121
+I0416 16:50:25.667639   703 pointcloud_preprocessor.cc:125]  1: 4.59348
+I0416 16:50:25.667902   703 pointcloud_preprocessor.cc:129]  2: 0.258518
+I0416 16:50:25.667907   703 pointcloud_preprocessor.cc:130]  FROM: 28504 TO: 28504
+I0416 16:50:25.763393   691 pointcloud_preprocessor.cc:81]  -1: 0.000781
+I0416 16:50:25.763398   691 pointcloud_preprocessor.cc:87]  -2: 0.001558
+I0416 16:50:25.768023   691 pointcloud_preprocessor.cc:125]  1: 4.62162
+I0416 16:50:25.768294   691 pointcloud_preprocessor.cc:129]  2: 0.265658
+I0416 16:50:25.768299   691 pointcloud_preprocessor.cc:130]  FROM: 28755 TO: 28755
+I0416 16:50:25.863956   702 pointcloud_preprocessor.cc:81]  -1: 0.00097
+I0416 16:50:25.863965   702 pointcloud_preprocessor.cc:87]  -2: 0.002237
+I0416 16:50:25.868712   702 pointcloud_preprocessor.cc:125]  1: 4.73982
+I0416 16:50:25.868991   702 pointcloud_preprocessor.cc:129]  2: 0.267307
+I0416 16:50:25.868997   702 pointcloud_preprocessor.cc:130]  FROM: 28924 TO: 28924
+I0416 16:50:25.963562   699 pointcloud_preprocessor.cc:81]  -1: 0.000823
+I0416 16:50:25.963567   699 pointcloud_preprocessor.cc:87]  -2: 0.001067
+I0416 16:50:25.968243   699 pointcloud_preprocessor.cc:125]  1: 4.67181
+I0416 16:50:25.968511   699 pointcloud_preprocessor.cc:129]  2: 0.261255
+I0416 16:50:25.968516   699 pointcloud_preprocessor.cc:130]  FROM: 28980 TO: 28980
+I0416 16:50:26.111361   691 pointcloud_preprocessor.cc:81]  -1: 0.001502
+I0416 16:50:26.111377   691 pointcloud_preprocessor.cc:87]  -2: 0.00324
+I0416 16:50:26.122083   691 pointcloud_preprocessor.cc:125]  1: 10.6877
+I0416 16:50:26.122570   691 pointcloud_preprocessor.cc:129]  2: 0.45885
+I0416 16:50:26.122581   691 pointcloud_preprocessor.cc:130]  FROM: 29047 TO: 29047
+I0416 16:50:26.165279   707 pointcloud_preprocessor.cc:81]  -1: 0.001663
+I0416 16:50:26.165289   707 pointcloud_preprocessor.cc:87]  -2: 0.001364
+I0416 16:50:26.170471   707 pointcloud_preprocessor.cc:125]  1: 5.17174
+I0416 16:50:26.171133   707 pointcloud_preprocessor.cc:129]  2: 0.640217
+I0416 16:50:26.171142   707 pointcloud_preprocessor.cc:130]  FROM: 28982 TO: 28982
+I0416 16:50:26.263162   704 pointcloud_preprocessor.cc:81]  -1: 0.001215
+I0416 16:50:26.263167   704 pointcloud_preprocessor.cc:87]  -2: 0.001346
+I0416 16:50:26.267802   704 pointcloud_preprocessor.cc:125]  1: 4.63104
+I0416 16:50:26.268069   704 pointcloud_preprocessor.cc:129]  2: 0.259365
+I0416 16:50:26.268074   704 pointcloud_preprocessor.cc:130]  FROM: 28794 TO: 28794
+I0416 16:50:26.363134   703 pointcloud_preprocessor.cc:81]  -1: 0.000753
+I0416 16:50:26.363140   703 pointcloud_preprocessor.cc:87]  -2: 0.001255
+I0416 16:50:26.367749   703 pointcloud_preprocessor.cc:125]  1: 4.60342
+I0416 16:50:26.368080   703 pointcloud_preprocessor.cc:129]  2: 0.323674
+I0416 16:50:26.368085   703 pointcloud_preprocessor.cc:130]  FROM: 28679 TO: 28679
+I0416 16:50:26.463052   706 pointcloud_preprocessor.cc:81]  -1: 0.000754
+I0416 16:50:26.463057   706 pointcloud_preprocessor.cc:87]  -2: 0.001638
+I0416 16:50:26.467648   706 pointcloud_preprocessor.cc:125]  1: 4.58709
+I0416 16:50:26.467928   706 pointcloud_preprocessor.cc:129]  2: 0.273093
+I0416 16:50:26.467933   706 pointcloud_preprocessor.cc:130]  FROM: 28465 TO: 28465
+I0416 16:50:26.563092   704 pointcloud_preprocessor.cc:81]  -1: 0.000745
+I0416 16:50:26.563097   704 pointcloud_preprocessor.cc:87]  -2: 0.001125
+I0416 16:50:26.567643   704 pointcloud_preprocessor.cc:125]  1: 4.54376
+I0416 16:50:26.567903   704 pointcloud_preprocessor.cc:129]  2: 0.254443
+I0416 16:50:26.567909   704 pointcloud_preprocessor.cc:130]  FROM: 28348 TO: 28348
+I0416 16:50:26.663085   701 pointcloud_preprocessor.cc:81]  -1: 0.000912
+I0416 16:50:26.663090   701 pointcloud_preprocessor.cc:87]  -2: 0.001102
+I0416 16:50:26.667752   701 pointcloud_preprocessor.cc:125]  1: 4.65462
+I0416 16:50:26.668032   701 pointcloud_preprocessor.cc:129]  2: 0.272318
+I0416 16:50:26.668038   701 pointcloud_preprocessor.cc:130]  FROM: 28392 TO: 28392
+I0416 16:50:26.762944   702 pointcloud_preprocessor.cc:81]  -1: 0.000753
+I0416 16:50:26.762948   702 pointcloud_preprocessor.cc:87]  -2: 0.001094
+I0416 16:50:26.767503   702 pointcloud_preprocessor.cc:125]  1: 4.55037
+I0416 16:50:26.767906   702 pointcloud_preprocessor.cc:129]  2: 0.398984
+I0416 16:50:26.767912   702 pointcloud_preprocessor.cc:130]  FROM: 28323 TO: 28323
+I0416 16:50:26.863345   704 pointcloud_preprocessor.cc:81]  -1: 0.000945
+I0416 16:50:26.863350   704 pointcloud_preprocessor.cc:87]  -2: 0.001368
+I0416 16:50:26.867925   704 pointcloud_preprocessor.cc:125]  1: 4.57191
+I0416 16:50:26.868196   704 pointcloud_preprocessor.cc:129]  2: 0.262493
+I0416 16:50:26.868199   704 pointcloud_preprocessor.cc:130]  FROM: 28435 TO: 28435
+I0416 16:50:26.981813   700 pointcloud_preprocessor.cc:81]  -1: 0.002384
+I0416 16:50:26.981840   700 pointcloud_preprocessor.cc:87]  -2: 0.005409
+I0416 16:50:26.997733   700 pointcloud_preprocessor.cc:125]  1: 15.8762
+I0416 16:50:26.998512   700 pointcloud_preprocessor.cc:129]  2: 0.755638
+I0416 16:50:26.998526   700 pointcloud_preprocessor.cc:130]  FROM: 28638 TO: 28638
+I0416 16:50:27.069519   702 pointcloud_preprocessor.cc:81]  -1: 0.000843
+I0416 16:50:27.069525   702 pointcloud_preprocessor.cc:87]  -2: 0.001345
+I0416 16:50:27.074168   702 pointcloud_preprocessor.cc:125]  1: 4.63717
+I0416 16:50:27.074442   702 pointcloud_preprocessor.cc:129]  2: 0.266115
+I0416 16:50:27.074448   702 pointcloud_preprocessor.cc:130]  FROM: 28816 TO: 28816
+I0416 16:50:27.197829   704 pointcloud_preprocessor.cc:81]  -1: 0.001079
+I0416 16:50:27.197836   704 pointcloud_preprocessor.cc:87]  -2: 0.001752
+I0416 16:50:27.206106   704 pointcloud_preprocessor.cc:125]  1: 8.25859
+I0416 16:50:27.206612   704 pointcloud_preprocessor.cc:129]  2: 0.493167
+I0416 16:50:27.206621   704 pointcloud_preprocessor.cc:130]  FROM: 28980 TO: 28980
+I0416 16:50:27.278643   703 pointcloud_preprocessor.cc:81]  -1: 0.001199
+I0416 16:50:27.278651   703 pointcloud_preprocessor.cc:87]  -2: 0.00139
+I0416 16:50:27.283375   703 pointcloud_preprocessor.cc:125]  1: 4.71602
+I0416 16:50:27.283710   703 pointcloud_preprocessor.cc:129]  2: 0.324958
+I0416 16:50:27.283716   703 pointcloud_preprocessor.cc:130]  FROM: 28996 TO: 28996
+I0416 16:50:27.403810   699 pointcloud_preprocessor.cc:81]  -1: 0.001968
+I0416 16:50:27.403831   699 pointcloud_preprocessor.cc:87]  -2: 0.003669
+I0416 16:50:27.419713   699 pointcloud_preprocessor.cc:125]  1: 15.8622
+I0416 16:50:27.420326   699 pointcloud_preprocessor.cc:129]  2: 0.584926
+I0416 16:50:27.420343   699 pointcloud_preprocessor.cc:130]  FROM: 28925 TO: 28925
+I0416 16:50:27.592257   708 pointcloud_preprocessor.cc:81]  -1: 0.001982
+I0416 16:50:27.592278   708 pointcloud_preprocessor.cc:87]  -2: 0.003791
+I0416 16:50:27.607933   708 pointcloud_preprocessor.cc:125]  1: 15.6361
+I0416 16:50:27.608675   708 pointcloud_preprocessor.cc:129]  2: 0.713289
+I0416 16:50:27.608690   708 pointcloud_preprocessor.cc:130]  FROM: 28928 TO: 28928
+I0416 16:50:27.634815   708 pointcloud_preprocessor.cc:81]  -1: 0.001658
+I0416 16:50:27.634827   708 pointcloud_preprocessor.cc:87]  -2: 0.006726
+I0416 16:50:27.639873   708 pointcloud_preprocessor.cc:125]  1: 5.0414
+I0416 16:50:27.640425   708 pointcloud_preprocessor.cc:129]  2: 0.54535
+I0416 16:50:27.640430   708 pointcloud_preprocessor.cc:130]  FROM: 28939 TO: 28939
+I0416 16:50:27.679891   708 pointcloud_preprocessor.cc:81]  -1: 0.001877
+I0416 16:50:27.679905   708 pointcloud_preprocessor.cc:87]  -2: 0.006428
+I0416 16:50:27.685832   708 pointcloud_preprocessor.cc:125]  1: 5.91959
+I0416 16:50:27.686623   708 pointcloud_preprocessor.cc:129]  2: 0.778824
+I0416 16:50:27.686631   708 pointcloud_preprocessor.cc:130]  FROM: 28932 TO: 28932
+I0416 16:50:27.763247   699 pointcloud_preprocessor.cc:81]  -1: 0.001373
+I0416 16:50:27.763255   699 pointcloud_preprocessor.cc:87]  -2: 0.001609
+I0416 16:50:27.768528   699 pointcloud_preprocessor.cc:125]  1: 5.26438
+I0416 16:50:27.768975   699 pointcloud_preprocessor.cc:129]  2: 0.428272
+I0416 16:50:27.768985   699 pointcloud_preprocessor.cc:130]  FROM: 28912 TO: 28912
+I0416 16:50:27.863337   703 pointcloud_preprocessor.cc:81]  -1: 0.001266
+I0416 16:50:27.863344   703 pointcloud_preprocessor.cc:87]  -2: 0.001332
+I0416 16:50:27.868012   703 pointcloud_preprocessor.cc:125]  1: 4.66212
+I0416 16:50:27.868290   703 pointcloud_preprocessor.cc:129]  2: 0.271408
+I0416 16:50:27.868296   703 pointcloud_preprocessor.cc:130]  FROM: 29048 TO: 29048
+I0416 16:50:27.963385   705 pointcloud_preprocessor.cc:81]  -1: 0.001161
+I0416 16:50:27.963393   705 pointcloud_preprocessor.cc:87]  -2: 0.002819
+I0416 16:50:27.968132   705 pointcloud_preprocessor.cc:125]  1: 4.73468
+I0416 16:50:27.968420   705 pointcloud_preprocessor.cc:129]  2: 0.282222
+I0416 16:50:27.968425   705 pointcloud_preprocessor.cc:130]  FROM: 29008 TO: 29008
+I0416 16:50:28.063606   708 pointcloud_preprocessor.cc:81]  -1: 0.000858
+I0416 16:50:28.063613   708 pointcloud_preprocessor.cc:87]  -2: 0.001696
+I0416 16:50:28.068296   708 pointcloud_preprocessor.cc:125]  1: 4.67681
+I0416 16:50:28.068598   708 pointcloud_preprocessor.cc:129]  2: 0.292835
+I0416 16:50:28.068604   708 pointcloud_preprocessor.cc:130]  FROM: 29047 TO: 29047
+I0416 16:50:28.163466   701 pointcloud_preprocessor.cc:81]  -1: 0.000977
+I0416 16:50:28.163473   701 pointcloud_preprocessor.cc:87]  -2: 0.001844
+I0416 16:50:28.168254   701 pointcloud_preprocessor.cc:125]  1: 4.77674
+I0416 16:50:28.168709   701 pointcloud_preprocessor.cc:129]  2: 0.442297
+I0416 16:50:28.168715   701 pointcloud_preprocessor.cc:130]  FROM: 29155 TO: 29155
+I0416 16:50:28.263350   703 pointcloud_preprocessor.cc:81]  -1: 0.000956
+I0416 16:50:28.263355   703 pointcloud_preprocessor.cc:87]  -2: 0.001036
+I0416 16:50:28.268050   703 pointcloud_preprocessor.cc:125]  1: 4.69006
+I0416 16:50:28.268326   703 pointcloud_preprocessor.cc:129]  2: 0.269677
+I0416 16:50:28.268332   703 pointcloud_preprocessor.cc:130]  FROM: 29215 TO: 29215
+I0416 16:50:28.487058   702 pointcloud_preprocessor.cc:81]  -1: 0.002138
+I0416 16:50:28.487082   702 pointcloud_preprocessor.cc:87]  -2: 0.003417
+I0416 16:50:28.505802   702 pointcloud_preprocessor.cc:125]  1: 18.7059
+I0416 16:50:28.506983   702 pointcloud_preprocessor.cc:129]  2: 1.15457
+I0416 16:50:28.507004   702 pointcloud_preprocessor.cc:130]  FROM: 29450 TO: 29450
+I0416 16:50:28.539741   702 pointcloud_preprocessor.cc:81]  -1: 0.00131
+I0416 16:50:28.539758   702 pointcloud_preprocessor.cc:87]  -2: 0.008446
+I0416 16:50:28.546716   702 pointcloud_preprocessor.cc:125]  1: 6.94579
+I0416 16:50:28.547394   702 pointcloud_preprocessor.cc:129]  2: 0.664105
+I0416 16:50:28.547401   702 pointcloud_preprocessor.cc:130]  FROM: 29497 TO: 29497
+I0416 16:50:28.587275   702 pointcloud_preprocessor.cc:81]  -1: 0.001007
+I0416 16:50:28.587285   702 pointcloud_preprocessor.cc:87]  -2: 0.005102
+I0416 16:50:28.592576   702 pointcloud_preprocessor.cc:125]  1: 5.28572
+I0416 16:50:28.593207   702 pointcloud_preprocessor.cc:129]  2: 0.620806
+I0416 16:50:28.593214   702 pointcloud_preprocessor.cc:130]  FROM: 29434 TO: 29434
+I0416 16:50:28.676126   708 pointcloud_preprocessor.cc:81]  -1: 0.000967
+I0416 16:50:28.676136   708 pointcloud_preprocessor.cc:87]  -2: 0.002219
+I0416 16:50:28.680943   708 pointcloud_preprocessor.cc:125]  1: 4.80079
+I0416 16:50:28.681222   708 pointcloud_preprocessor.cc:129]  2: 0.268882
+I0416 16:50:28.681228   708 pointcloud_preprocessor.cc:130]  FROM: 29276 TO: 29276
+I0416 16:50:28.877229   699 pointcloud_preprocessor.cc:81]  -1: 0.002366
+I0416 16:50:28.877255   699 pointcloud_preprocessor.cc:87]  -2: 0.004142
+I0416 16:50:28.894881   699 pointcloud_preprocessor.cc:125]  1: 17.6083
+I0416 16:50:28.895931   699 pointcloud_preprocessor.cc:129]  2: 1.02362
+I0416 16:50:28.895948   699 pointcloud_preprocessor.cc:130]  FROM: 29114 TO: 29114
+I0416 16:50:29.082603   700 pointcloud_preprocessor.cc:81]  -1: 0.00188
+I0416 16:50:29.082624   700 pointcloud_preprocessor.cc:87]  -2: 0.003255
+I0416 16:50:29.097182   700 pointcloud_preprocessor.cc:125]  1: 14.5432
+I0416 16:50:29.097762   700 pointcloud_preprocessor.cc:129]  2: 0.551992
+I0416 16:50:29.097775   700 pointcloud_preprocessor.cc:130]  FROM: 28979 TO: 28979
+I0416 16:50:29.136970   700 pointcloud_preprocessor.cc:81]  -1: 0.001077
+I0416 16:50:29.136976   700 pointcloud_preprocessor.cc:87]  -2: 0.001411
+I0416 16:50:29.142246   700 pointcloud_preprocessor.cc:125]  1: 5.26464
+I0416 16:50:29.142899   700 pointcloud_preprocessor.cc:129]  2: 0.642589
+I0416 16:50:29.142908   700 pointcloud_preprocessor.cc:130]  FROM: 28750 TO: 28750
+I0416 16:50:29.168334   709 pointcloud_preprocessor.cc:81]  -1: 0.001152
+I0416 16:50:29.168344   709 pointcloud_preprocessor.cc:87]  -2: 0.002317
+I0416 16:50:29.173472   709 pointcloud_preprocessor.cc:125]  1: 5.10969
+I0416 16:50:29.174475   709 pointcloud_preprocessor.cc:129]  2: 0.969547
+I0416 16:50:29.174492   709 pointcloud_preprocessor.cc:130]  FROM: 28825 TO: 28825
+I0416 16:50:29.263463   705 pointcloud_preprocessor.cc:81]  -1: 0.000832
+I0416 16:50:29.263468   705 pointcloud_preprocessor.cc:87]  -2: 0.002288
+I0416 16:50:29.268272   705 pointcloud_preprocessor.cc:125]  1: 4.79923
+I0416 16:50:29.268548   705 pointcloud_preprocessor.cc:129]  2: 0.268732
+I0416 16:50:29.268553   705 pointcloud_preprocessor.cc:130]  FROM: 29064 TO: 29064
+I0416 16:50:29.423544   699 pointcloud_preprocessor.cc:81]  -1: 0.001578
+I0416 16:50:29.423560   699 pointcloud_preprocessor.cc:87]  -2: 0.002903
+I0416 16:50:29.434587   699 pointcloud_preprocessor.cc:125]  1: 11.0147
+I0416 16:50:29.435674   699 pointcloud_preprocessor.cc:129]  2: 1.05677
+I0416 16:50:29.435690   699 pointcloud_preprocessor.cc:130]  FROM: 29344 TO: 29344
+I0416 16:50:29.476593   691 pointcloud_preprocessor.cc:81]  -1: 0.000731
+I0416 16:50:29.476598   691 pointcloud_preprocessor.cc:87]  -2: 0.001833
+I0416 16:50:29.481473   691 pointcloud_preprocessor.cc:125]  1: 4.87185
+I0416 16:50:29.481926   691 pointcloud_preprocessor.cc:129]  2: 0.442653
+I0416 16:50:29.481932   691 pointcloud_preprocessor.cc:130]  FROM: 29538 TO: 29538
+I0416 16:50:29.576491   706 pointcloud_preprocessor.cc:81]  -1: 0.000844
+I0416 16:50:29.576495   706 pointcloud_preprocessor.cc:87]  -2: 0.001242
+I0416 16:50:29.581341   706 pointcloud_preprocessor.cc:125]  1: 4.84225
+I0416 16:50:29.581647   706 pointcloud_preprocessor.cc:129]  2: 0.300665
+I0416 16:50:29.581652   706 pointcloud_preprocessor.cc:130]  FROM: 29655 TO: 29655
+I0416 16:50:29.779057   704 pointcloud_preprocessor.cc:81]  -1: 0.002065
+I0416 16:50:29.779083   704 pointcloud_preprocessor.cc:87]  -2: 0.005058
+I0416 16:50:29.798645   704 pointcloud_preprocessor.cc:125]  1: 19.5459
+I0416 16:50:29.799927   704 pointcloud_preprocessor.cc:129]  2: 1.24905
+I0416 16:50:29.799949   704 pointcloud_preprocessor.cc:130]  FROM: 29743 TO: 29743
+I0416 16:50:29.824663   704 pointcloud_preprocessor.cc:81]  -1: 0.001077
+I0416 16:50:29.824671   704 pointcloud_preprocessor.cc:87]  -2: 0.001719
+I0416 16:50:29.830025   704 pointcloud_preprocessor.cc:125]  1: 5.34933
+I0416 16:50:29.830718   704 pointcloud_preprocessor.cc:129]  2: 0.681412
+I0416 16:50:29.830727   704 pointcloud_preprocessor.cc:130]  FROM: 29758 TO: 29758
+I0416 16:50:29.869598   704 pointcloud_preprocessor.cc:81]  -1: 0.001199
+I0416 16:50:29.869611   704 pointcloud_preprocessor.cc:87]  -2: 0.006214
+I0416 16:50:29.874915   704 pointcloud_preprocessor.cc:125]  1: 5.29967
+I0416 16:50:29.875591   704 pointcloud_preprocessor.cc:129]  2: 0.66589
+I0416 16:50:29.875597   704 pointcloud_preprocessor.cc:130]  FROM: 29731 TO: 29731
+I0416 16:50:29.963896   701 pointcloud_preprocessor.cc:81]  -1: 0.001024
+I0416 16:50:29.963903   701 pointcloud_preprocessor.cc:87]  -2: 0.001273
+I0416 16:50:29.968680   701 pointcloud_preprocessor.cc:125]  1: 4.7714
+I0416 16:50:29.968955   701 pointcloud_preprocessor.cc:129]  2: 0.267034
+I0416 16:50:29.968960   701 pointcloud_preprocessor.cc:130]  FROM: 29687 TO: 29687
+I0416 16:50:30.063616   706 pointcloud_preprocessor.cc:81]  -1: 0.000784
+I0416 16:50:30.063622   706 pointcloud_preprocessor.cc:87]  -2: 0.00234
+I0416 16:50:30.068469   706 pointcloud_preprocessor.cc:125]  1: 4.84045
+I0416 16:50:30.068769   706 pointcloud_preprocessor.cc:129]  2: 0.295803
+I0416 16:50:30.068774   706 pointcloud_preprocessor.cc:130]  FROM: 29643 TO: 29643
+I0416 16:50:30.163590   705 pointcloud_preprocessor.cc:81]  -1: 0.000779
+I0416 16:50:30.163597   705 pointcloud_preprocessor.cc:87]  -2: 0.001375
+I0416 16:50:30.168373   705 pointcloud_preprocessor.cc:125]  1: 4.77295
+I0416 16:50:30.168648   705 pointcloud_preprocessor.cc:129]  2: 0.265904
+I0416 16:50:30.168653   705 pointcloud_preprocessor.cc:130]  FROM: 29671 TO: 29671
+I0416 16:50:30.263592   701 pointcloud_preprocessor.cc:81]  -1: 0.000877
+I0416 16:50:30.263598   701 pointcloud_preprocessor.cc:87]  -2: 0.001235
+I0416 16:50:30.268476   701 pointcloud_preprocessor.cc:125]  1: 4.87341
+I0416 16:50:30.268782   701 pointcloud_preprocessor.cc:129]  2: 0.299501
+I0416 16:50:30.268786   701 pointcloud_preprocessor.cc:130]  FROM: 29835 TO: 29835
+I0416 16:50:30.363775   699 pointcloud_preprocessor.cc:81]  -1: 0.000932
+I0416 16:50:30.363780   699 pointcloud_preprocessor.cc:87]  -2: 0.001866
+I0416 16:50:30.368595   699 pointcloud_preprocessor.cc:125]  1: 4.81116
+I0416 16:50:30.368868   699 pointcloud_preprocessor.cc:129]  2: 0.265912
+I0416 16:50:30.368872   699 pointcloud_preprocessor.cc:130]  FROM: 29992 TO: 29992
+I0416 16:50:30.463672   706 pointcloud_preprocessor.cc:81]  -1: 0.000844
+I0416 16:50:30.463676   706 pointcloud_preprocessor.cc:87]  -2: 0.001046
+I0416 16:50:30.468513   706 pointcloud_preprocessor.cc:125]  1: 4.83405
+I0416 16:50:30.468822   706 pointcloud_preprocessor.cc:129]  2: 0.302573
+I0416 16:50:30.468827   706 pointcloud_preprocessor.cc:130]  FROM: 30162 TO: 30162
+I0416 16:50:30.605615   701 pointcloud_preprocessor.cc:81]  -1: 0.002354
+I0416 16:50:30.605638   701 pointcloud_preprocessor.cc:87]  -2: 0.003716
+I0416 16:50:30.618600   701 pointcloud_preprocessor.cc:125]  1: 12.9448
+I0416 16:50:30.619321   701 pointcloud_preprocessor.cc:129]  2: 0.698364
+I0416 16:50:30.619333   701 pointcloud_preprocessor.cc:130]  FROM: 30113 TO: 30113
+I0416 16:50:30.715303   704 pointcloud_preprocessor.cc:81]  -1: 0.00093
+I0416 16:50:30.715309   704 pointcloud_preprocessor.cc:87]  -2: 0.002266
+I0416 16:50:30.720240   704 pointcloud_preprocessor.cc:125]  1: 4.92804
+I0416 16:50:30.720546   704 pointcloud_preprocessor.cc:129]  2: 0.298689
+I0416 16:50:30.720551   704 pointcloud_preprocessor.cc:130]  FROM: 30187 TO: 30187
+I0416 16:50:30.768280   709 pointcloud_preprocessor.cc:81]  -1: 0.001036
+I0416 16:50:30.768290   709 pointcloud_preprocessor.cc:87]  -2: 0.001528
+I0416 16:50:30.773975   709 pointcloud_preprocessor.cc:125]  1: 5.67589
+I0416 16:50:30.774416   709 pointcloud_preprocessor.cc:129]  2: 0.426485
+I0416 16:50:30.774426   709 pointcloud_preprocessor.cc:130]  FROM: 30253 TO: 30253
+I0416 16:50:30.863620   704 pointcloud_preprocessor.cc:81]  -1: 0.00079
+I0416 16:50:30.863623   704 pointcloud_preprocessor.cc:87]  -2: 0.001335
+I0416 16:50:30.868582   704 pointcloud_preprocessor.cc:125]  1: 4.95498
+I0416 16:50:30.868929   704 pointcloud_preprocessor.cc:129]  2: 0.339945
+I0416 16:50:30.868934   704 pointcloud_preprocessor.cc:130]  FROM: 30267 TO: 30267
+I0416 16:50:30.964088   700 pointcloud_preprocessor.cc:81]  -1: 0.000766
+I0416 16:50:30.964094   700 pointcloud_preprocessor.cc:87]  -2: 0.002178
+I0416 16:50:30.968972   700 pointcloud_preprocessor.cc:125]  1: 4.87519
+I0416 16:50:30.969259   700 pointcloud_preprocessor.cc:129]  2: 0.279127
+I0416 16:50:30.969264   700 pointcloud_preprocessor.cc:130]  FROM: 30345 TO: 30345
+I0416 16:50:31.075202   707 pointcloud_preprocessor.cc:81]  -1: 0.000768
+I0416 16:50:31.075208   707 pointcloud_preprocessor.cc:87]  -2: 0.002179
+I0416 16:50:31.080314   707 pointcloud_preprocessor.cc:125]  1: 5.10223
+I0416 16:50:31.080780   707 pointcloud_preprocessor.cc:129]  2: 0.454007
+I0416 16:50:31.080790   707 pointcloud_preprocessor.cc:130]  FROM: 30340 TO: 30340
+I0416 16:50:31.278230   699 pointcloud_preprocessor.cc:81]  -1: 0.002587
+I0416 16:50:31.278262   699 pointcloud_preprocessor.cc:87]  -2: 0.005586
+I0416 16:50:31.301453   699 pointcloud_preprocessor.cc:125]  1: 23.167
+I0416 16:50:31.302724   699 pointcloud_preprocessor.cc:129]  2: 1.22541
+I0416 16:50:31.302749   699 pointcloud_preprocessor.cc:130]  FROM: 30349 TO: 30349
+I0416 16:50:31.328356   699 pointcloud_preprocessor.cc:81]  -1: 0.000981
+I0416 16:50:31.328372   699 pointcloud_preprocessor.cc:87]  -2: 0.01083
+I0416 16:50:31.334540   699 pointcloud_preprocessor.cc:125]  1: 6.16212
+I0416 16:50:31.335373   699 pointcloud_preprocessor.cc:129]  2: 0.820696
+I0416 16:50:31.335381   699 pointcloud_preprocessor.cc:130]  FROM: 30341 TO: 30341
+I0416 16:50:31.376696   699 pointcloud_preprocessor.cc:81]  -1: 0.001107
+I0416 16:50:31.376706   699 pointcloud_preprocessor.cc:87]  -2: 0.005462
+I0416 16:50:31.382073   699 pointcloud_preprocessor.cc:125]  1: 5.3588
+I0416 16:50:31.382659   699 pointcloud_preprocessor.cc:129]  2: 0.567106
+I0416 16:50:31.382665   699 pointcloud_preprocessor.cc:130]  FROM: 30243 TO: 30243
+I0416 16:50:31.464500   706 pointcloud_preprocessor.cc:81]  -1: 0.001038
+I0416 16:50:31.464507   706 pointcloud_preprocessor.cc:87]  -2: 0.001405
+I0416 16:50:31.469517   706 pointcloud_preprocessor.cc:125]  1: 5.00243
+I0416 16:50:31.469815   706 pointcloud_preprocessor.cc:129]  2: 0.288052
+I0416 16:50:31.469820   706 pointcloud_preprocessor.cc:130]  FROM: 30150 TO: 30150
+I0416 16:50:31.626611   705 pointcloud_preprocessor.cc:81]  -1: 0.002845
+I0416 16:50:31.626622   705 pointcloud_preprocessor.cc:87]  -2: 0.002334
+I0416 16:50:31.634274   705 pointcloud_preprocessor.cc:125]  1: 7.64312
+I0416 16:50:31.634650   705 pointcloud_preprocessor.cc:129]  2: 0.364872
+I0416 16:50:31.634658   705 pointcloud_preprocessor.cc:130]  FROM: 30078 TO: 30078
+I0416 16:50:31.678230   705 pointcloud_preprocessor.cc:81]  -1: 0.001524
+I0416 16:50:31.678233   705 pointcloud_preprocessor.cc:87]  -2: 0.000996
+I0416 16:50:31.683225   705 pointcloud_preprocessor.cc:125]  1: 4.98874
+I0416 16:50:31.683526   705 pointcloud_preprocessor.cc:129]  2: 0.292242
+I0416 16:50:31.683532   705 pointcloud_preprocessor.cc:130]  FROM: 30160 TO: 30160
+I0416 16:50:31.763682   703 pointcloud_preprocessor.cc:81]  -1: 0.000914
+I0416 16:50:31.763689   703 pointcloud_preprocessor.cc:87]  -2: 0.001909
+I0416 16:50:31.768555   703 pointcloud_preprocessor.cc:125]  1: 4.85949
+I0416 16:50:31.768844   703 pointcloud_preprocessor.cc:129]  2: 0.278305
+I0416 16:50:31.768851   703 pointcloud_preprocessor.cc:130]  FROM: 30232 TO: 30232
+I0416 16:50:31.863829   709 pointcloud_preprocessor.cc:81]  -1: 0.000972
+I0416 16:50:31.863837   709 pointcloud_preprocessor.cc:87]  -2: 0.002103
+I0416 16:50:31.868681   709 pointcloud_preprocessor.cc:125]  1: 4.83723
+I0416 16:50:31.868964   709 pointcloud_preprocessor.cc:129]  2: 0.277405
+I0416 16:50:31.868970   709 pointcloud_preprocessor.cc:130]  FROM: 30178 TO: 30178
+I0416 16:50:31.963845   705 pointcloud_preprocessor.cc:81]  -1: 0.000773
+I0416 16:50:31.963848   705 pointcloud_preprocessor.cc:87]  -2: 0.001316
+I0416 16:50:31.968760   705 pointcloud_preprocessor.cc:125]  1: 4.90899
+I0416 16:50:31.969056   705 pointcloud_preprocessor.cc:129]  2: 0.290528
+I0416 16:50:31.969061   705 pointcloud_preprocessor.cc:130]  FROM: 30086 TO: 30086
+I0416 16:50:32.063446   701 pointcloud_preprocessor.cc:81]  -1: 0.000762
+I0416 16:50:32.063452   701 pointcloud_preprocessor.cc:87]  -2: 0.002078
+I0416 16:50:32.068287   701 pointcloud_preprocessor.cc:125]  1: 4.83064
+I0416 16:50:32.068562   701 pointcloud_preprocessor.cc:129]  2: 0.268288
+I0416 16:50:32.068568   701 pointcloud_preprocessor.cc:130]  FROM: 30006 TO: 30006
+I0416 16:50:32.163406   691 pointcloud_preprocessor.cc:81]  -1: 0.000878
+I0416 16:50:32.163411   691 pointcloud_preprocessor.cc:87]  -2: 0.001586
+I0416 16:50:32.168190   691 pointcloud_preprocessor.cc:125]  1: 4.7743
+I0416 16:50:32.168612   691 pointcloud_preprocessor.cc:129]  2: 0.416747
+I0416 16:50:32.168618   691 pointcloud_preprocessor.cc:130]  FROM: 29633 TO: 29633
+I0416 16:50:32.273186   702 pointcloud_preprocessor.cc:81]  -1: 0.001263
+I0416 16:50:32.273191   702 pointcloud_preprocessor.cc:87]  -2: 0.001567
+I0416 16:50:32.277987   702 pointcloud_preprocessor.cc:125]  1: 4.79018
+I0416 16:50:32.278260   702 pointcloud_preprocessor.cc:129]  2: 0.261326
+I0416 16:50:32.278266   702 pointcloud_preprocessor.cc:130]  FROM: 29298 TO: 29298
+I0416 16:50:32.373769   701 pointcloud_preprocessor.cc:81]  -1: 0.000808
+I0416 16:50:32.373773   701 pointcloud_preprocessor.cc:87]  -2: 0.001453
+I0416 16:50:32.378602   701 pointcloud_preprocessor.cc:125]  1: 4.82566
+I0416 16:50:32.378901   701 pointcloud_preprocessor.cc:129]  2: 0.292192
+I0416 16:50:32.378906   701 pointcloud_preprocessor.cc:130]  FROM: 28868 TO: 28868
+I0416 16:50:32.501993   708 pointcloud_preprocessor.cc:81]  -1: 0.001058
+I0416 16:50:32.502002   708 pointcloud_preprocessor.cc:87]  -2: 0.002732
+I0416 16:50:32.510627   708 pointcloud_preprocessor.cc:125]  1: 8.61893
+I0416 16:50:32.511256   708 pointcloud_preprocessor.cc:129]  2: 0.616913
+I0416 16:50:32.511267   708 pointcloud_preprocessor.cc:130]  FROM: 28168 TO: 28168
+I0416 16:50:32.574625   701 pointcloud_preprocessor.cc:81]  -1: 0.001021
+I0416 16:50:32.574636   701 pointcloud_preprocessor.cc:87]  -2: 0.006393
+I0416 16:50:32.579450   701 pointcloud_preprocessor.cc:125]  1: 4.80714
+I0416 16:50:32.579988   701 pointcloud_preprocessor.cc:129]  2: 0.526795
+I0416 16:50:32.579994   701 pointcloud_preprocessor.cc:130]  FROM: 27852 TO: 27852
+I0416 16:50:32.800521   708 pointcloud_preprocessor.cc:81]  -1: 0.002258
+I0416 16:50:32.800544   708 pointcloud_preprocessor.cc:87]  -2: 0.004706
+I0416 16:50:32.812731   708 pointcloud_preprocessor.cc:125]  1: 12.1754
+I0416 16:50:32.813585   708 pointcloud_preprocessor.cc:129]  2: 0.835843
+I0416 16:50:32.813596   708 pointcloud_preprocessor.cc:130]  FROM: 27661 TO: 27661
+I0416 16:50:32.868118   691 pointcloud_preprocessor.cc:81]  -1: 0.001002
+I0416 16:50:32.868131   691 pointcloud_preprocessor.cc:87]  -2: 0.00289
+I0416 16:50:32.873039   691 pointcloud_preprocessor.cc:125]  1: 4.88987
+I0416 16:50:32.873492   691 pointcloud_preprocessor.cc:129]  2: 0.420853
+I0416 16:50:32.873507   691 pointcloud_preprocessor.cc:130]  FROM: 27684 TO: 27684
+I0416 16:50:32.932929   702 pointcloud_preprocessor.cc:81]  -1: 0.000712
+I0416 16:50:32.932932   702 pointcloud_preprocessor.cc:87]  -2: 0.001262
+I0416 16:50:32.937412   702 pointcloud_preprocessor.cc:125]  1: 4.47529
+I0416 16:50:32.937675   702 pointcloud_preprocessor.cc:129]  2: 0.257738
+I0416 16:50:32.937680   702 pointcloud_preprocessor.cc:130]  FROM: 27866 TO: 27866
+I0416 16:50:33.004873   703 pointcloud_preprocessor.cc:81]  -1: 0.000828
+I0416 16:50:33.004879   703 pointcloud_preprocessor.cc:87]  -2: 0.001921
+I0416 16:50:33.009508   703 pointcloud_preprocessor.cc:125]  1: 4.62423
+I0416 16:50:33.009773   703 pointcloud_preprocessor.cc:129]  2: 0.258811
+I0416 16:50:33.009779   703 pointcloud_preprocessor.cc:130]  FROM: 28059 TO: 28059
+I0416 16:50:33.096937   704 pointcloud_preprocessor.cc:81]  -1: 0.00094
+I0416 16:50:33.096946   704 pointcloud_preprocessor.cc:87]  -2: 0.003159
+I0416 16:50:33.101524   704 pointcloud_preprocessor.cc:125]  1: 4.57428
+I0416 16:50:33.101783   704 pointcloud_preprocessor.cc:129]  2: 0.25307
+I0416 16:50:33.101789   704 pointcloud_preprocessor.cc:130]  FROM: 28237 TO: 28237
+I0416 16:50:33.182952   700 pointcloud_preprocessor.cc:81]  -1: 0.001009
+I0416 16:50:33.182958   700 pointcloud_preprocessor.cc:87]  -2: 0.002254
+I0416 16:50:33.187575   700 pointcloud_preprocessor.cc:125]  1: 4.61359
+I0416 16:50:33.187849   700 pointcloud_preprocessor.cc:129]  2: 0.264068
+I0416 16:50:33.187856   700 pointcloud_preprocessor.cc:130]  FROM: 28399 TO: 28399
+I0416 16:50:33.264092   703 pointcloud_preprocessor.cc:81]  -1: 0.000834
+I0416 16:50:33.264099   703 pointcloud_preprocessor.cc:87]  -2: 0.001465
+I0416 16:50:33.268743   703 pointcloud_preprocessor.cc:125]  1: 4.63888
+I0416 16:50:33.269029   703 pointcloud_preprocessor.cc:129]  2: 0.280231
+I0416 16:50:33.269034   703 pointcloud_preprocessor.cc:130]  FROM: 28442 TO: 28442
+I0416 16:50:33.363376   708 pointcloud_preprocessor.cc:81]  -1: 0.000894
+I0416 16:50:33.363382   708 pointcloud_preprocessor.cc:87]  -2: 0.003292
+I0416 16:50:33.367986   708 pointcloud_preprocessor.cc:125]  1: 4.59783
+I0416 16:50:33.368257   708 pointcloud_preprocessor.cc:129]  2: 0.263752
+I0416 16:50:33.368260   708 pointcloud_preprocessor.cc:130]  FROM: 28604 TO: 28604
+I0416 16:50:33.463675   706 pointcloud_preprocessor.cc:81]  -1: 0.000866
+I0416 16:50:33.463682   706 pointcloud_preprocessor.cc:87]  -2: 0.002332
+I0416 16:50:33.468314   706 pointcloud_preprocessor.cc:125]  1: 4.62767
+I0416 16:50:33.468582   706 pointcloud_preprocessor.cc:129]  2: 0.262045
+I0416 16:50:33.468586   706 pointcloud_preprocessor.cc:130]  FROM: 28801 TO: 28801
+I0416 16:50:33.563402   701 pointcloud_preprocessor.cc:81]  -1: 0.000914
+I0416 16:50:33.563406   701 pointcloud_preprocessor.cc:87]  -2: 0.001158
+I0416 16:50:33.568092   701 pointcloud_preprocessor.cc:125]  1: 4.68148
+I0416 16:50:33.568393   701 pointcloud_preprocessor.cc:129]  2: 0.293885
+I0416 16:50:33.568398   701 pointcloud_preprocessor.cc:130]  FROM: 29094 TO: 29094
+I0416 16:50:33.663179   702 pointcloud_preprocessor.cc:81]  -1: 0.001231
+I0416 16:50:33.663185   702 pointcloud_preprocessor.cc:87]  -2: 0.001726
+I0416 16:50:33.667892   702 pointcloud_preprocessor.cc:125]  1: 4.70231
+I0416 16:50:33.668164   702 pointcloud_preprocessor.cc:129]  2: 0.2645
+I0416 16:50:33.668169   702 pointcloud_preprocessor.cc:130]  FROM: 29284 TO: 29284
+I0416 16:50:33.763281   708 pointcloud_preprocessor.cc:81]  -1: 0.000738
+I0416 16:50:33.763285   708 pointcloud_preprocessor.cc:87]  -2: 0.001598
+I0416 16:50:33.768043   708 pointcloud_preprocessor.cc:125]  1: 4.7539
+I0416 16:50:33.768329   708 pointcloud_preprocessor.cc:129]  2: 0.279528
+I0416 16:50:33.768335   708 pointcloud_preprocessor.cc:130]  FROM: 29455 TO: 29455
+I0416 16:50:33.863520   707 pointcloud_preprocessor.cc:81]  -1: 0.000767
+I0416 16:50:33.863525   707 pointcloud_preprocessor.cc:87]  -2: 0.001876
+I0416 16:50:33.868398   707 pointcloud_preprocessor.cc:125]  1: 4.86929
+I0416 16:50:33.868685   707 pointcloud_preprocessor.cc:129]  2: 0.280428
+I0416 16:50:33.868690   707 pointcloud_preprocessor.cc:130]  FROM: 29583 TO: 29583
+I0416 16:50:33.963258   703 pointcloud_preprocessor.cc:81]  -1: 0.000842
+I0416 16:50:33.963263   703 pointcloud_preprocessor.cc:87]  -2: 0.001484
+I0416 16:50:33.968044   703 pointcloud_preprocessor.cc:125]  1: 4.77318
+I0416 16:50:33.968320   703 pointcloud_preprocessor.cc:129]  2: 0.269438
+I0416 16:50:33.968325   703 pointcloud_preprocessor.cc:130]  FROM: 29720 TO: 29720
+I0416 16:50:34.063328   704 pointcloud_preprocessor.cc:81]  -1: 0.00074
+I0416 16:50:34.063333   704 pointcloud_preprocessor.cc:87]  -2: 0.001606
+I0416 16:50:34.068100   704 pointcloud_preprocessor.cc:125]  1: 4.76387
+I0416 16:50:34.068373   704 pointcloud_preprocessor.cc:129]  2: 0.267568
+I0416 16:50:34.068378   704 pointcloud_preprocessor.cc:130]  FROM: 29686 TO: 29686
+I0416 16:50:34.173974   700 pointcloud_preprocessor.cc:81]  -1: 0.000766
+I0416 16:50:34.173979   700 pointcloud_preprocessor.cc:87]  -2: 0.001979
+I0416 16:50:34.178966   700 pointcloud_preprocessor.cc:125]  1: 4.98244
+I0416 16:50:34.179280   700 pointcloud_preprocessor.cc:129]  2: 0.306883
+I0416 16:50:34.179286   700 pointcloud_preprocessor.cc:130]  FROM: 29756 TO: 29756
+I0416 16:50:34.275259   701 pointcloud_preprocessor.cc:81]  -1: 0.000869
+I0416 16:50:34.275265   701 pointcloud_preprocessor.cc:87]  -2: 0.002486
+I0416 16:50:34.280186   701 pointcloud_preprocessor.cc:125]  1: 4.9171
+I0416 16:50:34.280468   701 pointcloud_preprocessor.cc:129]  2: 0.274131
+I0416 16:50:34.280473   701 pointcloud_preprocessor.cc:130]  FROM: 29778 TO: 29778
+I0416 16:50:34.378805   699 pointcloud_preprocessor.cc:81]  -1: 0.000801
+I0416 16:50:34.378813   699 pointcloud_preprocessor.cc:87]  -2: 0.00364
+I0416 16:50:34.383994   699 pointcloud_preprocessor.cc:125]  1: 5.17817
+I0416 16:50:34.384296   699 pointcloud_preprocessor.cc:129]  2: 0.294552
+I0416 16:50:34.384302   699 pointcloud_preprocessor.cc:130]  FROM: 29855 TO: 29855
+I0416 16:50:34.578522   702 pointcloud_preprocessor.cc:81]  -1: 0.006338
+I0416 16:50:34.578547   702 pointcloud_preprocessor.cc:87]  -2: 0.004021
+I0416 16:50:34.596042   702 pointcloud_preprocessor.cc:125]  1: 17.4743
+I0416 16:50:34.596690   702 pointcloud_preprocessor.cc:129]  2: 0.629874
+I0416 16:50:34.596702   702 pointcloud_preprocessor.cc:130]  FROM: 29967 TO: 29967
+I0416 16:50:34.620292   706 pointcloud_preprocessor.cc:81]  -1: 0.001006
+I0416 16:50:34.620297   706 pointcloud_preprocessor.cc:87]  -2: 0.001472
+I0416 16:50:34.625540   706 pointcloud_preprocessor.cc:125]  1: 5.23761
+I0416 16:50:34.626031   706 pointcloud_preprocessor.cc:129]  2: 0.482882
+I0416 16:50:34.626039   706 pointcloud_preprocessor.cc:130]  FROM: 30005 TO: 30005
+I0416 16:50:34.696682   704 pointcloud_preprocessor.cc:81]  -1: 0.000828
+I0416 16:50:34.696686   704 pointcloud_preprocessor.cc:87]  -2: 0.001284
+I0416 16:50:34.701736   704 pointcloud_preprocessor.cc:125]  1: 5.02754
+I0416 16:50:34.702183   704 pointcloud_preprocessor.cc:129]  2: 0.433626
+I0416 16:50:34.702188   704 pointcloud_preprocessor.cc:130]  FROM: 30059 TO: 30059
+I0416 16:50:34.798300   702 pointcloud_preprocessor.cc:81]  -1: 0.000888
+I0416 16:50:34.798305   702 pointcloud_preprocessor.cc:87]  -2: 0.001184
+I0416 16:50:34.803393   702 pointcloud_preprocessor.cc:125]  1: 5.07721
+I0416 16:50:34.803683   702 pointcloud_preprocessor.cc:129]  2: 0.278575
+I0416 16:50:34.803689   702 pointcloud_preprocessor.cc:130]  FROM: 30019 TO: 30019
+I0416 16:50:34.875257   707 pointcloud_preprocessor.cc:81]  -1: 0.000923
+I0416 16:50:34.875262   707 pointcloud_preprocessor.cc:87]  -2: 0.001684
+I0416 16:50:34.880267   707 pointcloud_preprocessor.cc:125]  1: 5.00115
+I0416 16:50:34.880707   707 pointcloud_preprocessor.cc:129]  2: 0.432455
+I0416 16:50:34.880713   707 pointcloud_preprocessor.cc:130]  FROM: 29964 TO: 29964
+I0416 16:50:34.972627   700 pointcloud_preprocessor.cc:81]  -1: 0.00083
+I0416 16:50:34.972633   700 pointcloud_preprocessor.cc:87]  -2: 0.001672
+I0416 16:50:34.977463   700 pointcloud_preprocessor.cc:125]  1: 4.82439
+I0416 16:50:34.977743   700 pointcloud_preprocessor.cc:129]  2: 0.273728
+I0416 16:50:34.977748   700 pointcloud_preprocessor.cc:130]  FROM: 29841 TO: 29841
+I0416 16:50:35.073530   702 pointcloud_preprocessor.cc:81]  -1: 0.000788
+I0416 16:50:35.073534   702 pointcloud_preprocessor.cc:87]  -2: 0.001386
+I0416 16:50:35.078408   702 pointcloud_preprocessor.cc:125]  1: 4.86849
+I0416 16:50:35.078687   702 pointcloud_preprocessor.cc:129]  2: 0.270838
+I0416 16:50:35.078692   702 pointcloud_preprocessor.cc:130]  FROM: 29694 TO: 29694
+I0416 16:50:35.174393   705 pointcloud_preprocessor.cc:81]  -1: 0.000772
+I0416 16:50:35.174398   705 pointcloud_preprocessor.cc:87]  -2: 0.001696
+I0416 16:50:35.179368   705 pointcloud_preprocessor.cc:125]  1: 4.9664
+I0416 16:50:35.179672   705 pointcloud_preprocessor.cc:129]  2: 0.297305
+I0416 16:50:35.179678   705 pointcloud_preprocessor.cc:130]  FROM: 29623 TO: 29623
+I0416 16:50:35.275360   700 pointcloud_preprocessor.cc:81]  -1: 0.0008
+I0416 16:50:35.275370   700 pointcloud_preprocessor.cc:87]  -2: 0.006713
+I0416 16:50:35.280325   700 pointcloud_preprocessor.cc:125]  1: 4.95106
+I0416 16:50:35.280774   700 pointcloud_preprocessor.cc:129]  2: 0.442212
+I0416 16:50:35.280779   700 pointcloud_preprocessor.cc:130]  FROM: 29583 TO: 29583
+I0416 16:50:35.376478   701 pointcloud_preprocessor.cc:81]  -1: 0.000755
+I0416 16:50:35.376485   701 pointcloud_preprocessor.cc:87]  -2: 0.002005
+I0416 16:50:35.381311   701 pointcloud_preprocessor.cc:125]  1: 4.82157
+I0416 16:50:35.381613   701 pointcloud_preprocessor.cc:129]  2: 0.295605
+I0416 16:50:35.381618   701 pointcloud_preprocessor.cc:130]  FROM: 29508 TO: 29508
+I0416 16:50:35.481178   709 pointcloud_preprocessor.cc:81]  -1: 0.000886
+I0416 16:50:35.481184   709 pointcloud_preprocessor.cc:87]  -2: 0.001297
+I0416 16:50:35.486315   709 pointcloud_preprocessor.cc:125]  1: 5.12743
+I0416 16:50:35.486608   709 pointcloud_preprocessor.cc:129]  2: 0.286626
+I0416 16:50:35.486613   709 pointcloud_preprocessor.cc:130]  FROM: 29472 TO: 29472
+I0416 16:50:35.677036   707 pointcloud_preprocessor.cc:81]  -1: 0.001924
+I0416 16:50:35.677052   707 pointcloud_preprocessor.cc:87]  -2: 0.004671
+I0416 16:50:35.695528   707 pointcloud_preprocessor.cc:125]  1: 18.4607
+I0416 16:50:35.696317   707 pointcloud_preprocessor.cc:129]  2: 0.763504
+I0416 16:50:35.696333   707 pointcloud_preprocessor.cc:130]  FROM: 29563 TO: 29563
+I0416 16:50:35.720224   707 pointcloud_preprocessor.cc:81]  -1: 0.000991
+I0416 16:50:35.720240   707 pointcloud_preprocessor.cc:87]  -2: 0.005017
+I0416 16:50:35.726810   707 pointcloud_preprocessor.cc:125]  1: 6.56246
+I0416 16:50:35.727614   707 pointcloud_preprocessor.cc:129]  2: 0.792565
+I0416 16:50:35.727622   707 pointcloud_preprocessor.cc:130]  FROM: 29711 TO: 29711
+I0416 16:50:35.769840   707 pointcloud_preprocessor.cc:81]  -1: 0.000833
+I0416 16:50:35.769850   707 pointcloud_preprocessor.cc:87]  -2: 0.005423
+I0416 16:50:35.775041   707 pointcloud_preprocessor.cc:125]  1: 5.18616
+I0416 16:50:35.775635   707 pointcloud_preprocessor.cc:129]  2: 0.583893
+I0416 16:50:35.775640   707 pointcloud_preprocessor.cc:130]  FROM: 29854 TO: 29854
+I0416 16:50:35.863555   704 pointcloud_preprocessor.cc:81]  -1: 0.000825
+I0416 16:50:35.863560   704 pointcloud_preprocessor.cc:87]  -2: 0.001579
+I0416 16:50:35.868391   704 pointcloud_preprocessor.cc:125]  1: 4.82604
+I0416 16:50:35.868680   704 pointcloud_preprocessor.cc:129]  2: 0.280206
+I0416 16:50:35.868685   704 pointcloud_preprocessor.cc:130]  FROM: 29980 TO: 29980
+I0416 16:50:35.963435   709 pointcloud_preprocessor.cc:81]  -1: 0.001105
+I0416 16:50:35.963443   709 pointcloud_preprocessor.cc:87]  -2: 0.001707
+I0416 16:50:35.968269   709 pointcloud_preprocessor.cc:125]  1: 4.82098
+I0416 16:50:35.968546   709 pointcloud_preprocessor.cc:129]  2: 0.270421
+I0416 16:50:35.968552   709 pointcloud_preprocessor.cc:130]  FROM: 30064 TO: 30064
+I0416 16:50:36.063652   703 pointcloud_preprocessor.cc:81]  -1: 0.000932
+I0416 16:50:36.063657   703 pointcloud_preprocessor.cc:87]  -2: 0.001813
+I0416 16:50:36.068490   703 pointcloud_preprocessor.cc:125]  1: 4.82941
+I0416 16:50:36.068768   703 pointcloud_preprocessor.cc:129]  2: 0.271552
+I0416 16:50:36.068773   703 pointcloud_preprocessor.cc:130]  FROM: 30088 TO: 30088
+I0416 16:50:36.163801   702 pointcloud_preprocessor.cc:81]  -1: 0.00113
+I0416 16:50:36.163807   702 pointcloud_preprocessor.cc:87]  -2: 0.001581
+I0416 16:50:36.168668   702 pointcloud_preprocessor.cc:125]  1: 4.85245
+I0416 16:50:36.168949   702 pointcloud_preprocessor.cc:129]  2: 0.272221
+I0416 16:50:36.168956   702 pointcloud_preprocessor.cc:130]  FROM: 30133 TO: 30133
+I0416 16:50:36.263489   691 pointcloud_preprocessor.cc:81]  -1: 0.0008
+I0416 16:50:36.263494   691 pointcloud_preprocessor.cc:87]  -2: 0.002463
+I0416 16:50:36.268334   691 pointcloud_preprocessor.cc:125]  1: 4.83743
+I0416 16:50:36.268764   691 pointcloud_preprocessor.cc:129]  2: 0.422861
+I0416 16:50:36.268769   691 pointcloud_preprocessor.cc:130]  FROM: 30108 TO: 30108
+I0416 16:50:36.363807   705 pointcloud_preprocessor.cc:81]  -1: 0.000854
+I0416 16:50:36.363812   705 pointcloud_preprocessor.cc:87]  -2: 0.00182
+I0416 16:50:36.368649   705 pointcloud_preprocessor.cc:125]  1: 4.83256
+I0416 16:50:36.368924   705 pointcloud_preprocessor.cc:129]  2: 0.269835
+I0416 16:50:36.368928   705 pointcloud_preprocessor.cc:130]  FROM: 30135 TO: 30135
+I0416 16:50:36.505861   704 pointcloud_preprocessor.cc:81]  -1: 0.001864
+I0416 16:50:36.505883   704 pointcloud_preprocessor.cc:87]  -2: 0.004331
+I0416 16:50:36.521051   704 pointcloud_preprocessor.cc:125]  1: 15.1533
+I0416 16:50:36.521857   704 pointcloud_preprocessor.cc:129]  2: 0.779713
+I0416 16:50:36.521867   704 pointcloud_preprocessor.cc:130]  FROM: 30204 TO: 30204
+I0416 16:50:36.595861   700 pointcloud_preprocessor.cc:81]  -1: 0.001095
+I0416 16:50:36.595870   700 pointcloud_preprocessor.cc:87]  -2: 0.002417
+I0416 16:50:36.600752   700 pointcloud_preprocessor.cc:125]  1: 4.87673
+I0416 16:50:36.601207   700 pointcloud_preprocessor.cc:129]  2: 0.447995
+I0416 16:50:36.601213   700 pointcloud_preprocessor.cc:130]  FROM: 30308 TO: 30308
+I0416 16:50:36.699301   703 pointcloud_preprocessor.cc:81]  -1: 0.001104
+I0416 16:50:36.699308   703 pointcloud_preprocessor.cc:87]  -2: 0.00165
+I0416 16:50:36.704195   703 pointcloud_preprocessor.cc:125]  1: 4.88313
+I0416 16:50:36.704660   703 pointcloud_preprocessor.cc:129]  2: 0.45851
+I0416 16:50:36.704665   703 pointcloud_preprocessor.cc:130]  FROM: 30377 TO: 30377
+I0416 16:50:36.764312   699 pointcloud_preprocessor.cc:81]  -1: 0.000721
+I0416 16:50:36.764317   699 pointcloud_preprocessor.cc:87]  -2: 0.001471
+I0416 16:50:36.769330   699 pointcloud_preprocessor.cc:125]  1: 5.00866
+I0416 16:50:36.769618   699 pointcloud_preprocessor.cc:129]  2: 0.280391
+I0416 16:50:36.769623   699 pointcloud_preprocessor.cc:130]  FROM: 30413 TO: 30413
+I0416 16:50:36.863858   703 pointcloud_preprocessor.cc:81]  -1: 0.000893
+I0416 16:50:36.863864   703 pointcloud_preprocessor.cc:87]  -2: 0.00117
+I0416 16:50:36.868743   703 pointcloud_preprocessor.cc:125]  1: 4.87509
+I0416 16:50:36.869228   703 pointcloud_preprocessor.cc:129]  2: 0.478867
+I0416 16:50:36.869235   703 pointcloud_preprocessor.cc:130]  FROM: 30343 TO: 30343
+I0416 16:50:36.963841   704 pointcloud_preprocessor.cc:81]  -1: 0.000769
+I0416 16:50:36.963848   704 pointcloud_preprocessor.cc:87]  -2: 0.002466
+I0416 16:50:36.968698   704 pointcloud_preprocessor.cc:125]  1: 4.84484
+I0416 16:50:36.968972   704 pointcloud_preprocessor.cc:129]  2: 0.268074
+I0416 16:50:36.968976   704 pointcloud_preprocessor.cc:130]  FROM: 30172 TO: 30172
+I0416 16:50:37.065999   707 pointcloud_preprocessor.cc:81]  -1: 0.00082
+I0416 16:50:37.066004   707 pointcloud_preprocessor.cc:87]  -2: 0.001634
+I0416 16:50:37.070930   707 pointcloud_preprocessor.cc:125]  1: 4.9212
+I0416 16:50:37.071208   707 pointcloud_preprocessor.cc:129]  2: 0.269328
+I0416 16:50:37.071213   707 pointcloud_preprocessor.cc:130]  FROM: 30023 TO: 30023
+I0416 16:50:37.163730   699 pointcloud_preprocessor.cc:81]  -1: 0.000703
+I0416 16:50:37.163735   699 pointcloud_preprocessor.cc:87]  -2: 0.001408
+I0416 16:50:37.168632   699 pointcloud_preprocessor.cc:125]  1: 4.89411
+I0416 16:50:37.168929   699 pointcloud_preprocessor.cc:129]  2: 0.29088
+I0416 16:50:37.168934   699 pointcloud_preprocessor.cc:130]  FROM: 29985 TO: 29985
+I0416 16:50:37.264423   704 pointcloud_preprocessor.cc:81]  -1: 0.000818
+I0416 16:50:37.264428   704 pointcloud_preprocessor.cc:87]  -2: 0.001782
+I0416 16:50:37.269318   704 pointcloud_preprocessor.cc:125]  1: 4.88695
+I0416 16:50:37.269618   704 pointcloud_preprocessor.cc:129]  2: 0.293658
+I0416 16:50:37.269623   704 pointcloud_preprocessor.cc:130]  FROM: 29938 TO: 29938
+I0416 16:50:37.363692   709 pointcloud_preprocessor.cc:81]  -1: 0.000906
+I0416 16:50:37.363696   709 pointcloud_preprocessor.cc:87]  -2: 0.001733
+I0416 16:50:37.368531   709 pointcloud_preprocessor.cc:125]  1: 4.83046
+I0416 16:50:37.368809   709 pointcloud_preprocessor.cc:129]  2: 0.268931
+I0416 16:50:37.368814   709 pointcloud_preprocessor.cc:130]  FROM: 29971 TO: 29971
+I0416 16:50:37.474848   706 pointcloud_preprocessor.cc:81]  -1: 0.000757
+I0416 16:50:37.474853   706 pointcloud_preprocessor.cc:87]  -2: 0.001637
+I0416 16:50:37.479811   706 pointcloud_preprocessor.cc:125]  1: 4.9534
+I0416 16:50:37.480188   706 pointcloud_preprocessor.cc:129]  2: 0.370991
+I0416 16:50:37.480193   706 pointcloud_preprocessor.cc:130]  FROM: 29983 TO: 29983
+I0416 16:50:37.575932   701 pointcloud_preprocessor.cc:81]  -1: 0.001251
+I0416 16:50:37.575940   701 pointcloud_preprocessor.cc:87]  -2: 0.003432
+I0416 16:50:37.581707   701 pointcloud_preprocessor.cc:125]  1: 5.75847
+I0416 16:50:37.582005   701 pointcloud_preprocessor.cc:129]  2: 0.281023
+I0416 16:50:37.582011   701 pointcloud_preprocessor.cc:130]  FROM: 29994 TO: 29994
+I0416 16:50:37.676687   708 pointcloud_preprocessor.cc:81]  -1: 0.000981
+I0416 16:50:37.676693   708 pointcloud_preprocessor.cc:87]  -2: 0.002393
+I0416 16:50:37.681646   708 pointcloud_preprocessor.cc:125]  1: 4.94937
+I0416 16:50:37.681932   708 pointcloud_preprocessor.cc:129]  2: 0.278645
+I0416 16:50:37.681936   708 pointcloud_preprocessor.cc:130]  FROM: 30022 TO: 30022
+I0416 16:50:37.778326   705 pointcloud_preprocessor.cc:81]  -1: 0.000826
+I0416 16:50:37.778331   705 pointcloud_preprocessor.cc:87]  -2: 0.001998
+I0416 16:50:37.783321   705 pointcloud_preprocessor.cc:125]  1: 4.98637
+I0416 16:50:37.783619   705 pointcloud_preprocessor.cc:129]  2: 0.291583
+I0416 16:50:37.783624   705 pointcloud_preprocessor.cc:130]  FROM: 29960 TO: 29960
+I0416 16:50:37.912722   691 pointcloud_preprocessor.cc:81]  -1: 0.002472
+I0416 16:50:37.912753   691 pointcloud_preprocessor.cc:87]  -2: 0.005701
+I0416 16:50:37.929021   691 pointcloud_preprocessor.cc:125]  1: 16.2409
+I0416 16:50:37.930450   691 pointcloud_preprocessor.cc:129]  2: 1.40353
+I0416 16:50:37.930471   691 pointcloud_preprocessor.cc:130]  FROM: 29904 TO: 29904
+I0416 16:50:37.966295   704 pointcloud_preprocessor.cc:81]  -1: 0.000864
+I0416 16:50:37.966301   704 pointcloud_preprocessor.cc:87]  -2: 0.001375
+I0416 16:50:37.971282   704 pointcloud_preprocessor.cc:125]  1: 4.97473
+I0416 16:50:37.971585   704 pointcloud_preprocessor.cc:129]  2: 0.295049
+I0416 16:50:37.971590   704 pointcloud_preprocessor.cc:130]  FROM: 29774 TO: 29774
+I0416 16:50:38.071384   700 pointcloud_preprocessor.cc:81]  -1: 0.000799
+I0416 16:50:38.071394   700 pointcloud_preprocessor.cc:87]  -2: 0.007093
+I0416 16:50:38.076297   700 pointcloud_preprocessor.cc:125]  1: 4.89812
+I0416 16:50:38.076782   700 pointcloud_preprocessor.cc:129]  2: 0.478836
+I0416 16:50:38.076787   700 pointcloud_preprocessor.cc:130]  FROM: 29564 TO: 29564
+I0416 16:50:38.181053   701 pointcloud_preprocessor.cc:81]  -1: 0.001053
+I0416 16:50:38.181059   701 pointcloud_preprocessor.cc:87]  -2: 0.002025
+I0416 16:50:38.186803   701 pointcloud_preprocessor.cc:125]  1: 5.73992
+I0416 16:50:38.187268   701 pointcloud_preprocessor.cc:129]  2: 0.451734
+I0416 16:50:38.187276   701 pointcloud_preprocessor.cc:130]  FROM: 29398 TO: 29398
+I0416 16:50:38.277313   704 pointcloud_preprocessor.cc:81]  -1: 0.000807
+I0416 16:50:38.277318   704 pointcloud_preprocessor.cc:87]  -2: 0.001314
+I0416 16:50:38.282116   704 pointcloud_preprocessor.cc:125]  1: 4.7946
+I0416 16:50:38.282413   704 pointcloud_preprocessor.cc:129]  2: 0.288586
+I0416 16:50:38.282419   704 pointcloud_preprocessor.cc:130]  FROM: 29038 TO: 29038
+I0416 16:50:38.435521   705 pointcloud_preprocessor.cc:81]  -1: 0.001611
+I0416 16:50:38.435556   705 pointcloud_preprocessor.cc:87]  -2: 0.00378
+I0416 16:50:38.444250   705 pointcloud_preprocessor.cc:125]  1: 8.66108
+I0416 16:50:38.444681   705 pointcloud_preprocessor.cc:129]  2: 0.410467
+I0416 16:50:38.444690   705 pointcloud_preprocessor.cc:130]  FROM: 28744 TO: 28744
+I0416 16:50:38.492509   705 pointcloud_preprocessor.cc:81]  -1: 0.001675
+I0416 16:50:38.492516   705 pointcloud_preprocessor.cc:87]  -2: 0.002073
+I0416 16:50:38.497215   705 pointcloud_preprocessor.cc:125]  1: 4.6919
+I0416 16:50:38.497578   705 pointcloud_preprocessor.cc:129]  2: 0.338955
+I0416 16:50:38.497586   705 pointcloud_preprocessor.cc:130]  FROM: 28349 TO: 28349
+I0416 16:50:38.564493   704 pointcloud_preprocessor.cc:81]  -1: 0.001147
+I0416 16:50:38.564499   704 pointcloud_preprocessor.cc:87]  -2: 0.001596
+I0416 16:50:38.569353   704 pointcloud_preprocessor.cc:125]  1: 4.84965
+I0416 16:50:38.569681   704 pointcloud_preprocessor.cc:129]  2: 0.31759
+I0416 16:50:38.569687   704 pointcloud_preprocessor.cc:130]  FROM: 27991 TO: 27991
+I0416 16:50:38.673027   701 pointcloud_preprocessor.cc:81]  -1: 0.00088
+I0416 16:50:38.673032   701 pointcloud_preprocessor.cc:87]  -2: 0.001139
+I0416 16:50:38.677534   701 pointcloud_preprocessor.cc:125]  1: 4.49892
+I0416 16:50:38.677806   701 pointcloud_preprocessor.cc:129]  2: 0.266494
+I0416 16:50:38.677811   701 pointcloud_preprocessor.cc:130]  FROM: 27645 TO: 27645
+I0416 16:50:38.774958   706 pointcloud_preprocessor.cc:81]  -1: 0.000775
+I0416 16:50:38.774963   706 pointcloud_preprocessor.cc:87]  -2: 0.001569
+I0416 16:50:38.779527   706 pointcloud_preprocessor.cc:125]  1: 4.56034
+I0416 16:50:38.779918   706 pointcloud_preprocessor.cc:129]  2: 0.384675
+I0416 16:50:38.779923   706 pointcloud_preprocessor.cc:130]  FROM: 27559 TO: 27559
+I0416 16:50:38.877732   691 pointcloud_preprocessor.cc:81]  -1: 0.000907
+I0416 16:50:38.877737   691 pointcloud_preprocessor.cc:87]  -2: 0.002893
+I0416 16:50:38.882241   691 pointcloud_preprocessor.cc:125]  1: 4.49884
+I0416 16:50:38.882503   691 pointcloud_preprocessor.cc:129]  2: 0.255931
+I0416 16:50:38.882508   691 pointcloud_preprocessor.cc:130]  FROM: 27081 TO: 27081
+I0416 16:50:39.020746   699 pointcloud_preprocessor.cc:81]  -1: 0.000934
+I0416 16:50:39.020756   699 pointcloud_preprocessor.cc:87]  -2: 0.004027
+I0416 16:50:39.028259   699 pointcloud_preprocessor.cc:125]  1: 7.4939
+I0416 16:50:39.028676   699 pointcloud_preprocessor.cc:129]  2: 0.396951
+I0416 16:50:39.028687   699 pointcloud_preprocessor.cc:130]  FROM: 26780 TO: 26780
+I0416 16:50:39.096807   706 pointcloud_preprocessor.cc:81]  -1: 0.000803
+I0416 16:50:39.096812   706 pointcloud_preprocessor.cc:87]  -2: 0.001295
+I0416 16:50:39.101017   706 pointcloud_preprocessor.cc:125]  1: 4.20323
+I0416 16:50:39.101270   706 pointcloud_preprocessor.cc:129]  2: 0.246911
+I0416 16:50:39.101275   706 pointcloud_preprocessor.cc:130]  FROM: 26165 TO: 26165
+I0416 16:50:39.173192   703 pointcloud_preprocessor.cc:81]  -1: 0.001043
+I0416 16:50:39.173197   703 pointcloud_preprocessor.cc:87]  -2: 0.001376
+I0416 16:50:39.177366   703 pointcloud_preprocessor.cc:125]  1: 4.16406
+I0416 16:50:39.177603   703 pointcloud_preprocessor.cc:129]  2: 0.229124
+I0416 16:50:39.177608   703 pointcloud_preprocessor.cc:130]  FROM: 25545 TO: 25545
+I0416 16:50:39.274580   702 pointcloud_preprocessor.cc:81]  -1: 0.0008
+I0416 16:50:39.274585   702 pointcloud_preprocessor.cc:87]  -2: 0.001413
+I0416 16:50:39.278740   702 pointcloud_preprocessor.cc:125]  1: 4.15214
+I0416 16:50:39.278980   702 pointcloud_preprocessor.cc:129]  2: 0.232595
+I0416 16:50:39.278985   702 pointcloud_preprocessor.cc:130]  FROM: 25223 TO: 25223
+I0416 16:50:39.387522   700 pointcloud_preprocessor.cc:81]  -1: 0.000934
+I0416 16:50:39.387539   700 pointcloud_preprocessor.cc:87]  -2: 0.003499
+I0416 16:50:39.393040   700 pointcloud_preprocessor.cc:125]  1: 5.4931
+I0416 16:50:39.393385   700 pointcloud_preprocessor.cc:129]  2: 0.33061
+I0416 16:50:39.393395   700 pointcloud_preprocessor.cc:130]  FROM: 25134 TO: 25134
+I0416 16:50:39.472673   709 pointcloud_preprocessor.cc:81]  -1: 0.000874
+I0416 16:50:39.472678   709 pointcloud_preprocessor.cc:87]  -2: 0.001683
+I0416 16:50:39.476737   709 pointcloud_preprocessor.cc:125]  1: 4.05368
+I0416 16:50:39.476969   709 pointcloud_preprocessor.cc:129]  2: 0.226075
+I0416 16:50:39.476972   709 pointcloud_preprocessor.cc:130]  FROM: 25219 TO: 25219
+I0416 16:50:39.572620   702 pointcloud_preprocessor.cc:81]  -1: 0.000903
+I0416 16:50:39.572625   702 pointcloud_preprocessor.cc:87]  -2: 0.001359
+I0416 16:50:39.576773   702 pointcloud_preprocessor.cc:125]  1: 4.14527
+I0416 16:50:39.577036   702 pointcloud_preprocessor.cc:129]  2: 0.255426
+I0416 16:50:39.577041   702 pointcloud_preprocessor.cc:130]  FROM: 25373 TO: 25373
+I0416 16:50:39.673679   699 pointcloud_preprocessor.cc:81]  -1: 0.001029
+I0416 16:50:39.673686   699 pointcloud_preprocessor.cc:87]  -2: 0.002393
+I0416 16:50:39.677765   699 pointcloud_preprocessor.cc:125]  1: 4.07336
+I0416 16:50:39.678009   699 pointcloud_preprocessor.cc:129]  2: 0.236113
+I0416 16:50:39.678014   699 pointcloud_preprocessor.cc:130]  FROM: 25371 TO: 25371
+I0416 16:50:39.772881   706 pointcloud_preprocessor.cc:81]  -1: 0.000841
+I0416 16:50:39.772887   706 pointcloud_preprocessor.cc:87]  -2: 0.002348
+I0416 16:50:39.777251   706 pointcloud_preprocessor.cc:125]  1: 4.35853
+I0416 16:50:39.777668   706 pointcloud_preprocessor.cc:129]  2: 0.406096
+I0416 16:50:39.777678   706 pointcloud_preprocessor.cc:130]  FROM: 25243 TO: 25243
+I0416 16:50:39.878294   701 pointcloud_preprocessor.cc:81]  -1: 0.00078
+I0416 16:50:39.878300   701 pointcloud_preprocessor.cc:87]  -2: 0.001569
+I0416 16:50:39.882527   701 pointcloud_preprocessor.cc:125]  1: 4.22285
+I0416 16:50:39.882787   701 pointcloud_preprocessor.cc:129]  2: 0.25332
+I0416 16:50:39.882792   701 pointcloud_preprocessor.cc:130]  FROM: 25231 TO: 25231
+I0416 16:50:39.974798   704 pointcloud_preprocessor.cc:81]  -1: 0.000971
+I0416 16:50:39.974805   704 pointcloud_preprocessor.cc:87]  -2: 0.002057
+I0416 16:50:39.978962   704 pointcloud_preprocessor.cc:125]  1: 4.15364
+I0416 16:50:39.979207   704 pointcloud_preprocessor.cc:129]  2: 0.237054
+I0416 16:50:39.979212   704 pointcloud_preprocessor.cc:130]  FROM: 25146 TO: 25146
+I0416 16:50:40.062319   699 pointcloud_preprocessor.cc:81]  -1: 0.001082
+I0416 16:50:40.062325   699 pointcloud_preprocessor.cc:87]  -2: 0.001648
+I0416 16:50:40.066992   699 pointcloud_preprocessor.cc:125]  1: 4.6606
+I0416 16:50:40.067365   699 pointcloud_preprocessor.cc:129]  2: 0.359693
+I0416 16:50:40.067374   699 pointcloud_preprocessor.cc:130]  FROM: 25152 TO: 25152
+I0416 16:50:40.162353   703 pointcloud_preprocessor.cc:81]  -1: 0.000739
+I0416 16:50:40.162358   703 pointcloud_preprocessor.cc:87]  -2: 0.001356
+I0416 16:50:40.166492   703 pointcloud_preprocessor.cc:125]  1: 4.1313
+I0416 16:50:40.166754   703 pointcloud_preprocessor.cc:129]  2: 0.254948
+I0416 16:50:40.166759   703 pointcloud_preprocessor.cc:130]  FROM: 25314 TO: 25314
+I0416 16:50:40.272835   706 pointcloud_preprocessor.cc:81]  -1: 0.000952
+I0416 16:50:40.272841   706 pointcloud_preprocessor.cc:87]  -2: 0.002123
+I0416 16:50:40.276976   706 pointcloud_preprocessor.cc:125]  1: 4.13226
+I0416 16:50:40.277220   706 pointcloud_preprocessor.cc:129]  2: 0.235292
+I0416 16:50:40.277225   706 pointcloud_preprocessor.cc:130]  FROM: 25782 TO: 25782
+I0416 16:50:40.373003   699 pointcloud_preprocessor.cc:81]  -1: 0.000848
+I0416 16:50:40.373008   699 pointcloud_preprocessor.cc:87]  -2: 0.001363
+I0416 16:50:40.377349   699 pointcloud_preprocessor.cc:125]  1: 4.33736
+I0416 16:50:40.377604   699 pointcloud_preprocessor.cc:129]  2: 0.247222
+I0416 16:50:40.377609   699 pointcloud_preprocessor.cc:130]  FROM: 26280 TO: 26280
+I0416 16:50:40.472827   707 pointcloud_preprocessor.cc:81]  -1: 0.000798
+I0416 16:50:40.472833   707 pointcloud_preprocessor.cc:87]  -2: 0.003256
+I0416 16:50:40.477174   707 pointcloud_preprocessor.cc:125]  1: 4.33653
+I0416 16:50:40.477440   707 pointcloud_preprocessor.cc:129]  2: 0.260561
+I0416 16:50:40.477445   707 pointcloud_preprocessor.cc:130]  FROM: 26589 TO: 26589
+I0416 16:50:40.573310   701 pointcloud_preprocessor.cc:81]  -1: 0.000731
+I0416 16:50:40.573314   701 pointcloud_preprocessor.cc:87]  -2: 0.001722
+I0416 16:50:40.577713   701 pointcloud_preprocessor.cc:125]  1: 4.39422
+I0416 16:50:40.577967   701 pointcloud_preprocessor.cc:129]  2: 0.245199
+I0416 16:50:40.577972   701 pointcloud_preprocessor.cc:130]  FROM: 26669 TO: 26669
+I0416 16:50:40.673054   705 pointcloud_preprocessor.cc:81]  -1: 0.000877
+I0416 16:50:40.673059   705 pointcloud_preprocessor.cc:87]  -2: 0.001876
+I0416 16:50:40.677485   705 pointcloud_preprocessor.cc:125]  1: 4.42264
+I0416 16:50:40.677738   705 pointcloud_preprocessor.cc:129]  2: 0.246395
+I0416 16:50:40.677742   705 pointcloud_preprocessor.cc:130]  FROM: 26859 TO: 26859
+I0416 16:50:40.773228   707 pointcloud_preprocessor.cc:81]  -1: 0.000789
+I0416 16:50:40.773233   707 pointcloud_preprocessor.cc:87]  -2: 0.001428
+I0416 16:50:40.777771   707 pointcloud_preprocessor.cc:125]  1: 4.53499
+I0416 16:50:40.778049   707 pointcloud_preprocessor.cc:129]  2: 0.272025
+I0416 16:50:40.778054   707 pointcloud_preprocessor.cc:130]  FROM: 27111 TO: 27111
+I0416 16:50:40.873420   709 pointcloud_preprocessor.cc:81]  -1: 0.001058
+I0416 16:50:40.873427   709 pointcloud_preprocessor.cc:87]  -2: 0.001975
+I0416 16:50:40.877828   709 pointcloud_preprocessor.cc:125]  1: 4.39658
+I0416 16:50:40.878080   709 pointcloud_preprocessor.cc:129]  2: 0.246357
+I0416 16:50:40.878085   709 pointcloud_preprocessor.cc:130]  FROM: 27423 TO: 27423
+I0416 16:50:40.974172   705 pointcloud_preprocessor.cc:81]  -1: 0.000927
+I0416 16:50:40.974177   705 pointcloud_preprocessor.cc:87]  -2: 0.001478
+I0416 16:50:40.979244   705 pointcloud_preprocessor.cc:125]  1: 5.06356
+I0416 16:50:40.979583   705 pointcloud_preprocessor.cc:129]  2: 0.329318
+I0416 16:50:40.979588   705 pointcloud_preprocessor.cc:130]  FROM: 27901 TO: 27901
+I0416 16:50:41.074652   700 pointcloud_preprocessor.cc:81]  -1: 0.001075
+I0416 16:50:41.074659   700 pointcloud_preprocessor.cc:87]  -2: 0.001662
+I0416 16:50:41.079200   700 pointcloud_preprocessor.cc:125]  1: 4.53471
+I0416 16:50:41.079607   700 pointcloud_preprocessor.cc:129]  2: 0.398709
+I0416 16:50:41.079612   700 pointcloud_preprocessor.cc:130]  FROM: 28244 TO: 28244
+I0416 16:50:41.174204   706 pointcloud_preprocessor.cc:81]  -1: 0.000761
+I0416 16:50:41.174209   706 pointcloud_preprocessor.cc:87]  -2: 0.001245
+I0416 16:50:41.178983   706 pointcloud_preprocessor.cc:125]  1: 4.77128
+I0416 16:50:41.179453   706 pointcloud_preprocessor.cc:129]  2: 0.463445
+I0416 16:50:41.179460   706 pointcloud_preprocessor.cc:130]  FROM: 28662 TO: 28662
+I0416 16:50:41.275463   709 pointcloud_preprocessor.cc:81]  -1: 0.000908
+I0416 16:50:41.275467   709 pointcloud_preprocessor.cc:87]  -2: 0.001202
+I0416 16:50:41.280158   709 pointcloud_preprocessor.cc:125]  1: 4.68608
+I0416 16:50:41.280428   709 pointcloud_preprocessor.cc:129]  2: 0.263024
+I0416 16:50:41.280432   709 pointcloud_preprocessor.cc:130]  FROM: 29083 TO: 29083
+I0416 16:50:41.375701   704 pointcloud_preprocessor.cc:81]  -1: 0.000831
+I0416 16:50:41.375705   704 pointcloud_preprocessor.cc:87]  -2: 0.001194
+I0416 16:50:41.380442   704 pointcloud_preprocessor.cc:125]  1: 4.73339
+I0416 16:50:41.380717   704 pointcloud_preprocessor.cc:129]  2: 0.268692
+I0416 16:50:41.380722   704 pointcloud_preprocessor.cc:130]  FROM: 29450 TO: 29450
+I0416 16:50:41.463212   709 pointcloud_preprocessor.cc:81]  -1: 0.000795
+I0416 16:50:41.463217   709 pointcloud_preprocessor.cc:87]  -2: 0.001685
+I0416 16:50:41.468013   709 pointcloud_preprocessor.cc:125]  1: 4.79172
+I0416 16:50:41.468554   709 pointcloud_preprocessor.cc:129]  2: 0.53196
+I0416 16:50:41.468559   709 pointcloud_preprocessor.cc:130]  FROM: 29705 TO: 29705
+I0416 16:50:41.563540   691 pointcloud_preprocessor.cc:81]  -1: 0.000894
+I0416 16:50:41.563544   691 pointcloud_preprocessor.cc:87]  -2: 0.001489
+I0416 16:50:41.568341   691 pointcloud_preprocessor.cc:125]  1: 4.79255
+I0416 16:50:41.568774   691 pointcloud_preprocessor.cc:129]  2: 0.4285
+I0416 16:50:41.568779   691 pointcloud_preprocessor.cc:130]  FROM: 29797 TO: 29797
+I0416 16:50:41.663246   701 pointcloud_preprocessor.cc:81]  -1: 0.000856
+I0416 16:50:41.663251   701 pointcloud_preprocessor.cc:87]  -2: 0.001294
+I0416 16:50:41.668058   701 pointcloud_preprocessor.cc:125]  1: 4.80337
+I0416 16:50:41.668339   701 pointcloud_preprocessor.cc:129]  2: 0.274009
+I0416 16:50:41.668344   701 pointcloud_preprocessor.cc:130]  FROM: 29903 TO: 29903
+I0416 16:50:41.814452   700 pointcloud_preprocessor.cc:81]  -1: 0.001259
+I0416 16:50:41.814465   700 pointcloud_preprocessor.cc:87]  -2: 0.005082
+I0416 16:50:41.824373   700 pointcloud_preprocessor.cc:125]  1: 9.89581
+I0416 16:50:41.825376   700 pointcloud_preprocessor.cc:129]  2: 0.977091
+I0416 16:50:41.825390   700 pointcloud_preprocessor.cc:130]  FROM: 29924 TO: 29924
+I0416 16:50:41.885699   706 pointcloud_preprocessor.cc:81]  -1: 0.001522
+I0416 16:50:41.885712   706 pointcloud_preprocessor.cc:87]  -2: 0.007286
+I0416 16:50:41.891078   706 pointcloud_preprocessor.cc:125]  1: 5.35358
+I0416 16:50:41.891821   706 pointcloud_preprocessor.cc:129]  2: 0.712806
+I0416 16:50:41.891835   706 pointcloud_preprocessor.cc:130]  FROM: 29901 TO: 29901
+I0416 16:50:41.964288   691 pointcloud_preprocessor.cc:81]  -1: 0.000731
+I0416 16:50:41.964293   691 pointcloud_preprocessor.cc:87]  -2: 0.001753
+I0416 16:50:41.969252   691 pointcloud_preprocessor.cc:125]  1: 4.95571
+I0416 16:50:41.969683   691 pointcloud_preprocessor.cc:129]  2: 0.422932
+I0416 16:50:41.969689   691 pointcloud_preprocessor.cc:130]  FROM: 29859 TO: 29859
+I0416 16:50:42.063017   709 pointcloud_preprocessor.cc:81]  -1: 0.001021
+I0416 16:50:42.063027   709 pointcloud_preprocessor.cc:87]  -2: 0.003266
+I0416 16:50:42.067891   709 pointcloud_preprocessor.cc:125]  1: 4.85548
+I0416 16:50:42.068359   709 pointcloud_preprocessor.cc:129]  2: 0.449506
+I0416 16:50:42.068367   709 pointcloud_preprocessor.cc:130]  FROM: 29882 TO: 29882
+I0416 16:50:42.163523   702 pointcloud_preprocessor.cc:81]  -1: 0.000751
+I0416 16:50:42.163528   702 pointcloud_preprocessor.cc:87]  -2: 0.002047
+I0416 16:50:42.168409   702 pointcloud_preprocessor.cc:125]  1: 4.87728
+I0416 16:50:42.168711   702 pointcloud_preprocessor.cc:129]  2: 0.296415
+I0416 16:50:42.168716   702 pointcloud_preprocessor.cc:130]  FROM: 29887 TO: 29887
+I0416 16:50:42.262930   691 pointcloud_preprocessor.cc:81]  -1: 0.000788
+I0416 16:50:42.262939   691 pointcloud_preprocessor.cc:87]  -2: 0.006006
+I0416 16:50:42.267822   691 pointcloud_preprocessor.cc:125]  1: 4.87788
+I0416 16:50:42.268268   691 pointcloud_preprocessor.cc:129]  2: 0.440349
+I0416 16:50:42.268273   691 pointcloud_preprocessor.cc:130]  FROM: 29879 TO: 29879
+I0416 16:50:42.363538   706 pointcloud_preprocessor.cc:81]  -1: 0.000839
+I0416 16:50:42.363548   706 pointcloud_preprocessor.cc:87]  -2: 0.006669
+I0416 16:50:42.368412   706 pointcloud_preprocessor.cc:125]  1: 4.86039
+I0416 16:50:42.368961   706 pointcloud_preprocessor.cc:129]  2: 0.543076
+I0416 16:50:42.368968   706 pointcloud_preprocessor.cc:130]  FROM: 29747 TO: 29747
+I0416 16:50:42.463491   701 pointcloud_preprocessor.cc:81]  -1: 0.000841
+I0416 16:50:42.463496   701 pointcloud_preprocessor.cc:87]  -2: 0.001841
+I0416 16:50:42.468250   701 pointcloud_preprocessor.cc:125]  1: 4.74965
+I0416 16:50:42.468521   701 pointcloud_preprocessor.cc:129]  2: 0.265593
+I0416 16:50:42.468526   701 pointcloud_preprocessor.cc:130]  FROM: 29632 TO: 29632
+I0416 16:50:42.563596   704 pointcloud_preprocessor.cc:81]  -1: 0.000798
+I0416 16:50:42.563601   704 pointcloud_preprocessor.cc:87]  -2: 0.003165
+I0416 16:50:42.568336   704 pointcloud_preprocessor.cc:125]  1: 4.73188
+I0416 16:50:42.568619   704 pointcloud_preprocessor.cc:129]  2: 0.275951
+I0416 16:50:42.568622   704 pointcloud_preprocessor.cc:130]  FROM: 29512 TO: 29512
+I0416 16:50:42.674748   707 pointcloud_preprocessor.cc:81]  -1: 0.000787
+I0416 16:50:42.674753   707 pointcloud_preprocessor.cc:87]  -2: 0.002026
+I0416 16:50:42.679587   707 pointcloud_preprocessor.cc:125]  1: 4.83081
+I0416 16:50:42.679955   707 pointcloud_preprocessor.cc:129]  2: 0.360091
+I0416 16:50:42.679965   707 pointcloud_preprocessor.cc:130]  FROM: 29488 TO: 29488
+I0416 16:50:42.775548   709 pointcloud_preprocessor.cc:81]  -1: 0.000916
+I0416 16:50:42.775554   709 pointcloud_preprocessor.cc:87]  -2: 0.002689
+I0416 16:50:42.780395   709 pointcloud_preprocessor.cc:125]  1: 4.83723
+I0416 16:50:42.780699   709 pointcloud_preprocessor.cc:129]  2: 0.298059
+I0416 16:50:42.780704   709 pointcloud_preprocessor.cc:130]  FROM: 29342 TO: 29342
+I0416 16:50:42.876340   701 pointcloud_preprocessor.cc:81]  -1: 0.000785
+I0416 16:50:42.876345   701 pointcloud_preprocessor.cc:87]  -2: 0.00178
+I0416 16:50:42.881032   701 pointcloud_preprocessor.cc:125]  1: 4.68404
+I0416 16:50:42.881302   701 pointcloud_preprocessor.cc:129]  2: 0.262724
+I0416 16:50:42.881307   701 pointcloud_preprocessor.cc:130]  FROM: 29061 TO: 29061
+I0416 16:50:43.115525   708 pointcloud_preprocessor.cc:81]  -1: 0.00213
+I0416 16:50:43.115546   708 pointcloud_preprocessor.cc:87]  -2: 0.006739
+I0416 16:50:43.135927   708 pointcloud_preprocessor.cc:125]  1: 20.364
+I0416 16:50:43.136484   708 pointcloud_preprocessor.cc:129]  2: 0.521802
+I0416 16:50:43.136497   708 pointcloud_preprocessor.cc:130]  FROM: 28901 TO: 28901
+I0416 16:50:43.159790   708 pointcloud_preprocessor.cc:81]  -1: 0.002438
+I0416 16:50:43.159799   708 pointcloud_preprocessor.cc:87]  -2: 0.006254
+I0416 16:50:43.164633   708 pointcloud_preprocessor.cc:125]  1: 4.82446
+I0416 16:50:43.165007   708 pointcloud_preprocessor.cc:129]  2: 0.35251
+I0416 16:50:43.165019   708 pointcloud_preprocessor.cc:130]  FROM: 28864 TO: 28864
+I0416 16:50:43.208138   708 pointcloud_preprocessor.cc:81]  -1: 0.001615
+I0416 16:50:43.208146   708 pointcloud_preprocessor.cc:87]  -2: 0.00309
+I0416 16:50:43.212944   708 pointcloud_preprocessor.cc:125]  1: 4.79207
+I0416 16:50:43.213232   708 pointcloud_preprocessor.cc:129]  2: 0.279791
+I0416 16:50:43.213238   708 pointcloud_preprocessor.cc:130]  FROM: 28974 TO: 28974
+I0416 16:50:43.264348   707 pointcloud_preprocessor.cc:81]  -1: 0.000909
+I0416 16:50:43.264355   707 pointcloud_preprocessor.cc:87]  -2: 0.001296
+I0416 16:50:43.269484   707 pointcloud_preprocessor.cc:125]  1: 5.11745
+I0416 16:50:43.269834   707 pointcloud_preprocessor.cc:129]  2: 0.336396
+I0416 16:50:43.269843   707 pointcloud_preprocessor.cc:130]  FROM: 29016 TO: 29016
+I0416 16:50:43.363059   705 pointcloud_preprocessor.cc:81]  -1: 0.000767
+I0416 16:50:43.363065   705 pointcloud_preprocessor.cc:87]  -2: 0.002134
+I0416 16:50:43.367751   705 pointcloud_preprocessor.cc:125]  1: 4.68187
+I0416 16:50:43.368018   705 pointcloud_preprocessor.cc:129]  2: 0.26077
+I0416 16:50:43.368023   705 pointcloud_preprocessor.cc:130]  FROM: 29152 TO: 29152
+I0416 16:50:43.498106   699 pointcloud_preprocessor.cc:81]  -1: 0.00115
+I0416 16:50:43.498117   699 pointcloud_preprocessor.cc:87]  -2: 0.003571
+I0416 16:50:43.506574   699 pointcloud_preprocessor.cc:125]  1: 8.44922
+I0416 16:50:43.507246   699 pointcloud_preprocessor.cc:129]  2: 0.653584
+I0416 16:50:43.507256   699 pointcloud_preprocessor.cc:130]  FROM: 29121 TO: 29121
+I0416 16:50:43.577062   707 pointcloud_preprocessor.cc:81]  -1: 0.000975
+I0416 16:50:43.577069   707 pointcloud_preprocessor.cc:87]  -2: 0.001157
+I0416 16:50:43.582005   707 pointcloud_preprocessor.cc:125]  1: 4.92977
+I0416 16:50:43.582298   707 pointcloud_preprocessor.cc:129]  2: 0.278611
+I0416 16:50:43.582304   707 pointcloud_preprocessor.cc:130]  FROM: 29134 TO: 29134
+I0416 16:50:43.704738   706 pointcloud_preprocessor.cc:81]  -1: 0.001855
+I0416 16:50:43.704764   706 pointcloud_preprocessor.cc:87]  -2: 0.00464
+I0416 16:50:43.723749   706 pointcloud_preprocessor.cc:125]  1: 18.9679
+I0416 16:50:43.724403   706 pointcloud_preprocessor.cc:129]  2: 0.622559
+I0416 16:50:43.724417   706 pointcloud_preprocessor.cc:130]  FROM: 28962 TO: 28962
+I0416 16:50:43.797004   703 pointcloud_preprocessor.cc:81]  -1: 0.000819
+I0416 16:50:43.797013   703 pointcloud_preprocessor.cc:87]  -2: 0.002908
+I0416 16:50:43.801859   703 pointcloud_preprocessor.cc:125]  1: 4.84208
+I0416 16:50:43.802301   703 pointcloud_preprocessor.cc:129]  2: 0.431153
+I0416 16:50:43.802309   703 pointcloud_preprocessor.cc:130]  FROM: 28767 TO: 28767
+I0416 16:50:43.875074   702 pointcloud_preprocessor.cc:81]  -1: 0.000967
+I0416 16:50:43.875082   702 pointcloud_preprocessor.cc:87]  -2: 0.002997
+I0416 16:50:43.879736   702 pointcloud_preprocessor.cc:125]  1: 4.64959
+I0416 16:50:43.880008   702 pointcloud_preprocessor.cc:129]  2: 0.263542
+I0416 16:50:43.880013   702 pointcloud_preprocessor.cc:130]  FROM: 28894 TO: 28894
+I0416 16:50:43.973654   708 pointcloud_preprocessor.cc:81]  -1: 0.000993
+I0416 16:50:43.973660   708 pointcloud_preprocessor.cc:87]  -2: 0.001478
+I0416 16:50:43.978363   708 pointcloud_preprocessor.cc:125]  1: 4.69674
+I0416 16:50:43.978648   708 pointcloud_preprocessor.cc:129]  2: 0.278184
+I0416 16:50:43.978654   708 pointcloud_preprocessor.cc:130]  FROM: 29245 TO: 29245
+I0416 16:50:44.074676   707 pointcloud_preprocessor.cc:81]  -1: 0.000831
+I0416 16:50:44.074681   707 pointcloud_preprocessor.cc:87]  -2: 0.001985
+I0416 16:50:44.079427   707 pointcloud_preprocessor.cc:125]  1: 4.74249
+I0416 16:50:44.079730   707 pointcloud_preprocessor.cc:129]  2: 0.297217
+I0416 16:50:44.079735   707 pointcloud_preprocessor.cc:130]  FROM: 29056 TO: 29056
+I0416 16:50:44.175019   706 pointcloud_preprocessor.cc:81]  -1: 0.000738
+I0416 16:50:44.175024   706 pointcloud_preprocessor.cc:87]  -2: 0.001348
+I0416 16:50:44.179630   706 pointcloud_preprocessor.cc:125]  1: 4.60314
+I0416 16:50:44.179899   706 pointcloud_preprocessor.cc:129]  2: 0.26377
+I0416 16:50:44.179903   706 pointcloud_preprocessor.cc:130]  FROM: 28688 TO: 28688
+I0416 16:50:44.278300   708 pointcloud_preprocessor.cc:81]  -1: 0.000819
+I0416 16:50:44.278303   708 pointcloud_preprocessor.cc:87]  -2: 0.001798
+I0416 16:50:44.282984   708 pointcloud_preprocessor.cc:125]  1: 4.67748
+I0416 16:50:44.283247   708 pointcloud_preprocessor.cc:129]  2: 0.257315
+I0416 16:50:44.283252   708 pointcloud_preprocessor.cc:130]  FROM: 28352 TO: 28352
+I0416 16:50:44.375912   709 pointcloud_preprocessor.cc:81]  -1: 0.00081
+I0416 16:50:44.375918   709 pointcloud_preprocessor.cc:87]  -2: 0.001575
+I0416 16:50:44.380504   709 pointcloud_preprocessor.cc:125]  1: 4.58101
+I0416 16:50:44.380944   709 pointcloud_preprocessor.cc:129]  2: 0.433365
+I0416 16:50:44.380949   709 pointcloud_preprocessor.cc:130]  FROM: 28190 TO: 28190
+I0416 16:50:44.462771   708 pointcloud_preprocessor.cc:81]  -1: 0.000776
+I0416 16:50:44.462776   708 pointcloud_preprocessor.cc:87]  -2: 0.001741
+I0416 16:50:44.467231   708 pointcloud_preprocessor.cc:125]  1: 4.45167
+I0416 16:50:44.467495   708 pointcloud_preprocessor.cc:129]  2: 0.256636
+I0416 16:50:44.467500   708 pointcloud_preprocessor.cc:130]  FROM: 27561 TO: 27561
+I0416 16:50:44.588670   703 pointcloud_preprocessor.cc:81]  -1: 0.001103
+I0416 16:50:44.588685   703 pointcloud_preprocessor.cc:87]  -2: 0.003601
+I0416 16:50:44.595170   703 pointcloud_preprocessor.cc:125]  1: 6.47524
+I0416 16:50:44.595677   703 pointcloud_preprocessor.cc:129]  2: 0.489205
+I0416 16:50:44.595687   703 pointcloud_preprocessor.cc:130]  FROM: 27752 TO: 27752
+I0416 16:50:44.717067   704 pointcloud_preprocessor.cc:81]  -1: 0.001831
+I0416 16:50:44.717087   704 pointcloud_preprocessor.cc:87]  -2: 0.010007
+I0416 16:50:44.730876   704 pointcloud_preprocessor.cc:125]  1: 13.7732
+I0416 16:50:44.732161   704 pointcloud_preprocessor.cc:129]  2: 1.24849
+I0416 16:50:44.732179   704 pointcloud_preprocessor.cc:130]  FROM: 27842 TO: 27842
+I0416 16:50:44.821727   706 pointcloud_preprocessor.cc:81]  -1: 0.000773
+I0416 16:50:44.821732   706 pointcloud_preprocessor.cc:87]  -2: 0.00159
+I0416 16:50:44.826483   706 pointcloud_preprocessor.cc:125]  1: 4.74403
+I0416 16:50:44.826784   706 pointcloud_preprocessor.cc:129]  2: 0.286164
+I0416 16:50:44.826791   706 pointcloud_preprocessor.cc:130]  FROM: 27613 TO: 27613

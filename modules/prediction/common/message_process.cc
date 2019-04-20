@@ -106,25 +106,25 @@ void MessageProcess::OnPerception(
         *ptr_ego_vehicle, ptr_ego_vehicle->timestamp());
     double x = ptr_ego_vehicle->position().x();
     double y = ptr_ego_vehicle->position().y();
-    ADEBUG << "Get ADC position [" << std::fixed << std::setprecision(6) << x
+    AINFO << "Get ADC position [" << std::fixed << std::setprecision(6) << x
            << ", " << std::fixed << std::setprecision(6) << y << "].";
     ptr_ego_trajectory_container->SetPosition({x, y});
   }
   auto end_time2 = std::chrono::system_clock::now();
   std::chrono::duration<double> diff = end_time2 - end_time1;
-  ADEBUG << "Time to insert ADC: " << diff.count() * 1000 << " msec.";
+  AINFO << "Time to insert ADC: " << diff.count() * 1000 << " msec.";
 
   // Insert perception_obstacles
   ptr_obstacles_container->Insert(perception_obstacles);
   auto end_time3 = std::chrono::system_clock::now();
   diff = end_time3 - end_time2;
-  ADEBUG << "Time to insert obstacles: " << diff.count() * 1000 << " msec.";
+  AINFO << "Time to insert obstacles: " << diff.count() * 1000 << " msec.";
 
   // Scenario analysis
   ScenarioManager::Instance()->Run();
   auto end_time4 = std::chrono::system_clock::now();
   diff = end_time4 - end_time3;
-  ADEBUG << "Time for scenario_manager: " << diff.count() * 1000 << " msec.";
+  AINFO << "Time for scenario_manager: " << diff.count() * 1000 << " msec.";
 
   // If in junction, BuildJunctionFeature();
   // If not, BuildLaneGraph().
@@ -136,12 +136,12 @@ void MessageProcess::OnPerception(
   }
   auto end_time5 = std::chrono::system_clock::now();
   diff = end_time5 - end_time4;
-  ADEBUG << "Time to build junction features: " << diff.count() * 1000
+  AINFO << "Time to build junction features: " << diff.count() * 1000
          << " msec.";
   ptr_obstacles_container->BuildLaneGraph();
   auto end_time6 = std::chrono::system_clock::now();
   diff = end_time6 - end_time5;
-  ADEBUG << "Time to build cruise features: " << diff.count() * 1000
+  AINFO << "Time to build cruise features: " << diff.count() * 1000
          << " msec.";
   ADEBUG << "Received a perception message ["
          << perception_obstacles.ShortDebugString() << "].";
@@ -169,13 +169,13 @@ void MessageProcess::OnPerception(
   EvaluatorManager::Instance()->Run();
   auto end_time7 = std::chrono::system_clock::now();
   diff = end_time7 - end_time6;
-  ADEBUG << "Time to evaluate: " << diff.count() * 1000 << " msec.";
+  AINFO << "Time to evaluate: " << diff.count() * 1000 << " msec.";
 
   // Make predictions
   PredictorManager::Instance()->Run();
   auto end_time8 = std::chrono::system_clock::now();
   diff = end_time8 - end_time7;
-  ADEBUG << "Time to predict: " << diff.count() * 1000 << " msec.";
+  AINFO << "Time to predict: " << diff.count() * 1000 << " msec.";
 
   // Get predicted obstacles
   *prediction_obstacles = PredictorManager::Instance()->prediction_obstacles();
