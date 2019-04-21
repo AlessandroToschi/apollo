@@ -36,10 +36,10 @@ email address}
 \maketitle
 
 \begin{abstract}
-    Autonomous driving is a field that gathers many interest from the academics world and from industry leaders.\\
+    Autonomous driving is a field that gathers many interest from the academics world and from industry leaders.
     The software of an autonomous driving systems (ADS) incorporates the state-of-the-art from many disciplines, such as computer vision, robotics, geo-localization.
-    Although the high level architecture of an autonomous driving system and the main algorithms used are known, the complete analysis of a real ADS is still difficult, especially for what concerns the modules interdependencies, interactions, either software and hardware, and pre- and post-processing.\\
-    In this paper, we want to extract those point of views and quantify them according different architectural aspects: response times, memory movements, complexity and CPU-GPU relationship.\\
+    Although the high level architecture of an autonomous driving system and the main algorithms used are known, the complete analysis of a real ADS is still difficult, especially for what concerns the modules interdependencies, interactions, either software and hardware, and pre- and post-processing.
+    In this paper, we want to extract those point of views and quantify them according different architectural aspects: response times, memory movements, computational complexity and CPU-GPU relationship.
     The analysis is based on the open-source Apollo ADS developed by Baidu and is focused on the most important modules: perception, prediction and planning.
 \end{abstract}
 
@@ -73,7 +73,12 @@ Two types of lidars are used in Apollo: 128L and 16L. The 128L lidar is set to b
 GPS and IMU data are provided to the localization module in order to estimate the car's position and pose.
 The perception detects obstacles present in the environment perceived from cameras and lidars and then the prediction module predicts obstacle trajectories using detections, localization estimations and trajectories chosen by the planner.
 Finally, the planning module selects the best trajectory, coherent to the route requested and obstacle trajectories, containing the path and speed profile to adopt.
+Many modules rely on HDMap to get an enriched understanding of the surrounding environment, being able to query road signs, junctions, lanes and many more. 
 
+In the next sections, we will describe the perception, prediction and planning modules.
+The description will be composed by an high level overview of the module and the analysis of each component within the module.
+The analysis is focused on response times, computational complexity, data dependencies, CPU-GPU relationship and memory movements.
+In the last section, we will detail the simulation environment, settings and datasets used in this work.
 \begin{figure*}[t]
     \centering
     \includegraphics[width=\textwidth]{images/apollo_software_architecture.png}

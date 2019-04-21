@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1555818679 "/home/apolloxps/apollo/paper/template/paper.tex" "/home/apolloxps/apollo/paper/template/paper.pdf" "paper" 1555818797
+["pdflatex"] 1555828281 "/home/apolloxps/apollo/paper/template/paper.tex" "/home/apolloxps/apollo/paper/template/paper.pdf" "paper" 1555828294
   "/etc/texmf/web2c/texmf.cnf" 1555470576 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/apolloxps/apollo/paper/template/paper.aux" 1555818679 4685 d1a71e88950ae5c19fe8af708e3d0cae ""
-  "/home/apolloxps/apollo/paper/template/paper.tex" 1555818797 21162 3b6b57aefcfd810d3cad9c50d00ca096 ""
+  "/home/apolloxps/apollo/paper/template/paper.aux" 1555828281 4685 f449d70b1dd7e85193358e387c66a1f2 ""
+  "/home/apolloxps/apollo/paper/template/paper.tex" 1555828293 21778 93e2b04c9c92507b1aadd2347aedb338 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -107,11 +107,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1555470708 3822874 0501ae3ab6e2f75c77a11a6ee36cd991 ""
   "IEEEtran.cls" 1440611324 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "images/apollo_software_architecture.png" 1555816941 13252 04bd337f018b7cd6c7ba884c713ae637 ""
-  "paper.aux" 1555818679 4685 d1a71e88950ae5c19fe8af708e3d0cae ""
-  "paper.tex" 1555818797 21162 3b6b57aefcfd810d3cad9c50d00ca096 ""
+  "paper.aux" 1555828281 4685 f449d70b1dd7e85193358e387c66a1f2 ""
+  "paper.tex" 1555828293 21778 93e2b04c9c92507b1aadd2347aedb338 ""
   (generated)
-  "paper.pdf"
+  "/home/apolloxps/apollo/paper/template/paper.log"
   "paper.log"
   "paper.aux"
   "/home/apolloxps/apollo/paper/template/paper.pdf"
-  "/home/apolloxps/apollo/paper/template/paper.log"
+  "paper.pdf"
