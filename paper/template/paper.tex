@@ -8,10 +8,14 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{dblfloatfix}
-\usepackage{svg}
+\usepackage{inputenc}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
+
+%\pagenumbering{arabic}
+%\thispagestyle{plain}
+%\pagestyle{plain}
 
 \title{Workload Analysis of Autonomous Driving System: Apollo, Baidu Inc.}
 
@@ -79,6 +83,7 @@ In the next sections, we will describe the perception, prediction and planning m
 The description will be composed by an high level overview of the module and the analysis of each component within the module.
 The analysis is focused on response times, computational complexity, data dependencies, CPU-GPU relationship and memory movements.
 In the last section, we will detail the simulation environment, settings and datasets used in this work.
+
 \begin{figure*}[t]
     \centering
     \includegraphics[width=\textwidth]{images/apollo_software_architecture.png}
@@ -86,7 +91,22 @@ In the last section, we will detail the simulation environment, settings and dat
     \label{apollo_software_architecure}
 \end{figure*}
 
+
+\begin{figure*}[b!]
+    \centering
+    \includegraphics[width=\textwidth]{images/perception_software_architecture.png}
+    \caption{Perception Software Architecture}
+    \label{perception_software_architecture}
+\end{figure*}
+
 \section{Perception}
+The perception module perceives the environment, through the data coming from cameras and lidars, by detecting obstacles.
+In the Figure \ref{perception_software_architecture} is presented the internal representation of the perception modules, highlighting the module's components and flow.
+Due to the different nature of the inputs, camera frames and cloud points require different detection algorithm, pre- and post-processing.
+The Fusion Camera Detection is a unique component shared from both 6mm and 12mm camera frames.
+
+
+
 Perception diagram.
 General description: what it does, sensors descriptions, output and general overview.
 
