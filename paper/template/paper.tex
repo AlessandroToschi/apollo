@@ -5,15 +5,15 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
-\usepackage{float}
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{dblfloatfix}
+\usepackage{svg}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Complete Workload Analysis of Real Autonomous Driving System: Apollo, Baidu Inc.}
+\title{Workload Analysis of Autonomous Driving System: Apollo, Baidu Inc.}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Alessandro Toschi}
 \IEEEauthorblockA{\textit{Shanghai Jiao Tong University} \\
@@ -66,20 +66,20 @@ This rich environment carries out the need of having the right hardware equipmen
 CPU should be able to sustain many multi-threaded algorithms and provides enough cores to execute several processes concurrently.
 GPU is required for the execution of convolutional neural networks (CNN), vector and matrix operations, which are especially encountered in the perception module.
 
-\begin{figure}[htb]
-    
+A schematic overview of the Apollo software architecture is presented in Figure \ref{apollo_software_architecure}.
+Although the communication is data-driven, is reasonable to describe the architecture starting from sensors.
+Apollo supports two Full-HD cameras with two different focal lengths, 6mm and 12mm respectively, which are polled at 20 fps.
+Two types of lidars are used in Apollo: 128L and 16L. The 128L lidar is set to be the master sensor in the architecture.
+GPS and IMU data are provided to the localization module in order to estimate the car's position and pose.
+The perception detects obstacles present in the environment perceived from cameras and lidars and then the prediction module predicts obstacle trajectories using detections, localization estimations and trajectories chosen by the planner.
+Finally, the planning module selects the best trajectory, coherent to the route requested and obstacle trajectories, containing the path and speed profile to adopt.
+
+\begin{figure*}[t]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/apollo_software_architecture.png}
+    \includegraphics[width=\textwidth]{images/apollo_software_architecture.png}
     \caption{Apollo Software Architecture}
-    \label{}
-\end{figure}
-
-\clearpage
-
-Autonomous driving requirements.\\
-Introduction to Apollo: what is it, how is it implemented, data communication.\\
-Modules that are going to be analyzed.\\
-Image of apollo software architecture.\\
+    \label{apollo_software_architecure}
+\end{figure*}
 
 \section{Perception}
 Perception diagram.
