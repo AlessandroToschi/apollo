@@ -86,7 +86,7 @@ In the last section, we will detail the simulation environment, settings and dat
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=\textwidth]{images/apollo_software_architecture.png}
+    \includegraphics[height=3.7cm]{images/apollo_software_architecture.png}
     \caption{Apollo Software Architecture}
     \label{apollo_software_architecure}
 \end{figure*}
@@ -94,7 +94,7 @@ In the last section, we will detail the simulation environment, settings and dat
 
 \begin{figure*}[b!]
     \centering
-    \includegraphics[width=\textwidth]{images/perception_software_architecture.png}
+    \includegraphics[height=3.7cm]{images/perception_software_architecture.png}
     \caption{Perception Software Architecture}
     \label{perception_software_architecture}
 \end{figure*}
@@ -103,23 +103,38 @@ In the last section, we will detail the simulation environment, settings and dat
 The perception module perceives the environment, through the data coming from cameras and lidars, by detecting obstacles.
 In the Figure \ref{perception_software_architecture} is presented the internal representation of the perception modules, highlighting the module's components and flow.
 Due to the different nature of the inputs, camera frames and cloud points require different detection algorithm, pre- and post-processing.
-The Fusion Camera Detection is a unique component shared from both 6mm and 12mm camera frames.
+The Fusion Camera Detection is a unique component shared from both 6mm and 12mm camera frames and processes them using first-in, first-served policy through an Obstacle Camera Pipeline.
+The Lidar Segmentation is bounded to a specific Lidar because different lidars have different parameters that affect the segmentation.
+Thus, cloud points are published into distinct Cyber's channels according to the lidars and the segmentation components are driven by those channels concurrently.
+The ouput of lidar segmentation doens't depends anymore on the lidar of origin, the recognition component indeed is unique and shared.
+Intermediate detections converge on the Fusion component, which will provide coherent and combined detections among sensors, publishing them as the output of the whole module.
 
+\subsection{Fusion Camera Detection}
 
+The Fusion Camera Detection applies a sequence of tasks, called Obstacle Camera Pipeline, to camera frames.
+The pipeline is composed by lanes detection and post-processing, obstacles tracking and obstacles detection and post-processing.
+The pipeline is not applied equally to each frame; lanes detection and post-processing are only applied to camera frames coming from the 6mm camera, due to the wider perspective.
 
-Perception diagram.
-General description: what it does, sensors descriptions, output and general overview.
+Lanes detection is performed using SCNN \cite{b2}, spatial convolutional neural network, which exploits spatial relationship among pixels in order to identify straight shaped obstacles, such as lanes.
+To fit the SCNN input size, the camera frame is resized from 1920x1080 to 640x480 and then forwarded through the network.
+The network detects at most 13 lanes, the output indeed can be interpreted as 13 frames of size 640x480 each of which highlights a lane if present. 
+This sparse output is then fused to a single 640x480 frame, in which different lanes are highlighted by different identifiers.
 
-For each component: camera, lidar segmentation, lidar recognition, fusion component and traffic lights
+Lanes post-processing needs to be applied because lanes' representation is not yet meaningful for the subsequent modules in the ADS.
+The lanes found so far belong to the camera plane and need to be projected onto car plane and ground plane.
+For each lane, the third-order polynomial coefficients are estimated from the ground plane projection using the Ransac-Fitting algorithm.
+Finally a further projection is executed, converting the lane points from the two bi-dimensional planes onto the three-dimensional plane, represented in world coordinates.
 
-\subsection{Camera Component}
+Obstacles are detected using 'YoloNET' convolutional neural network which is able to identify 2D bounding boxes of obstacles and their classes.
+Likewise the lanes detection, the camera frame is resized to fit the size of the neural network. After the inference, the 2D bounding boxes are projected onto the 3D by the obstacle post-processor.
 
-\subsubsection{What it does and how}
-Explain which are the input of module, output and tasks.
-Explain what each task does.
-\subsubsection{Complexity}
+The obstacles tracker adapts the detections of the previous iteration to the current one by estimating the new bouding boxes position according an Adaptive Kalman Filter, car pose and time-deltas.
+Afterwards, the obstacles tracker matches new obstacles detected to the previous ones, generates hypothesys and deletes the duplicates.
+Finally, the obstacles detected are propagated towards the Fusion component.
+
+\subsubsection*{Complexity}
 Explain the complexity of the tasks and their dependencies
-\subsubsection{Response time}
+\subsubsection*{Response time}
 Response time analysis and on which device each task runs.
 Table or graph about response times.
 
@@ -146,17 +161,6 @@ Response time analysis and on which device each task runs.
 Table or graph about response times.
 
 \subsection{Fusion Component}
-
-\subsubsection{What it does and how}
-Explain which are the input of module, output and tasks.
-Explain what each task does.
-\subsubsection{Complexity}
-Explain the complexity of the tasks and their dependencies
-\subsubsection{Response time}
-Response time analysis and on which device each task runs.
-Table or graph about response times.
-
-\subsection{Traffic Light Component}
 
 \subsubsection{What it does and how}
 Explain which are the input of module, output and tasks.
@@ -371,9 +375,9 @@ For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
-\bibitem{b1} Shih-Chieh Lin, Yunqi Zhang, Chang-Hong Hsu, Matt Skach, Md E. Haque, Lingjia Tang, and Jason Mars, ``The Architectural Implications of Autonomous Driving: Constraints and Acceleration.'' In Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '18). ACM, New York, NY, USA, 751-766. DOI: https://doi.org/10.1145/3173162.3173191
+\bibitem{b1} Lin, S. C., Zhang, Y., Hsu, C. H., Skach, M., Haque, M. E., Tang, L., \& Mars, J. (2018, March). The architectural implications of autonomous driving: Constraints and acceleration. In ACM SIGPLAN Notices (Vol. 53, No. 2, pp. 751-766). ACM.
 %\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+\bibitem{b2} Pan, X., Shi, J., Luo, P., Wang, X., \& Tang, X. (2018, April). Spatial as deep: Spatial cnn for traffic scene understanding. In Thirty-Second AAAI Conference on Artificial Intelligence.
 \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
 \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
 \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
