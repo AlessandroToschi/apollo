@@ -8,7 +8,8 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{dblfloatfix}
-\usepackage{inputenc}
+\usepackage{subcaption}
+\usepackage{adjustbox}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -86,18 +87,41 @@ In the last section, we will detail the simulation environment, settings and dat
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[height=3.7cm]{images/apollo_software_architecture.png}
+    \includegraphics[height=2.5cm]{images/apollo_software_architecture.png}
     \caption{Apollo Software Architecture}
     \label{apollo_software_architecure}
 \end{figure*}
 
-
 \begin{figure*}[b!]
     \centering
-    \includegraphics[height=3.7cm]{images/perception_software_architecture.png}
-    \caption{Perception Software Architecture}
-    \label{perception_software_architecture}
+    \begin{subfigure}{\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth, height=2.5cm]{images/perception_software_architecture.png}
+        \caption{Perception Software Architecture}
+        \label{perception_software_architecture}
+    \end{subfigure}
+    \begin{subfigure}{\columnwidth}
+        \centering
+        \includegraphics[width=\columnwidth,height=2.5cm]{images/obstacle_camera_pipeline.png}
+        \caption{Obstacle Camera Pipeline}
+        \label{obstacle_camera_pipeline}
+    \end{subfigure}
+    \caption{}
 \end{figure*}
+
+%\begin{figure}[b!]
+%    \centering
+%    \includegraphics[height=2.5cm]{images/perception_software_architecture.png}
+%    \caption{Perception Software Architecture}
+%    \label{perception_software_architecture}
+%\end{figure}
+%
+%\begin{figure}[b!]
+%    \centering
+%    \includegraphics[height=2.5cm]{images/obstacle_camera_pipeline.png}
+%    \caption{Obstacle Camera Pipeline}
+%    \label{obstacle_camera_pipeline}
+%\end{figure}
 
 \section{Perception}
 The perception module perceives the environment, through the data coming from cameras and lidars, by detecting obstacles.
@@ -111,7 +135,7 @@ Intermediate detections converge on the Fusion component, which will provide coh
 
 \subsection{Fusion Camera Detection}
 
-The Fusion Camera Detection applies a sequence of tasks, called Obstacle Camera Pipeline, to camera frames.
+The Fusion Camera Detection applies a sequence of tasks, called Obstacle Camera Pipeline to camera frames, displayed in Figure \ref{perception_software_architecture}.
 The pipeline is composed by lanes detection and post-processing, obstacles tracking and obstacles detection and post-processing.
 The pipeline is not applied equally to each frame; lanes detection and post-processing are only applied to camera frames coming from the 6mm camera, due to the wider perspective.
 
@@ -133,10 +157,77 @@ Afterwards, the obstacles tracker matches new obstacles detected to the previous
 Finally, the obstacles detected are propagated towards the Fusion component.
 
 \subsubsection*{Complexity}
-Explain the complexity of the tasks and their dependencies
+
+The computational complexity of the whole pipeline is dominated by CNN inferences.
+Lanes detection, in addition, depends on image resizing and the fusion of detected lanes into one frame.
+Lanes post-processing performs several operations on lane points of each lanes detected and the iterative RANSAC algorithm to find the polynomial coefficients.
+The tracker prediction relies only to the past obstacles detected and the update of the Adaptive Kalman Filter.
+The obstacles detection, similarly to the lane detection, resizes the image and performs some refinements on the obstacles candidates to refine their bounding boxes.
+The obstacles post-processing and tracking association involve the comparison between past obstacles and current obstacles.
+
+\begin{table}[htbp]
+    \begin{center}
+    \begin{adjustbox}{max width=\columnwidth}
+        \setlength{\tabcolsep}{0.5em}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|p{3cm}|p{6cm}|}
+            \hline
+            \textbf{Task} & \textbf{Complexity} \\
+            \hline
+            Lanes Detection & CNN inference, image resizing and single lanes frame\\
+            \hline
+            Lanes Post-processing & RANSAC algorithm, lane points x lanes detected \\
+            \hline
+            Tracker Prediction & Past obstacles detected\\
+            \hline
+            Obstacles Detection & CNN inference, image resizing, obstacles candidates, obstacles detected\\
+            \hline
+            Obstacles Post-processing & Obstacles detected\\
+            \hline
+            Tracker Association & Obstacles detected x past obstacles\\
+            \hline
+            \end{tabular}    
+    \end{adjustbox}
+    \label{fusion_detection_component_complexity_table}
+    \end{center}
+    \caption{Fusion Camera Detection Complexity}
+\end{table}
+
 \subsubsection*{Response time}
-Response time analysis and on which device each task runs.
-Table or graph about response times.
+
+The average response time of the component in our simulation is 49.76 ms and the 95.86\% of time is spent on CNN inferences.
+This dominance of CNN inferences lead to make the computation independent from the number of obstacles detected, even if the pre- and post-processing operations are needed to generate a correct detection.
+This component heavily relies on GPU for the CNN inferences, image resizing, the extraction of the obstacles bounding boxes from the YoloNet output and the similarities between obstacles and frames in the tracking phase.
+
+\begin{table}[htbp]
+    \begin{center}
+    \begin{adjustbox}{max width=\columnwidth}
+        \setlength{\tabcolsep}{0.5em}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{|l|r|r|}
+            \hline
+            \textbf{Task}&\multicolumn{2}{|c|}{\textbf{Response Time}} \\
+            \cline{2-3} 
+            & \textbf{\textit{ms}}& \textbf{\textit{\%}}\\
+            \hline
+            Lanes Detection & 38.14 & 76.65\\
+            \hline
+            Lanes Post-processing & 0.72 & 1.45 \\
+            \hline
+            Tracker Prediction & 0.01 & 0.02\\
+            \hline
+            Obstacles Detection & 9.56 & 19.21\\
+            \hline
+            Obstacles Post-processing & 0.6 & 1.2\\
+            \hline
+            Tracker Association & 0.73 & 1.47\\
+            \hline
+            \end{tabular}    
+    \end{adjustbox}
+    \label{fusion_detection_component_response_time_table}
+    \end{center}
+    \caption{Fusion Camera Detection Response Time}
+\end{table}
 
 \subsection{Lidar Segmentation Component}
 
