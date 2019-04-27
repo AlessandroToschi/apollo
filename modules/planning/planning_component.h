@@ -18,6 +18,7 @@
 
 #include <memory>
 
+#include "cyber/cyber.h"
 #include "cyber/class_loader/class_loader.h"
 #include "cyber/component/component.h"
 #include "cyber/message/raw_message.h"

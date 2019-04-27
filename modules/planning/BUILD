@@ -48,7 +48,7 @@ cc_library(
         "planning_base.h",
     ],
     copts = [
-        "-DMODULE_NAME=\\\"planning\\\"",
+        "-DMODULE_NAME=\\\"planning_base\\\"",
         "-fopenmp",
     ],
     deps = [

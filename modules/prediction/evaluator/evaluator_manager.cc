@@ -205,6 +205,7 @@ void EvaluatorManager::EvaluateObstacle(Obstacle* obstacle,
       // For evaluators that don't need surrounding info.
       evaluator->Evaluate(obstacle);
     }
+    AINFO << evaluator->GetName();
   }
 }
 

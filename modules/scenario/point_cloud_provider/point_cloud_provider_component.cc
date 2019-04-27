@@ -128,7 +128,7 @@ bool PointCloudProviderComponent::Proc()
         
         point_cloud = std::make_shared<PointCloud>();
 
-        for(int i = 0; i < bytes / 16; i += 4)
+        for(int i = 0; i < bytes / 4; i += 4)
         {
             PointXYZIT *point_xyzit = point_cloud->add_point();
             point_xyzit->set_x(buffer[i]);

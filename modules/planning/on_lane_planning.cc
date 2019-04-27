@@ -232,21 +232,38 @@ void OnLanePlanning::RunOnce(const LocalView& local_view,
   const double planning_cycle_time =
       1.0 / static_cast<double>(FLAGS_planning_loop_rate);
 
+  auto profile_start_time = std::chrono::system_clock::now();    
+
   std::vector<TrajectoryPoint> stitching_trajectory;
   std::string replan_reason;
   stitching_trajectory = TrajectoryStitcher::ComputeStitchingTrajectory(
       vehicle_state, start_timestamp, planning_cycle_time,
       last_publishable_trajectory_.get(), &replan_reason);
 
+  auto profile_end_time = std::chrono::system_clock::now();    
+  auto time_difference = profile_end_time - profile_start_time;
+  AINFO << "Stitching Trajectory: " << (double)time_difference.count() / 1E6;
+  profile_start_time = std::chrono::system_clock::now();
+
   const uint32_t frame_num = static_cast<uint32_t>(seq_num_++);
   bool update_ego_info =
       EgoInfo::Instance()->Update(stitching_trajectory.back(), vehicle_state);
   status = InitFrame(frame_num, stitching_trajectory.back(), vehicle_state);
 
+  profile_end_time = std::chrono::system_clock::now();    
+  time_difference = profile_end_time - profile_start_time;
+  AINFO << "Frame Init: " << (double)time_difference.count() / 1E6;
+
+  profile_start_time = std::chrono::system_clock::now();
+
   if (update_ego_info && status.ok()) {
     EgoInfo::Instance()->CalculateFrontObstacleClearDistance(
         frame_->obstacles());
   }
+
+  profile_end_time = std::chrono::system_clock::now();    
+  time_difference = profile_end_time - profile_start_time;
+  AINFO << "Front Obstacle Distance: " << (double)time_difference.count() / 1E6;
 
   if (FLAGS_enable_record_debug) {
     frame_->RecordInputDebug(trajectory_pb->mutable_debug());
@@ -283,6 +300,8 @@ void OnLanePlanning::RunOnce(const LocalView& local_view,
     return;
   }
 
+  profile_start_time = std::chrono::system_clock::now();
+
   for (auto& ref_line_info : *frame_->mutable_reference_line_info()) {
     TrafficDecider traffic_decider;
     traffic_decider.Init(traffic_rule_configs_);
@@ -295,7 +314,19 @@ void OnLanePlanning::RunOnce(const LocalView& local_view,
     }
   }
 
+  profile_end_time = std::chrono::system_clock::now();    
+  time_difference = profile_end_time - profile_start_time;
+  AINFO << "Traffic Decider: " << (double)time_difference.count() / 1E6;
+
+  profile_start_time = std::chrono::system_clock::now();
+
   status = Plan(start_timestamp, stitching_trajectory, trajectory_pb);
+
+  profile_end_time = std::chrono::system_clock::now();    
+  time_difference = profile_end_time - profile_start_time;
+  AINFO << "Planning: " << (double)time_difference.count() / 1E6;
+
+  
 
   for (const auto& p : trajectory_pb->trajectory_point()) {
     ADEBUG << p.DebugString();
@@ -341,11 +372,14 @@ void OnLanePlanning::RunOnce(const LocalView& local_view,
     trajectory_pb->set_gear(canbus::Chassis::GEAR_DRIVE);
     FillPlanningPb(start_timestamp, trajectory_pb);
     ADEBUG << "Planning pb:" << trajectory_pb->header().DebugString();
-
+    profile_start_time = std::chrono::system_clock::now();
     frame_->set_current_frame_planned_trajectory(*trajectory_pb);
     if (FLAGS_enable_planning_smoother) {
       planning_smoother_.Smooth(FrameHistory::Instance(), frame_.get(),
                                 trajectory_pb);
+      profile_end_time = std::chrono::system_clock::now();    
+      time_difference = profile_end_time - profile_start_time;
+      AINFO << "Smoother: " << (double)time_difference.count() / 1E6;
     }
   }
 

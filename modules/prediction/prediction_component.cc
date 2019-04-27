@@ -113,7 +113,7 @@ bool PredictionComponent::Proc(
     AERROR << "Prediction: cannot receive any localization message.";
     return false;
   }
-  AINFO << "CIAO";
+  AINFO << "Perception obstacles count: " << perception_obstacles->perception_obstacle_size();
   auto localization_msg = *ptr_localization_msg;
   MessageProcess::OnLocalization(localization_msg);
   auto end_time2 = std::chrono::system_clock::now();
@@ -170,6 +170,8 @@ bool PredictionComponent::Proc(
       }
     }
   }
+
+  AINFO << "Prediction obstacles count: " << prediction_obstacles.prediction_obstacle_size();
 
   // Publish output
   common::util::FillHeader(node_->Name(), &prediction_obstacles);

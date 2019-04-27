@@ -102,6 +102,9 @@ bool PlanningComponent::Proc(
     const std::shared_ptr<canbus::Chassis>& chassis,
     const std::shared_ptr<localization::LocalizationEstimate>&
         localization_estimate) {
+  
+  auto startt_time = std::chrono::system_clock::now();
+
   CHECK(prediction_obstacles != nullptr);
 
   if (FLAGS_use_sim_time) {
@@ -145,6 +148,10 @@ bool PlanningComponent::Proc(
     p.set_relative_time(p.relative_time() + dt);
   }
   planning_writer_->Write(std::make_shared<ADCTrajectory>(adc_trajectory_pb));
+
+  auto endt_time = std::chrono::system_clock::now();
+  auto time_difference = endt_time - startt_time;
+  AINFO << "Planning response time: " << (double)time_difference.count() / 1E6;
   return true;
 }
 
