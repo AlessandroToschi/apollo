@@ -219,7 +219,7 @@ bool FusionCameraDetectionComponent::Init() {
   double roll_adj_degree = 0.0;
   // load in lidar to imu extrinsic
   Eigen::Matrix4d ex_lidar2imu;
-  if(!LoadExtrinsics(FLAGS_obs_sensor_intrinsic_path + "/" + "velodyne128_novatel_extrinsics.yaml", &ex_lidar2imu))
+  if(!LoadExtrinsics(FLAGS_obs_sensor_intrinsic_path + "/" + "velodyne64_novatel_extrinsics.yaml", &ex_lidar2imu))
   {
     ex_lidar2imu = Eigen::Matrix4d::Identity();
   }
@@ -258,12 +258,12 @@ void FusionCameraDetectionComponent::OnReceiveImage(
 
   ++seq_num_;
 
-  auto profiler_info_proto = std::make_shared<apollo::scenario::profiler::proto::ProfilerInfo>();
-  profiler_info_proto->set_frame_id(seq_num_);
-  profiler_info_proto->set_pid(getpid());
-  profiler_info_proto->set_action("START");
-
-  profiler_writer->Write(profiler_info_proto);
+  //auto profiler_info_proto = std::make_shared<apollo::scenario::profiler::proto::ProfilerInfo>();
+  //profiler_info_proto->set_frame_id(seq_num_);
+  //profiler_info_proto->set_pid(getpid());
+  //profiler_info_proto->set_action("START");
+//
+  //profiler_writer->Write(profiler_info_proto);
   //std::string prof_file_name = "/apollo/debug_output/" + std::to_string(seq_num_) + "_prof.data";
   //std::string profiling_command = "perf record -o " + prof_file_name +
   //                                " --call-grap dwarf --event cycles:P,instructions:P,cpu-clock:P,task-clock:P" +
@@ -654,6 +654,11 @@ int FusionCameraDetectionComponent::InternalProc(
     camera_frame.project_matrix = project_matrix_;
   } else {
     camera_frame.project_matrix.setIdentity();
+    
+    /*<<  7.215377e+02, 0.000000e+00, 6.095593e+02, 
+                                    4.485728e+01, 0.000000e+00, 7.215377e+02, 
+                                    1.728540e+02, 2.163791e-01, 0.000000e+00, 
+                                    0.000000e+00, 1.000000e+00, 2.745884e-03;*/
   }
   //AINFO << "qua ci arrivo";
   ++frame_id_;

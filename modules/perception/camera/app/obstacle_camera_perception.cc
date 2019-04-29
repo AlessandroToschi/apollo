@@ -365,7 +365,7 @@ bool ObstacleCameraPerception::Perception(
 
     if (write_out_lane_file_) {
       std::string lane_file_path =
-          out_lane_dir_ + "/" + std::to_string(frame->frame_id) + ".txt";
+          out_lane_dir_ + "/" + std::to_string(frame->frame_id + 1) + "_lane.txt";
       WriteLanelines(write_out_lane_file_, lane_file_path, frame->lane_objects);
     }
   } else {
@@ -500,7 +500,7 @@ bool ObstacleCameraPerception::Perception(
   WriteDetections(
       perception_param_.debug_param().has_tracked_detection_out_dir(),
       perception_param_.debug_param().tracked_detection_out_dir() + "/" +
-          std::to_string(frame->frame_id + 1) + ".txt",
+          std::to_string(frame->frame_id + 1) + "_track.txt",
       frame->tracked_objects);
 
   // fill polygon & set anchor point
@@ -512,7 +512,7 @@ bool ObstacleCameraPerception::Perception(
   end_time = apollo::cyber::Time::Now();
   times["FillObjectPolygon"] = (double)(end_time - start_time).ToNanosecond() / 1E6;
 
-  WriteTimes(true, "/apollo/debug_output/" + std::to_string(frame->frame_id + 1) + "_times.txt", times);
+  //WriteTimes(true, "/apollo/debug_output/" + std::to_string(frame->frame_id + 1) + "_times.txt", times);
 
   /*
   if(frame->frame_id == 10) 

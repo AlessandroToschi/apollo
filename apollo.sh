@@ -113,7 +113,8 @@ function generate_build_targets() {
 	BUILD_TARGETS=`bazel query $COMMON_TARGETS union //modules/image_provider/...`
 	;;
   *)
-    BUILD_TARGETS=`bazel query //modules/... union //cyber/...`
+    BUILD_TARGETS=`bazel query //modules/... except //modules/prediction/... except //modules/planning/... union //cyber/...`
+  ;;
   esac
 
   if [ $? -ne 0 ]; then

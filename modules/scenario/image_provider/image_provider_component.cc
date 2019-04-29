@@ -68,6 +68,8 @@ bool ImageProviderComponent::Proc()
         cv::cvtColor(image, image, cv::COLOR_BGR2RGB);
         cv::resize(image, image, cv::Size(1920, 1080), 1.0, 1.0, cv::INTER_CUBIC);
 
+        change_contrast_brightness(image, 1.5, 20.0);
+
         proto_image->mutable_header()->set_frame_id(FLAGS_camera_frame_id);
         proto_image->mutable_header()->set_timestamp_sec(cyber::Time::Now().ToSecond());
         proto_image->set_width(image.cols);
@@ -87,33 +89,13 @@ bool ImageProviderComponent::Proc()
     {
         image.release();
     }
-
-    /*
-    CameraImagePtr raw_image;
-    raw_image.reset(new CameraImage);
-    raw_image->width = image.cols;
-    raw_image->height = image.rows;
-    raw_image->bytes_per_pixel = 3;
-    raw_image->image_size =  raw_image->width * raw_image->height * 3;
-    raw_image->is_new = 1;
-    raw_image->image = reinterpret_cast<char*>(calloc(raw_image->image_size, sizeof(char)));
-    */
-
-
-
-    //memcpy(raw_image->image, image.data, raw_image->image_size);
-
-    
-
-
-
-    
-
-    
-
-    //images_index = (uint)images_list.size();
     
     return true;
+}
+
+void change_contrast_brightness(cv::Mat &image, double alpha, double beta)
+{
+    image.convertTo(image, -1, alpha, beta);
 }
 
 }//image_provider
