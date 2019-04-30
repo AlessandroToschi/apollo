@@ -37,6 +37,11 @@ bool ImageProviderComponent::Init()
     return true;
 }
 
+void change_contrast_brightness(cv::Mat &image, double alpha, double beta)
+{
+    image.convertTo(image, -1, alpha, beta);
+}
+
 bool ImageProviderComponent::Proc()
 {
     if(images_index >= images_list.size() + 1)
@@ -92,12 +97,6 @@ bool ImageProviderComponent::Proc()
     
     return true;
 }
-
-void change_contrast_brightness(cv::Mat &image, double alpha, double beta)
-{
-    image.convertTo(image, -1, alpha, beta);
-}
-
 }//image_provider
 }//scenario
 }//apollo

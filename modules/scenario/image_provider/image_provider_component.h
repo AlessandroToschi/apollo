@@ -36,8 +36,6 @@ class ImageProviderComponent : public TimerComponent
     std::vector<std::string> images_list;
     uint images_index;
     std::shared_ptr<Writer<Image>> writer_ = nullptr;
-
-    void change_contrast_brightness(cv::Mat &image, double alpha, double beta);
 };
 
 CYBER_REGISTER_COMPONENT(ImageProviderComponent)

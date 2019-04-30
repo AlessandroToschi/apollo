@@ -92,7 +92,7 @@ class Visualizer {
   bool reset_key();
 
   bool write_out_img_ = false;
-  bool cv_imshow_img_ = true;
+  bool cv_imshow_img_ = false;
   // homograph between image and ground plane
   Eigen::Matrix3d homography_image2ground_ = Eigen::Matrix3d::Identity(3, 3);
   Eigen::Matrix3d homography_ground2image_ = Eigen::Matrix3d::Identity(3, 3);
