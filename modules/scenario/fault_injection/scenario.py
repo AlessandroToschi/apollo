@@ -40,15 +40,25 @@ class Scenario(object):
         self.__images_paths = [scenario_path + "/image_02/data/" + str(frame_id).rjust(10, '0') + ".png" for frame_id in valid_frame_id]
         self.__cloud_points_paths = [scenario_path + "/velodyne_points/data/" + str(frame_id).rjust(10, '0') + ".bin" for frame_id in valid_frame_id]
 
+    def __len__(self):
+        return self.length
+    
+    def prepare_point_cloud_provider(self):
+        with open("/apollo/modules/scenario/fault_injection/velodyne_list.txt", "w+") as list_file:
+            list_file.write("\n".join(self.__cloud_points_paths))
+
     name = property(lambda self: self.__name)
     images_paths = property(lambda self: self.__images_paths[:])
     cloud_points_paths = property(lambda self: self.__cloud_points_paths[:])
     oracle_path = property(lambda self: self.__oracle_path)
     simulations_path = property(lambda self: self.__simulations_path)
+    length = property(lambda self: len(self.__images_paths))
 
 if __name__ == "__main__":
-    for scenario in Scenario.get_scenarios():
-        print(scenario.name)
-    scenario_0 = Scenario.get_scenarios()[0]
-    print(scenario_0.images_paths)
-    print(scenario_0.cloud_points_paths)
+    print(len(Scenario.get_scenarios()))
+    print(Scenario.get_scenarios()[0].name)
+    #for scenario in Scenario.get_scenarios():
+    #    print(scenario.name, len(scenario.images_paths))
+    #scenario_0 = Scenario.get_scenarios()[0]
+    #print(scenario_0.images_paths)
+    #print(scenario_0.cloud_points_paths)

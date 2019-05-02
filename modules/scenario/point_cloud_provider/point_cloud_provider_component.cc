@@ -8,7 +8,7 @@ bool PointCloudProviderComponent::Init()
 {
     std::string point_clouds_list_content;
 
-    if(!apollo::cyber::common::GetContent(FLAGS_dataset_root_folder + FLAGS_dataset_point_clouds_folder_name + FLAGS_dataset_point_clouds_list_file_name, &point_clouds_list_content))
+    if(!apollo::cyber::common::GetContent("/apollo/modules/scenario/fault_injection/velodyne_list.txt", &point_clouds_list_content))
     {
         AERROR << "Unable to open point clouds list file: " << FLAGS_dataset_root_folder + FLAGS_dataset_point_clouds_folder_name + FLAGS_dataset_point_clouds_list_file_name;
         return false;
@@ -105,7 +105,7 @@ bool PointCloudProviderComponent::Proc()
     else
     {
         std::ifstream point_clouds_file;
-        point_clouds_file.open(FLAGS_dataset_root_folder + FLAGS_dataset_point_clouds_folder_name + point_clouds_list[point_clouds_index]);
+        point_clouds_file.open(point_clouds_list[point_clouds_index]);
         
         if(!point_clouds_file.is_open())
         {
