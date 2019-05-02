@@ -5,7 +5,10 @@ bazel-bin
 bazel-genfiles
 bazel-out
 bazel-testlogs
+kitti/
+dataset/*
 /Debug/
+debug_output/
 *.pyc
 *genrule.log
 WORKSPACE
