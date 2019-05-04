@@ -1,0 +1,308 @@
+city_2011_09_26_0104
+Frames: 223
+Total obstacles: 14073
+Camera obstacles: 1079, 0.077
+Velodyne obstacles: 12994, 0.923
+Unknown obstacles: 3488, 0.248
+
+road_2011_09_26_0029
+Frames: 429
+Total obstacles: 3116
+Camera obstacles: 200, 0.064
+Velodyne obstacles: 2916, 0.936
+Unknown obstacles: 1401, 0.45
+
+residential_2011_09_26_0036
+Frames: 765
+Total obstacles: 21515
+Camera obstacles: 1665, 0.077
+Velodyne obstacles: 19850, 0.923
+Unknown obstacles: 6682, 0.311
+
+city_2011_09_26_0056
+Frames: 292
+Total obstacles: 5040
+Camera obstacles: 433, 0.086
+Velodyne obstacles: 4607, 0.914
+Unknown obstacles: 2101, 0.417
+
+residential_2011_09_26_0022
+Frames: 781
+Total obstacles: 13931
+Camera obstacles: 1057, 0.076
+Velodyne obstacles: 12874, 0.924
+Unknown obstacles: 3839, 0.276
+
+city_2011_09_26_0005
+Frames: 147
+Total obstacles: 9190
+Camera obstacles: 276, 0.03
+Velodyne obstacles: 8914, 0.97
+Unknown obstacles: 4886, 0.532
+
+residential_2011_09_30_0018
+Frames: 2755
+Total obstacles: 62726
+Camera obstacles: 2426, 0.039
+Velodyne obstacles: 60300, 0.961
+Unknown obstacles: 25659, 0.409
+
+city_2011_09_26_0009
+Frames: 400
+Total obstacles: 24129
+Camera obstacles: 1260, 0.052
+Velodyne obstacles: 22869, 0.948
+Unknown obstacles: 6382, 0.264
+
+city_2011_09_26_0018
+Frames: 265
+Total obstacles: 12687
+Camera obstacles: 578, 0.046
+Velodyne obstacles: 12109, 0.954
+Unknown obstacles: 3538, 0.279
+
+city_2011_09_26_0106
+Frames: 170
+Total obstacles: 10477
+Camera obstacles: 456, 0.044
+Velodyne obstacles: 10021, 0.956
+Unknown obstacles: 4352, 0.415
+
+city_2011_09_26_0095
+Frames: 255
+Total obstacles: 7975
+Camera obstacles: 711, 0.089
+Velodyne obstacles: 7264, 0.911
+Unknown obstacles: 2256, 0.283
+
+city_2011_09_29_0071
+Frames: 923
+Total obstacles: 67495
+Camera obstacles: 1893, 0.028
+Velodyne obstacles: 65602, 0.972
+Unknown obstacles: 17675, 0.262
+
+road_2011_09_30_0016
+Frames: 278
+Total obstacles: 4099
+Camera obstacles: 341, 0.083
+Velodyne obstacles: 3758, 0.917
+Unknown obstacles: 1639, 0.4
+
+residential_2011_09_26_0087
+Frames: 723
+Total obstacles: 3465
+Camera obstacles: 230, 0.066
+Velodyne obstacles: 3235, 0.934
+Unknown obstacles: 1163, 0.336
+
+residential_2011_09_30_0020
+Frames: 1072
+Total obstacles: 40641
+Camera obstacles: 2087, 0.051
+Velodyne obstacles: 38554, 0.949
+Unknown obstacles: 15658, 0.385
+
+residential_2011_09_26_0039
+Frames: 388
+Total obstacles: 10582
+Camera obstacles: 791, 0.075
+Velodyne obstacles: 9791, 0.925
+Unknown obstacles: 3030, 0.286
+
+road_2011_09_26_0015
+Frames: 295
+Total obstacles: 7541
+Camera obstacles: 821, 0.109
+Velodyne obstacles: 6720, 0.891
+Unknown obstacles: 2017, 0.267
+
+residential_2011_09_26_0061
+Frames: 690
+Total obstacles: 11114
+Camera obstacles: 694, 0.062
+Velodyne obstacles: 10420, 0.938
+Unknown obstacles: 3651, 0.329
+
+city_2011_09_26_0011
+Frames: 232
+Total obstacles: 7460
+Camera obstacles: 460, 0.062
+Velodyne obstacles: 7000, 0.938
+Unknown obstacles: 2352, 0.315
+
+city_2011_09_26_0013
+Frames: 143
+Total obstacles: 4468
+Camera obstacles: 219, 0.049
+Velodyne obstacles: 4249, 0.951
+Unknown obstacles: 1550, 0.347
+
+residential_2011_09_26_0035
+Frames: 90
+Total obstacles: 5284
+Camera obstacles: 335, 0.063
+Velodyne obstacles: 4949, 0.937
+Unknown obstacles: 1287, 0.244
+
+city_2011_09_26_0084
+Frames: 373
+Total obstacles: 16577
+Camera obstacles: 1330, 0.08
+Velodyne obstacles: 15247, 0.92
+Unknown obstacles: 5107, 0.308
+
+city_2011_09_26_0059
+Frames: 333
+Total obstacles: 18592
+Camera obstacles: 1158, 0.062
+Velodyne obstacles: 17434, 0.938
+Unknown obstacles: 6535, 0.351
+
+city_2011_09_26_0051
+Frames: 434
+Total obstacles: 28293
+Camera obstacles: 1717, 0.061
+Velodyne obstacles: 26576, 0.939
+Unknown obstacles: 10057, 0.355
+
+city_2011_09_28_0002
+Frames: 373
+Total obstacles: 29555
+Camera obstacles: 1000, 0.034
+Velodyne obstacles: 28555, 0.966
+Unknown obstacles: 10925, 0.37
+
+city_2011_09_26_0057
+Frames: 360
+Total obstacles: 9400
+Camera obstacles: 1344, 0.143
+Velodyne obstacles: 8056, 0.857
+Unknown obstacles: 2406, 0.256
+
+road_2011_09_26_0052
+Frames: 41
+Total obstacles: 1146
+Camera obstacles: 56, 0.049
+Velodyne obstacles: 1090, 0.951
+Unknown obstacles: 459, 0.401
+
+residential_2011_09_26_0086
+Frames: 699
+Total obstacles: 2602
+Camera obstacles: 129, 0.05
+Velodyne obstacles: 2473, 0.95
+Unknown obstacles: 953, 0.366
+
+road_2011_09_26_0101
+Frames: 931
+Total obstacles: 19034
+Camera obstacles: 1533, 0.081
+Velodyne obstacles: 17501, 0.919
+Unknown obstacles: 5653, 0.297
+
+road_2011_09_26_0028
+Frames: 428
+Total obstacles: 2464
+Camera obstacles: 85, 0.034
+Velodyne obstacles: 2379, 0.966
+Unknown obstacles: 1641, 0.666
+
+road_2011_09_29_0004
+Frames: 338
+Total obstacles: 4911
+Camera obstacles: 767, 0.156
+Velodyne obstacles: 4144, 0.844
+Unknown obstacles: 1622, 0.33
+
+road_2011_09_26_0032
+Frames: 388
+Total obstacles: 9247
+Camera obstacles: 807, 0.087
+Velodyne obstacles: 8440, 0.913
+Unknown obstacles: 1751, 0.189
+
+road_2011_09_26_0070
+Frames: 418
+Total obstacles: 3390
+Camera obstacles: 91, 0.027
+Velodyne obstacles: 3299, 0.973
+Unknown obstacles: 2113, 0.623
+
+road_2011_09_26_0027
+Frames: 187
+Total obstacles: 1097
+Camera obstacles: 37, 0.034
+Velodyne obstacles: 1060, 0.966
+Unknown obstacles: 812, 0.74
+
+city_2011_09_26_0001
+Frames: 107
+Total obstacles: 2607
+Camera obstacles: 282, 0.108
+Velodyne obstacles: 2325, 0.892
+Unknown obstacles: 636, 0.244
+
+residential_2011_09_26_0019
+Frames: 473
+Total obstacles: 7817
+Camera obstacles: 423, 0.054
+Velodyne obstacles: 7394, 0.946
+Unknown obstacles: 3304, 0.423
+
+city_2011_09_26_0093
+Frames: 381
+Total obstacles: 11282
+Camera obstacles: 803, 0.071
+Velodyne obstacles: 10479, 0.929
+Unknown obstacles: 3387, 0.3
+
+residential_2011_09_26_0023
+Frames: 376
+Total obstacles: 18730
+Camera obstacles: 962, 0.051
+Velodyne obstacles: 17768, 0.949
+Unknown obstacles: 4725, 0.252
+
+city_2011_09_26_0117
+Frames: 632
+Total obstacles: 19928
+Camera obstacles: 672, 0.034
+Velodyne obstacles: 19256, 0.966
+Unknown obstacles: 5740, 0.288
+
+city_2011_09_26_0091
+Frames: 337
+Total obstacles: 17722
+Camera obstacles: 817, 0.046
+Velodyne obstacles: 16905, 0.954
+Unknown obstacles: 5837, 0.329
+
+residential_2011_09_30_0027
+Frames: 1026
+Total obstacles: 32767
+Camera obstacles: 1829, 0.056
+Velodyne obstacles: 30938, 0.944
+Unknown obstacles: 7856, 0.24
+
+residential_2011_09_26_0064
+Frames: 569
+Total obstacles: 12765
+Camera obstacles: 980, 0.077
+Velodyne obstacles: 11785, 0.923
+Unknown obstacles: 4014, 0.314
+
+city_2011_09_26_0014
+Frames: 313
+Total obstacles: 6986
+Camera obstacles: 725, 0.104
+Velodyne obstacles: 6261, 0.896
+Unknown obstacles: 2775, 0.397
+
+city_2011_09_26_0096
+Frames: 469
+Total obstacles: 21561
+Camera obstacles: 1055, 0.049
+Velodyne obstacles: 20506, 0.951
+Unknown obstacles: 5762, 0.267
+

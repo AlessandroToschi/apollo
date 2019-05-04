@@ -1,0 +1,11 @@
+{
+  "errorCode":"OK",
+  "header":{
+    "cameraTimestamp":"0",
+    "moduleName":"perception_obstacle",
+    "radarTimestamp":"0",
+    "sequenceNum":665,
+    "timestampSec":1556874577.7846825,
+    "lidarTimestamp":"1556874577695144960"
+  }
+}

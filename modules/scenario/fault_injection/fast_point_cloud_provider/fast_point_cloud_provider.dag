@@ -1,0 +1,9 @@
+module_config {
+    module_library : "/apollo/bazel-bin/modules/scenario/fault_injection/fast_point_cloud_provider/libfast_point_cloud_provider_component.so"
+    components {
+        class_name : "FastPointCloudProvider"
+        config {
+            name : "FastPointCloudProvider"
+        }
+      }
+}

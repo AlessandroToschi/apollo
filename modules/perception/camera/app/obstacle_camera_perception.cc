@@ -428,7 +428,7 @@ bool ObstacleCameraPerception::Perception(
   // save detection results with bbox, detection_feature
   WriteDetections(perception_param_.debug_param().has_detect_feature_dir(),
                   perception_param_.debug_param().detect_feature_dir() + "/" +
-                      std::to_string(frame->frame_id + 1) + ".txt",
+                      std::to_string(frame->frame_id) + ".txt",
                   frame);
   // set the sensor name of each object
   for (size_t i = 0; i < frame->detected_objects.size(); i++) {

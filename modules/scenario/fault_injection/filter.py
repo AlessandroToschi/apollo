@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+import time
 
 from scenario import Scenario
 
@@ -11,6 +12,26 @@ class Filter(object):
                 OcclusionFilter.get_filters() +
                 FogFilter.get_filters() +
                 SnowFilter.get_filters())
+    
+    @staticmethod
+    def get_filter(filter_name):
+        left_bracket_index = filter_name.find("(")
+        name = filter_name[:left_bracket_index]
+        parameters = filter_name[left_bracket_index + 1 : -1].split(",")
+        if name == "contrast":
+            return ContrastBrightnessFilter(float(parameters[0]), 0.0)
+        elif name == "brightness":
+            return ContrastBrightnessFilter(1.0, float(parameters[0]))
+        elif name == "blur":
+            return BlurFilter(parameters[0], float(parameters[1]))
+        elif name == "fog":
+            return FogFilter(float(parameters[0]), float(parameters[1]))
+        elif name == "snow":
+            return SnowFilter(float(parameters[0]), float(parameters[1]), float(parameters[2]))
+        elif name == "occlusion":
+            return OcclusionFilter(int(parameters[0]))
+        else:
+            return None
 
     def apply(self, image):
         return image
@@ -21,8 +42,8 @@ class Filter(object):
 class ContrastBrightnessFilter(Filter):
     @staticmethod
     def get_filters():
-        contrast_range = np.linspace(1.2, 3.0, 10)
-        brightness_range = np.linspace(10, 100, 10)
+        contrast_range = np.linspace(1.2, 3.0, 5)
+        brightness_range = np.linspace(10, 100, 5)
         filters = [ContrastBrightnessFilter(alpha, 0.0) for alpha in contrast_range]
         filters += [ContrastBrightnessFilter(1.0, beta) for beta in brightness_range]
         return filters
@@ -35,7 +56,8 @@ class ContrastBrightnessFilter(Filter):
         return np.clip(self.__alpha * image.astype("float") + self.__beta, 0, 255).astype("uint8")
     
     def __str__(self):
-        return "Contrast Brightness Filter[alpha={}, beta={}]".format(self.__alpha, self.__beta)
+        return "contrast_brightness_{}_{}".format(self.__alpha, self.__beta)
+        #return "Contrast Brightness Filter[alpha={}, beta={}]".format(self.__alpha, self.__beta)
 
 class BlurFilter(Filter):
     @staticmethod
@@ -59,7 +81,8 @@ class BlurFilter(Filter):
             return image
     
     def __str__(self):
-        return "Blur Filter[mode={}, kernel_size={}]".format(self.__mode, self.__kernel_size)
+        return "blur_{}_{}".format(self.__mode, self.__kernel_size)
+        #return "Blur Filter[mode={}, kernel_size={}]".format(self.__mode, self.__kernel_size)
 
 class OcclusionFilter(Filter):
     @staticmethod
@@ -86,7 +109,8 @@ class OcclusionFilter(Filter):
         return image
     
     def __str__(self):
-        return "Occlusion Filter[occlusions count={}]".format(self.__occlusions_count)
+        return "occlusion_{}".format(self.__occlusions_count)
+        #return "Occlusion Filter[occlusions count={}]".format(self.__occlusions_count)
 
 class FogFilter(Filter):
     @staticmethod
@@ -106,9 +130,10 @@ class FogFilter(Filter):
         return image
     
     def __str__(self):
-        return "Fog Filter[alpha={}, kernel size={}]".format(self.__alpha, self.__kernel_size)
+        return "fog_{}_{}".format(self.__alpha, self.__kernel_size)
+        #return "Fog Filter[alpha={}, kernel size={}]".format(self.__alpha, self.__kernel_size)
 
-class SnowFilter(FogFilter):
+class SnowFilter(Filter):
     @staticmethod
     def get_filters():
         return [SnowFilter(5, 0.4, 0.5), SnowFilter(5, 0.6, 0.5), SnowFilter(5, 0.9, 0.5),
@@ -116,11 +141,12 @@ class SnowFilter(FogFilter):
                 SnowFilter(5, 0.4, 1.5), SnowFilter(5, 0.6, 1.5), SnowFilter(5, 0.9, 1.5)]
     
     def __init__(self, kernel_size, alpha, sigma):
-        super().__init__(kernel_size, alpha)
+        self.__fog = FogFilter(kernel_size, alpha)
+        #super(FogFilter, self).__init__(kernel_size, alpha)
         self.__sigma = sigma
     
     def apply(self, image):
-        image = super().apply(image)
+        image = self.__fog.apply(image)#super(FogFilter, self).apply(image)
         snow_layer = np.zeros_like(image)
         for i in range(1200):
             x = np.random.randint(0, image.shape[1])
@@ -135,7 +161,8 @@ class SnowFilter(FogFilter):
         return image
     
     def __str__(self):
-        return "Snow Filter[{}, sigma={}]".format(super().__str__(), self.__sigma)
+        return "snow_{}_{}".format(self.__fog, self.__sigma)
+        #return "Snow Filter[{}, sigma={}]".format(self.__fog, self.__sigma)
 
 
     
@@ -144,8 +171,25 @@ if __name__ == "__main__":
     print(len(filters))
     for f in filters:
         print(f)
-    scenario = Scenario.get_scenarios()[0]
-    image = cv2.imread(scenario.images_paths[50], cv2.IMREAD_COLOR)
+    scenario_path = Scenario.get_scenarios()[0]
+    scenario = Scenario(scenario_path)
+
+    for snow_filter in SnowFilter.get_filters():
+        image = cv2.imread(scenario.images_paths[50], cv2.IMREAD_COLOR)
+        cv2.imshow("image", snow_filter.apply(image))
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+    
+    #filterr = SnowFilter(7, 0.4, 1)#ContrastBrightnessFilter(2.0, 0.0)
+#
+    #start = time.time()
+#
+    #image = cv2.imread(scenario.images_paths[50], cv2.IMREAD_COLOR)
+    #filterr.apply(image)
+#
+    #end = time.time()
+#
+    #print((end - start) * 1000)
 
     #cv2.imshow('image', OcclusionFilter(10).apply(image))
     #cv2.waitKey(0)

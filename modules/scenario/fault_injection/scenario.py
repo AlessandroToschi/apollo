@@ -5,7 +5,7 @@ class Scenario(object):
     @staticmethod
     def get_scenarios():
         with open("/apollo/modules/scenario/fault_injection/scenarios.txt") as scenarios_path_file:
-            return [Scenario(scenario_path) for scenario_path in scenarios_path_file.readlines()]
+            return scenarios_path_file.readlines()
 
     def __init__(self, scenario_path):
         self.__scenario_path = scenario_path.strip()
