@@ -99,7 +99,7 @@ class OcclusionFilter(Filter):
             x = np.random.randint(0, image.shape[1])
             y = np.random.randint(0, image.shape[0])
             radius = np.random.randint(5, 41)
-            image = cv2.circle(image, (x, y), radius, (0, 0, 0), -1)
+            cv2.circle(image, (x, y), radius, (0, 0, 0), -1)
             x_min = max(0, x - radius - self.__blur_offset)
             x_max = min(image.shape[1] - 1, x + radius + self.__blur_offset)
             y_min = max(0, y - radius - self.__blur_offset)
@@ -174,11 +174,13 @@ if __name__ == "__main__":
     scenario_path = Scenario.get_scenarios()[0]
     scenario = Scenario(scenario_path)
 
-    for snow_filter in SnowFilter.get_filters():
-        image = cv2.imread(scenario.images_paths[50], cv2.IMREAD_COLOR)
-        cv2.imshow("image", snow_filter.apply(image))
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+    image = cv2.imread(scenario.images_paths[50], cv2.IMREAD_COLOR)
+    cv2.imshow("image",ContrastBrightnessFilter.get_filters()[8].apply(image))
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+    #for snow_filter in SnowFilter.get_filters():
+        
     
     #filterr = SnowFilter(7, 0.4, 1)#ContrastBrightnessFilter(2.0, 0.0)
 #

@@ -32,6 +32,24 @@ def iou_3D(oracle_box, simulation_box):
     x_d, y_d = simulation_box[0], simulation_box[1]
     x1_d, x2_d, y1_d, y2_d = get_corner_points(x_d, y_d, l_d, w_d)
 
+    x_min = min(x1_o, x1_d)
+
+    if x_min < 0:
+        x_min = abs(x_min)
+        x1_o += x_min
+        x2_o += x_min
+        x1_d += x_min
+        x2_d += x_min
+
+    y_min = min(y1_o, y2_o)
+
+    if y_min < 0:
+        y_min = abs(y_min)
+        y1_o += y_min
+        y2_o += y_min
+        y1_d += y_min
+        y2_d += y_min
+
     x1_i, y1_i = max(x1_o, x1_d), max(y1_o, y1_d)
     x2_i, y2_i = min(x2_o, x2_d), min(y2_o, y2_d)
 
@@ -75,14 +93,45 @@ def load_boxes(box_path):
         if "perceptionObstacle" in box_json:
             for obstacle in box_json["perceptionObstacle"]:
                 boxes.append((
-                    math.trunc(float(obstacle["position"]["x"]) * 1E6),
-                    math.trunc(float(obstacle["position"]["y"]) * 1E6),
-                    math.trunc(float(obstacle["position"]["z"]) * 1E6),
-                    math.trunc(float(obstacle["length"]) * 1E6),
-                    math.trunc(float(obstacle["width"]) * 1E6),
-                    math.trunc(float(obstacle["height"]) * 1E6)
+                    math.trunc(float(obstacle["position"]["x"]) * 1E3),
+                    math.trunc(float(obstacle["position"]["y"]) * 1E3),
+                    math.trunc(float(obstacle["position"]["z"]) * 1E3),
+                    math.trunc(float(obstacle["length"]) * 1E3),
+                    math.trunc(float(obstacle["width"]) * 1E3),
+                    math.trunc(float(obstacle["height"]) * 1E3)
                 ))
         return boxes
+
+def load_boxes_polygon(box_path):
+    with open(box_path) as box_file:
+        box_json = json.loads(box_file.read())
+        boxes = []
+        if "perceptionObstacle" in box_json:
+            for obstacle in box_json["perceptionObstacle"]:
+                x_min = 1E12
+                x_max = -1E12
+                y_min = 1E12
+                y_max = -1E12
+                for polygon in obstacle["polygonPoint"]:
+                    if float(polygon["x"]) < x_min:
+                        x_min = float(polygon["x"])
+                    if float(polygon["x"]) > x_max:
+                        x_max = float(polygon["x"])
+                    if float(polygon["y"]) < y_min:
+                        y_min = float(polygon["y"])
+                    if float(polygon["y"]) > y_max:
+                        y_max = float(polygon["y"])
+                boxes.append((x_min, x_max, y_min))
+                #boxes.append((
+                #    math.trunc(float(obstacle["position"]["x"]) * 1E6),
+                #    math.trunc(float(obstacle["position"]["y"]) * 1E6),
+                #    math.trunc(float(obstacle["position"]["z"]) * 1E6),
+                #    math.trunc(float(obstacle["length"]) * 1E6),
+                #    math.trunc(float(obstacle["width"]) * 1E6),
+                #    math.trunc(float(obstacle["height"]) * 1E6)
+                #))
+        return boxes
+
 
 def iou(oracle_rect, simulation_rect):
     x_o, y_o, w_o, h_o = oracle_rect
@@ -190,3 +239,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    #oracle_rect = (10, 20, 5, 10)
+    #d_rect = (12, 35, 6, 5)
+    #print(iou(oracle_rect, d_rect))
