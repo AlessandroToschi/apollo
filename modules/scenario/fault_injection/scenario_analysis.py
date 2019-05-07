@@ -2,6 +2,23 @@ import os
 import numpy as np
 import json
 import math
+import matplotlib.pyplot as plt
+
+def plot_camera_fusion(camera, fusion):
+    ordering = {"contrast(1.5)" : 1, "contrast(2.0)" : 2, "contrast(2.5)" : 3,
+                "brightness(30.0)" : 4, "brightness(60.0)" : 5, "brightness(90.0)" : 6,
+                "gaussian(7)" : 7, "rain" : 8, "snow" : 9, "occlusion" : 10}
+    
+    camera.sort(key=lambda x: ordering[x[0]])
+    fusion.sort(key=lambda x: ordering[x[0]])
+
+    _, axes1 = plt.subplots(figsize=(20,10))
+    ff = [c[1] for c in camera]
+    #i = 1
+    #for s, f, _ in camera:
+    axes1.bar(range(1, 11), ff, color='blue', width=1)
+    plt.show()
+
 
 def get_corner_points(x, y, l, w):
     x1, x2, y1, y2 = 0, 0, 0, 0
@@ -192,7 +209,7 @@ def load_oracle_ids(oracle_path):
     return sorted([int(fusion_file.strip().split("_")[1].split(".")[0]) for fusion_file in fusion_files])
 
 def main():
-    scenario = "road_2011_09_29_0004"
+    scenario = "city_2011_09_26_0014"
     oracle_path = "/apollo/modules/scenario/fault_injection/oracle/" + scenario + "/"
     simulations_path = "/apollo/modules/scenario/fault_injection/simulations/" + scenario + "/"
     simulations = os.listdir(simulations_path)
@@ -212,30 +229,56 @@ def main():
     for id in oracle_ids:
         oracle_rects = load_rects(oracle_path + "{}.txt".format(id))
         for simulation in simulations:
-            simulation_rects = load_rects(simulations_path + simulation + "/{}.txt".format(id))
+            file_name = simulations_path + simulation + "/{}.txt".format(id)
+            if not os.path.exists(file_name):
+                continue
+            simulation_rects = load_rects(file_name)
             metrics[simulation].append(evaluate_detection(oracle_rects, simulation_rects))
     
     for id in oracle_ids:
         oracle_boxes = load_boxes(oracle_path + "fusion_{}.txt".format(id))
         for simulation in simulations:
-            simulation_boxes = load_boxes(simulations_path + simulation + "/fusion_{}.txt".format(id))
+            file_name = simulations_path + simulation + "/fusion_{}.txt".format(id)
+            if not os.path.exists(file_name):
+                continue
+            simulation_boxes = load_boxes(file_name)
             metrics_3D[simulation].append(evaluate_detection_3D(oracle_boxes, simulation_boxes))
+
+    camera = []
     
     for simulation in simulations:
         f = [t[0] for t in metrics[simulation]]
         mean_iou = [t[1] for t in metrics[simulation]]
         mean_f = np.round(np.mean(f), decimals=3)
         mean_mean_iou = np.round(np.mean(mean_iou), decimals=3)
-        print("Camera - {} - {} - {}".format(simulation, mean_f, mean_mean_iou))
-        print()
+        camera.append((simulation, mean_f, mean_mean_iou))
+        #print("Camera - {} - {} - {}".format(simulation, mean_f, mean_mean_iou))
+        #print()
+    
+    camera.sort(key=lambda x: x[1], reverse=True)
+
+    for sim, f, i in camera:
+        print("Camera - {} - {} - {}".format(sim, f, i))
+    
+    print()
+
+    fusion = []
 
     for simulation in simulations:
         f = [t[0] for t in metrics_3D[simulation]]
         mean_iou = [t[1] for t in metrics_3D[simulation]]
         mean_f = np.round(np.mean(f), decimals=3)
         mean_mean_iou = np.round(np.mean(mean_iou), decimals=3)
-        print("Fusion - {} - {} - {}".format(simulation, mean_f, mean_mean_iou))
-        print()
+        fusion.append((simulation, mean_f, mean_mean_iou))
+        #print("Fusion - {} - {} - {}".format(simulation, mean_f, mean_mean_iou))
+        #print()
+    
+    fusion.sort(key=lambda x: x[1], reverse=True)
+
+    for sim, f, i in fusion:
+        print("Fusion - {} - {} - {}".format(sim, f, i))
+    
+    #plot_camera_fusion(camera, fusion)
 
 if __name__ == "__main__":
     main()

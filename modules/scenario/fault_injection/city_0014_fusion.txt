@@ -1,0 +1,23 @@
+There are 10 simulations
+The oracle has 313 frames
+Camera - brightness(30.0) - 0.961 - 0.944
+Camera - brightness(60.0) - 0.951 - 0.914
+Camera - contrast(2.0) - 0.949 - 0.869
+Camera - occlusion - 0.945 - 0.926
+Camera - brightness(90.0) - 0.944 - 0.892
+Camera - contrast(1.5) - 0.942 - 0.899
+Camera - contrast(2.5) - 0.939 - 0.846
+Camera - gaussian(7) - 0.926 - 0.831
+Camera - rain - 0.864 - 0.806
+Camera - snow - 0.821 - 0.759
+
+Fusion - brightness(30.0) - 0.978 - 0.983
+Fusion - brightness(60.0) - 0.976 - 0.982
+Fusion - contrast(2.5) - 0.976 - 0.982
+Fusion - contrast(2.0) - 0.975 - 0.983
+Fusion - snow - 0.971 - 0.984
+Fusion - brightness(90.0) - 0.971 - 0.981
+Fusion - contrast(1.5) - 0.968 - 0.98
+Fusion - gaussian(7) - 0.966 - 0.98
+Fusion - occlusion - 0.959 - 0.98
+Fusion - rain - 0.957 - 0.985

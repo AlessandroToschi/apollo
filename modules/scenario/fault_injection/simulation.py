@@ -36,10 +36,14 @@ class Simulation(object):
         #    self.__run_oracle()
         for i in range(len(self.__scenario)):
             start = time.time()
-            self.trigger_point_cloud(self.__scenario.cloud_points_paths[i], i)
+            
+            
             image = self.__read_image(self.__scenario.images_paths[i])
             self.write_image(self.__filter.apply(image), i)
-            time_to_sleep = 0.2 - (time.time() - start)
+
+            self.trigger_point_cloud(self.__scenario.cloud_points_paths[i], i)
+
+            time_to_sleep = 0.3 - (time.time() - start)
             if time_to_sleep < 0:
                 continue
             else:
@@ -58,11 +62,13 @@ class Simulation(object):
         #os.system("cyber_launch start modules/scenario/launch/point_cloud.launch &")
         for i in range(len(self.__scenario)):
             start = time.time()
-            self.trigger_point_cloud(self.__scenario.cloud_points_paths[i], i)
+            
             time.sleep(0.01)
             image = self.__read_image(self.__scenario.images_paths[i])
             self.write_image(image, i)
-            time_to_sleep = 0.2 - (time.time() - start)
+            self.trigger_point_cloud(self.__scenario.cloud_points_paths[i], i)
+            
+            time_to_sleep = 0.3
             if time_to_sleep < 0:
                 continue
             else:
@@ -129,6 +135,8 @@ class Simulation(object):
             os.mkdir(self.__simulation_folder)
     
     def listener_callback(self, perception_obstacles):
+        #with open(self.__simulation_folder + "/fusion_{}.txt".format(perception_obstacles.header.sequence_num), "w") as log_txt:
+        #with open(self.__scenario.oracle_path + "/fusion_{}.txt".format(perception_obstacles.header.sequence_num), "w") as log_txt:
         with open(self.__simulation_folder + "/fusion_{}.txt".format(perception_obstacles.header.sequence_num), "w") as log_txt:
             log_txt.write(MessageToJson(perception_obstacles))
 

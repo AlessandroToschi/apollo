@@ -5,10 +5,12 @@ bazel-bin
 bazel-genfiles
 bazel-out
 bazel-testlogs
-kitti/
+kitti/*
 dataset/*
 /Debug/
 debug_output/
+modules/scenario/fault_injection/oracle/*
+modules/scenario/fault_injection/simulations/*
 *.pyc
 *genrule.log
 WORKSPACE

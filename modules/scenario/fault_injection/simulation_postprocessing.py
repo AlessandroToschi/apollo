@@ -125,14 +125,21 @@ def count_obstacles(scenario_path):
     print("Unknown obstacles: {}, {}".format(unknown_obstacles, round(unknown_obstacles / (camera_obstacles + velodyne_obstacles), 3)))   
 
 if __name__ == "__main__":
-    simulation_path = "/apollo/modules/scenario/fault_injection/simulations/road_2011_09_29_0004/"
-    for filter in os.listdir(simulation_path):
-        remove_point_cloud(simulation_path + filter + "/", filter)
+    scenario_path = "/apollo/modules/scenario/fault_injection/oracle/city_2011_09_26_0014/"
+    simulation_path = "/apollo/modules/scenario/fault_injection/simulations/city_2011_09_26_0014/"
+
+    for sim in os.listdir(simulation_path):
+        scenario_path = simulation_path + sim + "/"
+        remove_outliers(scenario_path, sim)
+        remove_point_cloud(scenario_path, sim)
+    #for filter in os.listdir(simulation_path):
+    #    remove_point_cloud(simulation_path + filter + "/", filter)
     #scenario_paths = find_scenarios("/apollo/modules/scenario/fault_injection/oracle/")
     #for scenario_path in scenario_paths:
-    #    scenario_name = scenario_path.strip().split("/")[-2]
-    #    print(scenario_name)
-    #    #remove_outliers(scenario_path, scenario_name)
-    #    #remove_point_cloud(scenario_path, scenario_name)
+    #scenario_name = scenario_path.strip().split("/")[-2]
+    ##    print(scenario_name)
+    #scenario_name = scenario_path.strip().split("/")[-2]
+    #remove_outliers(scenario_path, scenario_name)
+    #remove_point_cloud(scenario_path, scenario_name)
     #    count_obstacles(scenario_path)
     #    print()
